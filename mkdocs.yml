@@ -1,12 +1,19 @@
-site_name: my-docs
+site_name: uniroma1
 
 theme:
+    features:
+      - navigation.top
     name: 'material'
+    logo: assets/sapienza_icon.png
+    favicon: assets/favicon.png
+    font:
+      text: Roboto
+      code: Roboto Mono
     palette:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
+      primary: blue
       accent: blue
 
 
@@ -19,6 +26,7 @@ extra:
 
 # Extensions
 markdown_extensions:
+  - tables
   - footnotes
   # - attr_list
   - pymdownx.arithmatex:
@@ -46,6 +54,7 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -57,12 +66,20 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/katex.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js 
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 plugins:
   - search
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js

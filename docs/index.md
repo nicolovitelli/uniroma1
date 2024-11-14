@@ -1,4 +1,1 @@
-# my-docs
-
-- [SQL](SQL)
-- [PL/SQL](PLSQL)
+- [Metodi Matematici per l'Informatica](metodi\index.md)
