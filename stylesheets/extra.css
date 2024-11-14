@@ -1,0 +1,35 @@
+:root {
+  --md-admonition-icon--math-adm: url('calculator.svg');
+}
+
+.md-typeset .admonition.math-adm,
+.md-typeset details.math-adm {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .math-adm > .admonition-title,
+.md-typeset .math-adm > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .math-adm > .admonition-title::before,
+.md-typeset .math-adm > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--math-adm);
+          mask-image: var(--md-admonition-icon--math-adm);
+}
+
+/* Remove all borders, padding, and background color for tables */
+table {
+    border-collapse: collapse;
+    border: none !important;
+}
+
+table td {
+    border: none !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+table th {
+    border: none !important;
+    background: none !important;
+}
