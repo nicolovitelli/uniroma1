@@ -668,171 +668,480 @@
 <details class="example">
 <summary>Esempio</summary>
 <ul>
-<li>Sia <span class="arithmatex">\(L = \{a,b\}\)</span> e verifichiamo se l'insieme <span class="arithmatex">\(\{L,\subseteq\}\)</span> è un reticolo.</li>
-<li>Per farlo, costruiamo l'insieme delle parti di <span class="arithmatex">\(L\)</span>:</li>
+<li>Traccia: identificare un reticolo dato un insieme ed una relazione.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{P}(L) = \{\emptyset, \{a\},\{b\},\{a,b\}\}
-\end{array}
-\]</div>
+<p><big>STEP 1: Analisi dell'Insieme e Relazione di partenza</big></p>
 <ul>
-<li>Verifichiamo se <span class="arithmatex">\(\mathcal{P}(L)\)</span> è un insieme parzialmente ordinato:</li>
+<li><span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span></li>
+<li><span class="arithmatex">\(\mathcal{R} = \{(a,b) \in A : a \leq b \text{ se e solo se } a \mid b\}\)</span></li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \text{Riflessività: } x \subseteq x : x \in \mathcal{P}(L) \\
-    \text{Antisimmetria: se } x \subseteq y \text{ e } y \subseteq x, \text{ allora } x = y \\
-    \text{Transitività: se } x \subseteq y \text{ e } y \subseteq z, \text{ allora } x \subseteq z 
-\end{array}
-\]</div>
+<div class="admonition info">
+<p class="admonition-title">Nozione di Divisibilità</p>
 <ul>
-<li>
-<p>Calcoliamo infimo e supremo per ogni coppia di sottoinsiemi in <span class="arithmatex">\(\mathcal{P}(L)\)</span>:</p>
+<li>Un numero <span class="arithmatex">\(a\)</span> divide il numero <span class="arithmatex">\(b\)</span> se esiste un numero intero <span class="arithmatex">\(k\)</span> tale che <span class="arithmatex">\(b = a \cdot k\)</span>.</li>
+</ul>
+</div>
+<p><big>STEP 2: Verifica delle Proprietà di Ordinamento Parziale</big></p>
 <ul>
-<li>Coppia <span class="arithmatex">\(\{\emptyset,\{a\}\}\)</span>:<ul>
-<li>Infimo: <span class="arithmatex">\(\emptyset \cap \{a\} = \emptyset\)</span></li>
-<li>Supremo: <span class="arithmatex">\(\emptyset \cup \{a\} = \{a\}\)</span></li>
-</ul>
-</li>
-<li>Coppia <span class="arithmatex">\(\{\emptyset, \{b\}\}\)</span>:<ul>
-<li>Infimo: <span class="arithmatex">\(\emptyset \cap \{b\} = \emptyset\)</span></li>
-<li>Supremo: <span class="arithmatex">\(\emptyset \cup \{b\} = \{b\}\)</span></li>
-</ul>
-</li>
-<li>Coppia <span class="arithmatex">\(\{\emptyset, \{a,b\}\}\)</span>:<ul>
-<li>Infimo: <span class="arithmatex">\(\emptyset \cap \{a,b\} = \emptyset\)</span></li>
-<li>Supremo: <span class="arithmatex">\(\emptyset \cup \{a,b\} = \{a,b\}\)</span></li>
-</ul>
-</li>
-<li>Coppia <span class="arithmatex">\(\{\{a\},\{b\}\}\)</span>:<ul>
-<li>Infimo: <span class="arithmatex">\(\{a\} \cap \{b\} = \emptyset\)</span></li>
-<li>Supremo: <span class="arithmatex">\(\{a\} \cup \{b\} = \{a,b\}\)</span></li>
-</ul>
-</li>
+<li><strong>Riflessività</strong>: ogni elemento è divisibile per sé stesso.<ul>
+<li><span class="arithmatex">\(1 \mid 1\)</span></li>
+<li><span class="arithmatex">\(2 \mid 2\)</span></li>
 <li><span class="arithmatex">\(\dots\)</span></li>
 </ul>
 </li>
-<li>
-<p>Conclusione: ogni coppia di elementi in <span class="arithmatex">\(\mathcal{P}(L)\)</span> ha sia un infimo (intersezione) che un supremo (unione). Quindi, <span class="arithmatex">\(\mathcal{P}(L)\)</span>, con la relazione di sottoinsieme <span class="arithmatex">\(\subseteq\)</span>, soddisfa le condizioni per essere un reticolo.</p>
-</li>
-</ul>
-<hr />
-<ul>
-<li>Ora prendiamo come insieme <span class="arithmatex">\(S = \{2,3,6\}\)</span> e la Relazione di Divisibilità (<em><span class="arithmatex">\(a | b\)</span> se e solo se <span class="arithmatex">\(a\)</span> è un divisore di <span class="arithmatex">\(b\)</span></em>).</li>
-<li>Costruiamo l'insieme delle parti di <span class="arithmatex">\(S\)</span>:</li>
-</ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{P}(S) = \{\emptyset, \{2\},\{3\}, \{6\},\{2,3\},\{2,6\},\{3,6\}\}
-\end{array}
-\]</div>
-<ul>
-<li>Verifichiamo che la relazione sia parzialmente ordinata:</li>
-</ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \text{Riflessività: ogni elemento è divisibile per se stesso}  \\
-    \text{Antisimmetria: se } a | b \text{ e } b | a, \text{ allora } a = b \\
-    \text{Transitività: se } a | b \text{ e } b | c, \text{ allora } a | c 
-\end{array}
-\]</div>
-<ul>
-<li>
-<p>Calcoliamo infimo e supremo per ogni coppia di sottoinsiemi in <span class="arithmatex">\(\mathcal{P}(S)\)</span>:</p>
-<ul>
-<li>Coppia <span class="arithmatex">\(\{2,3\}\)</span>:<ul>
-<li>Infimo: non esiste un infimo per <span class="arithmatex">\(2\)</span> e <span class="arithmatex">\(3\)</span> in <span class="arithmatex">\(S\)</span>, perchè il massimo comune divisore di <span class="arithmatex">\(2\)</span> e <span class="arithmatex">\(3\)</span> è <span class="arithmatex">\(1\)</span>, che non appartiene a <span class="arithmatex">\(S\)</span>.</li>
-<li>Supremo: non esiste un supremo per <span class="arithmatex">\(2\)</span> e <span class="arithmatex">\(3\)</span> in <span class="arithmatex">\(S\)</span>, perchè il minimo comune multiplo di <span class="arithmatex">\(2\)</span> e <span class="arithmatex">\(3\)</span> è <span class="arithmatex">\(6\)</span>, che è effettivamente in <span class="arithmatex">\(S\)</span>. Tuttavia, poichè non esiste un infimo, già questo ci impedisce di considerare <span class="arithmatex">\(S\)</span> come un reticolo.</li>
-</ul>
-</li>
+<li>Conclusione: la proprietà Riflessiva è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li><strong>Antisimmetria</strong>: se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid a\)</span>, necessariamente <span class="arithmatex">\(a = b\)</span>.<ul>
+<li>(<strong>Esempio 1</strong>) <span class="arithmatex">\(a = 2, b = 4\)</span>; <span class="arithmatex">\(a \mid b: 4 = 2 \cdot 2\)</span>, quindi <span class="arithmatex">\(2 \mid 4\)</span>.</li>
+<li>(<strong>Esempio 1</strong>) <span class="arithmatex">\(b = 4, a = 2\)</span>; <span class="arithmatex">\(b \not\mid a: 2 \neq 4 \cdot k\)</span> per nessun <span class="arithmatex">\(k \in \mathbb{N}\)</span>.</li>
+<li>(<strong>Esempio 2</strong>) <span class="arithmatex">\(a = 12, b=12\)</span>; <span class="arithmatex">\(a \mid b:12=12 \cdot 1\)</span>, quindi <span class="arithmatex">\(12 \mid 12\)</span>.</li>
+<li>(<strong>Esempio 2</strong>) <span class="arithmatex">\(b = 12, a =12\)</span>; <span class="arithmatex">\(b \mid a: 12 = 12 \cdot 1\)</span>, quindi <span class="arithmatex">\(12 \mid 12\)</span>.</li>
 <li><span class="arithmatex">\(\dots\)</span></li>
 </ul>
 </li>
-<li>
-<p>Conclusione: per la coppia <span class="arithmatex">\(\{2,3\}\)</span> non esiste un infimo all'interno dell'insieme <span class="arithmatex">\(S\)</span>, quindi l'insieme <span class="arithmatex">\(S = \{2,3,6\}\)</span> con la relazione di divisibilità non è un reticolo.</p>
-</li>
+<li>Conclusione: la proprietà Antisimmetrica è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> perchè quando viene applicata (<span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} a\)</span>), allora <span class="arithmatex">\(a = b\)</span>. In tutti gli altri casi, la proprietà Antisimmetrica non viene violata.</li>
+<li><strong>Transitività</strong>: se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid c\)</span>, allora necessariamente <span class="arithmatex">\(a \mid c\)</span>.<ul>
+<li><span class="arithmatex">\(a = 2, b=4, c=12\)</span></li>
+<li><span class="arithmatex">\(a \mid b : 4 = 2 \cdot 2\)</span>; quindi <span class="arithmatex">\(a \mid b\)</span>.</li>
+<li><span class="arithmatex">\(b \mid c : 12 = 4 \cdot 3\)</span>; quindi <span class="arithmatex">\(b \mid c\)</span>.</li>
+<li><span class="arithmatex">\(a \mid c : 12 = 2 \cdot 6\)</span>; quindi <span class="arithmatex">\(a \mid c\)</span>.</li>
+<li><span class="arithmatex">\(\dots\)</span></li>
 </ul>
+</li>
+<li>Conclusione: la proprietà Transitiva è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+</ul>
+<p><big>STEP 3: Verifica delle Proprietà di un Reticolo</big></p>
+<ul>
+<li><strong>Idempotenza</strong>: l'operazione applicata due volte all'elemento restituisce l'elemento stesso.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    4 \mathop{\vee} 4 = mcm(4,4) = 4 \\
+    6 \mathop{\wedge} 6 = mcd(6,6) = 6 \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà Idempotenza è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li><strong>Commutatività</strong>: l'ordine degli elementi non influenza il risultato.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    2 \mathop{\vee} 6 = mcm(2,6) = 6 \\
+    6 \mathop{\vee} 2 = mcm(6,2) = 6 \\
+    4 \mathop{\wedge} 6 = mcd(4,6) = 2 \\
+    6 \mathop{\wedge} 4 = mcd(6,4) = 2 \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà Commutativa è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li>
+<p><strong>Associatività</strong>: la disposizione delle parentesi non influenza il risultato.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+(2 \mathop{\vee} 3) \mathop{\vee} 4 \\
+= mcm(2,3) \mathop{\vee} 4 \\
+= 6 \mathop{\vee} 4 \\
+= mcm(6,4) = 12 \\
+\\
+2 \mathop{\vee} (3 \mathop{\vee} 4) \\
+= 2 \mathop{\vee} mcm(3,4) \\
+= 2 \mathop{\vee} 12 = 12 \\
+--- \\
+(2 \mathop{\wedge} 3) \mathop{\wedge} 4 \\
+= mcd(2,3) \mathop{\wedge} 4 \\
+= 1 \mathop{\wedge} 4
+= mcd(1,4) = 1 \\
+\\
+2 \mathop{\wedge} (3 \mathop{\wedge} 4) \\
+= 2 \mathop{\wedge} mcd(3,4) \\
+= 2 \mathop{\wedge} 1
+= mcd(2,1) = 1 \\
+\\
+\dots
+\end{array}
+\]</div>
+</li>
+<li>
+<p>Conclusione: la proprietà Associativa è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</p>
+</li>
+<li><strong>Assorbimento</strong>: assicura che combinare un elemento con il risultato dell'intersezione (o unione) dell'elemento con un altro non cambia il risultato.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    4 \mathop{\vee} (4 \mathop{\wedge} 6) \\
+    = 4 \mathop{\vee} mcd(4,6) \\
+    = 4 \mathop{\vee} 2 \\
+    = mcm (4,2) = 4 \\
+    \\
+    6 \mathop{\vee} (6 \mathop{\wedge} 12) \\
+    = 6 \mathop{\vee} mcd(6,12) \\
+    = 6 \mathop{\vee} 6 \\
+    = mcm(6,6) = 6 \\
+    --- \\
+    4 \mathop{\wedge} (4 \mathop{\vee} 6) \\
+    = 4 \mathop{\wedge} mcm(4,6) \\
+    = 4 \mathop{\wedge} 12 \\
+    = mcd(4,12) = 4 \\
+    \\
+    6 \mathop{\wedge} (6 \mathop{\vee} 12) \\
+    = 6 \mathop{\wedge} mcm(6,12) \\
+    = 6 \mathop{\wedge} 12 \\
+    = mcd(6,12) = 6 \\
+    \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà di Assorbimento è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />, quindi possiamo stabilire che l'insieme <span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span> con la relazione <span class="arithmatex">\(\mathcal{R}\)</span> di divisibilità è un Reticolo.</li>
+</ul>
+<p><figure markdown="1">
+  <img alt="image" src="../assets/mod9_div12.png" />
+  <figcaption>Diagramma di Hasse</figcaption>
+</figure></p>
 </details>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Reticolo Distributivo</p>
 <p>Un Reticolo Distributivo è un reticolo dove ogni elemento è verificato dalla proprietà distributiva.</p>
 </div>
 <details class="example">
-<summary>Esempio ― Reticolo non distributivo</summary>
-<p><figure markdown="1">
-<img alt="image" src="../assets/mod9_reticoloNonDis.png" />
-</figure></p>
+<summary>Esempio ― Reticolo Distributivo</summary>
+<p><big>STEP 1: Analisi dell'Insieme e Relazione di partenza</big></p>
+<ul>
+<li><span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span></li>
+<li><span class="arithmatex">\(\mathcal{R} = \{(a,b) \in A : a \leq b \text{ se e solo se } a \mid b\}\)</span></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Nozione di Divisibilità</p>
+<ul>
+<li>Un numero <span class="arithmatex">\(a\)</span> divide il numero <span class="arithmatex">\(b\)</span> se esiste un numero intero <span class="arithmatex">\(k\)</span> tale che <span class="arithmatex">\(b = a \cdot k\)</span>.</li>
+</ul>
+</div>
+<p><big>STEP 2: Verifica delle Proprietà di Ordinamento Parziale</big></p>
+<ul>
+<li><strong>Riflessività</strong>: ogni elemento è divisibile per sé stesso.<ul>
+<li><span class="arithmatex">\(1 \mid 1\)</span></li>
+<li><span class="arithmatex">\(2 \mid 2\)</span></li>
+<li><span class="arithmatex">\(\dots\)</span></li>
+</ul>
+</li>
+<li>Conclusione: la proprietà Riflessiva è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li><strong>Antisimmetria</strong>: se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid a\)</span>, necessariamente <span class="arithmatex">\(a = b\)</span>.<ul>
+<li>(<strong>Esempio 1</strong>) <span class="arithmatex">\(a = 2, b = 4\)</span>; <span class="arithmatex">\(a \mid b: 4 = 2 \cdot 2\)</span>, quindi <span class="arithmatex">\(2 \mid 4\)</span>.</li>
+<li>(<strong>Esempio 1</strong>) <span class="arithmatex">\(b = 4, a = 2\)</span>; <span class="arithmatex">\(b \not\mid a: 2 \neq 4 \cdot k\)</span> per nessun <span class="arithmatex">\(k \in \mathbb{N}\)</span>.</li>
+<li>(<strong>Esempio 2</strong>) <span class="arithmatex">\(a = 12, b=12\)</span>; <span class="arithmatex">\(a \mid b:12=12 \cdot 1\)</span>, quindi <span class="arithmatex">\(12 \mid 12\)</span>.</li>
+<li>(<strong>Esempio 2</strong>) <span class="arithmatex">\(b = 12, a =12\)</span>; <span class="arithmatex">\(b \mid a: 12 = 12 \cdot 1\)</span>, quindi <span class="arithmatex">\(12 \mid 12\)</span>.</li>
+<li><span class="arithmatex">\(\dots\)</span></li>
+</ul>
+</li>
+<li>Conclusione: la proprietà Antisimmetrica è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> perchè quando viene applicata (<span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} a\)</span>), allora <span class="arithmatex">\(a = b\)</span>. In tutti gli altri casi, la proprietà Antisimmetrica non viene violata.</li>
+<li><strong>Transitività</strong>: se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid c\)</span>, allora necessariamente <span class="arithmatex">\(a \mid c\)</span>.<ul>
+<li><span class="arithmatex">\(a = 2, b=4, c=12\)</span></li>
+<li><span class="arithmatex">\(a \mid b : 4 = 2 \cdot 2\)</span>; quindi <span class="arithmatex">\(a \mid b\)</span>.</li>
+<li><span class="arithmatex">\(b \mid c : 12 = 4 \cdot 3\)</span>; quindi <span class="arithmatex">\(b \mid c\)</span>.</li>
+<li><span class="arithmatex">\(a \mid c : 12 = 2 \cdot 6\)</span>; quindi <span class="arithmatex">\(a \mid c\)</span>.</li>
+<li><span class="arithmatex">\(\dots\)</span></li>
+</ul>
+</li>
+<li>Conclusione: la proprietà Transitiva è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+</ul>
+<p><big>STEP 3: Verifica delle Proprietà di un Reticolo</big></p>
+<ul>
+<li><strong>Idempotenza</strong>: l'operazione applicata due volte all'elemento restituisce l'elemento stesso.</li>
+</ul>
 <div class="arithmatex">\[
-\begin{array}{c}
-    b \mathop{\vee} c = sup(b,c) = \text{ pallino arancione} \\
-    a \mathop{\wedge} sup(b,c) = inf(a, \text{ pallino arancione}) = a \\
-    \text{quindi..} \\
-    a \mathop{\wedge} (b \mathop{\vee} c) = a \mathop{\wedge} \text{ pallino arancione} = a
-\end{array}
-\]</div>
-<div class="arithmatex">\[
-\begin{array}{c}
-    (a \mathop{\wedge} b) = inf(a,b) = \text{ pallino celeste} \\
-    (a \mathop{\wedge} c) = inf(a,c) = \text{ pallino celeste} \\
-    \text{pallino celeste} \mathop{\vee} \text{pallino celeste} = sup(\text{pallino celeste}, \text{pallino celeste}) = \text{pallino celeste} \neq a
-\end{array}
+    \begin{array}{c}
+    4 \mathop{\vee} 4 = mcm(4,4) = 4 \\
+    6 \mathop{\wedge} 6 = mcd(6,6) = 6 \\
+    \dots
+    \end{array}
 \]</div>
 <ul>
-<li>Conclusione: il reticolo non è distributivo altrimenti le due proprietà avrebbero avuto lo stesso risultato.</li>
+<li>Conclusione: la proprietà Idempotenza è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li><strong>Commutatività</strong>: l'ordine degli elementi non influenza il risultato.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    2 \mathop{\vee} 6 = mcm(2,6) = 6 \\
+    6 \mathop{\vee} 2 = mcm(6,2) = 6 \\
+    \\
+    4 \mathop{\wedge} 6 = mcd(4,6) = 2 \\
+    6 \mathop{\wedge} 4 = mcd(6,4) = 2 \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà Commutativa è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li>
+<p><strong>Associatività</strong>: la disposizione delle parentesi non influenza il risultato.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+(2 \mathop{\vee} 3) \mathop{\vee} 4 \\
+= mcm(2,3) \mathop{\vee} 4 \\
+= 6 \mathop{\vee} 4 \\
+= mcm(6,4) = 12 \\
+\\
+2 \mathop{\vee} (3 \mathop{\vee} 4) \\
+= 2 \mathop{\vee} mcm(3,4) \\
+= 2 \mathop{\vee} 12 = 12 \\
+--- \\
+(2 \mathop{\wedge} 3) \mathop{\wedge} 4 \\
+= mcd(2,3) \mathop{\wedge} 4 \\
+= 1 \mathop{\wedge} 4
+= mcd(1,4) = 1 \\
+\\
+2 \mathop{\wedge} (3 \mathop{\wedge} 4) \\
+= 2 \mathop{\wedge} mcd(3,4) \\
+= 2 \mathop{\wedge} 1
+= mcd(2,1) = 1 \\
+\\
+\dots
+\end{array}
+\]</div>
+</li>
+<li>
+<p>Conclusione: la proprietà Associativa è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</p>
+</li>
+<li><strong>Assorbimento</strong>: assicura che combinare un elemento con il risultato dell'intersezione (o unione) dell'elemento con un altro non cambia il risultato.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    4 \mathop{\vee} (4 \mathop{\wedge} 6) \\
+    = 4 \mathop{\vee} mcd(4,6) \\
+    = 4 \mathop{\vee} 2 \\
+    = mcm (4,2) = 4 \\
+    \\
+    6 \mathop{\vee} (6 \mathop{\wedge} 12) \\
+    = 6 \mathop{\vee} mcd(6,12) \\
+    = 6 \mathop{\vee} 6 \\
+    = mcm(6,6) = 6 \\
+    --- \\
+    4 \mathop{\wedge} (4 \mathop{\vee} 6) \\
+    = 4 \mathop{\wedge} mcm(4,6) \\
+    = 4 \mathop{\wedge} 12 \\
+    = mcd(4,12) = 4 \\
+    \\
+    6 \mathop{\wedge} (6 \mathop{\vee} 12) \\
+    = 6 \mathop{\wedge} mcm(6,12) \\
+    = 6 \mathop{\wedge} 12 \\
+    = mcd(6,12) = 6 \\
+    \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà di Assorbimento è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />, quindi possiamo stabilire che l'insieme <span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span> con la relazione <span class="arithmatex">\(\mathcal{R}\)</span> di divisibilità è un Reticolo.</li>
+</ul>
+<p><big>STEP 3: Verifica della Proprietà Distributiva</big></p>
+<div class="admonition info">
+<p class="admonition-title">Proprietà Distributiva</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+a \mathop{\wedge} (b \mathop{\vee} c) = (a \mathop{\wedge} b) \mathop{\vee} (a \mathop{\wedge} c) \\
+\\
+a \mathop{\vee} (b \mathop{\wedge} c) = (a \mathop{\vee} b) \mathop{\wedge} (a \mathop{\vee} c)
+\end{array}
+\]</div>
+</div>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    a = 2, b = 3, c = 4 \\
+    \\
+    2 \mathop{\wedge} (3 \mathop{\vee} 4) \\
+    = 2 \mathop{\wedge} mcm(3,4) \\
+    = 2 \mathop{\wedge} 12 \\
+    = mcd(2,12) = 2 \\
+    \\
+    (2 \mathop{\wedge} 3) \mathop{\vee} (2 \mathop{\wedge} 4) \\
+    = mcd(2,3) \mathop{\vee} mcd(2,4) \\
+    = 1 \mathop{\vee} 2 \\
+    = mcm(1,2) = 2 \\
+    --- \\
+    2 \mathop{\vee} (3 \mathop{\wedge} 4) \\
+    = 2 \mathop{\vee} mcd(3,4) \\
+    = 2 \mathop{\vee} 1 \\
+    = mcm(2,1) = 2 \\
+    \\
+    (2 \mathop{\vee} 3) \mathop{\wedge} (2 \mathop{\vee} 4) \\
+    = mcm(2,3) \mathop{\wedge} mcm(2,4) \\
+    = 6 \mathop{\wedge} 4 \\
+    = mcd(6,4) = 2 \\
+    \\
+    \dots
+    \end{array}
+    \]</div>
+<ul>
+<li>Conclusione: l'insieme dei numeri divisibili per 12 <span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span> con la relazione <span class="arithmatex">\(\mathcal{R}\)</span> di divisibilità, soddisfa la proprietà distributiva <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
 </ul>
 </details>
 <details class="example">
-<summary>Esempio ― Reticolo GPT</summary>
+<summary>Esempio ― Reticolo Non Distributivo</summary>
+<p><big>STEP 1: Analisi dell'Insieme e Relazione di partenza</big></p>
 <ul>
-<li><strong>STEP 1</strong><ul>
-<li><strong>Insieme numerico</strong>: <span class="arithmatex">\(\{1, 2, 3, 4, 6, 12\}\)</span></li>
-<li><strong>Relazione</strong>: Relazione di divisibilità, dove <span class="arithmatex">\(a \leq b\)</span> se e solo se <span class="arithmatex">\(a\)</span> divide <span class="arithmatex">\(b\)</span>.</li>
+<li><span class="arithmatex">\(A = \{1,2,3,5,6,10,15,30\}\)</span></li>
+<li><span class="arithmatex">\(\mathcal{R} = \{(a,b) \in A : a \leq b \text{ se e solo se } a \mid b\}\)</span></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Nozione di Divisibilità</p>
+<ul>
+<li>Un numero <span class="arithmatex">\(a\)</span> divide il numero <span class="arithmatex">\(b\)</span> se esiste un numero intero <span class="arithmatex">\(k\)</span> tale che <span class="arithmatex">\(b = a \cdot k\)</span>.</li>
+</ul>
+</div>
+<p><big>STEP 2: Verifica delle Proprietà di Ordinamento Parziale</big></p>
+<ul>
+<li><strong>Riflessività</strong>: ogni elemento è divisibile per sé stesso.<ul>
+<li><span class="arithmatex">\(1 \mid 1\)</span></li>
+<li><span class="arithmatex">\(2 \mid 2\)</span></li>
+<li><span class="arithmatex">\(\dots\)</span></li>
 </ul>
 </li>
-<li><strong>STEP 2</strong><ul>
-<li><strong>Idempotenza</strong>:<ul>
-<li><span class="arithmatex">\(4 \vee 4 = m.c.m.(4, 4) = 4\)</span></li>
-<li><span class="arithmatex">\(6 \vee 6 = m.c.m.(6, 6) = 6\)</span></li>
-<li><span class="arithmatex">\(12 \vee 12 = m.c.m.(12, 12) = 12\)</span></li>
-<li><span class="arithmatex">\(2 \wedge 2 = m.c.d.(2, 2) = 2\)</span></li>
-<li><span class="arithmatex">\(3 \wedge 3 = m.c.d.(3, 3) = 3\)</span></li>
-<li><span class="arithmatex">\(4 \wedge 4 = m.c.d.(4, 4) = 4\)</span></li>
-<li><strong>Conclusione</strong>: La proprietà di idempotenza è verificata sia per l'unione che per l'intersezione.</li>
+<li>Conclusione: la proprietà Riflessiva è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li><strong>Antisimmetria</strong>: se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid a\)</span>, necessariamente <span class="arithmatex">\(a = b\)</span>.<ul>
+<li>(<strong>Esempio 1</strong>) <span class="arithmatex">\(a = 2, b = 4\)</span>; <span class="arithmatex">\(a \mid b: 4 = 2 \cdot 2\)</span>, quindi <span class="arithmatex">\(2 \mid 4\)</span>.</li>
+<li>(<strong>Esempio 1</strong>) <span class="arithmatex">\(b = 4, a = 2\)</span>; <span class="arithmatex">\(b \not\mid a: 2 \neq 4 \cdot k\)</span> per nessun <span class="arithmatex">\(k \in \mathbb{N}\)</span>.</li>
+<li>(<strong>Esempio 2</strong>) <span class="arithmatex">\(a = 12, b=12\)</span>; <span class="arithmatex">\(a \mid b:12=12 \cdot 1\)</span>, quindi <span class="arithmatex">\(12 \mid 12\)</span>.</li>
+<li>(<strong>Esempio 2</strong>) <span class="arithmatex">\(b = 12, a =12\)</span>; <span class="arithmatex">\(b \mid a: 12 = 12 \cdot 1\)</span>, quindi <span class="arithmatex">\(12 \mid 12\)</span>.</li>
+<li><span class="arithmatex">\(\dots\)</span></li>
 </ul>
 </li>
-<li><strong>Commutatività</strong>:<ul>
-<li><span class="arithmatex">\(2 \vee 6 = m.c.m.(2, 6) = 6\)</span> e <span class="arithmatex">\(6 \vee 2 = m.c.m.(6, 2) = 6\)</span></li>
-<li><span class="arithmatex">\(3 \vee 4 = m.c.m.(3, 4) = 12\)</span> e <span class="arithmatex">\(4 \vee 3 = m.c.m.(4, 3) = 12\)</span></li>
-<li><span class="arithmatex">\(2 \vee 12 = m.c.m.(2, 12) = 12\)</span> e <span class="arithmatex">\(12 \vee 2 = m.c.m.(12, 2) = 12\)</span></li>
-<li><span class="arithmatex">\(4 \wedge 6 = m.c.d.(4, 6) = 2\)</span> e <span class="arithmatex">\(6 \wedge 4 = m.c.d.(6, 4) = 2\)</span></li>
-<li><span class="arithmatex">\(3 \wedge 12 = m.c.d.(3, 12) = 3\)</span> e <span class="arithmatex">\(12 \wedge 3 = m.c.d.(12, 3) = 3\)</span></li>
-<li><span class="arithmatex">\(2 \wedge 4 = m.c.d.(2, 4) = 2\)</span> e <span class="arithmatex">\(4 \wedge 2 = m.c.d.(4, 2) = 2\)</span></li>
-<li><strong>Conclusione</strong>: La proprietà di commutatività è verificata sia per l'unione che per l'intersezione.</li>
+<li>Conclusione: la proprietà Antisimmetrica è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> perchè quando viene applicata (<span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} a\)</span>), allora <span class="arithmatex">\(a = b\)</span>. In tutti gli altri casi, la proprietà Antisimmetrica non viene violata.</li>
+<li><strong>Transitività</strong>: se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid c\)</span>, allora necessariamente <span class="arithmatex">\(a \mid c\)</span>.<ul>
+<li><span class="arithmatex">\(a = 2, b=4, c=12\)</span></li>
+<li><span class="arithmatex">\(a \mid b : 4 = 2 \cdot 2\)</span>; quindi <span class="arithmatex">\(a \mid b\)</span>.</li>
+<li><span class="arithmatex">\(b \mid c : 12 = 4 \cdot 3\)</span>; quindi <span class="arithmatex">\(b \mid c\)</span>.</li>
+<li><span class="arithmatex">\(a \mid c : 12 = 2 \cdot 6\)</span>; quindi <span class="arithmatex">\(a \mid c\)</span>.</li>
+<li><span class="arithmatex">\(\dots\)</span></li>
 </ul>
 </li>
-<li><strong>Associatività</strong>:<ul>
-<li><span class="arithmatex">\((2 \vee 3) \vee 4 = m.c.m.(2, 3) \vee 4 = 6 \vee 4 = 12\)</span> e <span class="arithmatex">\(2 \vee (3 \vee 4) = 2 \vee 12 = 12\)</span></li>
-<li><span class="arithmatex">\((2 \vee 6) \vee 12 = m.c.m.(2, 6) \vee 12 = 6 \vee 12 = 12\)</span> e <span class="arithmatex">\(2 \vee (6 \vee 12) = 2 \vee 12 = 12\)</span></li>
-<li><span class="arithmatex">\((3 \vee 4) \vee 6 = m.c.m.(3, 4) \vee 6 = 12 \vee 6 = 12\)</span> e <span class="arithmatex">\(3 \vee (4 \vee 6) = 3 \vee 12 = 12\)</span></li>
-<li><span class="arithmatex">\((2 \wedge 3) \wedge 4 = m.c.d.(2, 3) \wedge 4 = 1 \wedge 4 = 1\)</span> e <span class="arithmatex">\(2 \wedge (3 \wedge 4) = 2 \wedge 1 = 1\)</span></li>
-<li><span class="arithmatex">\((2 \wedge 6) \wedge 12 = m.c.d.(2, 6) \wedge 12 = 2 \wedge 12 = 2\)</span> e <span class="arithmatex">\(2 \wedge (6 \wedge 12) = 2 \wedge 6 = 2\)</span></li>
-<li><span class="arithmatex">\((3 \wedge 4) \wedge 6 = m.c.d.(3, 4) \wedge 6 = 1 \wedge 6 = 1\)</span> e <span class="arithmatex">\(3 \wedge (4 \wedge 6) = 3 \wedge 2 = 1\)</span></li>
-<li><strong>Conclusione</strong>: La proprietà di associatività è verificata sia per l'unione che per l'intersezione.</li>
+<li>Conclusione: la proprietà Transitiva è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
 </ul>
-</li>
-<li><strong>Assorbimento</strong>:<ul>
-<li><span class="arithmatex">\(4 \vee (4 \wedge 6) = 4 \vee m.c.d.(4, 6) = 4 \vee 2 = 4\)</span></li>
-<li><span class="arithmatex">\(6 \vee (6 \wedge 12) = 6 \vee m.c.d.(6, 12) = 6 \vee 6 = 6\)</span></li>
-<li><span class="arithmatex">\(12 \vee (12 \wedge 3) = 12 \vee m.c.d.(12, 3) = 12 \vee 3 =     12\)</span></li>
-<li><span class="arithmatex">\(4 \wedge (4 \vee 6) = 4 \wedge m.c.m.(4, 6) = 4 \wedge 12 = 4\)</span></li>
-<li><span class="arithmatex">\(6 \wedge (6 \vee 12) = 6 \wedge m.c.m.(6, 12) = 6 \wedge 12 = 6\)</span></li>
-<li><span class="arithmatex">\(12 \wedge (12 \vee 3) = 12 \wedge m.c.m.(12, 3) = 12 \wedge 12 = 12\)</span></li>
-<li><strong>Conclusione</strong>: La proprietà di assorbimento è verificata sia per l'unione che per l'intersezione.</li>
+<p><big>STEP 3: Verifica delle Proprietà di un Reticolo</big></p>
+<ul>
+<li><strong>Idempotenza</strong>: l'operazione applicata due volte all'elemento restituisce l'elemento stesso.</li>
 </ul>
-</li>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    6 \mathop{\vee} 6 = mcm(6,6) = 6 \\
+    10 \mathop{\wedge} 10 = mcd(10,10) = 10 \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà Idempotenza è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li><strong>Commutatività</strong>: l'ordine degli elementi non influenza il risultato.</li>
 </ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    2 \mathop{\vee} 3 = mcm(2,3) = 6 \\
+    3 \mathop{\vee} 2 = mcm(3,2) = 6 \\
+    \\
+    5 \mathop{\wedge} 6 = mcd(5,6) = 30 \\
+    6 \mathop{\wedge} 5 = mcd(6,5) = 30 \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà Commutativa è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</li>
+<li>
+<p><strong>Associatività</strong>: la disposizione delle parentesi non influenza il risultato.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+(2 \mathop{\vee} 3) \mathop{\vee} 5 \\
+= mcm(2,3) \mathop{\vee} 5 \\
+= 6 \mathop{\vee} 5 \\
+= mcm(6,5) = 30 \\
+\\
+2 \mathop{\vee} (3 \mathop{\vee} 5) \\
+= 2 \mathop{\vee} mcm(3,5) \\
+= 2 \mathop{\vee} 15 = 30 \\
+--- \\
+(3 \mathop{\wedge} 6) \mathop{\wedge} 15 \\
+= mcd(3,6) \mathop{\wedge} 15 \\
+= 3 \mathop{\wedge} 15
+= mcd(3,15) = 3 \\
+\\
+3 \mathop{\wedge} (6 \mathop{\wedge} 15) \\
+= 3 \mathop{\wedge} mcd(6,15) \\
+= 3 \mathop{\wedge} 30
+= mcd(3,30) = 3 \\
+\\
+\dots
+\end{array}
+\]</div>
 </li>
+<li>
+<p>Conclusione: la proprietà Associativa è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />.</p>
+</li>
+<li><strong>Assorbimento</strong>: assicura che combinare un elemento con il risultato dell'intersezione (o unione) dell'elemento con un altro non cambia il risultato.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    6 \mathop{\vee} (6 \mathop{\wedge} 10) \\
+    = 6 \mathop{\vee} mcd(6,10) \\
+    = 6 \mathop{\vee} 2 \\
+    = mcm (6,2) = 6 \\
+    \\
+    10 \mathop{\vee} (10 \mathop{\wedge} 15) \\
+    = 10 \mathop{\vee} mcd(10,15) \\
+    = 10 \mathop{\vee} 5 \\
+    = mcm(10,5) = 10 \\
+    --- \\
+    5 \mathop{\wedge} (5 \mathop{\vee} 10) \\
+    = 5 \mathop{\wedge} mcm(5,10) \\
+    = 5\mathop{\wedge} 10 \\
+    = mcd(5,10) = 5 \\
+    \\
+    3 \mathop{\wedge} (3 \mathop{\vee} 6) \\
+    = 3 \mathop{\wedge} mcm(3,6) \\
+    = 3 \mathop{\wedge} 6 \\
+    = mcd(3,6) = 3 \\
+    \\
+    \dots
+    \end{array}
+\]</div>
+<ul>
+<li>Conclusione: la proprietà di Assorbimento è rispettata <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" />, quindi possiamo stabilire che l'insieme <span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span> con la relazione <span class="arithmatex">\(\mathcal{R}\)</span> di divisibilità è un Reticolo.</li>
+</ul>
+<p><big>STEP 3: Verifica della Proprietà Distributiva</big></p>
+<div class="admonition info">
+<p class="admonition-title">Proprietà Distributiva</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+a \mathop{\wedge} (b \mathop{\vee} c) = (a \mathop{\wedge} b) \mathop{\vee} (a \mathop{\wedge} c) \\
+\\
+a \mathop{\vee} (b \mathop{\wedge} c) = (a \mathop{\vee} b) \mathop{\wedge} (a \mathop{\vee} c)
+\end{array}
+\]</div>
+</div>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    a = 2, b = 3, c = 5 \\
+    \\
+    2 \mathop{\wedge} (3 \mathop{\vee} 5) \\
+    = 2 \mathop{\wedge} mcm(3,5) \\
+    = 2 \mathop{\wedge} 15 \\
+    = mcd(2,15) = 1 \\
+    \\
+    (2 \mathop{\wedge} 3) \mathop{\vee} (2 \mathop{\wedge} 5) \\
+    = mcd(2,3) \mathop{\vee} mcd(2,5) \\
+    = 1 \mathop{\vee} 1 \\
+    = mcm(1,1) = 1 \\
+    --- \\
+    3 \mathop{\vee} (6 \mathop{\wedge} 15) \\
+    = 3 \mathop{\vee} mcd(6,15) \\
+    = 3 \mathop{\vee} 3 \\
+    = mcm(3,3) = 3 \\
+    \\
+    (3 \mathop{\vee} 6) \mathop{\wedge} (3 \mathop{\vee} 15) \\
+    = mcm(3,6) \mathop{\wedge} mcm(3,15) \\
+    = 6 \mathop{\wedge} 15 \\
+    = mcd(6,15) = 6 \\
+    \\
+    \dots
+    \end{array}
+    \]</div>
+<ul>
+<li>Conclusione: l'insieme dei numeri divisibili per 12 <span class="arithmatex">\(A = \{1,2,3,4,6,12\}\)</span> con la relazione <span class="arithmatex">\(\mathcal{R}\)</span> di divisibilità, non soddisfa la proprietà distributiva <img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" />.</li>
 </ul>
 </details>
 
