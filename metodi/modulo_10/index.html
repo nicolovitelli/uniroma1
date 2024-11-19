@@ -768,21 +768,19 @@
 <img alt="image" src="../assets/mod9_reticoloNonDis.png" />
 </figure></p>
 <ul>
-<li>
-<p>Usiamo la Proprietà Distributiva per capire se è un reticolo distributivo:</p>
-<p>$$
-\begin{array}{c}
-a = 1, b = 2, c = 3 \
-\
-1 \mathop{\wedge} (2 \mathop{\vee} 3) = (1 \mathop{\wedge} 2) \mathop{\vee} (1 \mathop{\wedge} 3) \
-= 1 \mathop{\wedge} sup(2,3) = inf(1,2) \mathop{\vee} inf(1,3) \
-= 1 \mathop{\wedge} 4 = 0 \mathop{\vee} 0 \
-= inf(1,4) = \sup(0,0) \
-= 1 \neq 0
-\end{array}</p>
-</li>
+<li>Usiamo la Proprietà Distributiva per capire se è un reticolo distributivo:</li>
 </ul>
-<p>$$</p>
+<div class="arithmatex">\[
+    \begin{array}{c}
+    a = 1, b = 2, c = 3 \\
+    \\
+    1 \mathop{\wedge} (2 \mathop{\vee} 3) = (1 \mathop{\wedge} 2) \mathop{\vee} (1 \mathop{\wedge} 3) \\
+    = 1 \mathop{\wedge} sup(2,3) = inf(1,2) \mathop{\vee} inf(1,3) \\
+    = 1 \mathop{\wedge} 4 = 0 \mathop{\vee} 0 \\
+    = inf(1,4) = \sup(0,0) \\
+    = 1 \neq 0
+    \end{array}
+\]</div>
 <ul>
 <li>Conclusione: il Reticolo dato non è un Reticolo Distributivo <img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" />.</li>
 </ul>
@@ -794,7 +792,7 @@ a = 1, b = 2, c = 3 \
         \text{ allora } sup\{\} \leq b
     \end{array}
 \]</div>
-<p>Per ogni elemento dell'insieme <span class="arithmatex">\(A\)</span>, se questo elemento è più grande di tutti gli elementi dell'insieme vuoto (<em>condizione facilmente verificabile</em>) allora il <span class="arithmatex">\(sup\)</span> è più piccolo di <span class="arithmatex">\(b\)</span>.</p>
+<p>Per ogni elemento dell'insieme <span class="arithmatex">\(A\)</span>, se questo elemento è più grande di tutti gli elementi dell'insieme vuoto (<em>condizione banalmente verificata</em>) allora <span class="arithmatex">\(sup\{\}\)</span> è più piccolo di <span class="arithmatex">\(b\)</span>.</p>
 <p>Da questa definizione possiamo assumere che il <span class="arithmatex">\(sup\)</span> dell'insieme vuoto altro non è che il <span class="arithmatex">\(min(A)\)</span>. Analogamente, l'<span class="arithmatex">\(inf\)</span> dell'insieme vuoto è il <span class="arithmatex">\(max(A)\)</span>.</p>
 <p>La rappresentazione è la seguente:</p>
 <div class="arithmatex">\[
@@ -803,9 +801,8 @@ a = 1, b = 2, c = 3 \
        inf\{\} = max(A) = \top \text{ (top)}
     \end{array}
 \]</div>
-<p>Questo teorema però non si applica agli insiemi <strong>infiniti</strong>:</p>
 <details class="example">
-<summary>Dimostrazione</summary>
+<summary>Applicazione del Teorema su Insiemi Infiniti</summary>
 <ul>
 <li>Data un insieme <span class="arithmatex">\(A\)</span> infinitamente discendente:</li>
 </ul>
@@ -883,8 +880,8 @@ $$</p>
 <li><span class="arithmatex">\(\cup\)</span> rappresenta il join <span class="arithmatex">\(\mathop{\vee}\)</span></li>
 <li><span class="arithmatex">\(\cap\)</span> rappresenta il meet <span class="arithmatex">\(\mathop{\wedge}\)</span></li>
 <li><span class="arithmatex">\(-\)</span> rappresenta l'operazione di complemento</li>
-<li><span class="arithmatex">\(\{\}\)</span> rappresenta il <span class="arithmatex">\(min(A)\)</span></li>
-<li><span class="arithmatex">\(A\)</span> rappresenta il <span class="arithmatex">\(max(A)\)</span></li>
+<li><span class="arithmatex">\(\{\}\)</span> rappresenta il <span class="arithmatex">\(min(A)\)</span> <span class="arithmatex">\(\bot\)</span></li>
+<li><span class="arithmatex">\(A\)</span> rappresenta il <span class="arithmatex">\(max(A)\)</span> <span class="arithmatex">\(\top\)</span></li>
 </ul>
 </li>
 </ul>
@@ -915,6 +912,9 @@ $$</p>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Dualità di Stone</p>
 <p>Ogni Algebra di Boole (<em>rappresentazione astratta di un reticolo</em>) è isomorfa ad un'algebra di insieme (<em>rappresentazione concreta di un insieme</em>).</p>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod10_stone.png" />
+</figure></p>
 </div>
 <h2 id="leggi-di-de-morgan">Leggi di De Morgan<a class="headerlink" href="#leggi-di-de-morgan" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
@@ -1017,7 +1017,7 @@ $$</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "content.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
