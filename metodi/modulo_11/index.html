@@ -551,6 +551,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduzione-alla-logica-proposizionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduzione alla Logica Proposizionale
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -595,6 +604,15 @@
   <a href="#omomorfismo" class="md-nav__link">
     <span class="md-ellipsis">
       Omomorfismo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduzione-alla-logica-proposizionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduzione alla Logica Proposizionale
     </span>
   </a>
   
@@ -753,7 +771,105 @@
 </details>
 <details class="example">
 <summary>Esempio - Dimostrazione del Complemento</summary>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod11_esempio_comp.png" />
+</figure></p>
+<ul>
+<li>Dati due insieme <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> ed una funzione <span class="arithmatex">\(f : A \rightarrow B\)</span>:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A = \{0,1,2,3,4\} \\
+    B = \{0,2,4,6,8\} \\
+    f(a) = 2a \\
+    \\
+    \text{dimostrazione della formula: } f(\overline{a}) = \overline{f(a)} \\
+    \text{dato } a = 2 \\
+    \\
+    f(\overline{a}) \\
+    = A - \{2\} = \{0,1,3,4\} \\
+    f(0) = 0 \\
+    f(1) = 2 \\
+    f(3) = 6 \\
+    f(4) = 8 \\
+    f(\overline{a}) = \{0,2,6,8\} \\
+    \\
+    \overline{f(a)} \\
+    B - \{f(a)\} \\
+    = B - \{f(2)\} \\
+    = B - \{4\} \\
+    = \overline{f(a)} = \{0,2,6,8\} = f(\overline{a})
+\end{array}
+\]</div>
 </details>
+<h2 id="introduzione-alla-logica-proposizionale">Introduzione alla Logica Proposizionale<a class="headerlink" href="#introduzione-alla-logica-proposizionale" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Consideriamo l'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span> ed i due predicati <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span>:</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod11_logica_prop1.png" /></p>
+</figure>
+<ul>
+<li><span class="arithmatex">\(P\)</span> = essere un numero primo</li>
+<li><span class="arithmatex">\(Q\)</span> = essere un numero minore di <span class="arithmatex">\(10\)</span></li>
+<li>Aggiungiamo due reticoli che rappresentano i due predicati e Top/Bottom:</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod11_logica_prop2.png" /></p>
+</figure>
+<ul>
+<li>Preso un qualsiasi elemento <span class="arithmatex">\(\mathbb{N}\)</span>, mappiamo <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> su <span class="arithmatex">\(\top\)</span> / <span class="arithmatex">\(\bot\)</span> a seconda se l'elemento di <span class="arithmatex">\(\mathbb{N}\)</span> rispetta le proprietà.</li>
+<li>Esempio: dato <span class="arithmatex">\(a = 2\)</span><ul>
+<li><span class="arithmatex">\(2\)</span> è sia un numero primo (<span class="arithmatex">\(P\)</span>) sia è un numero minore di 10 (<span class="arithmatex">\(Q\)</span>), quindi entrambi vengono mappati su <span class="arithmatex">\(\top\)</span>.</li>
+</ul>
+</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod11_logica_prop3.png" /></p>
+</figure>
+<ul>
+<li>Nel mondo della logica possiamo far corrispondere un'associazione fra i predicati e Top e Bottom:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P \rightarrow \top \\
+        Q \rightarrow \bot
+    \end{array}
+\]</div>
+<ul>
+<li>Altro esempio con <span class="arithmatex">\(a = 9\)</span>:</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod11_logica_prop4.png" /></p>
+</figure>
+<ul>
+<li>In questo caso quindi, visto che <span class="arithmatex">\(9\)</span> rispetta solo la proprietà <span class="arithmatex">\(Q\)</span>:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P \rightarrow \bot \\
+        Q \rightarrow \top
+    \end{array}
+\]</div>
+<ul>
+<li>Adesso ipotizziamo una funzione <span class="arithmatex">\(m\)</span> che mappa gli elementi in questo modo:</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod11_logica_prop5.png" /></p>
+</figure>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P \rightarrow \bot \\
+        Q \rightarrow \top \\
+        P \mathop{\wedge} Q \rightarrow ?
+    \end{array}
+\]</div>
+<ul>
+<li>Sappiamo che:<ul>
+<li><span class="arithmatex">\(\bot\)</span> è formato da <span class="arithmatex">\(\bot \mathop{\wedge} \top = inf(\bot,\top)\)</span></li>
+</ul>
+</li>
+</ul>
 
 
 
