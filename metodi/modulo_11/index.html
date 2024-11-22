@@ -12,6 +12,8 @@
         <link rel="prev" href="../modulo_10/">
       
       
+        <link rel="next" href="../modulo_12/">
+      
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.33">
@@ -560,10 +562,49 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tavole-di-verita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tavole di Verità
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-proposizionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logica Proposizionale
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo_12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulo 12
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -613,6 +654,24 @@
   <a href="#introduzione-alla-logica-proposizionale" class="md-nav__link">
     <span class="md-ellipsis">
       Introduzione alla Logica Proposizionale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tavole-di-verita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tavole di Verità
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-proposizionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logica Proposizionale
     </span>
   </a>
   
@@ -812,23 +871,31 @@
 <ul>
 <li><span class="arithmatex">\(P\)</span> = essere un numero primo</li>
 <li><span class="arithmatex">\(Q\)</span> = essere un numero minore di <span class="arithmatex">\(10\)</span></li>
-<li>Aggiungiamo due reticoli che rappresentano i due predicati e Top/Bottom:</li>
+<li>Aggiungiamo due Algebre di Boole:<ul>
+<li>nella prima Algebra di Boole, ogni elemento rappresenta un sottoinsieme dell'insieme <span class="arithmatex">\(\mathbb{N}\)</span></li>
+<li>la seconda Algebra di Boole è detta <strong>Omomorfismo di 2</strong>, perchè contiene solo Top e Bottom.</li>
+</ul>
+</li>
 </ul>
 <figure>
 <p><img alt="image" src="../assets/mod11_logica_prop2.png" /></p>
 </figure>
 <ul>
 <li>Preso un qualsiasi elemento <span class="arithmatex">\(\mathbb{N}\)</span>, mappiamo <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> su <span class="arithmatex">\(\top\)</span> / <span class="arithmatex">\(\bot\)</span> a seconda se l'elemento di <span class="arithmatex">\(\mathbb{N}\)</span> rispetta le proprietà.</li>
-<li>Esempio: dato <span class="arithmatex">\(a = 2\)</span><ul>
-<li><span class="arithmatex">\(2\)</span> è sia un numero primo (<span class="arithmatex">\(P\)</span>) sia è un numero minore di 10 (<span class="arithmatex">\(Q\)</span>), quindi entrambi vengono mappati su <span class="arithmatex">\(\top\)</span>.</li>
+</ul>
+<details class="example">
+<summary>Esempio - Omomorfismo Non Violato</summary>
+<ul>
+<li>Dato <span class="arithmatex">\(a = 2\)</span><ul>
+<li><span class="arithmatex">\(2\)</span> è sia un numero primo (<span class="arithmatex">\(P\)</span>) sia è un numero minore di 10 (<span class="arithmatex">\(Q\)</span>), quindi entrambi vengono mappati su Top <span class="arithmatex">\(\top\)</span>.</li>
 </ul>
 </li>
 </ul>
-<figure>
-<p><img alt="image" src="../assets/mod11_logica_prop3.png" /></p>
-</figure>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod11_logica_prop3.png" />
+</figure></p>
 <ul>
-<li>Nel mondo della logica possiamo far corrispondere un'associazione fra i predicati e Top e Bottom:</li>
+<li>Gli elementi dell'universo dei sottoinsiemi che corrispondono agli omomorfismi nell'universo delle Algebre di Boole, in realtà corrispondono a delle funzioni che mappano i predicati in Top <span class="arithmatex">\(\top\)</span> e Bottom <span class="arithmatex">\(\bot\)</span>, secondo la condizione descritta nello step precedente:</li>
 </ul>
 <div class="arithmatex">\[
     \begin{array}{c}
@@ -836,12 +903,15 @@
         Q \rightarrow \bot
     \end{array}
 \]</div>
+</details>
+<details class="example">
+<summary>Esempio - Omomorfismo Violato</summary>
 <ul>
-<li>Altro esempio con <span class="arithmatex">\(a = 9\)</span>:</li>
+<li>Esempio con <span class="arithmatex">\(a = 9\)</span>:</li>
 </ul>
-<figure>
-<p><img alt="image" src="../assets/mod11_logica_prop4.png" /></p>
-</figure>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod11_logica_prop4.png" />
+</figure></p>
 <ul>
 <li>In questo caso quindi, visto che <span class="arithmatex">\(9\)</span> rispetta solo la proprietà <span class="arithmatex">\(Q\)</span>:</li>
 </ul>
@@ -852,11 +922,11 @@
     \end{array}
 \]</div>
 <ul>
-<li>Adesso ipotizziamo una funzione <span class="arithmatex">\(m\)</span> che mappa gli elementi in questo modo:</li>
+<li>Ipotizziamo una funzione <span class="arithmatex">\(m\)</span> che oltre a mappare <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span>, mappa <span class="arithmatex">\(P \mathop{\wedge} Q\)</span> su <span class="arithmatex">\(\top\)</span>.</li>
 </ul>
-<figure>
-<p><img alt="image" src="../assets/mod11_logica_prop5.png" /></p>
-</figure>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod11_logica_prop5.png" />
+</figure></p>
 <div class="arithmatex">\[
     \begin{array}{c}
         P \rightarrow \bot \\
@@ -865,11 +935,138 @@
     \end{array}
 \]</div>
 <ul>
-<li>Sappiamo che:<ul>
-<li><span class="arithmatex">\(\bot\)</span> è formato da <span class="arithmatex">\(\bot \mathop{\wedge} \top = inf(\bot,\top)\)</span></li>
+<li>Dobbiamo quindi trovare una corrispondenza tra l'elemento <span class="arithmatex">\(P \mathop{\wedge} Q\)</span> e <span class="arithmatex">\(\top\)</span> o <span class="arithmatex">\(\bot\)</span>.</li>
+<li>Sappiamo che <span class="arithmatex">\(\bot\)</span> è composto da <span class="arithmatex">\(\bot \mathop{\wedge} \top\)</span>.</li>
+<li>Nella particolare funzione <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(\bot\)</span> corrisponde a <span class="arithmatex">\(m(P)\)</span> e <span class="arithmatex">\(\top\)</span> corrisponde a <span class="arithmatex">\(m(Q)\)</span>, quindi possiamo riscrivere la composizione di <span class="arithmatex">\(\bot\)</span> in questo modo:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \bot = m(P) \mathop{\wedge} m(Q)
+    \end{array}
+\]</div>
+<ul>
+<li>Mentre <span class="arithmatex">\(\top\)</span> corrisponde al seguente:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \top = m(P \mathop{\wedge} Q)
+    \end{array}
+\]</div>
+<ul>
+<li>Ricordiamoci che gli omomorfismi devono preservare alcune proprietà, tra cui:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        f(a) \mathop{\wedge} f(b) = f(a \mathop{\wedge} b)
+    \end{array}
+\]</div>
+<ul>
+<li>Nel nostro caso non può essere vero, altrimenti <span class="arithmatex">\(\top\)</span> e <span class="arithmatex">\(\bot\)</span> sarebbero uguali. Quindi, la funzione <span class="arithmatex">\(m\)</span> viola l'omomorfismo.</li>
+</ul>
+<hr />
+<ul>
+<li>Possiamo modificare la funzione <span class="arithmatex">\(m\)</span> in questo modo:</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod11_logica_prop6.png" />
+</figure></p>
+<ul>
+<li>In questo caso, la funzione <span class="arithmatex">\(m\)</span> è un omomorfismo perchè rispetta le tre proprietà:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P \mathop{\wedge} Q \rightarrow m(P) \mathop{\wedge} m(Q) \\
+        P \mathop{\vee} Q \rightarrow m(P) \mathop{\vee} m(Q) \\
+        \neg P \rightarrow \overline{m(P)}
+    \end{array}
+\]</div>
+</details>
+<h2 id="tavole-di-verita">Tavole di Verità<a class="headerlink" href="#tavole-di-verita" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Possiamo rappresentare in forma tabellare la ricetta che ci consente di calcolare qual è il valore che assume nel modello <span class="arithmatex">\(m\)</span> le forme <span class="arithmatex">\(P \mathop{\wedge} Q\)</span> e <span class="arithmatex">\(P \mathop{\vee} Q\)</span>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="mod11_tav_verita_meet" src="../assets/mod11_tav_verita_meet.png" /></th>
+<th style="text-align: center;"><img alt="mod11_tav_verita_join" src="../assets/mod11_tav_verita_join.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Avendo a disposizione l'interpretazione di <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> (<em>ovvero il risultato di <span class="arithmatex">\(m(P)\)</span> e <span class="arithmatex">\(m(Q)\)</span></em>) allora facendone il <span class="arithmatex">\(\mathop{\vee}\)</span> o <span class="arithmatex">\(\mathop{\wedge}\)</span> possiamo calcolare l'interpretazione di <span class="arithmatex">\(P \mathop{\vee} Q\)</span> o <span class="arithmatex">\(P \mathop{\wedge} Q\)</span>.</li>
+<li>Un discorso analogo possiamo farlo per il not (<em>complemento</em>):</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod11_tav_verita_not.png" /></p>
+</figure>
+<h2 id="logica-proposizionale">Logica Proposizionale<a class="headerlink" href="#logica-proposizionale" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Linguaggio della Logica Proposizionale</p>
+<p>Combinando le proposizioni elementari (<em>essere un numero primo, essere minore di <span class="arithmatex">\(10\)</span>, <span class="arithmatex">\(\dots\)</span></em>) con i connettivi logici (<em>and <span class="arithmatex">\(\mathop{\wedge}\)</span>, or <span class="arithmatex">\(\mathop{\vee}\)</span>, not <span class="arithmatex">\(\neg\)</span></em>) quello che otteniamo è il Linguaggio della Logica Proposizionale.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Proposizioni</p>
+<p>Le Proposizioni possno essere:</p>
+<ul>
+<li>Simboli proposizionali secchi (<span class="arithmatex">\(P,Q,\dots\)</span>)</li>
+<li>Frasi complesse (<em>proposizioni composte da altre proposizioni</em>)</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+       A,B, \dots ::= P | Q | \dots | A \mathop{\wedge} B | A \mathop{\vee} B | \neg A | \dots
+    \end{array}
+\]</div>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P \mathop{\wedge} (\neg Q \mathop{\vee} R)
+    \end{array}
+\]</div>
+<ul>
+<li>Questa proposizione è composta da altre proposizioni:<ul>
+<li><span class="arithmatex">\(P\)</span></li>
+<li><span class="arithmatex">\(\neg Q\)</span></li>
+<li><span class="arithmatex">\(R\)</span></li>
 </ul>
 </li>
 </ul>
+</details>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Modelli</p>
+<p>Sono delle Funzioni che associano ciascuna proposizione ad un elemento dell'insieme <span class="arithmatex">\(\{T,F\}\)</span>.</p>
+<p>Nel mondo della Logica, <span class="arithmatex">\(\top\)</span> e <span class="arithmatex">\(\bot\)</span> vengono chiamati True e False.</p>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        m : \text{ proposizioni } \rightarrow \{T,F\}
+    \end{array}
+\]</div>
+</div>
+<details class="note">
+<summary>Note aggiuntive</summary>
+<ul>
+<li>Non tutte le possibili funzioni che ad ogni proposizione associano <span class="arithmatex">\(T,F\)</span> sono modelli legali; per essere modelli devono verificare le tre proprietà <em>and, or, not</em>:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        A \mathop{\wedge} B \rightarrow m(A) \mathop{\wedge} m(B) \\
+        A \mathop{\vee} B \rightarrow m(A) \mathop{\vee} m(B) \\
+        \neg A \rightarrow \overline{m(B)}
+    \end{array}
+\]</div>
+</details>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Modelli (Alternativa)</p>
+<p>In alternativa, possiamo dire che un Modello mappa solamente i simboli proposizionali semplici (<span class="arithmatex">\(P,Q,\dots\)</span>) nell'insieme <span class="arithmatex">\(\{T,F\}\)</span>; mentre per tutte le altre proposizioni (<em>che potrebbero essere frasi complesse</em>) usiamo le tavole di verità per calcolare la loro interpretazione.</p>
+</div>
 
 
 
