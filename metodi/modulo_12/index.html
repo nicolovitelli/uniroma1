@@ -12,6 +12,8 @@
         <link rel="prev" href="../modulo_11/">
       
       
+        <link rel="next" href="../modulo_13/">
+      
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.33">
@@ -573,18 +575,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#forza-e-debolezza-di-una-proprieta" class="md-nav__link">
+  <a href="#implicazione" class="md-nav__link">
     <span class="md-ellipsis">
-      Forza e Debolezza di una Proprietà
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#da-definire" class="md-nav__link">
-    <span class="md-ellipsis">
-      Da definire
+      Implicazione
     </span>
   </a>
   
@@ -594,6 +587,90 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo_13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulo 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo_14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulo 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo_15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulo 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo_16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulo 16
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -640,18 +717,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#forza-e-debolezza-di-una-proprieta" class="md-nav__link">
+  <a href="#implicazione" class="md-nav__link">
     <span class="md-ellipsis">
-      Forza e Debolezza di una Proprietà
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#da-definire" class="md-nav__link">
-    <span class="md-ellipsis">
-      Da definire
+      Implicazione
     </span>
   </a>
   
@@ -759,46 +827,39 @@
 <li>Quindi: il modello <span class="arithmatex">\(m\)</span> assegna True come valore di verità al predicato <span class="arithmatex">\(P\)</span>.</li>
 </ul>
 </details>
-<h2 id="forza-e-debolezza-di-una-proprieta">Forza e Debolezza di una Proprietà<a class="headerlink" href="#forza-e-debolezza-di-una-proprieta" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Paragrafo da migliorare</p>
-</div>
+<h2 id="implicazione">Implicazione<a class="headerlink" href="#implicazione" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Definizione ― Forza e Debolezza di una Proprietà</p>
-<p>Essere un numero primo e minore di 10 (<span class="arithmatex">\(P \mathop{\wedge} Q\)</span>) è una proprietà più forte di essere un numero primo e basta (<span class="arithmatex">\(P\)</span>): più piccolo è l'insieme, più la proprietà è forte e difficile da soddisfare.</p>
+<p class="admonition-title">Definizione ― Implicazione</p>
+<p>L'Implicazione è un legame tra proposizioni che mette in relazione i valori di verità di due proposizioni matematiche, dette antecedente e conseguente.</p>
+<p>Se <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> sono due enunciati, compondendoli col connettivo logico di implicazione materiale si ottiene l'enunciato composto:</p>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P \rightarrow Q
+    \end{array}
+\]</div>
 </div>
-<p>Nel mondo degli Insiemi:</p>
-<div class="arithmatex">\[
-    \begin{array}{c}
-        P \cap Q \subseteq P
-   \end{array}
-\]</div>
+<figure>
+<p><img alt="Intersezione" src="../assets/mod12_tav_implicazione.png" />
+  </p>
+<figcaption>Tavola di Verità dell'Implicazione</figcaption>
+</figure>
+<details class="example">
+<summary>Esempio</summary>
 <ul>
-<li>Per ogni numero <span class="arithmatex">\(m\)</span>, se <span class="arithmatex">\(m \in P \cap Q\)</span>, allora <span class="arithmatex">\(m \in P\)</span>.</li>
+<li>Dati due enunciati <span class="arithmatex">\(P\)</span> = piove e <span class="arithmatex">\(Q\)</span> = la strada è bagnata, unendole con il connettivo logico di implicazione materiale si ottiene la proposizione composta:</li>
 </ul>
-<p>Nel mondo della Logica:</p>
 <div class="arithmatex">\[
     \begin{array}{c}
-        P \mathop{\wedge} Q \models P
+        P \rightarrow B: \text{ se piove allora la strada è bagnata}
     \end{array}
 \]</div>
 <ul>
-<li>Per ogni modello <span class="arithmatex">\(m\)</span>, se <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(P \mathop{\wedge} Q\)</span>, allora <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(P\)</span>.</li>
+<li>Se si verifica la causa <span class="arithmatex">\(P\)</span> (piove) allora segue l'effetto <span class="arithmatex">\(Q\)</span> (la strada è bagnata).</li>
+<li>Se <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> sono proposizioni vere, allora è vero anche l'enunciato <span class="arithmatex">\(P \rightarrow Q\)</span>, e ciò giustifica la prima riga della Tavola di Verità.</li>
+<li>Se la prima proposizione <span class="arithmatex">\(P\)</span> è vera e la seconda <span class="arithmatex">\(Q\)</span> è falsa, l'implicazione è falsa, perchè quando si verifica la causa (piove) deve necessariamente verificarsi l'effetto (la strada è bagnata).</li>
+<li>Infine, nel caso in cui la causa <span class="arithmatex">\(P\)</span> sia falsa, nulla si può dire sull'effetto <span class="arithmatex">\(Q\)</span>: infati la strada potrebbe essere bagnata per altri motivi (notte di umidità). </li>
 </ul>
-<h2 id="da-definire">Da definire<a class="headerlink" href="#da-definire" title="Permanent link">&para;</a></h2>
-<ul>
-<li>In un'Algebra di Boole, per ogni coppia di elementi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, esiste un terzo elemento <span class="arithmatex">\(B^A\)</span> tale che <span class="arithmatex">\(B^A \mathop{\wedge} A \leq B\)</span>.</li>
-<li>Quindi, pescando due elementi qualsiasi dall'Algebra, sono sicuro che ne esista un terzo che se ne faccio il <span class="arithmatex">\(\mathop{\wedge}\)</span> con <span class="arithmatex">\(A\)</span>, quello che ottengo è un elemento dell'Algebra di Boole che è sicuramente minore di <span class="arithmatex">\(B\)</span>.</li>
-</ul>
-<div class="arithmatex">\[
-    \begin{array}{c}
-        B^A \mathop{\wedge} A \leq B \\
-    \end{array}
-\]</div>
-<ul>
-<li><span class="arithmatex">\(B^A \mathop{\wedge} A \leq B\)</span> si può scrivere anche come <span class="arithmatex">\((B^A \mathop{\wedge} A) \mathop{\vee} B = B\)</span>.</li>
-<li>Stiamo dicendo quindi che un qualsiasi insieme (<span class="arithmatex">\(B^A \mathop{\wedge} A\)</span>) unito ad un qualsiasi </li>
-</ul>
+</details>
 
 
 
