@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deduzione-semantica" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -547,6 +552,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modulo 13
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -556,6 +572,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deduzione-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deduzione Semantica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equivalenza-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equivalenza Semantica
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -650,6 +701,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deduzione-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deduzione Semantica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equivalenza-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equivalenza Semantica
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -665,7 +742,94 @@
 
   <h1>Modulo 13</h1>
 
-
+<h2 id="deduzione-semantica">Deduzione Semantica<a class="headerlink" href="#deduzione-semantica" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Deduzione Semantica</p>
+<p>Se tutte le proposizioni <span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span> e <span class="arithmatex">\(A\)</span> sono vere per un certo modello, allora <span class="arithmatex">\(B\)</span> deve essere vera nello stesso modello. Inoltre, questo afferma che in tutti i modelli in cui <span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span> sono veri, l'implicazione <span class="arithmatex">\(A \rightarrow B\)</span> deve essere vera.
+$$
+\begin{array}{c}
+    C_1,C_2,\dots,C_n,A \models B \
+    \text{ se e solo se } \
+    C_1,C_2,\dots,C_n \models A \rightarrow B
+\end{array}
+$$</p>
+</div>
+<details class="note">
+<summary>Note aggiuntive</summary>
+<ul>
+<li>Se prendiamo un insieme di formule <span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span> ed una proposizione <span class="arithmatex">\(A\)</span>, dire che <span class="arithmatex">\(B\)</span> è una conseguenza logica <span class="arithmatex">\(\models\)</span> di tutte queste proposizioni è equivalente a dire che l'implicazione <span class="arithmatex">\(A \rightarrow B\)</span> è una conseguenza logica delle sole proposizioni <span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span>.</li>
+</ul>
+</details>
+<details class="example">
+<summary>Esempio</summary>
+<ul>
+<li>Prendiamo in considerazione queste proposizioni:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    C_1: \text{ "tutti i cani abbaiano"} \\
+    C_2: \text{ "Bobby è un cane"} \\
+    A: \text{ " Bobby abbaia"} \\
+    B: \text{ " Bobby fa rumore"}
+\end{array}
+\]</div>
+<ul>
+<li>Vogliamo dimostrare che:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    C_1,C_2,\dots,C_n,A \models B \\
+    \text{ se e solo se } \\
+    C_1,C_2,\dots,C_n \models A \rightarrow B
+\end{array}
+\]</div>
+<ul>
+<li>Parte sinistra della definizione: <span class="arithmatex">\(C_1,C_2,A \models B\)</span><ul>
+<li>Da <span class="arithmatex">\(C_1\)</span> <span class="arithmatex">\(C_2\)</span>, possiamo concludere che <span class="arithmatex">\(A\)</span> è vera perchè Bobby è un cane e tutti i cani abbaiano.</li>
+<li>Con <span class="arithmatex">\(A\)</span> vera, anche <span class="arithmatex">\(B\)</span> dovrebbe essere vero perchè abbaiare implica fare rumore.</li>
+<li>Quindi, <span class="arithmatex">\(C_1,C_2,A \models B\)</span> è vero per tutti i modelli in cui <span class="arithmatex">\(C_1\)</span>, <span class="arithmatex">\(C_2\)</span> e <span class="arithmatex">\(A\)</span> sono veri.</li>
+</ul>
+</li>
+<li>Parte destra della definizione: <span class="arithmatex">\(C_1,C_2 \models A \rightarrow B\)</span><ul>
+<li>Dobbiamo dimostrare che <span class="arithmatex">\(A \rightarrow B\)</span> è vero: "se Bobby abbaia, allora Bobby fa rumore"</li>
+<li>Dato che <span class="arithmatex">\(C_1\)</span> e <span class="arithmatex">\(C_2\)</span> sono veri, se Bobby abbaia allora Bobby fa rumore (da definizione di abbaiare).</li>
+<li>Quindi, <span class="arithmatex">\(A \rightarrow B\)</span> è vera nei modelli dove <span class="arithmatex">\(C_1\)</span> e <span class="arithmatex">\(C_2\)</span> sono veri.</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="equivalenza-semantica">Equivalenza Semantica<a class="headerlink" href="#equivalenza-semantica" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Equivalenza Semantica</p>
+<p>Due proposizioni <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> si dicono semanticamente equivalenti quando, per ogni interpretazione <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(m(A) = T\)</span> se e solo se <span class="arithmatex">\(m(B) = T\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A \equiv B
+\end{array}
+\]</div>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<ul>
+<li>Consideriamo le seguenti proposizioni logiche:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A: \neg p \\
+    B: p \rightarrow \text{ Falso }
+\end{array}
+\]</div>
+<ul>
+<li>Costruiamo la Tabella di Verità per entrambe le proposizioni per tutte le combinazioni di valori di <span class="arithmatex">\(p\)</span>:</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod13_es1.png" />
+</figure></p>
+<ul>
+<li>Possiamo osservare che le colonne per <span class="arithmatex">\(\neg p\)</span> e <span class="arithmatex">\(p \rightarrow\)</span> Falso hanno gli stessi valori di verità in tutte le interpretazioni.</li>
+<li>Quindi, possiamo concludere che <span class="arithmatex">\(\neg p \equiv p \rightarrow\)</span> Falso.</li>
+</ul>
+</details>
 
 
 
