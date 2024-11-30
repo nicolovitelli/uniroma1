@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#albero-delle-proposizioni" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -568,6 +573,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modulo 14
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -577,6 +593,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#albero-delle-proposizioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Albero delle Proposizioni
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableu-proposizionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableu Proposizionali
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regole-costruttive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regole Costruttive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#completezza-e-correttezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completezza e Correttezza
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -650,6 +719,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#albero-delle-proposizioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Albero delle Proposizioni
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableu-proposizionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableu Proposizionali
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regole-costruttive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regole Costruttive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#completezza-e-correttezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completezza e Correttezza
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -665,7 +778,183 @@
 
   <h1>Modulo 14</h1>
 
-
+<h2 id="albero-delle-proposizioni">Albero delle Proposizioni<a class="headerlink" href="#albero-delle-proposizioni" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Albero delle Proposizioni</p>
+<p>Un Albero delle Proposizioni è una certa struttura ad albero nella quale ogni nodo può avere zero figli, un figlio, oppure due figli.</p>
+<ul>
+<li>I nodi sono insiemi di proposizioni.</li>
+<li>Le proposizioni di ciascun nodo si intendono in congiunzione.</li>
+<li>I figli di un nodo si intendono in disgiunzione e dipendono dal padre secondo regole costruttive. </li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod14_albero_prop.png" />
+</figure></p>
+</div>
+<details class="note">
+<summary>Note aggiuntive</summary>
+<ul>
+<li>Nelle foglie compaiono solo proposizioni atomiche (<span class="arithmatex">\(P,Q,\dots\)</span>) o negazioni di queste (<span class="arithmatex">\(\neg P,\neg Q,\dots\)</span>).</li>
+</ul>
+</details>
+<details class="example">
+<summary>Esempio ― AND e OR</summary>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod14_albero_and.png" />
+</figure></p>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod14_albero_or.png" />
+</figure></p>
+</details>
+<details class="example">
+<summary>Esempio ― Verificare la Soddisfacibilità di un Albero</summary>
+<ul>
+<li>Prendiamo in considerazione la formula:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P \mathop{\wedge} (\neg Q \mathop{\vee} \neg P)
+\end{array}
+\]</div>
+<ul>
+<li>Possiamo scomporla in questo modo:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P, \neg Q \mathop{\vee} \neg P
+\end{array}
+\]</div>
+<ul>
+<li>A sua volta si può scomporre:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P, \neg Q \\
+    P, \neg P
+\end{array}
+\]</div>
+<ul>
+<li>Ovviamente <span class="arithmatex">\(P, \neg P\)</span> sappiamo che non sarà mai vero perchè è impossibile che abbiano i stessi valori di verità.</li>
+<li>Quindi, abbiamo individuato il modello che soddisfa la formula di partenza:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    m(P) = T \\
+    m(Q) = F
+\end{array}
+\]</div>
+<ul>
+<li>In questo caso, diciamo che <span class="arithmatex">\(P, \neg Q\)</span> è una foglia verde mentre <span class="arithmatex">\(P, \neg P\)</span> non lo è.</li>
+<li>Visto che la formula ha almeno una foglia verde, possiamo concludere che è <strong>soddisfacibile</strong>.</li>
+</ul>
+<hr />
+<ul>
+<li>Prendiamo in considerazione la seguente formula:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P \mathop{\wedge} (\neg Q \mathop{\vee} \neg P) \mathop{\wedge} Q
+\end{array}
+\]</div>
+<ul>
+<li>Che possiamo scomporre in:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P,Q,\neg Q \mathop{\vee} \neg P
+\end{array}
+\]</div>
+<ul>
+<li>Ed infine:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P, Q, \neg Q \\
+    P, Q, \neg P
+\end{array}
+\]</div>
+<ul>
+<li>Entrambe le foglie sono chiuse visto che contengono una proposizione (<span class="arithmatex">\(P\)</span>) e la sua negazione (<span class="arithmatex">\(\neg P\)</span>).</li>
+<li>Possiamo concludere che la formula di partenza è <strong>insoddisfacibile</strong> perchè non esiste un modello in cui è vero <span class="arithmatex">\(P,\neg P\)</span> o <span class="arithmatex">\(Q, \neg Q\)</span>.</li>
+</ul>
+</details>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Albero Chiuso</p>
+<p>Un Albero si dice chiuso quando tutte le sue foglie sono chiuse (<em>contengono falso oppure una proposizione e la sua negazione</em>).</p>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod14_albero_chiuso.png" />
+</figure></p>
+</details>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Proposizione Valida</p>
+<p>Una proposizione <span class="arithmatex">\(A\)</span> è valida se e solo se, per ogni <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(m(A) = T\)</span>.<br>
+Ovvero, se e solo se per ogni <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(m(\neg A) = F\)</span>.<br>
+Ovvero, se e solo se <span class="arithmatex">\(\neg A\)</span> è insoddisfacibile.</p>
+</div>
+<h2 id="tableu-proposizionali">Tableu Proposizionali<a class="headerlink" href="#tableu-proposizionali" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Tableu Proposizionali</p>
+<p>Tableu Proposizionale è un nome più formale per definire gli Alberi delle Proposizioni.</p>
+</div>
+<h2 id="regole-costruttive">Regole Costruttive<a class="headerlink" href="#regole-costruttive" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Conosciamo queste tre regole costruttive, le quali possiamo trovare all'interno di un nodo:</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod14_regole_costruttive_base.png" /></p>
+</figure>
+<ul>
+<li>Da queste, possiamo derivarci tutte le altre, per esempio l'implicazione:</li>
+</ul>
+<figure>
+<p><img alt="image" src="../assets/mod14_reg_costr_implicazione.png" /></p>
+</figure>
+<details class="note">
+<summary>Note aggiuntive</summary>
+<ul>
+<li>Le regole costruttive con un solo figlio (<span class="arithmatex">\(\mathop{\wedge}\)</span>) sono chiamate regole <span class="arithmatex">\(\alpha\)</span>.</li>
+<li>Le regole costruttive con più di un figlio (<span class="arithmatex">\(\mathop{\vee}\)</span>) sono chiamate regole <span class="arithmatex">\(\beta\)</span>.</li>
+</ul>
+</details>
+<details class="example">
+<summary>Altri Esempi</summary>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \neg (A \rightarrow B) \equiv \neg (\neg A \mathop{\vee} B) \\
+    \equiv \neg \neg A \mathop{\wedge} \neg B \\
+    \equiv A \mathop{\wedge} \neg B \\
+    A, \neg B \\
+    \\
+    \neg(A \rightarrow B) \\
+    A, \neg B
+\end{array}
+\]</div>
+</details>
+<h2 id="completezza-e-correttezza">Completezza e Correttezza<a class="headerlink" href="#completezza-e-correttezza" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Dato un Tableu di partenza:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    P \mathop{\wedge} (Q \rightarrow R) \\
+                        | \\
+                    P, Q \rightarrow R \\
+                        /       / \\
+                    P,\neg Q    P,R
+\end{array}
+\]</div>
+<ul>
+<li>Analizzando le foglie possiamo ricavare la formula <span class="arithmatex">\(\phi_B\)</span>, che ha la seguente proprietà:<ul>
+<li>Un qualunque modello <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(B\)</span> (<em>il tableu di partenza</em>) se e solo se soddisfa <span class="arithmatex">\(\phi_B\)</span>.</li>
+<li>Inoltre, se <span class="arithmatex">\(\phi_B\)</span> è inssodisfacibile, l'albero <span class="arithmatex">\(B\)</span> è necessariamente chiuso.  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 
