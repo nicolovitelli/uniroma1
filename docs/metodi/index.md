@@ -17,12 +17,12 @@ title: Indice
 	- [Numeri transfiniti, cardinalità, la polvere di Cantor](modulo_8)
 	- [Alberghi transfiniti, la prova di Cantor, funzioni non calcolabili](modulo_8)
 - [L'algebra dei sottoinsiemi: Reticoli](modulo_9)
-- L'algebra dei sottoinsiemi: Algebre di Boole
-- Algebra e modelli
-- L'implicazione
-- Logica proposizionale
-- Tableau proposizionali
-- Il sistema di Hilbert
-- Logica predicativa
-	- Sintassi e semantica
-	- Tableau predicativi
+- [L'algebra dei sottoinsiemi: Algebre di Boole](modulo_10)
+- [Algebra e modelli](modulo_11)
+- [L'implicazione](modulo_12)
+- [Logica proposizionale](modulo_13)
+- [Tableau proposizionali](modulo_14)
+- [Il sistema di Hilbert](modulo_15)
+- [Logica predicativa](modulo_16)
+	- [Sintassi e semantica](modulo_16)
+	- [Tableau predicativi](modulo_16)

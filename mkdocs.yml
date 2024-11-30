@@ -3,6 +3,7 @@ site_name: uniroma1
 theme:
     features:
       - navigation.top
+      - content.tooltips
     name: 'material'
     logo: assets/sapienza_icon.png
     favicon: assets/favicon.png
@@ -45,6 +46,7 @@ markdown_extensions:
   - admonition
   - pymdownx.critic
   - pymdownx.caret
+  - pymdownx.tasklist
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
@@ -75,7 +77,8 @@ extra_javascript:
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 plugins:
-  - search
+    - search
+    - awesome-pages
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css

@@ -2,6 +2,638 @@
 title: Esercizi
 ---
 
+## Esercizi del 23/11/2024
+
+??? question "Domande"
+
+	1. **Assioma di Estensione**: Due insiemi \( A \) e \( B \) sono considerati uguali se e solo se:  
+		- [ ] Sono entrambi sottoinsiemi di un insieme \( C \).  
+		- [ ] Contengono lo stesso numero di elementi.  
+		- [ ] Contengono esattamente gli stessi elementi.  
+		- [ ] Sono entrambi infiniti.  
+
+	2. **Relazione e Negazione di Appartenenza**: Se \( x \in U \) e \( x \notin A \), quale delle seguenti affermazioni è sempre vera?  
+		- [ ] \( x \in A^c \)  
+		- [ ] \( x \in A \)  
+		- [ ] \( x \notin U \)  
+		- [ ] \( x \in A \cup A^c \)  
+
+	3. **Relazione e Negazione di Sottoinsieme**: Se \( A = \{1, 2, 3\} \) e \( B = \{2, 3, 4\} \), quale affermazione è falsa?  
+		- [ ] \( A \subseteq A \cup B \)  
+		- [ ] \( A \cap B \subseteq A \)  
+		- [ ] \( A \subseteq B \)  
+		- [ ] \( A \cap B = \{2, 3\} \)  
+
+	4. **Operatori Insiemistici**: Qual è \( A \cap B \) se \( A = \{a, b, c\} \) e \( B = \{b, c, d\} \)?  
+		- [ ] \( \{a, b, c, d\} \)  
+		- [ ] \( \{b, c\} \)  
+		- [ ] \( \{a, d\} \)  
+		- [ ] \( \emptyset \)  
+
+	5. **Complemento**: Se \( U = \{1, 2, 3, 4, 5\} \) è l'universo e \( B = \{1, 3, 5\} \), qual è \( B^c \)?  
+		- [ ] \( \{1, 2, 3\} \)  
+		- [ ] \( \{2, 4\} \)  
+		- [ ] \( \{1, 3, 5\} \)  
+		- [ ] \( \emptyset \)  
+
+	6. **Potenza e Cardinalità**: Se un insieme \( A \) ha 3 elementi, qual è la cardinalità dell'insieme potenza di \( A \)?  
+		- [ ] 3  
+		- [ ] 6  
+		- [ ] 8  
+		- [ ] 9  
+
+	7. **Prodotto Cartesiano**: Se \( A = \{1, 2, 3\} \) e \( B = \{a, b\} \), quanti elementi ha \( A \times B \)?  
+		- [ ] 3  
+		- [ ] 5  
+		- [ ] 6  
+		- [ ] 9  
+
+	8. **Relazioni di un Insieme**: Se un insieme \( X \) ha 4 elementi, quante relazioni binarie possono essere definite su \( X \)?  
+		- [ ] 256  
+		- [ ] 512  
+		- [ ] 2,048  
+		- [ ] 65,536  
+
+	9. **Proprietà delle Relazioni**: La relazione "è uguale a" su \( \mathbb{R} \) è:  
+		- [ ] Riflessiva ma non simmetrica.  
+		- [ ] Riflessiva, simmetrica e transitiva.  
+		- [ ] Simmetrica ma non riflessiva.  
+		- [ ] Transitiva ma non simmetrica.  
+
+	10. **Reticoli**: In un reticolo, il join (\( \lor \)) di due elementi rappresenta:  
+		- [ ] Il massimo tra due elementi.  
+		- [ ] Il minimo tra due elementi.  
+		- [ ] L’intersezione di due elementi.  
+		- [ ] La differenza tra due elementi.  
+
+??? success "Soluzioni"
+
+	1. **Assioma di Estensione**  
+	   Risposta: Contengono esattamente gli stessi elementi.  
+		- Spiegazione: L'assioma di estensione stabilisce che due insiemi sono uguali se contengono esattamente gli stessi elementi, indipendentemente dall’ordine o dalla rappresentazione.
+
+	2. **Relazione e Negazione di Appartenenza**  
+	   Risposta: \( x \in A^c \).  
+		- Spiegazione: Se \( x \notin A \) ma appartiene all'universo \( U \), per definizione appartiene al complemento di \( A \), cioè \( A^c \).
+
+	3. **Relazione e Negazione di Sottoinsieme**  
+	   Risposta: \( A \subseteq B \).  
+		- Spiegazione: \( A \subseteq B \) è falso, perché \( 1 \in A \) ma \( 1 \notin B \). Le altre affermazioni sono vere.
+
+	4. **Operatori Insiemistici**  
+	   Risposta: \( \{b, c\} \).  
+		- Spiegazione: L’intersezione \( A \cap B \) contiene gli elementi comuni a \( A \) e \( B \). Qui sono \( b \) e \( c \).
+
+	5. **Complemento**  
+	   Risposta: \( \{2, 4\} \).  
+		- Spiegazione: Il complemento di \( B \) rispetto a \( U \) contiene tutti gli elementi di \( U \) che non sono in \( B \), cioè \( \{2, 4\} \).
+
+	6. **Potenza e Cardinalità**  
+	   Risposta: 8.  
+		- Spiegazione: L'insieme delle parti (o insieme potenza) di un insieme con \( n \) elementi ha \( 2^n \) sottoinsiemi. Per \( n = 3 \), abbiamo \( 2^3 = 8 \).
+
+	7. **Prodotto Cartesiano**  
+	   Risposta: 6.  
+		- Spiegazione: Il prodotto cartesiano \( A \times B \) contiene \( |A| \cdot |B| = 3 \cdot 2 = 6 \) coppie ordinate.
+
+	8. **Relazioni di un Insieme**  
+	   Risposta: 65,536.  
+		- Spiegazione: Per un insieme con \( n \) elementi, il numero di relazioni binarie possibili è \( 2^{n^2} \). Per \( n = 4 \), abbiamo \( 2^{4^2} = 2^{16} = 65,536 \).
+
+	9. **Proprietà delle Relazioni**  
+	   Risposta: Riflessiva, simmetrica e transitiva.  
+		- Spiegazione: L'uguaglianza (\( = \)) su \( \mathbb{R} \) soddisfa tutte e tre le proprietà: riflessività (\( a = a \)), simmetria (\( a = b \implies b = a \)) e transitività (\( a = b \land b = c \implies a = c \)).
+
+	10. **Reticoli**  
+	    Risposta: Il massimo tra due elementi.  
+		- Spiegazione: Nel linguaggio dei reticoli, il join (\( \lor \)) di due elementi rappresenta il massimo comune rispetto alla relazione d'ordine.
+
+---
+
+## Esercizi del 22/11/2024
+
+??? question "Domande"
+
+	1. Due insiemi $A$ e $B$ sono uguali se:  
+		- [ ] Hanno la stessa cardinalità.  
+		- [ ] Contengono esattamente gli stessi elementi.  
+		- [ ] Sono entrambi infiniti.  
+		- [ ] Sono entrambi sottoinsiemi propri di un insieme $C$.
+
+	2. Se $x \notin A$, quale affermazione è sempre vera?  
+		- [ ] $x \notin A^c$  
+		- [ ] $x \in A$  
+		- [ ] $x \in A^c$  
+		- [ ] $x \in A \cap A^c$
+
+	3. Se $A \not\subseteq B$, quale delle seguenti affermazioni è vera?  
+		- [ ] Esiste almeno un elemento di $A$ che non è in $B$.  
+		- [ ] Tutti gli elementi di $A$ sono anche in $B$.  
+		- [ ] $A \cap B = \emptyset$.  
+		- [ ] $A = B$.
+
+	4. Quale affermazione descrive l’assioma di specificazione?  
+		- [ ] Consente di creare un sottoinsieme specificando una proprietà.  
+		- [ ] Consente di creare un insieme vuoto.  
+		- [ ] Consente di confrontare due insiemi.  
+		- [ ] Consente di unire due insiemi.
+
+	5. Se $A = \{1, 2, 3\}$ e $B = \{2, 3, 4\}$, qual è $A \setminus B$?  
+		- [ ] $\{1, 2, 3\}$  
+		- [ ] $\{2, 3\}$  
+		- [ ] $\{1\}$  
+		- [ ] $\{4\}$
+
+	6. Se $U = \{1, 2, 3, 4, 5\}$ è l’universo e $A = \{2, 4\}$, qual è $A^c$?  
+		- [ ] $\{1, 2, 3\}$  
+		- [ ] $\{1, 3, 5\}$  
+		- [ ] $\{2, 4\}$  
+		- [ ] $\emptyset$
+
+	7. Qual è la cardinalità dell'insieme potenza di un insieme con 4 elementi?  
+		- [ ] 8  
+		- [ ] 16  
+		- [ ] 32  
+		- [ ] 64
+
+	8. Se $A = \{1, 2\}$ e $B = \{x, y, z\}$, quanti elementi ha $A \times B$?  
+		- [ ] 5  
+		- [ ] 6  
+		- [ ] 8  
+		- [ ] 9
+
+	9. Quante relazioni binarie possono essere definite su un insieme $A$ con 2 elementi?  
+		- [ ] 2  
+		- [ ] 4  
+		- [ ] 16  
+		- [ ] 32
+
+	10. Quale proprietà manca alla relazione "è divisibile per" ($a \mid b$) sui numeri interi?  
+		- [ ] Riflessività  
+		- [ ] Simmetria  
+		- [ ] Transitività  
+		- [ ] Antisimmetria
+
+	11. Se $X \subseteq Y$, allora la chiusura di $X$ in $Y$ è:  
+		- [ ] $X \cup Y$  
+		- [ ] L'intersezione di tutti i chiusi contenenti $X$.  
+		- [ ] Il complemento di $X$.  
+		- [ ] L'unione di $X$ con tutti gli aperti.
+
+	12. Un insieme è $p$-maggiorabile se:  
+		- [ ] Ogni sottoinsieme finito ha un massimo rispetto a una relazione d’ordine.  
+		- [ ] Ogni elemento ha un successore.  
+		- [ ] Ogni sottoinsieme ha un massimo.  
+		- [ ] Nessun elemento può essere comparato.
+
+	13. Quale delle seguenti è un esempio di ordinamento parziale?  
+		- [ ] L’insieme dei numeri interi con $\leq$.  
+		- [ ] L’insieme delle parti di un insieme $S$, ordinato per inclusione.  
+		- [ ] L’insieme dei numeri reali con $<$.  
+		- [ ] L’insieme dei numeri naturali con $>$.
+
+	14. Quale funzione è suriettiva?  
+		- [ ] $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$.  
+		- [ ] $f: \mathbb{R} \to [0, \infty)$, $f(x) = x^2$.  
+		- [ ] $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x + 1$.  
+		- [ ] $f: \mathbb{N} \to \mathbb{N}$, $f(x) = 2x$.
+
+	15. In un reticolo, il meet ($\land$) di due elementi rappresenta:  
+		- [ ] Il massimo tra due elementi.  
+		- [ ] Il minimo tra due elementi.  
+		- [ ] L’unione di due elementi.  
+		- [ ] La differenza tra due elementi.
+
+??? success "Soluzioni"
+
+	1. **Assioma di Estensione**  
+	   Risposta: Contengono esattamente gli stessi elementi.  
+		- Spiegazione: L'assioma di estensione afferma che due insiemi sono uguali se contengono esattamente gli stessi elementi, indipendentemente da come sono rappresentati.
+
+	2. **Relazione e Negazione di Appartenenza**  
+	   Risposta: $x \in A^c$.  
+		- Spiegazione: Se $x \notin A$, allora appartiene al complemento di $A$, che contiene tutti gli elementi che non sono in $A$.
+
+	3. **Relazione e Negazione di Sottoinsieme**  
+	   Risposta: Esiste almeno un elemento di $A$ che non è in $B$.  
+		- Spiegazione: Se $A \not\subseteq B$, significa che c’è almeno un elemento di $A$ che non appartiene a $B$.
+
+	4. **Assioma di Specificazione**  
+	   Risposta: Consente di creare un sottoinsieme specificando una proprietà.  
+		- Spiegazione: L'assioma di specificazione consente di definire un sottoinsieme di un insieme dato includendo solo gli elementi che soddisfano una proprietà specifica.
+
+	5. **Operatori Insiemistici**  
+	   Risposta: $\{1\}$.  
+		- Spiegazione: $A \setminus B$ contiene gli elementi di $A$ che non appartengono a $B$. In questo caso, $A \setminus B = \{1\}$.
+
+	6. **Complemento**  
+	   Risposta: $\{1, 3, 5\}$.  
+		- Spiegazione: Il complemento di $A$ rispetto all’universo $U$ contiene tutti gli elementi di $U$ che non sono in $A$, cioè $A^c = \{1, 3, 5\}$.
+
+	7. **Potenza e Cardinalità**  
+	   Risposta: 16.  
+		- Spiegazione: L'insieme delle parti (o potenza) di un insieme con $n$ elementi ha $2^n$ sottoinsiemi. Per $n = 4$, abbiamo $2^4 = 16$.
+
+	8. **Prodotto Cartesiano**  
+	   Risposta: 6.  
+		- Spiegazione: Il prodotto cartesiano $A \times B$ contiene $|A| \cdot |B| = 2 \cdot 3 = 6$ coppie ordinate.
+
+	9. **Relazioni di un Insieme**  
+	   Risposta: 16.  
+		- Spiegazione: Per un insieme con $n$ elementi, il numero di relazioni binarie è $2^{n^2}$. Per $n = 2$, abbiamo $2^{2^2} = 2^4 = 16$.
+
+	10. **Proprietà delle Relazioni**  
+	    Risposta: Simmetria.  
+		- Spiegazione: La relazione "è divisibile per" ($a \mid b$) non è simmetrica, perché $2 \mid 4$ ma $4 \nmid 2$.
+
+	11. **Chiusura di un Insieme**  
+	    Risposta: L'intersezione di tutti i chiusi contenenti $X$.  
+		- Spiegazione: La chiusura di $X$ è il più piccolo chiuso contenente $X$, ottenuto come intersezione di tutti i chiusi che lo contengono.
+
+	12. **P-Maggiorabile**  
+	    Risposta: Ogni sottoinsieme finito ha un massimo rispetto a una relazione d’ordine.  
+		- Spiegazione: Un insieme $p$-maggiorabile soddisfa la condizione che ogni suo sottoinsieme finito abbia un massimo.
+
+	13. **Ordinamento Parziale**  
+	    Risposta: L’insieme delle parti di un insieme $S$, ordinato per inclusione.  
+		- Spiegazione: L'inclusione è un esempio classico di ordinamento parziale, poiché non tutti i sottoinsiemi di $S$ sono confrontabili.
+
+	14. **Funzioni Iniettive e Suriettive**  
+	    Risposta: $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x + 1$.  
+		- Spiegazione: La funzione $f(x) = x + 1$ è suriettiva perché ogni valore reale è raggiunto dal dominio $\mathbb{R}$.
+
+	15. **Reticoli**  
+	    Risposta: Il minimo tra due elementi.  
+		- Spiegazione: Nel linguaggio dei reticoli, il meet ($\land$) di due elementi rappresenta il loro minimo.
+
+---
+
+## Esercizi del 21/11/2024
+
+??? question "Domande"
+
+	1. Quale affermazione descrive correttamente l’assioma di specificazione?  
+		- [ ] Permette di definire un sottoinsieme specificando una proprietà.  
+		- [ ] Permette di aggiungere nuovi elementi a un insieme dato.  
+		- [ ] Permette di definire l’insieme vuoto.  
+		- [ ] Permette di confrontare la cardinalità di due insiemi.
+
+	2. Se $A = \{1, 2, 3\}$ e $B = \{3, 4, 5\}$, qual è $A \cup B$?  
+		- [ ] $\{1, 2, 3\}$  
+		- [ ] $\{3\}$  
+		- [ ] $\{1, 2, 3, 4, 5\}$  
+		- [ ] $\emptyset$
+
+	3. Quante relazioni binarie possono essere definite su un insieme $A$ con 3 elementi?  
+		- [ ] 8  
+		- [ ] 9  
+		- [ ] 27  
+		- [ ] 512  
+
+	4. Quale delle seguenti è una funzione suriettiva?  
+		- [ ] $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$.  
+		- [ ] $f: \mathbb{R} \to \mathbb{R}^+$, $f(x) = x^2$.  
+		- [ ] $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x + 1$.  
+		- [ ] $f: \mathbb{N} \to \mathbb{N}$, $f(x) = 2x$.
+
+	5. In una relazione di equivalenza su un insieme $A$, il quoziente di $A$ rispetto alla relazione:  
+		- [ ] Contiene tutti gli elementi di $A$.  
+		- [ ] Contiene le classi di equivalenza.  
+		- [ ] È un sottoinsieme proprio di $A$.  
+		- [ ] Non ha una struttura definita.
+
+	6. Quale delle seguenti è un ordinamento parziale?  
+		- [ ] I numeri interi con l'ordinamento $\leq$.  
+		- [ ] L’insieme delle parti di un insieme $S$, ordinato per inclusione.  
+		- [ ] I numeri reali con l'ordinamento $\leq$.  
+		- [ ] I numeri naturali con l'ordinamento $<$.
+
+	7. Quale dei seguenti passaggi è necessario per applicare il principio di induzione?  
+		- [ ] Dimostrare che la proprietà vale per il passo $n + 1$ assumendo che valga per $n$.  
+		- [ ] Dimostrare che la proprietà vale per ogni sottoinsieme finito.  
+		- [ ] Dimostrare che la proprietà vale per $n = 0$.  
+		- [ ] Dimostrare che la proprietà è vera per i numeri pari.
+
+	8. Come viene costruita la polvere di Cantor?  
+		- [ ] Eliminando l'intervallo $(1/3, 2/3)$ dall’intervallo $[0, 1]$, e ripetendo l'operazione per ogni intervallo restante.  
+		- [ ] Considerando tutti i numeri razionali nell’intervallo $[0, 1]$.  
+		- [ ] Rimuovendo tutti i numeri pari dall'intervallo $[0, 1]$.  
+		- [ ] Dividendo $[0, 1]$ in intervalli di lunghezza $1/3$ e conservando solo i primi intervalli.
+
+	9. L'hotel infinito di Hilbert è usato per illustrare:  
+		- [ ] La cardinalità degli insiemi finiti.  
+		- [ ] Il principio di induzione.  
+		- [ ] La nozione di infinito numerabile.  
+		- [ ] La struttura degli insiemi non numerabili.
+
+	10. Quale delle seguenti affermazioni è vera per un reticolo distributivo?  
+		- [ ] Ogni coppia di elementi ha un massimo e un minimo.  
+		- [ ] La proprietà distributiva vale per tutte le operazioni.  
+		- [ ] Esiste un elemento neutro per $\lor$.  
+		- [ ] Gli elementi possono essere confrontati solo parzialmente.
+
+??? success "Soluzioni"
+
+	1. Risposta: Permette di definire un sottoinsieme specificando una proprietà.  
+		- Spiegazione: L'assioma di specificazione consente di definire un sottoinsieme di un insieme dato includendo solo gli elementi che soddisfano una proprietà specifica.
+
+	2. Risposta: $\{1, 2, 3, 4, 5\}$.  
+		- Spiegazione: L'unione $A \cup B$ contiene tutti gli elementi di $A$ e $B$, quindi $\{1, 2, 3\} \cup \{3, 4, 5\} = \{1, 2, 3, 4, 5\}$.
+
+	3. Risposta: 512.  
+		- Spiegazione: Per un insieme con $n$ elementi, il numero di relazioni binarie possibili è $2^{n^2}$. Per $n = 3$, abbiamo $2^{3^2} = 2^9 = 512$.
+
+	4. Risposta: $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x + 1$.  
+		- Spiegazione: $f(x) = x + 1$ è suriettiva perché ogni valore reale è raggiunto. Le altre opzioni non soddisfano questa proprietà.
+
+	5. Risposta: Contiene le classi di equivalenza.  
+		- Spiegazione: Il quoziente di un insieme rispetto a una relazione di equivalenza è l'insieme delle classi di equivalenza formate dagli elementi di $A$.
+
+	6. Risposta: L’insieme delle parti di un insieme $S$, ordinato per inclusione.  
+		- Spiegazione: L'ordinamento per inclusione è un ordinamento parziale, perché non tutti i sottoinsiemi sono confrontabili.
+
+	7. Risposta: Dimostrare che la proprietà vale per il passo $n + 1$ assumendo che valga per $n$.  
+		- Spiegazione: Questo è il passo induttivo del principio di induzione, necessario per dimostrare che la proprietà vale per tutti i numeri naturali.
+
+	8. Risposta: Eliminando l'intervallo $(1/3, 2/3)$ dall’intervallo $[0, 1]$, e ripetendo l'operazione per ogni intervallo restante.  
+		- Spiegazione: La polvere di Cantor viene costruita rimuovendo progressivamente il terzo centrale di ogni intervallo.
+
+	9. Risposta: La nozione di infinito numerabile.  
+		- Spiegazione: L'hotel infinito di Hilbert illustra che un insieme numerabile può accogliere infiniti nuovi elementi sfruttando la numerabilità.
+
+	10. Risposta: Ogni coppia di elementi ha un massimo e un minimo.  
+		- Spiegazione: Un reticolo è una struttura in cui ogni coppia di elementi ha un "join" (massimo) e un "meet" (minimo) definiti.
+
+---
+
+## Esercizi del 20/11/2024
+
+??? question "Domande"
+
+	1. Due insiemi $A$ e $B$ sono uguali se:
+		- [ ] Hanno lo stesso numero di elementi.
+		- [ ] Contengono esattamente gli stessi elementi.
+		- [ ] Sono entrambi sottoinsiemi propri di un insieme $C$.
+		- [ ] Non contengono l'insieme vuoto.
+
+	2. Se $A \subset B$, quale affermazione è falsa?
+		- [ ] Ogni elemento di $A$ appartiene a $B$.
+		- [ ] $A \cap B = A$.
+		- [ ] $A \cup B = B$.
+		- [ ] $A = B$.
+
+	3. Se $U = \{1, 2, 3, 4, 5\}$ è l'universo e $A = \{2, 4\}$, qual è $A^c$?
+		- [ ] $\{1, 2, 3\}$
+		- [ ] $\{1, 3, 5\}$
+		- [ ] $\{2, 4\}$
+		- [ ] $\emptyset$
+
+	4. Se $A = \{1, 2\}$ e $B = \{x, y\}$, quanti elementi ha $A \times B$?
+		- [ ] 2
+		- [ ] 4
+		- [ ] 6
+		- [ ] 8
+
+	5. La relazione $=$ su $\mathbb{R}$ (uguaglianza) è:
+		- [ ] Riflessiva, simmetrica e transitiva.
+		- [ ] Simmetrica ma non riflessiva.
+		- [ ] Transitiva ma non riflessiva.
+		- [ ] Riflessiva e simmetrica ma non transitiva.
+
+	6. Quale dei seguenti esempi rappresenta un ordinamento totale?
+		- [ ] L'insieme dei numeri interi con l'ordinamento $\leq$.
+		- [ ] L'insieme delle parti di un insieme $S$, ordinato per inclusione.
+		- [ ] L'insieme delle classi di equivalenza di una relazione.
+		- [ ] L'insieme dei numeri reali con l'ordinamento $>$.
+
+	7. Un insieme è infinito se:
+		- [ ] Contiene un numero finito di elementi.
+		- [ ] Può essere messo in corrispondenza biunivoca con un suo sottoinsieme proprio.
+		- [ ] È numerabile.
+		- [ ] Contiene almeno un elemento.
+
+	8. Qual è la base del principio di induzione matematica?
+		- [ ] Dimostrare che la proprietà vale per il passo $n+1$.
+		- [ ] Dimostrare che la proprietà vale per un numero naturale arbitrario.
+		- [ ] Dimostrare che la proprietà vale per $n = 1$.
+		- [ ] Dimostrare che la proprietà vale per ogni sottoinsieme finito.
+
+	9. Qual è una caratteristica della polvere di Cantor?
+		- [ ] Ha misura nulla ma cardinalità infinita.
+		- [ ] È un sottoinsieme dei numeri razionali.
+		- [ ] È numerabile e ha misura finita.
+		- [ ] Contiene solo numeri interi.
+
+	10. In un reticolo distributivo, qual è una proprietà fondamentale?
+		- [ ] $x \lor (y \land z) = (x \lor y) \land (x \lor z)$.
+		- [ ] $x \lor (y \lor z) = x \lor z$.
+		- [ ] $x \land (y \lor z) = x \land y$.
+		- [ ] $x \land y = x \lor y$.
+
+??? success "Soluzioni"
+
+	1. Risposta: Contengono esattamente gli stessi elementi.  
+		- Spiegazione: L'assioma di estensione stabilisce che due insiemi sono uguali se contengono esattamente gli stessi elementi, indipendentemente dall'ordine o dalla rappresentazione.
+
+	2. Risposta: $A = B$.  
+		- Spiegazione: Se $A \subset B$ (e non $A = B$), $A$ è un sottoinsieme proprio di $B$, quindi $A = B$ è falso.
+
+	3. Risposta: $\{1, 3, 5\}$.  
+		- Spiegazione: Il complemento di $A$ rispetto a $U$ contiene tutti gli elementi di $U$ che non sono in $A$, quindi $A^c = \{1, 3, 5\}$.
+
+	4. Risposta: 4.  
+		- Spiegazione: Il prodotto cartesiano $A \times B$ ha $|A| \times |B| = 2 \times 2 = 4$ elementi.
+
+	5. Risposta: Riflessiva, simmetrica e transitiva.  
+		- Spiegazione: L'uguaglianza ($=$) soddisfa tutte e tre le proprietà: riflessività ($a = a$), simmetria ($a = b \implies b = a$) e transitività ($a = b \land b = c \implies a = c$).
+
+	6. Risposta: L'insieme dei numeri interi con l'ordinamento $\leq$.  
+		- Spiegazione: Un ordinamento totale permette il confronto tra qualsiasi coppia di elementi. $\leq$ sui numeri interi è un esempio classico.
+
+	7. Risposta: Può essere messo in corrispondenza biunivoca con un suo sottoinsieme proprio.  
+		- Spiegazione: Questa è una caratteristica fondamentale degli insiemi infiniti (come stabilito da Dedekind).
+
+	8. Risposta: Dimostrare che la proprietà vale per $n = 1$.  
+		- Spiegazione: La base dell'induzione consiste nel dimostrare che la proprietà è vera per il primo numero naturale $n = 1$.
+
+	9. Risposta: Ha misura nulla ma cardinalità infinita.  
+		- Spiegazione: La polvere di Cantor è un insieme infinito, non numerabile e con misura di Lebesgue pari a zero.
+
+	10. Risposta: $x \lor (y \land z) = (x \lor y) \land (x \lor z)$.  
+		- Spiegazione: Nei reticoli distributivi, le operazioni di join ($\lor$) e meet ($\land$) rispettano la proprietà distributiva.
+
+---
+
+## Esercizi del 19/11/2024
+
+??? question "Domande"
+
+	1. Un reticolo è una struttura algebrica in cui:
+		- [ ] Ogni coppia di elementi ha un massimo e un minimo.
+		- [ ] Ogni elemento ha un inverso.
+		- [ ] Esiste un solo elemento neutro.
+		- [ ] Gli elementi sono disgiunti.
+
+	2. Quale delle seguenti strutture è un esempio di reticolo distributivo?
+		- [ ] L'insieme delle parti di un insieme $S$, ordinato per inclusione.
+		- [ ] L'insieme dei numeri naturali con l'ordinamento $\leq$.
+		- [ ] L'insieme dei numeri reali con l'ordinamento $>$.
+		- [ ] L'insieme delle classi di equivalenza rispetto a una relazione di equivalenza.
+
+	3. Vero o falso: ogni reticolo distributivo è anche un reticolo.
+
+	4. In un reticolo distributivo, qual è la proprietà chiave che distingue la distribuzione?
+		- [ ] $x \land (y \lor z) = (x \land y) \lor (x \land z)$
+		- [ ] $x \lor (y \land z) = (x \lor y) \land (x \lor z)$
+		- [ ] Entrambe le precedenti.
+		- [ ] Nessuna delle precedenti.
+
+	5. In un reticolo, l'operazione di join ($\lor$) corrisponde a:
+		- [ ] Il massimo comune divisore.
+		- [ ] Il minimo comune multiplo.
+		- [ ] Il massimo tra due elementi.
+		- [ ] Il minimo tra due elementi.
+
+	6. Se un insieme $L$ è un reticolo, quale delle seguenti affermazioni è vera?
+		- [ ] $L$ ha un massimo ma non un minimo.
+		- [ ] Ogni coppia di elementi ha un minimo e un massimo.
+		- [ ] Gli elementi di $L$ sono tutti numeri.
+		- [ ] $L$ è un sottoinsieme dei numeri naturali.
+
+	7. Quale dei seguenti esempi rappresenta un reticolo distributivo?
+		- [ ] L'insieme delle parti di $\{1, 2, 3\}$ con unione e intersezione.
+		- [ ] L'insieme dei numeri interi con massimo e minimo.
+		- [ ] L'insieme delle classi di equivalenza di una relazione.
+		- [ ] L'insieme dei numeri razionali con l'ordinamento $\leq$.
+
+	8. Vero o falso: in un reticolo distributivo, il join e il meet rispettano le proprietà distributive tra loro.
+
+	9. Se $A$ e $B$ sono elementi di un reticolo, quale delle seguenti affermazioni è vera?
+		- [ ] $A \lor B = B \land A$
+		- [ ] $A \lor A = A$
+		- [ ] $A \land B = A \lor B$
+		- [ ] $A \lor B = A \land A$
+
+	10. Quale delle seguenti affermazioni descrive un reticolo non distributivo?
+		- [ ] La legge distributiva non è valida per tutte le coppie di elementi.
+		- [ ] Non esiste un massimo e un minimo.
+		- [ ] Gli elementi non possono essere ordinati.
+		- [ ] Non esiste un'operazione di join ($\lor$).
+
+??? success "Soluzioni"
+
+	1. Risposta: Ogni coppia di elementi ha un massimo e un minimo.
+		- Spiegazione: Un reticolo è una struttura in cui ogni coppia di elementi ha un "join" ($\lor$, massimo) e un "meet" ($\land$, minimo) definiti.
+
+	2. Risposta: L'insieme delle parti di un insieme $S$, ordinato per inclusione.
+		- Spiegazione: L'insieme delle parti di $S$ con operazioni di unione ($\lor$) e intersezione ($\land$) è un esempio classico di reticolo distributivo.
+
+	3. Risposta: Vero
+		- Spiegazione: Ogni reticolo distributivo è, per definizione, anche un reticolo. Tuttavia, non tutti i reticoli sono distributivi.
+
+	4. Risposta: Entrambe le precedenti.
+		- Spiegazione: Un reticolo distributivo soddisfa entrambe le proprietà distributive:
+	     $x \land (y \lor z) = (x \land y) \lor (x \land z)$ e 
+	     $x \lor (y \land z) = (x \lor y) \land (x \lor z)$.
+
+	5. Risposta: Il massimo tra due elementi.
+		- Spiegazione: Nel linguaggio dei reticoli, il join ($\lor$) di due elementi rappresenta il loro massimo.
+
+	6. Risposta: Ogni coppia di elementi ha un minimo e un massimo.
+		- Spiegazione: La definizione di reticolo implica che ogni coppia di elementi ha un join ($\lor$) e un meet ($\land$).
+
+	7. Risposta: L'insieme delle parti di $\{1, 2, 3\}$ con unione e intersezione.
+		- Spiegazione: L'insieme delle parti con operazioni di unione e intersezione è un reticolo distributivo, poiché soddisfa entrambe le leggi distributive.
+
+	8. Risposta: Vero
+		- Spiegazione: Nei reticoli distributivi, le operazioni di join ($\lor$) e meet ($\land$) rispettano le proprietà distributive.
+
+	9. Risposta: $A \lor A = A$
+		- Spiegazione: La proprietà idempotente di un reticolo garantisce che $A \lor A = A$ e $A \land A = A$.
+
+	10. Risposta: La legge distributiva non è valida per tutte le coppie di elementi.
+		- Spiegazione: Un reticolo non distributivo non soddisfa le proprietà distributive per tutte le combinazioni di elementi, pur mantenendo le proprietà di meet e join.
+
+---
+
+## Esercizi del 18/11/2024
+
+??? question "Domande"
+
+	1. Se una funzione $f: A \to B$ è suriettiva, allora quale delle seguenti affermazioni è vera?
+		- [ ] Ogni elemento di $A$ ha una preimmagine in $B$.
+		- [ ] Ogni elemento di $B$ ha almeno una preimmagine in $A$.
+		- [ ] Ogni elemento di $B$ ha esattamente una preimmagine in $A$.
+		- [ ] Ogni elemento di $A$ è in corrispondenza biunivoca con $B$.
+
+	2. L'insieme $\mathbb{Q}$ dei numeri razionali è:
+		- [ ] Infinito e numerabile.
+		- [ ] Infinito e non numerabile.
+		- [ ] Finito.
+		- [ ] Un sottoinsieme dei numeri reali con cardinalità nulla.
+
+	3. Se $f: \mathbb{R} \to \mathbb{R}$ è definita da $f(x) = x^2$, qual è il codominio di $f$?
+		- [ ] $\mathbb{R}$
+		- [ ] $\mathbb{R}^+$
+		- [ ] $[0, \infty)$
+		- [ ] $(-\infty, \infty)$
+
+	4. Qual è la cardinalità dell'insieme $\{1, 2, 3, 4, 5\}$?
+
+	5. Vero o falso: L'insieme delle parti di un insieme finito con $n$ elementi ha cardinalità $2^n$.
+
+	6. Se $R$ è una relazione sull'insieme $A = \{1, 2, 3\}$ definita come $R = \{(1, 1), (2, 2), (3, 3), (1, 2)\}$, quale proprietà manca a $R$ affinché sia una relazione di equivalenza?
+		- [ ] Riflessività
+		- [ ] Simmetria
+		- [ ] Transitività
+		- [ ] Antisimmetria
+
+	7. Se $A = \{1, 2, 3\}$ e $B = \{4, 5\}$, quanti elementi ha il prodotto cartesiano $A \times B$?
+
+	8. La relazione "è maggiore di" ($>$) sui numeri naturali è:
+		- [ ] Riflessiva
+		- [ ] Antisimmetrica
+		- [ ] Simmetrica
+		- [ ] Transitiva
+
+	9. Qual è la somma degli elementi di un insieme $S = \{2, 4, 6, 8, 10\}$?
+
+	10. Vero o falso: Se $A \subseteq B$, allora $A \cup B = B$.
+
+??? success "Soluzioni"
+
+	1. Risposta: Ogni elemento di $B$ ha almeno una preimmagine in $A$.
+		- Spiegazione: Una funzione è suriettiva se ogni elemento del codominio $B$ è raggiunto da almeno un elemento del dominio $A$.
+
+	2. Risposta: Infinito e numerabile.
+		- Spiegazione: L'insieme $\mathbb{Q}$ dei numeri razionali è infinito e numerabile, perché è possibile metterlo in corrispondenza biunivoca con i numeri naturali.
+
+	3. Risposta: $[0, \infty)$
+		- Spiegazione: La funzione $f(x) = x^2$ mappa ogni numero reale in un numero reale non negativo, quindi il suo codominio è $[0, \infty)$.
+
+	4. Risposta: 5
+		- Spiegazione: L'insieme $\{1, 2, 3, 4, 5\}$ ha 5 elementi, quindi la sua cardinalità è 5.
+
+	5. Risposta: Vero
+		- Spiegazione: L'insieme delle parti (insieme potenza) di un insieme con $n$ elementi ha $2^n$ sottoinsiemi, compresi l'insieme vuoto e l'insieme stesso.
+
+	6. Risposta: Simmetria
+		- Spiegazione: La relazione $R$ non è simmetrica perché, ad esempio, $(1, 2) \in R$ ma $(2, 1) \notin R$.
+
+	7. Risposta: 6
+		- Spiegazione: Il prodotto cartesiano $A \times B$ ha $|A| \cdot |B| = 3 \cdot 2 = 6$ elementi.
+
+	8. Risposta: Transitiva
+		- Spiegazione: La relazione $>$ è transitiva, perché se $a > b$ e $b > c$, allora $a > c$.
+
+	9. Risposta: 30
+		- Spiegazione: La somma degli elementi di $S = \{2, 4, 6, 8, 10\}$ è $2 + 4 + 6 + 8 + 10 = 30$.
+
+	10. Risposta: Vero
+		- Spiegazione: Se $A \subseteq B$, allora $A \cup B$ contiene tutti gli elementi di $A$ e $B$, che sono esattamente quelli di $B$.
+
+---
+
 ## Esercizi del 17/11/2024
 
 ??? question "Domande"
@@ -728,48 +1360,42 @@ title: Esercizi
 ??? question "Domande"
 
 	1. Data l'uguaglianza $A = \{x \in \mathbb{N} : x < 5\}$, si tratta di un'estensione o di una specificazione di insieme?
-		1. [ ] Estensione
-		2. [ ] Specificazione
+		1. Estensione  
+		2. Specificazione
 
 	2. L'intersezione di due insiemi disgiunti è l'insieme vuoto.
-		1. [ ] Vero
-		2. [ ] Falso
+		1. Vero
+		2. Falso
 
 	3. Se $A = \{1, 2, 3\}$ e $B = \{3, 4, 5\}$, qual è $A \cap B$?
 
 	4. Esiste una relazione d'ordine totale tra gli elementi di $\{a, b, c\}$ in cui $a < b < c$?
-		1. [ ] Sì
-		2. [ ] No
 
 	5. Considera la funzione $f: \mathbb{R} \to \mathbb{R}$ definita da $f(x) = x^2$. È iniettiva?
-		1. [ ] Sì
-		2. [ ] No
 
 	6. Se $R$ è una relazione d'ordine parziale su un insieme $X$, quale delle seguenti proprietà deve soddisfare?
-		1. [ ] Riflessività, simmetria e transitività
-		2. [ ] Antisimmetria, riflessività e transitività
-		3. [ ] Antisimmetria e transitività
+		1. Riflessività, simmetria e transitività
+		2. Antisimmetria, riflessività e transitività
+		3. Antisimmetria e transitività
 
 	7. Data l'uguaglianza $\{x \in \mathbb{Z} : x \text{ è pari}\} \cap \{x \in \mathbb{Z} : x \text{ è dispari}\}$, qual è il risultato?
-		1. [ ] L'insieme dei numeri pari
-		2. [ ] L'insieme dei numeri dispari
-		3. [ ] L'insieme vuoto
+		1. L'insieme dei numeri pari
+		2. L'insieme dei numeri dispari
+		3. L'insieme vuoto
 
 	8. Se $A = \{1, 2, 3\}$, qual è il numero totale di sottoinsiemi di $A$?
 
 	9. Una funzione suriettiva è anche iniettiva.
-		1. [ ] Vero
-		2. [ ] Falso
+		1. Vero
+		2. Falso
 
 	10. Dati due insiemi $A$ e $B$ tali che $A \subseteq B$, l'unione di $A$ e $B$ coincide con $B$?
-		1. [ ] Sì
-		2. [ ] No
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
-	1. **Specificazione** — La definizione tramite proprietà come $x < 5$ identifica un insieme senza elencarne direttamente gli elementi, perciò è una specificazione.
+	1. **B** — La definizione tramite proprietà come $x < 5$ identifica un insieme senza elencarne direttamente gli elementi, perciò è una specificazione.
 
-	2. **Vero** — Due insiemi disgiunti non hanno elementi in comune, quindi la loro intersezione è l'insieme vuoto.
+	2. **Vero** — Due insiemi disgiunti non hanno elementi in comune, quindi la loro intersezione è l'insieme vuoto.	
 
 	3. **$A \cap B = \{3\}$** — L'elemento comune tra $A$ e $B$ è solo il numero 3, quindi l'intersezione è $\{3\}$.
 
@@ -777,9 +1403,9 @@ title: Esercizi
 
 	5. **No** — La funzione $f(x) = x^2$ non è iniettiva perché due valori diversi, come $x = 2$ e $x = -2$, possono avere lo stesso valore $f(x) = 4$.
 
-	6. **Antisimmetria, riflessività e transitività** — Una relazione d'ordine parziale deve essere riflessiva (ogni elemento è in relazione con sé stesso), transitiva (se $a \leq b$ e $b \leq c$, allora $a \leq c$) e antisimmetrica (se $a \leq b$ e $b \leq a$, allora $a = b$).
+	6. **B** — Una relazione d'ordine parziale deve essere riflessiva (ogni elemento è in relazione con sé stesso), transitiva (se $a \leq b$ e $b \leq c$, allora $a \leq c$) e antisimmetrica (se $a \leq b$ e $b \leq a$, allora $a = b$).
 
-	7. **L'insieme vuoto** — Non ci sono numeri interi che siano sia pari che dispari, quindi l'intersezione dei due insiemi è vuota.
+	7. **C** — Non ci sono numeri interi che siano sia pari che dispari, quindi l'intersezione dei due insiemi è vuota.
 
 	8. **8** — Un insieme di $n$ elementi ha $2^n$ sottoinsiemi. Per $A = \{1, 2, 3\}$, ci sono $2^3 = 8$ sottoinsiemi.
 

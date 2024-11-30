@@ -1,5 +1,6 @@
 :root {
   --md-admonition-icon--math-adm: url('calculator.svg');
+  --md-admonition-icon--lightbulb: url('lightbulb.svg');
 }
 
 .md-typeset .admonition.math-adm,
@@ -15,6 +16,21 @@
   background-color: rgb(43, 155, 70);
   -webkit-mask-image: var(--md-admonition-icon--math-adm);
           mask-image: var(--md-admonition-icon--math-adm);
+}
+
+.md-typeset .admonition.lightbulb,
+.md-typeset details.lightbulb {
+  border-color: rgb(218, 165, 32);
+}
+.md-typeset .lightbulb > .admonition-title,
+.md-typeset .lightbulb > summary {
+  background-color: rgba(218, 165, 32, 0.1);
+}
+.md-typeset .lightbulb > .admonition-title::before,
+.md-typeset .lightbulb > summary::before {
+  background-color: rgb(218, 165, 32);
+  -webkit-mask-image: var(--md-admonition-icon--lightbulb);
+          mask-image: var(--md-admonition-icon--lightbulb);
 }
 
 /* Remove all borders, padding, and background color for tables */

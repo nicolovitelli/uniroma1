@@ -4,7 +4,7 @@ title: Modulo 9
 
 ## Reticoli
 !!! abstract "Definizione ― Reticolo"
-    Un Reticolo è un insieme (parzialmente) ordinato $S$ tale che, per ogni $a, b \in S$, esistono $inf(a,b)$ e $sup(a,b)$.
+    Un Reticolo è un insieme [parzialmente ordinato](/metodi/modulo_4/#ordinamento-parziale) $S$ tale che, per ogni $a, b \in S$, esistono $inf(a,b)$ e $sup(a,b)$.
 
 	$$
     \begin{array}{c}
@@ -70,97 +70,122 @@ title: Modulo 9
 	$$
 
 ??? example "Esempio"
+	- Traccia: identificare un reticolo dato un insieme ed una relazione.
 
-	- Sia $L = \{a,b\}$ e verifichiamo se l'insieme $\{L,\subseteq\}$ è un reticolo.
-	- Per farlo, costruiamo l'insieme delle parti di $L$:
+	<big>STEP 1: Analisi dell'Insieme e Relazione di partenza</big>
 
-    $$
-    \begin{array}{c}
-    	\mathcal{P}(L) = \{\emptyset, \{a\},\{b\},\{a,b\}\}
-    \end{array}
-    $$
+	- $A = \{1,2,3,4,6,12\}$
+	- $\mathcal{R} = \{(a,b) \in A : a \leq b \text{ se e solo se } a \mid b\}$
 
-    - Verifichiamo se $\mathcal{P}(L)$ è un insieme parzialmente ordinato:
+	!!! info "Nozione di Divisibilità"
+		- Un numero $a$ divide il numero $b$ se esiste un numero intero $k$ tale che $b = a \cdot k$.
 
-    $$
-    \begin{array}{c}
-    	\text{Riflessività: } x \subseteq x : x \in \mathcal{P}(L) \\
-    	\text{Antisimmetria: se } x \subseteq y \text{ e } y \subseteq x, \text{ allora } x = y \\
-    	\text{Transitività: se } x \subseteq y \text{ e } y \subseteq z, \text{ allora } x \subseteq z 
-    \end{array}
-    $$
+	<big>STEP 2: Verifica delle Proprietà di Ordinamento Parziale</big>
 
-    - Calcoliamo infimo e supremo per ogni coppia di sottoinsiemi in $\mathcal{P}(L)$:
+	- **Riflessività**: ogni elemento è divisibile per sé stesso.
+		- $1 \mid 1$
+		- $2 \mid 2$
+		- $\dots$
+	- Conclusione: la proprietà Riflessiva è rispettata :white_check_mark:.
+	- **Antisimmetria**: se $a \mid b$ e $b \mid a$, necessariamente $a = b$.
+		- (**Esempio 1**) $a = 2, b = 4$; $a \mid b: 4 = 2 \cdot 2$, quindi $2 \mid 4$.
+		- (**Esempio 1**) $b = 4, a = 2$; $b \not\mid a: 2 \neq 4 \cdot k$ per nessun $k \in \mathbb{N}$.
+		- (**Esempio 2**) $a = 12, b=12$; $a \mid b:12=12 \cdot 1$, quindi $12 \mid 12$.
+		- (**Esempio 2**) $b = 12, a =12$; $b \mid a: 12 = 12 \cdot 1$, quindi $12 \mid 12$.
+		- $\dots$
+	- Conclusione: la proprietà Antisimmetrica è rispettata :white_check_mark: perchè quando viene applicata ($a \mathcal{R} b$ e $b \mathcal{R} a$), allora $a = b$. In tutti gli altri casi, la proprietà Antisimmetrica non viene violata.
+	- **Transitività**: se $a \mid b$ e $b \mid c$, allora necessariamente $a \mid c$.
+		- $a = 2, b=4, c=12$
+		- $a \mid b : 4 = 2 \cdot 2$; quindi $a \mid b$.
+		- $b \mid c : 12 = 4 \cdot 3$; quindi $b \mid c$.
+		- $a \mid c : 12 = 2 \cdot 6$; quindi $a \mid c$.
+		- $\dots$
+	- Conclusione: la proprietà Transitiva è rispettata :white_check_mark:.
 
-    	- Coppia $\{\emptyset,\{a\}\}$:
-    		- Infimo: $\emptyset \cap \{a\} = \emptyset$
-    		- Supremo: $\emptyset \cup \{a\} = \{a\}$
-    	- Coppia $\{\emptyset, \{b\}\}$:
-    		- Infimo: $\emptyset \cap \{b\} = \emptyset$
-    		- Supremo: $\emptyset \cup \{b\} = \{b\}$
-    	- Coppia $\{\emptyset, \{a,b\}\}$:
-    		- Infimo: $\emptyset \cap \{a,b\} = \emptyset$
-    		- Supremo: $\emptyset \cup \{a,b\} = \{a,b\}$
-    	- Coppia $\{\{a\},\{b\}\}$:
-    		- Infimo: $\{a\} \cap \{b\} = \emptyset$
-    		- Supremo: $\{a\} \cup \{b\} = \{a,b\}$
-    	- $\dots$
-    - Conclusione: ogni coppia di elementi in $\mathcal{P}(L)$ ha sia un infimo (intersezione) che un supremo (unione). Quindi, $\mathcal{P}(L)$, con la relazione di sottoinsieme $\subseteq$, soddisfa le condizioni per essere un reticolo.
+	<big>STEP 3: Verifica delle Proprietà di un Reticolo</big>
 
-    ---
+	- **Idempotenza**: l'operazione applicata due volte all'elemento restituisce l'elemento stesso.
 
-    - Ora prendiamo come insieme $S = \{2,3,6\}$ e la Relazione di Divisibilità (*$a | b$ se e solo se $a$ è un divisore di $b$*).
-    - Costruiamo l'insieme delle parti di $S$:
+	$$
+    	\begin{array}{c}
+    	4 \mathop{\vee} 4 = mcm(4,4) = 4 \\
+		6 \mathop{\wedge} 6 = mcd(6,6) = 6 \\
+		\dots
+    	\end{array}
+	$$
 
-    $$
-    \begin{array}{c}
-    	\mathcal{P}(S) = \{\emptyset, \{2\},\{3\}, \{6\},\{2,3\},\{2,6\},\{3,6\}\}
-    \end{array}
-    $$
-    
-    - Verifichiamo che la relazione sia parzialmente ordinata:
+	- Conclusione: la proprietà Idempotenza è rispettata :white_check_mark:.
+	- **Commutatività**: l'ordine degli elementi non influenza il risultato.
 
-    $$
-    \begin{array}{c}
-    	\text{Riflessività: ogni elemento è divisibile per se stesso}  \\
-    	\text{Antisimmetria: se } a | b \text{ e } b | a, \text{ allora } a = b \\
-    	\text{Transitività: se } a | b \text{ e } b | c, \text{ allora } a | c 
-    \end{array}
-    $$
+	$$
+    	\begin{array}{c}
+    	2 \mathop{\vee} 6 = mcm(2,6) = 6 \\
+		6 \mathop{\vee} 2 = mcm(6,2) = 6 \\
+		4 \mathop{\wedge} 6 = mcd(4,6) = 2 \\
+		6 \mathop{\wedge} 4 = mcd(6,4) = 2 \\
+		\dots
+    	\end{array}
+	$$
 
-    - Calcoliamo infimo e supremo per ogni coppia di sottoinsiemi in $\mathcal{P}(S)$:
+	- Conclusione: la proprietà Commutativa è rispettata :white_check_mark:.
+	- **Associatività**: la disposizione delle parentesi non influenza il risultato.
 
-    	- Coppia $\{2,3\}$:
-    		- Infimo: non esiste un infimo per $2$ e $3$ in $S$, perchè il massimo comune divisore di $2$ e $3$ è $1$, che non appartiene a $S$.
-    		- Supremo: non esiste un supremo per $2$ e $3$ in $S$, perchè il minimo comune multiplo di $2$ e $3$ è $6$, che è effettivamente in $S$. Tuttavia, poichè non esiste un infimo, già questo ci impedisce di considerare $S$ come un reticolo.
-    	- $\dots$
+		$$
+    	\begin{array}{c}
+    	(2 \mathop{\vee} 3) \mathop{\vee} 4 \\
+    	= mcm(2,3) \mathop{\vee} 4 \\
+    	= 6 \mathop{\vee} 4 \\
+    	= mcm(6,4) = 12 \\
+    	\\
+    	2 \mathop{\vee} (3 \mathop{\vee} 4) \\
+    	= 2 \mathop{\vee} mcm(3,4) \\
+    	= 2 \mathop{\vee} 12 = 12 \\
+    	--- \\
+    	(2 \mathop{\wedge} 3) \mathop{\wedge} 4 \\
+    	= mcd(2,3) \mathop{\wedge} 4 \\
+    	= 1 \mathop{\wedge} 4
+    	= mcd(1,4) = 1 \\
+    	\\
+    	2 \mathop{\wedge} (3 \mathop{\wedge} 4) \\
+    	= 2 \mathop{\wedge} mcd(3,4) \\
+    	= 2 \mathop{\wedge} 1
+    	= mcd(2,1) = 1 \\
+    	\\
+    	\dots
+    	\end{array}
+		$$
+	- Conclusione: la proprietà Associativa è rispettata :white_check_mark:.
+	- **Assorbimento**: assicura che combinare un elemento con il risultato dell'intersezione (o unione) dell'elemento con un altro non cambia il risultato.
 
-   	- Conclusione: per la coppia $\{2,3\}$ non esiste un infimo all'interno dell'insieme $S$, quindi l'insieme $S = \{2,3,6\}$ con la relazione di divisibilità non è un reticolo.
+	$$
+    	\begin{array}{c}
+    	4 \mathop{\vee} (4 \mathop{\wedge} 6) \\
+    	= 4 \mathop{\vee} mcd(4,6) \\
+    	= 4 \mathop{\vee} 2 \\
+    	= mcm (4,2) = 4 \\
+    	\\
+    	6 \mathop{\vee} (6 \mathop{\wedge} 12) \\
+    	= 6 \mathop{\vee} mcd(6,12) \\
+    	= 6 \mathop{\vee} 6 \\
+    	= mcm(6,6) = 6 \\
+    	--- \\
+    	4 \mathop{\wedge} (4 \mathop{\vee} 6) \\
+    	= 4 \mathop{\wedge} mcm(4,6) \\
+    	= 4 \mathop{\wedge} 12 \\
+    	= mcd(4,12) = 4 \\
+    	\\
+    	6 \mathop{\wedge} (6 \mathop{\vee} 12) \\
+    	= 6 \mathop{\wedge} mcm(6,12) \\
+    	= 6 \mathop{\wedge} 12 \\
+    	= mcd(6,12) = 6 \\
+    	\\
+    	\dots
+    	\end{array}
+	$$
 
-!!! abstract "Definizione ― Reticolo Distributivo"
-    Un Reticolo Distributivo è un reticolo dove ogni elemento è verificato dalla proprietà distributiva.
-
-??? example "Esempio ― Reticolo non distributivo"
+	- Conclusione: la proprietà di Assorbimento è rispettata :white_check_mark:, quindi possiamo stabilire che l'insieme $A = \{1,2,3,4,6,12\}$ con la relazione $\mathcal{R}$ di divisibilità è un Reticolo.
 
 	<figure markdown="1">
-    ![image](assets\mod9_reticoloNonDis.png)
-    </figure>
-
-    $$
-    \begin{array}{c}
-    	b \mathop{\vee} c = sup(b,c) = \text{ pallino arancione} \\
-    	a \mathop{\wedge} sup(b,c) = inf(a, \text{ pallino arancione}) = a \\
-    	\text{quindi..} \\
-    	a \mathop{\wedge} (b \mathop{\vee} c) = a \mathop{\wedge} \text{ pallino arancione} = a
-    \end{array}
-    $$
-
-    $$
-    \begin{array}{c}
-    	(a \mathop{\wedge} b) = inf(a,b) = \text{ pallino celeste} \\
-    	(a \mathop{\wedge} c) = inf(a,c) = \text{ pallino celeste} \\
-    	\text{pallino celeste} \mathop{\vee} \text{pallino celeste} = sup(\text{pallino celeste}, \text{pallino celeste}) = \text{pallino celeste} \neq a
-    \end{array}
-    $$
-
-    - Conclusione: il reticolo non è distributivo altrimenti le due proprietà avrebbero avuto lo stesso risultato.
+	  ![image](assets\mod9_div12.png)
+	  <figcaption>Diagramma di Hasse</figcaption>
+	</figure>
