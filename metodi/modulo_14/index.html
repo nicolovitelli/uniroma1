@@ -635,9 +635,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#completezza-e-correttezza" class="md-nav__link">
+  <a href="#correttezza-e-completezza" class="md-nav__link">
     <span class="md-ellipsis">
-      Completezza e Correttezza
+      Correttezza e Completezza
     </span>
   </a>
   
@@ -753,9 +753,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#completezza-e-correttezza" class="md-nav__link">
+  <a href="#correttezza-e-completezza" class="md-nav__link">
     <span class="md-ellipsis">
-      Completezza e Correttezza
+      Correttezza e Completezza
     </span>
   </a>
   
@@ -933,28 +933,34 @@ Ovvero, se e solo se <span class="arithmatex">\(\neg A\)</span> è insoddisfacib
 \end{array}
 \]</div>
 </details>
-<h2 id="completezza-e-correttezza">Completezza e Correttezza<a class="headerlink" href="#completezza-e-correttezza" title="Permanent link">&para;</a></h2>
+<h2 id="correttezza-e-completezza">Correttezza e Completezza<a class="headerlink" href="#correttezza-e-completezza" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>Dato un Tableu di partenza:</p>
-<div class="arithmatex">\[
-\begin{array}{c}
-    P \mathop{\wedge} (Q \rightarrow R) \\
-                        | \\
-                    P, Q \rightarrow R \\
-                        /       / \\
-                    P,\neg Q    P,R
-\end{array}
-\]</div>
+<p><figure markdown="1">
+<img alt="image" src="../assets/mod14_esempio1.png" />
+</figure></p>
+</li>
+<li>
+<p>Analizzando le foglie possiamo ricavare la formula <span class="arithmatex">\(\phi_B\)</span>, che ha la seguente proprietà:</p>
 <ul>
-<li>Analizzando le foglie possiamo ricavare la formula <span class="arithmatex">\(\phi_B\)</span>, che ha la seguente proprietà:<ul>
-<li>Un qualunque modello <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(B\)</span> (<em>il tableu di partenza</em>) se e solo se soddisfa <span class="arithmatex">\(\phi_B\)</span>.</li>
-<li>Inoltre, se <span class="arithmatex">\(\phi_B\)</span> è inssodisfacibile, l'albero <span class="arithmatex">\(B\)</span> è necessariamente chiuso.  </li>
+<li>Un qualunque modello <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(B\)</span> (<em>il tableu di partenza</em>) se e solo se soddisfa <span class="arithmatex">\(\phi_B\)</span></li>
+<li>Inoltre, se <span class="arithmatex">\(\phi_B\)</span> è insoddisfacibile, l'albero <span class="arithmatex">\(B\)</span> è necessariamente chiuso.  </li>
 </ul>
 </li>
+<li>Più genericamente quindi, <span class="arithmatex">\(A\)</span> è valido se l'albero <span class="arithmatex">\(\neg A\)</span> è chiuso. Dimostrazione:</li>
 </ul>
-</li>
-</ul>
+<figure>
+<p><img alt="image" src="../assets/mod14_esempio2.png" /></p>
+</figure>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Correttezza</p>
+<p>La Correttezza si verifica quando un albero <span class="arithmatex">\(\neg A\)</span> chiuso implica <span class="arithmatex">\(A\)</span> valido.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Completezza</p>
+<p>La Completezza si verifica quando un <span class="arithmatex">\(A\)</span> valido implica <span class="arithmatex">\(\neg A\)</span> chiuso.</p>
+</div>
 
 
 
