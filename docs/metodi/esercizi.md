@@ -2,7 +2,7 @@
 title: Esercizi
 ---
 
-## Esercizi del 23/11/2024
+## Esercizi - Parte XVII
 
 ??? question "Domande"
 
@@ -66,7 +66,7 @@ title: Esercizi
 		- [ ] L’intersezione di due elementi.  
 		- [ ] La differenza tra due elementi.  
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. **Assioma di Estensione**  
 	   Risposta: Contengono esattamente gli stessi elementi.  
@@ -110,7 +110,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 22/11/2024
+## Esercizi - Parte XVI
 
 ??? question "Domande"
 
@@ -182,7 +182,7 @@ title: Esercizi
 
 	12. Un insieme è $p$-maggiorabile se:  
 		- [ ] Ogni sottoinsieme finito ha un massimo rispetto a una relazione d’ordine.  
-		- [ ] Ogni elemento ha un successore.  
+		- [ ] Ogni elemento ha un lightbulbore.  
 		- [ ] Ogni sottoinsieme ha un massimo.  
 		- [ ] Nessun elemento può essere comparato.
 
@@ -204,7 +204,7 @@ title: Esercizi
 		- [ ] L’unione di due elementi.  
 		- [ ] La differenza tra due elementi.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. **Assioma di Estensione**  
 	   Risposta: Contengono esattamente gli stessi elementi.  
@@ -268,7 +268,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 21/11/2024
+## Esercizi - Parte XV
 
 ??? question "Domande"
 
@@ -332,7 +332,7 @@ title: Esercizi
 		- [ ] Esiste un elemento neutro per $\lor$.  
 		- [ ] Gli elementi possono essere confrontati solo parzialmente.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: Permette di definire un sottoinsieme specificando una proprietà.  
 		- Spiegazione: L'assioma di specificazione consente di definire un sottoinsieme di un insieme dato includendo solo gli elementi che soddisfano una proprietà specifica.
@@ -366,7 +366,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 20/11/2024
+## Esercizi - Parte XIV
 
 ??? question "Domande"
 
@@ -430,7 +430,7 @@ title: Esercizi
 		- [ ] $x \land (y \lor z) = x \land y$.
 		- [ ] $x \land y = x \lor y$.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: Contengono esattamente gli stessi elementi.  
 		- Spiegazione: L'assioma di estensione stabilisce che due insiemi sono uguali se contengono esattamente gli stessi elementi, indipendentemente dall'ordine o dalla rappresentazione.
@@ -464,7 +464,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 19/11/2024
+## Esercizi - Parte XIII
 
 ??? question "Domande"
 
@@ -520,7 +520,7 @@ title: Esercizi
 		- [ ] Gli elementi non possono essere ordinati.
 		- [ ] Non esiste un'operazione di join ($\lor$).
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: Ogni coppia di elementi ha un massimo e un minimo.
 		- Spiegazione: Un reticolo è una struttura in cui ogni coppia di elementi ha un "join" ($\lor$, massimo) e un "meet" ($\land$, minimo) definiti.
@@ -556,7 +556,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 18/11/2024
+## Esercizi - Parte XII
 
 ??? question "Domande"
 
@@ -600,7 +600,7 @@ title: Esercizi
 
 	10. Vero o falso: Se $A \subseteq B$, allora $A \cup B = B$.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: Ogni elemento di $B$ ha almeno una preimmagine in $A$.
 		- Spiegazione: Una funzione è suriettiva se ogni elemento del codominio $B$ è raggiunto da almeno un elemento del dominio $A$.
@@ -634,7 +634,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 17/11/2024
+## Esercizi - Parte XI
 
 ??? question "Domande"
 
@@ -670,7 +670,7 @@ title: Esercizi
 		- [ ] $f(x) = x$
 		- [ ] $f(x) = 0$
 
-	7. Vero o falso: secondo gli assiomi di Peano, esiste un numero naturale che non ha successore.
+	7. Vero o falso: secondo gli assiomi di Peano, esiste un numero naturale che non ha lightbulbore.
 
 	8. Se un insieme è infinito e numerabile, quale delle seguenti affermazioni è vera?
 		- [ ] È un sottoinsieme proprio dell'insieme dei numeri reali.
@@ -686,7 +686,7 @@ title: Esercizi
 
 	10. Vero o falso: il principio di induzione completa richiede di dimostrare due basi di induzione.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: $f^{-1}(x) = \frac{x + 5}{3}$
 		- Spiegazione: Per trovare l'inversa, risolviamo $y = 3x - 5$ per $x$: $x = \frac{y + 5}{3}$, quindi $f^{-1}(x) = \frac{x + 5}{3}$.
@@ -707,7 +707,7 @@ title: Esercizi
 		- Spiegazione: La funzione identità su $\mathbb{R}$ è definita come $f(x) = x$, poiché ogni elemento è mappato su sé stesso.
 
 	7. Risposta: Falso
-		- Spiegazione: Secondo gli assiomi di Peano, ogni numero naturale ha un successore, quindi non esiste un numero naturale senza successore.
+		- Spiegazione: Secondo gli assiomi di Peano, ogni numero naturale ha un lightbulbore, quindi non esiste un numero naturale senza lightbulbore.
 
 	8. Risposta: Ha la stessa cardinalità dell’insieme dei numeri naturali.
 		- Spiegazione: Un insieme infinito e numerabile ha la stessa cardinalità dell'insieme dei numeri naturali, il che significa che i suoi elementi possono essere messi in corrispondenza biunivoca con i numeri naturali.
@@ -716,11 +716,11 @@ title: Esercizi
 		- Spiegazione: La polvere di Cantor è un insieme non numerabile, poiché ha la stessa cardinalità dell'insieme dei numeri reali nell'intervallo $[0, 1]$.
 
 	10. Risposta: Falso
-		- Spiegazione: Il principio di induzione completa richiede una sola base di induzione, ma può richiedere di dimostrare la validità di una proposizione fino a un certo passo per dimostrare che è vera per tutti i numeri naturali successivi.
+		- Spiegazione: Il principio di induzione completa richiede una sola base di induzione, ma può richiedere di dimostrare la validità di una proposizione fino a un certo passo per dimostrare che è vera per tutti i numeri naturali lightbulbivi.
 
 ---
 
-## Esercizi del 16/11/2024
+## Esercizi - Parte X
 
 ??? question "Domande"
 
@@ -768,7 +768,7 @@ title: Esercizi
 		- [ ] È sempre un sottoinsieme proprio dell’insieme originale.
 		- [ ] È l’insieme delle immagini di una funzione suriettiva.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: $f$ è sia iniettiva che suriettiva.
 		- Spiegazione: Perché una funzione abbia un'inversa, deve essere biiettiva, cioè sia iniettiva (ogni elemento dell'immagine ha una preimmagine unica) che suriettiva (ogni elemento del codominio è raggiunto).
@@ -802,7 +802,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 15/11/2024
+## Esercizi - Parte IX
 
 ??? question "Domande"
 
@@ -858,7 +858,7 @@ title: Esercizi
 
 	10. Vero o falso: Il principio di induzione può essere usato per dimostrare una proprietà valida per ogni numero reale.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. $A$ è un sottoinsieme proprio di $B$
 		- Spiegazione: Se $A \subseteq B$ e $A \neq B$, allora $A$ è contenuto in $B$ ma non uguale a $B$, quindi è un sottoinsieme proprio di $B$.
@@ -892,7 +892,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 14/11/2024
+## Esercizi - Parte VIII
 
 ??? question "Domande"
 
@@ -948,7 +948,7 @@ title: Esercizi
 
 	10. Vero o falso: Il principio di induzione matematica è usato per dimostrare proposizioni valide per tutti i numeri interi positivi.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: Contengono esattamente gli stessi elementi.
 		- Spiegazione: L'assioma di estensione afferma che due insiemi sono uguali se e solo se contengono gli stessi elementi, indipendentemente dall'ordine o da come sono rappresentati.
@@ -982,7 +982,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 13/11/2024
+## Esercizi - Parte VII
 
 ??? question "Domande"
 
@@ -1030,7 +1030,7 @@ title: Esercizi
 
 	10. Vero o falso: Un ordine totale su un insieme richiede che ogni coppia di elementi sia confrontabile.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Contengono esattamente gli stessi elementi.
 		- Spiegazione: Secondo l'assioma di estensione, due insiemi sono uguali se e solo se contengono gli stessi elementi, indipendentemente da come sono definiti o rappresentati.
@@ -1065,7 +1065,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 12/11/2024
+## Esercizi - Parte VI
 
 ??? question "Domande"
 
@@ -1110,7 +1110,7 @@ title: Esercizi
 
 	10. Vero o falso: una relazione d'equivalenza su un insieme induce una partizione dell'insieme stesso in classi di equivalenza.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. Risposta: $\{2, 3\}$
 		- Spiegazione: L'intersezione di $A$ e $B$ contiene solo gli elementi comuni ai due insiemi, quindi $\{2, 3\}$.
@@ -1145,7 +1145,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 11/11/2024
+## Esercizi - Parte V
 
 ??? question "Domande"
 
@@ -1184,7 +1184,7 @@ title: Esercizi
 
 	10. Se $A \subset B$, allora la cardinalità di $A$ è strettamente minore della cardinalità di $B$?
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. **C.** La differenza simmetrica tra $A$ e $B$ contiene gli elementi che sono in $A$ o in $B$, ma non in entrambi.
 	2. **No.** La riflessività e la simmetria non sono sufficienti; è necessaria anche la transitività per avere una relazione di equivalenza.
@@ -1199,7 +1199,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 10/11/2024
+## Esercizi - Parte IV
 
 ??? question "Domande"
 
@@ -1241,7 +1241,7 @@ title: Esercizi
 	    - B: Sono sempre disgiunte
 	    - C: Possono sovrapporsi
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. **C.** Se $A \cap B = \emptyset$, allora $A$ e $B$ sono insiemi disgiunti, cioè non hanno elementi in comune.
 	2. **C.** Una funzione che è sia iniettiva che suriettiva è detta biiettiva, il che implica che ogni elemento del dominio ha un'immagine distinta nel codominio.
@@ -1256,7 +1256,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 09/11/2024
+## Esercizi - Parte III
 
 ??? question "Domande"
 
@@ -1300,7 +1300,7 @@ title: Esercizi
 	    - [ ] B: $a$ e $b$ sono diversi
 	    - [ ] C: Nulla, dipende dalla relazione
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. **C.** L'insieme potenza di $A$ ha $2^n$ elementi, dove $n$ è la cardinalità di $A$.
 	2. **Sì.** Se $A \subseteq B$ e $B \subseteq A$, per definizione $A$ e $B$ devono essere uguali.
@@ -1316,7 +1316,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 08/11/2024
+## Esercizi - Parte II
 
 ??? question "Domande"
 
@@ -1340,7 +1340,7 @@ title: Esercizi
 	9. La relazione di equivalenza su un insieme lo divide in classi disgiunte?
 	10. Una funzione identità può essere suriettiva?
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. **Sì** — Ogni insieme è sottoinsieme di sé stesso per definizione.
 	2. **B** — L'insieme B ha 5 elementi, che è la cardinalità maggiore rispetto agli altri.
@@ -1355,7 +1355,7 @@ title: Esercizi
 
 ---
 
-## Esercizi del 07/11/2024
+## Esercizi - Parte I
 
 ??? question "Domande"
 
@@ -1504,7 +1504,7 @@ title: Esercizi
 	21. Si dimostri (per doppia inclusione) che $A \times (B \cup C) = (A \times B) \cup (A \cap C)$.
 	22. Si dimostri (per doppia inclusione) che $A \times (B - C) = (A \times B) \ (A \times C)$.
 
-??? success "Soluzioni"
+??? lightbulb "Soluzioni"
 
 	1. La (a) è corretta: $1$ è un elemento di $M$ e quindi $1$ appartiene a $M$, mentre l'insieme che contiene $1$ non è un elemento di $M$ (e quindi la (c) è sbagliata). La (b) è sbagliata: essendo un elemento di $M$, $1$ non ne è un sottoinsieme; invece $\{1\}$ è un sottoinsieme di $M$, e quindi la (d) è corretta.
 	2. Due insiemi sono uguali se contengono gli stessi elementi. Pertanto, gli insiemi dati sono tutti uguali. Ricordiamo che, quando lavoriamo con un insieme, né l'ordine in cui i suoi elementi sono elencati né eventuali ripetizioni di uno stesso elemento contano.

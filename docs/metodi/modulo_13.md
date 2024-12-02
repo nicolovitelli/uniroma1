@@ -75,3 +75,20 @@ title: Modulo 13
 
 	- Possiamo osservare che le colonne per $\neg p$ e $p \rightarrow$ Falso hanno gli stessi valori di verità in tutte le interpretazioni.
 	- Quindi, possiamo concludere che $\neg p \equiv p \rightarrow$ Falso.
+
+## Operatore Logico XOR
+!!! abstract "Definizione ― XOR"
+	$$
+    \begin{array}{c}
+        A \dot{\vee} B
+    \end{array}
+	$$
+
+	$A \dot{\vee} B$ è vero quando $A$ e $B$ hanno dei valori di verità diversi.
+
+	<figure markdown="1">
+	![image](assets\mod13_xor.png)
+	</figure>
+
+??? note "Note aggiuntive"
+	- $A \dot{\vee} B$ è equivalente semanticamente a $(A \mathop{\wedge} \neg B) \mathop{\vee} (B \mathop{\wedge} \neg A)$   
