@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sistema-logico-assiomatico" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -589,6 +594,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modulo 15
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -598,6 +614,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-logico-assiomatico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema Logico Assiomatico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assiomi-di-hillbert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assiomi di Hillbert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimostrazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dimostrazione
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-di-hillbert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema di Hillbert
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -650,6 +719,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-logico-assiomatico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema Logico Assiomatico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assiomi-di-hillbert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assiomi di Hillbert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimostrazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dimostrazione
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-di-hillbert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema di Hillbert
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -665,7 +778,181 @@
 
   <h1>Modulo 15</h1>
 
-
+<h2 id="sistema-logico-assiomatico">Sistema Logico Assiomatico<a class="headerlink" href="#sistema-logico-assiomatico" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Sistema Logico Assiomatico</p>
+<ul>
+<li>Un Sistema nel quale vengono definiti un insieme di assiomi che sono delle proposizioni che vengono assunte senza dimostrazione (<em>quindi ovvie</em>).</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Regole di Inferenza</p>
+<ul>
+<li>
+<p>Una regola di inferenza è un procedimento logico che stabilisce come è possibile dedurre una nuova proposizione (conclusione) a partire da una o più proposizioni già date (premesse), secondo schemi logici prestabiliti.</p>
+</li>
+<li>
+<p>Formalmente, una regola di inferenza ha la forma:</p>
+</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \frac{C_1,C_2,\dots,C_n}{B}
+\end{array}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span> sono le premesse, cioè proposizioni che assumiamo siano vere.</li>
+<li><span class="arithmatex">\(B\)</span> è la conclusione che si può dedurre logicamente dalle premesse.</li>
+<li>La regola afferma che, se le premesse sono vere, allora anche la conclusione è vera.</li>
+</ul>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<ul>
+<li>Il Modus Ponens è una regola di inferenza che permette di dedurre una conclusione da una premessa e un'implicazione. Si basa sul principio logico fondamentale:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \frac{A \quad A \rightarrow B}{B}
+\end{array}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(A\)</span> è una proposizione considerata vera.</li>
+<li><span class="arithmatex">\(A \rightarrow B\)</span> è una proposizione che afferma "se <span class="arithmatex">\(A\)</span> allora <span class="arithmatex">\(B\)</span>" (un'implicazione).</li>
+<li><span class="arithmatex">\(B\)</span> la proposizione che possiamo concludere come vera grazie alla regola.</li>
+</ul>
+</details>
+<h2 id="assiomi-di-hillbert">Assiomi di Hillbert<a class="headerlink" href="#assiomi-di-hillbert" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        A \rightarrow B \\
+        B \rightarrow (A \rightarrow B) \\
+        (A \rightarrow (B \rightarrow C)) \rightarrow (A \rightarrow B) \rightarrow (A \rightarrow C) \\
+        (\neg A \rightarrow \neg B) \rightarrow (B \rightarrow A)
+    \end{array}
+\]</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Schema di Assioma</p>
+<ul>
+<li>Uno Schema di Assioma è una formula logica proposizionale che rimane valida (cioè è una tautologia) per tutti i valori di verità delle variabili proposizionali che contiene. In altre parole, è una struttura logica generale che rappresenta verità universali indipendentemente dalle proposizioni specifiche che la compongono.</li>
+<li>Negli Assiomi di Hillbert, quelli rappresentati sono tutti Schemi di Assiomi perchè sono proprietà che valgono per qualunque formula e non solo per <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>.</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Istanza di Assioma</p>
+<ul>
+<li>Un'istanza di un assioma è una proposizione logica specifica che si ottiene dallo schema di un'assioma sostituendo le variabili proposizionali (<span class="arithmatex">\(A, B, C, \dots\)</span>) con proposizioni concrete o con altre formule logiche.</li>
+<li>In altre parole, mentre uno schema di assioma rappresenta una regola generale e astratta, un'istanza di assioma è una forma concreta che segue lo schema, ottenuta scegliendo specifiche proposizioni o formule logiche per le variabili.</li>
+</ul>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \text{Istanza del primo Assioma di Hillbert} \\
+        (P \rightarrow Q) \rightarrow (P \rightarrow Q) \\
+        \\
+        \text{Istanza del secondo Assioma di Hillbert} \\
+        (P \mathop{\wedge} Q) \rightarrow ((Q \rightarrow R) \rightarrow (P \mathop{\wedge} Q))
+    \end{array}
+\]</div>
+</details>
+<h2 id="dimostrazione">Dimostrazione<a class="headerlink" href="#dimostrazione" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Dimostrazione</p>
+<ul>
+<li>Una Dimostrazione di una proposizione <span class="arithmatex">\(A\)</span> è una sequenza finita di proposizioni, di cui <span class="arithmatex">\(A\)</span> è l'ultima, ciascuna delle quali è una istanza di assioma o è ottenuta per Modus Ponens da due proposizioni che la precedono.</li>
+</ul>
+</div>
+<details class="example">
+<summary>Esempio ― Dimostrazione della Derivazione</summary>
+<ul>
+<li>Dimostriamo che lo schema d'assioma <span class="arithmatex">\(A \rightarrow A\)</span> è derivabile attraverso gli altri schemi, usando il Modus Ponens.</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \frac{A \rightarrow ((A \rightarrow A) \rightarrow A) \quad
+    (A \rightarrow ((A \rightarrow A) \rightarrow A)) \rightarrow (A \rightarrow (A \rightarrow A)) \rightarrow (A \rightarrow A)}{(A \rightarrow (A \rightarrow A)) \rightarrow (A \rightarrow A)}
+\end{array}
+\]</div>
+<ul>
+<li>
+<p>La prima parte:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+        A \rightarrow ((A \rightarrow A) \rightarrow A)
+\end{array}
+\]</div>
+</li>
+<li>
+<p>rappresenta un'istanza del primo schema di Assioma di Hilbert, usiamo <strong>Ax1</strong> come notazione.</p>
+</li>
+<li>
+<p>La seconda parte:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+        (A \rightarrow ((A \rightarrow A) \rightarrow A)) \rightarrow (A \rightarrow (A \rightarrow A)) \rightarrow (A \rightarrow A)
+\end{array}
+\]</div>
+</li>
+<li>
+<p>rappresenta un'istanza del secondo schema di Assioma di Hillbert, usiamo <strong>Ax2</strong> come notazione.</p>
+</li>
+<li>
+<p>Infine, la terza parte:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+        (A \rightarrow (A \rightarrow A)) \rightarrow (A \rightarrow A)
+\end{array}
+\]</div>
+</li>
+<li>
+<p>rappresenta il Modus Ponens tra Ax1 e Ax2, usiamo <strong>MP 1 2</strong> come notazione.</p>
+</li>
+<li>Come facciamo a capire che rappresenta il Modus Ponens? Perchè MP 1 2 corrisponde alla seconda parte dell'istanza Ax2, mentre la prima parte dell'istanza Ax2 corrisponde esattamente a Ax1.</li>
+<li>
+<p>Possiamo continuare, usando il MP 1 2:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+        \frac{A \rightarrow (A \rightarrow A) \quad (A \rightarrow (A \rightarrow A)) \rightarrow (A \rightarrow A)}{A \rightarrow A}
+\end{array}
+\]</div>
+</li>
+<li>
+<p>la prima parte rappresenta la prima parte dell'istanza MP 1 2, mentre il Modus Ponens finale rappresenta MP 3 4, cioè la seconda parte dell'istanza MP 1 2.</p>
+</li>
+<li>Concludendo deducendo che <span class="arithmatex">\(A \rightarrow A\)</span> è derivabile dalle altre formule.</li>
+</ul>
+</details>
+<h2 id="sistema-di-hillbert">Sistema di Hillbert<a class="headerlink" href="#sistema-di-hillbert" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Sistema di Hillbert</p>
+<ul>
+<li>Una Dimostrazione di una proposizione <span class="arithmatex">\(A\)</span> da un insieme <span class="arithmatex">\(T = \{B_1,B_2,\dots,B_n\}\)</span> è una sequenza finita di proposizioni, di cui <span class="arithmatex">\(A\)</span> è l'ultima, ciascuna delle quali è un'istanza di assioma, o una proposizione in <span class="arithmatex">\(T\)</span>, o è ottenuta per Modus Ponens da due proposizioni che la precedono.</li>
+</ul>
+<div class="arithmatex">\[
+   \begin{array}{c}
+        B_1,B_2,\dots,B_n \vdash A
+   \end{array}
+ \]</div>
+<ul>
+<li><span class="arithmatex">\(A\)</span> è derivabile da <span class="arithmatex">\(B_1,B_2,\dots,B_n\)</span></li>
+</ul>
+</div>
+<details class="note">
+<summary>Note aggiuntive</summary>
+<ul>
+<li>Si usa la notazione <span class="arithmatex">\(\vdash A\)</span> quando non ci sono premesse.</li>
+<li>Similmente alla Deduzione Semantica:</li>
+</ul>
+<div class="arithmatex">\[
+   \begin{array}{c}
+        C_1,C_2,\dots,C_n,A \vdash B \\
+        \text{ se e solo se } \\
+        C_1,C_2,\dots,C_n \vdash A \rightarrow B
+   \end{array}
+\]</div>
+</details>
 
 
 
