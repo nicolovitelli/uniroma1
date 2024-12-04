@@ -11,7 +11,7 @@ title: Modulo 14
 	- I figli di un nodo si intendono in disgiunzione e dipendono dal padre secondo regole costruttive. 
 
 	<figure markdown="1">
-	![image](assets\mod14_albero_prop.png)
+	![image](\metodi\assets\mod14_albero_prop.png)
 	</figure>
 
 ??? note "Note aggiuntive"
@@ -20,11 +20,11 @@ title: Modulo 14
 ??? example "Esempio ― AND e OR"
 
 	<figure markdown="1">
-	![image](assets\mod14_albero_and.png)
+	![image](\metodi\assets\mod14_albero_and.png)
 	</figure>
 
 	<figure markdown="1">
-	![image](assets\mod14_albero_or.png)
+	![image](\metodi\assets\mod14_albero_or.png)
 	</figure>
 
 ??? example "Esempio ― Verificare la Soddisfacibilità di un Albero"
@@ -103,7 +103,7 @@ title: Modulo 14
 ??? example "Esempio"
 
 	<figure markdown="1">
-	![image](assets\mod14_albero_chiuso.png)
+	![image](\metodi\assets\mod14_albero_chiuso.png)
 	</figure>
 
 !!! abstract "Definizione ― Proposizione Valida"
@@ -121,13 +121,13 @@ title: Modulo 14
 - Conosciamo queste tre regole costruttive, le quali possiamo trovare all'interno di un nodo:
 
 <figure markdown="1">
-![image](assets\mod14_regole_costruttive_base.png)
+![image](\metodi\assets\mod14_regole_costruttive_base.png)
 </figure>
 
 - Da queste, possiamo derivarci tutte le altre, per esempio l'implicazione:
 
 <figure markdown="1">
-![image](assets\mod14_reg_costr_implicazione.png)
+![image](\metodi\assets\mod14_reg_costr_implicazione.png)
 </figure>
 
 ??? note "Note aggiuntive"
@@ -153,7 +153,7 @@ title: Modulo 14
 - Dato un Tableu di partenza:
 
 	<figure markdown="1">
-    ![image](assets\mod14_esempio1.png)
+    ![image](\metodi\assets\mod14_esempio1.png)
     </figure>
 
 - Analizzando le foglie possiamo ricavare la formula $\phi_B$, che ha la seguente proprietà:
@@ -162,7 +162,7 @@ title: Modulo 14
 - Più genericamente quindi, $A$ è valido se l'albero $\neg A$ è chiuso. Dimostrazione:
 
 <figure markdown="1">
-![image](assets\mod14_esempio2.png)
+![image](\metodi\assets\mod14_esempio2.png)
 </figure>
 
 !!! abstract "Definizione ― Correttezza"

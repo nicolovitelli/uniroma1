@@ -77,8 +77,8 @@ extra_javascript:
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 plugins:
-    - search
-    - awesome_pages
+  - search # necessary for search to work
+  - awesome-pages
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css

@@ -70,7 +70,7 @@ title: Modulo 13
 	- Costruiamo la Tabella di Verità per entrambe le proposizioni per tutte le combinazioni di valori di $p$:
 
 	<figure markdown="1">
-	![image](assets\mod13_es1.png)
+	![image](\metodi\assets\mod13_es1.png)
 	</figure>
 
 	- Possiamo osservare che le colonne per $\neg p$ e $p \rightarrow$ Falso hanno gli stessi valori di verità in tutte le interpretazioni.
@@ -87,7 +87,7 @@ title: Modulo 13
 	$A \dot{\vee} B$ è vero quando $A$ e $B$ hanno dei valori di verità diversi.
 
 	<figure markdown="1">
-	![image](assets\mod13_xor.png)
+	![image](\metodi\assets\mod13_xor.png)
 	</figure>
 
 ??? note "Note aggiuntive"

@@ -28,7 +28,7 @@ title: Modulo 8
 
 ??? example "Esempio"
     <figure markdown="1">
-    ![image](assets\mod8_cantor_01.png)
+    ![image](\metodi\assets\mod8_cantor_01.png)
     </figure>
 
     Nell'esempio 1, c'è una funzione iniettiva $A \rightarrow B$, ma non c'è una l'iniettività $B \rightarrow A$, quindi la cardinalità di $A$ è minore di quella di $B$:
@@ -40,7 +40,7 @@ title: Modulo 8
 	$$
 
 	<figure markdown="1">
-    ![image](assets\mod8_cantor_02.png)
+    ![image](\metodi\assets\mod8_cantor_02.png)
     </figure>
 
     Nell'esempio 2, c'è una funziona iniettiva $A \rightarrow B$ ed una funzione iniettiva $B \rightarrow A$, quindi secondo il Teorema di Cantor, esiste una funzione biiettiva $A \rightarrow B$:
@@ -58,19 +58,19 @@ Proviamo a mettere in corrispondenza l'insieme di tutti i numeri naturali $\math
 - Immaginiamo una retta di tutti i numeri reali compresi tra $0$ ed $1$, e la dividiamo in esattamente tre parti uguali:
 
 <figure markdown="1">
-![image](assets\mod8_polvere_01.png)
+![image](\metodi\assets\mod8_polvere_01.png)
 </figure>
 
 - Andiamo a togliere la parte centrale e prendiamo solo la parte evidenziata in blu ($0 < x < \frac{1}{3}$ e $\frac{2}{3} < x < 1$) per andare a costruire altre piccole rette:
 
 <figure markdown="1">
-![image](assets\mod8_polvere_02.png)
+![image](\metodi\assets\mod8_polvere_02.png)
 </figure>
 
 - Applichiamo la stessa strategia in cui andiamo a dividere in esattamente tre parti uguali ed andiamo a prendere la parte centrale, continuando all'infinito:
 
 <figure markdown="1">
-![image](assets\mod8_polvere_03.png)
+![image](\metodi\assets\mod8_polvere_03.png)
 </figure>
 
 - L'insieme $C$ sarà quindi l'intersezione tra tutti gli insiemi che abbiamo estratto:

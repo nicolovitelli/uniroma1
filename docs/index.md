@@ -1,1 +1,1 @@
-- [Metodi Matematici per l'Informatica](metodi\index.md)
+- [Metodi Matematici per l'Informatica](metodi)

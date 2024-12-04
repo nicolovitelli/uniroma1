@@ -28,7 +28,7 @@ title: Modulo 11
 
 ??? example "Esempio - Non Preservazione di Meet e Join"
     <figure markdown="1">
-    ![image](assets\mod11_esempio1.png)
+    ![image](\metodi\assets\mod11_esempio1.png)
     </figure>
 
     - Dati i Reticoli $A$ e $B$ ed una funzione $f : A \rightarrow B$:
@@ -76,7 +76,7 @@ title: Modulo 11
 
 ??? example "Esempio - Preservazione di Meet e Join"
     <figure markdown="1">
-    ![image](assets\mod11_esempio1.png)
+    ![image](\metodi\assets\mod11_esempio1.png)
     </figure>
 
     - Dati i Reticoli $A$ e $B$ ed una funzione $f : A \rightarrow B$:
@@ -128,7 +128,7 @@ title: Modulo 11
 ??? example "Esempio - Dimostrazione del Complemento"
 
     <figure markdown="1">
-    ![image](assets\mod11_esempio_comp.png)
+    ![image](\metodi\assets\mod11_esempio_comp.png)
     </figure>
 
     - Dati due insieme $A$ e $B$ ed una funzione $f : A \rightarrow B$:
@@ -163,7 +163,7 @@ title: Modulo 11
 - Consideriamo l'insieme dei numeri naturali $\mathbb{N}$ ed i due predicati $P$ e $Q$:
 
 <figure markdown="1">
-![image](assets\mod11_logica_prop1.png)
+![image](\metodi\assets\mod11_logica_prop1.png)
 </figure>
 
 - $P$ = essere un numero primo
@@ -173,7 +173,7 @@ title: Modulo 11
     - la seconda Algebra di Boole è detta **Omomorfismo di 2**, perchè contiene solo Top e Bottom.
 
 <figure markdown="1">
-![image](assets\mod11_logica_prop2.png)
+![image](\metodi\assets\mod11_logica_prop2.png)
 </figure>
 
 - Preso un qualsiasi elemento $\mathbb{N}$, mappiamo $P$ e $Q$ su $\top$ / $\bot$ a seconda se l'elemento di $\mathbb{N}$ rispetta le proprietà.
@@ -183,7 +183,7 @@ title: Modulo 11
         - $2$ è sia un numero primo ($P$) sia è un numero minore di 10 ($Q$), quindi entrambi vengono mappati su Top $\top$.
 
     <figure markdown="1">
-    ![image](assets\mod11_logica_prop3.png)
+    ![image](\metodi\assets\mod11_logica_prop3.png)
     </figure>
 
     - Gli elementi dell'universo dei sottoinsiemi che corrispondono agli omomorfismi nell'universo delle Algebre di Boole, in realtà corrispondono a delle funzioni che mappano i predicati in Top $\top$ e Bottom $\bot$, secondo la condizione descritta nello step precedente:
@@ -200,7 +200,7 @@ title: Modulo 11
     - Esempio con $a = 9$:
 
     <figure markdown="1">
-    ![image](assets\mod11_logica_prop4.png)
+    ![image](\metodi\assets\mod11_logica_prop4.png)
     </figure>
 
     - In questo caso quindi, visto che $9$ rispetta solo la proprietà $Q$:
@@ -215,7 +215,7 @@ title: Modulo 11
     - Ipotizziamo una funzione $m$ che oltre a mappare $P$ e $Q$, mappa $P \mathop{\wedge} Q$ su $\top$.
 
     <figure markdown="1">
-    ![image](assets\mod11_logica_prop5.png)
+    ![image](\metodi\assets\mod11_logica_prop5.png)
     </figure>
 
     $$
@@ -259,7 +259,7 @@ title: Modulo 11
     - Possiamo modificare la funzione $m$ in questo modo:
 
     <figure markdown="1">
-    ![image](assets\mod11_logica_prop6.png)
+    ![image](\metodi\assets\mod11_logica_prop6.png)
     </figure>
 
     - In questo caso, la funzione $m$ è un omomorfismo perchè rispetta le tre proprietà:
@@ -283,7 +283,7 @@ title: Modulo 11
 - Un discorso analogo possiamo farlo per il not (*complemento*):
 
 <figure markdown="1">
-![image](assets\mod11_tav_verita_not.png)
+![image](\metodi\assets\mod11_tav_verita_not.png)
 </figure>
 
 ## Logica Proposizionale

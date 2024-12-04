@@ -225,7 +225,7 @@ title: Modulo 3
 	- per ogni insieme $C$, se $\mathcal{P}(C)$ e $A \subseteq C$, allora $B \subseteq C$
 
 <figure markdown="1">
-![image](assets\mod3_chiusura.png)
+![image](\metodi\assets\mod3_chiusura.png)
 </figure>
 
 Nell'esempio raffigurato:
@@ -289,5 +289,5 @@ Possiamo concludere quindi che l'Unione non preserva la Transitività di una Rel
     In altre parole, $A$ è P-Maggiorabile quando rispetta le prime due proprietà della Chiusura.
 
 <figure markdown="1">
-![image](assets\mod3_pmaggiorabile.png)
+![image](\metodi\assets\mod3_pmaggiorabile.png)
 </figure>

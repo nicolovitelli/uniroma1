@@ -12,7 +12,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](assets\mod2_intersezione.png)
+![image](\metodi\assets\mod2_intersezione.png)
 </figure>
 
 ??? math-adm "Proprietà Algebriche"
@@ -31,7 +31,7 @@ title: Modulo 2
 	$$
 
 	<figure markdown="1">
-	![image](assets\mod2_intersezione_subset.png)
+	![image](\metodi\assets\mod2_intersezione_subset.png)
 	</figure>
 
 ??? example "Esempio"
@@ -56,7 +56,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](assets\mod2_unione.png)
+![image](\metodi\assets\mod2_unione.png)
 </figure>
 
 !!! abstract "Definizione ― Assioma dell'Unione"
@@ -112,7 +112,7 @@ title: Modulo 2
     $$
 
     <figure markdown="1">
-	![image](assets\mod2_intersezione_subset.png)
+	![image](\metodi\assets\mod2_intersezione_subset.png)
 	</figure>
 
 ## Differenza
@@ -125,7 +125,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](assets\mod2_differenza.png)
+![image](\metodi\assets\mod2_differenza.png)
 </figure>
 
 ??? math-adm "Proprietà Algebriche"
@@ -157,7 +157,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](assets\mod2_complemento.png)
+![image](\metodi\assets\mod2_complemento.png)
 </figure>
 
 ??? math-adm "Proprietà Algebriche"

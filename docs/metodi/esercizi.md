@@ -1261,44 +1261,44 @@ title: Esercizi
 ??? question "Domande"
 
 	1. Se un insieme $A$ ha $n$ elementi, quanti elementi ha l'insieme potenza di $A$?
-	    - [ ] A: $2n$
-	    - [ ] B: $n^2$
-	    - [ ] C: $2^n$
+	    1. A: $2n$
+	    2. B: $n^2$
+	    3. C: $2^n$
 
 	2. Se $A \subseteq B$ e $B \subseteq A$, allora $A$ è uguale a $B$?
 
 	3. Quale delle seguenti operazioni insiemistiche risulta sempre commutativa?
-	    - [ ] A: Intersezione
-	    - [ ] B: Differenza
-	    - [ ] C: Prodotto cartesiano
+	    1. A: Intersezione
+	    2. B: Differenza
+	    3. C: Prodotto cartesiano
 
 	4. Un insieme vuoto ha cardinalità zero?
 
 	5. Qual è il complemento dell'unione di due insiemi?
-	    - [ ] A: Unione dei complementi
-	    - [ ] B: Intersezione dei complementi
-	    - [ ] C: Differenza tra i complementi
+	    1. A: Unione dei complementi
+	    2. B: Intersezione dei complementi
+	    3. C: Differenza tra i complementi
 
 	6. Siano dati gli insiemi $A = \{1, 2\}$ e $B = \{x, y\}$. Qual è il numero totale di elementi nel prodotto cartesiano $A \times B$?
 
-		- [ ] 2
-		- [ ] 4
-		- [ ] 6
-		- [ ] 8
+		1. 2
+		2. 4
+		3. 6
+		4. 8
 
 	7. La relazione di ordine stretto $<$ è transitiva?
 
 	8. Se una funzione è suriettiva, il suo codominio coincide con il suo insieme immagine?
 
 	9. Due insiemi sono detti disgiunti se:
-	    - [ ] A: Uno è sottoinsieme dell'altro
-	    - [ ] B: Non hanno elementi in comune
-	    - [ ] C: Hanno esattamente un elemento in comune
+	    1. A: Uno è sottoinsieme dell'altro
+	    2. B: Non hanno elementi in comune
+	    3. C: Hanno esattamente un elemento in comune
 
 	10. In una relazione antisimmetrica, se $a R b$ e $b R a$, cosa possiamo concludere su $a$ e $b$?
-	    - [ ] A: $a$ e $b$ sono uguali
-	    - [ ] B: $a$ e $b$ sono diversi
-	    - [ ] C: Nulla, dipende dalla relazione
+	    1. A: $a$ e $b$ sono uguali
+	    2. B: $a$ e $b$ sono diversi
+	    3. C: Nulla, dipende dalla relazione
 
 ??? lightbulb "Soluzioni"
 
@@ -1322,20 +1322,20 @@ title: Esercizi
 
 	1. Un insieme può essere sottoinsieme di sé stesso?
 	2. Quale degli insiemi seguenti ha cardinalità maggiore?
-		1. [ ] $A: \{1, 2, 3, 4\}$
-		2. [ ] $B: \{2, 4, 6, 8, 10\}$
-		3. [ ] $C: \{3, 5, 7\}$
+		1. $A: \{1, 2, 3, 4\}$
+		2. $B: \{2, 4, 6, 8, 10\}$
+		3. $C: \{3, 5, 7\}$
 	3. Il prodotto cartesiano tra due insiemi finiti è sempre finito?
 	4. Se una funzione è iniettiva e suriettiva, è anche biiettiva?
 	5. Quale delle seguenti è una proprietà riflessiva?
-		1. [ ] $\leq$
-		2. [ ] $<$
-		3. [ ] $\neq$
+		1. $\leq$
+		2. $<$
+		3. $\neq$
 	6. La relazione di appartenenza $\in$ è simmetrica?
 	7. Qual è il complemento dell'intersezione di due insiemi?
-		1. [ ] Unione dei complementi
-		2. [ ] Intersezione dei complementi
-		3. [ ] Differenza tra i complementi
+		1. Unione dei complementi
+		2. Intersezione dei complementi
+		3. Differenza tra i complementi
 	8. Se $A$ è un insieme con $|A| = 5$, qual è la cardinalità dell'insieme potenza di $A$?
 	9. La relazione di equivalenza su un insieme lo divide in classi disgiunte?
 	10. Una funzione identità può essere suriettiva?

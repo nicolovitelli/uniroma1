@@ -62,7 +62,7 @@ title: Modulo 10
     - Dato il seguente reticolo:
 
     <figure markdown="1">
-    ![image](assets\mod9_reticoloNonDis.png)
+    ![image](\metodi\assets\mod9_reticoloNonDis.png)
     </figure>
 
     - Usiamo la Proprietà Distributiva per capire se è un reticolo distributivo:
@@ -182,7 +182,7 @@ $$
         - $A$ rappresenta il $max(A)$ $\top$
 
     <figure markdown="1">
-      ![image](assets\mod10_complemento.png)
+      ![image](\metodi\assets\mod10_complemento.png)
     </figure>
 
     - Possiamo dimostrare che le proprietà algebriche si verificano correttamente:
@@ -209,7 +209,7 @@ $$
     Ogni Algebra di Boole (*rappresentazione astratta di un reticolo*) è isomorfa ad un'algebra di insieme (*rappresentazione concreta di un insieme*).
 
     <figure markdown="1">
-    ![image](assets\mod10_stone.png)
+    ![image](\metodi\assets\mod10_stone.png)
     </figure>
 
 ## Leggi di De Morgan

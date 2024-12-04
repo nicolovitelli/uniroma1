@@ -156,7 +156,7 @@ title: Modulo 4
     $$
 
 <figure markdown="1">
-![image](assets\mod4_partizione.png)
+![image](\metodi\assets\mod4_partizione.png)
 </figure>
 
 - Nell'esempio raffigurato, la Partizione $P$ è composta da 4 sottoinsiemi, in cui ogni $a \in A$ si trova in uno ed uno soltanto di questi 4 sottoinsiemi.

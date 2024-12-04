@@ -30,13 +30,13 @@ title: Modulo 12
 	- Considerato l'insieme $\mathbb{N}$ a questo corrisponderà una qualche Algebra di Boole.
 
 	<figure markdown="1">
-	![image](assets\mod11_logica_prop2.png)
+	![image](\metodi\assets\mod11_logica_prop2.png)
 	</figure>
 
 	- Ora prendiamo come esempio l'elemento $9$:
 
 	<figure markdown="1">
-	![image](assets\mod12_esempio1.png)
+	![image](\metodi\assets\mod12_esempio1.png)
 	</figure>
 
 	- Possiamo affermare che:
@@ -87,7 +87,7 @@ title: Modulo 12
 	$$
 
 <figure markdown="1">
-  ![Intersezione](assets/mod12_tav_implicazione.png)
+  ![Intersezione](\metodi\assets/mod12_tav_implicazione.png)
   <figcaption>Tavola di Verità dell'Implicazione</figcaption>
 </figure>
 

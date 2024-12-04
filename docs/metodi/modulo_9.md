@@ -186,6 +186,6 @@ title: Modulo 9
 	- Conclusione: la proprietà di Assorbimento è rispettata :white_check_mark:, quindi possiamo stabilire che l'insieme $A = \{1,2,3,4,6,12\}$ con la relazione $\mathcal{R}$ di divisibilità è un Reticolo.
 
 	<figure markdown="1">
-	  ![image](assets\mod9_div12.png)
+	  ![image](\metodi\assets\mod9_div12.png)
 	  <figcaption>Diagramma di Hasse</figcaption>
 	</figure>

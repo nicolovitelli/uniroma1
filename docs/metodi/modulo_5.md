@@ -7,7 +7,7 @@ title: Modulo 5
     Una Funzione da un insieme $A$ ad un insieme $B$ è una Relazione $\mathcal{R} \subseteq A \times B$ tale che per ogni elemento $a \in A$ esiste uno ed un solo elemento $b \in B$ tale che $a \mathcal{R} b$.
 
 <figure markdown="1">
-![image](assets\mod5_funzioni.png)
+![image](\metodi\assets\mod5_funzioni.png)
 </figure>
 
 ??? note "Note aggiuntive"
@@ -26,7 +26,7 @@ title: Modulo 5
 
 ??? example "Esempio"
     <figure markdown="1">
-    ![image](assets\mod5_iniettiva_00.png)
+    ![image](\metodi\assets\mod5_iniettiva_00.png)
     </figure>
 
     $$
@@ -49,7 +49,7 @@ title: Modulo 5
     Una funzione si dice biiettiva quando è sia suriettiva che iniettiva (detta *relazione one-to-one*).
 
 <figure markdown="1">
-![image](assets\mod5_biiettiva.png)
+![image](\metodi\assets\mod5_biiettiva.png)
 </figure>
 
 ??? note "Note aggiuntive"
@@ -60,7 +60,7 @@ title: Modulo 5
     Un insieme è detto infinito se è in corrispondenza biunivoca con una sua parte propria (*con un suo sottoinsieme proprio*).
 
 <figure markdown="1">
-![image](assets\mod5_finito.png)
+![image](\metodi\assets\mod5_finito.png)
 </figure>
 
 In questo primo esempio:
@@ -70,7 +70,7 @@ In questo primo esempio:
 - Questa Relazione non è una funzione non è biiettiva (*non è nemmeno una funzione*) quindi possiamo definire $A$ come insieme finito.
 
 <figure markdown="1">
-![image](assets\mod5_infinito.png)
+![image](\metodi\assets\mod5_infinito.png)
 </figure>
 
 Nel secondo esempio:
@@ -105,7 +105,7 @@ Nel secondo esempio:
 
 ??? example "Esempio"
     <figure markdown="1">
-    ![image](assets\mod5_identita.png)
+    ![image](\metodi\assets\mod5_identita.png)
     </figure>
 
     Nell'esempio raffigurato:
