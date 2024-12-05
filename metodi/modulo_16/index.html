@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sillogismo" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -608,6 +613,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modulo 16
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -617,6 +633,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sillogismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sillogismo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelli-nella-logica-predicativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelli nella Logica Predicativa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quantificatori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantificatori
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-predicativa-sintassi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logica Predicativa - Sintassi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formule-nella-logica-predicativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formule nella Logica Predicativa
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -648,6 +726,59 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sillogismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sillogismo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelli-nella-logica-predicativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelli nella Logica Predicativa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quantificatori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantificatori
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-predicativa-sintassi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logica Predicativa - Sintassi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formule-nella-logica-predicativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formule nella Logica Predicativa
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -663,7 +794,220 @@
 
   <h1>Modulo 16</h1>
 
-
+<h2 id="sillogismo">Sillogismo<a class="headerlink" href="#sillogismo" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Usiamo le seguenti tre implicazioni come base di partenza:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        P = \text{ tutti gli uomini sono mortali} \\
+        Q = \text{ Socrate è un uomo} \\
+        R = \text{ dunque, Socrate è mortale} 
+    \end{array}
+\]</div>
+<ul>
+<li>Dobbiamo dimostrare perchè <span class="arithmatex">\(P \mathop{\wedge} Q \rightarrow R\)</span> è vera.</li>
+<li>Possiamo riscrivere le proposizioni come:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        U(x) = x \text{ è un uomo} \\
+        M(x) = x \text{ è mortale} \\
+        S = \text{ Socrate} \\
+        \\
+        P = \forall x. U(x) \rightarrow M(x) \\
+        Q = U(S) \\
+        R = M(S)
+    \end{array}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(P\)</span> si legge come "per ogni <span class="arithmatex">\(x\)</span>, se <span class="arithmatex">\(x\)</span> è un uomo (<span class="arithmatex">\(U(x)\)</span>) allora è mortale (cioè vale <span class="arithmatex">\(M(x)\)</span>)".</li>
+<li>Nel mondo della Logica possiamo continuare la dimostrazione con il Modus Ponens:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \text{Formula Iniziale: } \\
+        \forall x. U(x) \rightarrow M(x) \\
+        \\
+        \text{visto che la premessa vale per ogni } x \text{, allora varrà anche per } S: \\
+        \frac{U(S) \quad U(S) \rightarrow M(S)}{M(S)} 
+    \end{array}
+\]</div>
+<h2 id="modelli-nella-logica-predicativa">Modelli nella Logica Predicativa<a class="headerlink" href="#modelli-nella-logica-predicativa" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nella Logica Predicativa, è presente, come nella Logica Proposizionale l'insieme dei modelli, ma quest'ultimi vengono rappresentati in maniera differente:<ul>
+<li><span class="arithmatex">\(U\)</span> rappresenta l'universo degli oggetti.</li>
+<li><span class="arithmatex">\(P,Q,R\)</span> rappresentano dei sottoinsiemi che applicano un predicato.</li>
+</ul>
+</li>
+<li>Esempio:<ul>
+<li><span class="arithmatex">\(U =\)</span> Universo degli Animali</li>
+<li><span class="arithmatex">\(Q_m(x) = x\)</span> è un quadrupede</li>
+<li><span class="arithmatex">\(R_m(x) = x\)</span> è un rettile</li>
+</ul>
+</li>
+<li>Prendendo in analisi la frase:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \forall x. Q(x) \rightarrow R(x)
+    \end{array}
+\]</div>
+<ul>
+<li>Nel nostro esempio la possiamo leggere come:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \text{tutti i quadrupedi sono rettili}
+    \end{array}
+\]</div>
+<ul>
+<li>Ovviamente quest'affermazione è falsa, perciò:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \not\models_m \forall x. Q(x) \rightarrow R(x) \\
+        \text{il modello } m \text{ non soddisfa questa formula}
+    \end{array}
+\]</div>
+<hr />
+<ul>
+<li>Cambiamo Universo e Modello:<ul>
+<li><span class="arithmatex">\(V =\)</span> essere animati</li>
+<li><span class="arithmatex">\(Q_n(x) = x\)</span> è un uomo</li>
+<li><span class="arithmatex">\(R_n(x) = x\)</span> è mortale</li>
+</ul>
+</li>
+<li>Prendendo in analisi la frase:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \forall x. Q(x) \rightarrow R(x)
+    \end{array}
+\]</div>
+<ul>
+<li>Nel nostro esempio si legge:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \text{tutti gli uomini sono mortali}
+    \end{array}
+\]</div>
+<ul>
+<li>L'affermazione è vera, perciò:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \models_n \forall x. Q(x) \rightarrow R(x) \\
+        \text{il modello } n \text{ soddisfa questa formula}
+    \end{array}
+\]</div>
+<h2 id="quantificatori">Quantificatori<a class="headerlink" href="#quantificatori" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Il simbolo <span class="arithmatex">\(\forall\)</span> (<em>per ogni</em>) si chiama Quantificatore Universale.</li>
+<li>Il simbolo <span class="arithmatex">\(\exists\)</span> (<em>esiste</em>) si chiama Quantificatore Esistenziale.</li>
+<li>Tornando all'esempio del modello <span class="arithmatex">\(m\)</span> con Universo <span class="arithmatex">\(U\)</span>, aggiungiamo una proposizione:<ul>
+<li><span class="arithmatex">\(P_m(x) = x\)</span> è squamato</li>
+</ul>
+</li>
+<li>Prendendo in analisi la frase:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \exists x. P(x) \mathop{\wedge} Q(x) \\
+        \text{"esiste un quadrupede squamato"}
+    \end{array}
+\]</div>
+<ul>
+<li>Sicuramente esiste un elemento che è sia un quadrupede che squamato (<em>il Varano</em>) quindi possiamo concludere che:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \models_m \exists x. P(x) \mathop{\wedge} Q(x) \\
+        \text{il modello } m \text{ soddisfa questa formula}
+    \end{array}
+\]</div>
+<hr />
+<ul>
+<li>Torniamo all'esempio con il modello <span class="arithmatex">\(n\)</span> nell'universo <span class="arithmatex">\(V\)</span>.</li>
+<li>Aggiungiamo una proposizione:<ul>
+<li><span class="arithmatex">\(P_n(x) = x\)</span> ha almeno 100 arti</li>
+</ul>
+</li>
+<li>Prendendo in analisi la frase:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \exists x. P(x) \mathop{\wedge} Q(x) \\
+        \text{"esiste almeno un uomo con 100 arti"}
+    \end{array}
+\]</div>
+<ul>
+<li>L'affermazione è falsa, quindi questra frase non è soddisfatta dal modello <span class="arithmatex">\(n\)</span>:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \not\models_n \exists x. P(x) \mathop{\wedge} Q(x) \\
+        \text{il modello } n \text{ non soddisfa questa formula}
+    \end{array}
+\]</div>
+<h2 id="logica-predicativa-sintassi">Logica Predicativa - Sintassi<a class="headerlink" href="#logica-predicativa-sintassi" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Possiamo definire la sintassi della Logica Predicativa attraverso i termini (<em>che sono oggetti che denotano elementi dell'universo</em>) e le formule (<em>che corrispondo alle proposizioni nel mondo della Logica Proposizionale</em>).</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \text{termini } t_1, t_2, \dots ::= x | y | z | \dots | a | b | c | \dots | f(t_1,t_2,\dots,t_n)
+    \end{array}
+\]</div>
+<ul>
+<li>Dove:<ul>
+<li><span class="arithmatex">\(x | y | z | \dots\)</span> fanno parte dell'insieme dei simboli di Variabile.</li>
+<li><span class="arithmatex">\(a | b | c | \dots\)</span> fanno parte dell'insieme dei simboli di Costante (<em>es. <span class="arithmatex">\(S =\)</span> Socrate</em>).</li>
+<li><span class="arithmatex">\(f | g | h | \dots\)</span> fanno parte dell'insieme dei simboli di Funzione.</li>
+</ul>
+</li>
+<li>A ciascun simbolo <span class="arithmatex">\(f\)</span> nella Logica Predicativa, si suppone che venga accompagnato da un'informazione (<em>un interno positivo</em> <span class="arithmatex">\(n\)</span>) che chiamiamo <strong>arietà</strong> di <span class="arithmatex">\(f\)</span>, che rappresenta il numero di argomento della funzione <span class="arithmatex">\(f\)</span>.</li>
+</ul>
+<details class="example">
+<summary>Esempio</summary>
+<ul>
+<li>La somma <span class="arithmatex">\(+\)</span> è una funzione che ha bisogno di due argomento, quindi la sua arietà è <span class="arithmatex">\(2\)</span> (<em>funzione binaria</em>).</li>
+<li>Il fattoriale è una funzione che ha bisogno di un solo argomento, quindi la sua arietà è <span class="arithmatex">\(1\)</span> (<em>funzione unaria</em>).</li>
+<li><em>If-Then-Else</em> è una funzione ternaria perchè ha bisogno di tre argomenti, perciò la sua arietà è <span class="arithmatex">\(3\)</span>.</li>
+</ul>
+</details>
+<ul>
+<li>Un Termine è un elemento dell'insieme delle Variabili oppure un elemento dell'insieme delle Costanti.</li>
+<li>Se io ho <span class="arithmatex">\(n\)</span> termini (<span class="arithmatex">\(t_1,t_2,\dots,t_n\)</span>) ed <span class="arithmatex">\(f\)</span> è una funzione di arietà <span class="arithmatex">\(n\)</span> (quindi può prendere <span class="arithmatex">\(n\)</span> argomenti), allora <span class="arithmatex">\(f(t_1,t_2,\dots,t_n\)</span>) è anch'esso un termine.</li>
+<li>Importante: nient'altro è un termine!</li>
+</ul>
+<h2 id="formule-nella-logica-predicativa">Formule nella Logica Predicativa<a class="headerlink" href="#formule-nella-logica-predicativa" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Come anticipato, nella Logica Predicativa oltre ai termini sono presenti anche le formule.</li>
+<li>Definizione Formale: a ciascun simbolo predicativo <span class="arithmatex">\(P\)</span> è associato un intero positivo <span class="arithmatex">\(n\)</span>, chiamato arietà di <span class="arithmatex">\(p\)</span>, che ne rappresenta il numero di argomenti.<ul>
+<li><span class="arithmatex">\(P\)</span> è un elemento che fa parte dell'insieme dei simboli predicativi (oltre a <span class="arithmatex">\(Q,R,\dots\)</span>).</li>
+</ul>
+</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \text{formule } A, B \dots ::= P(t_1,t_2,\dots,t_n)
+    \end{array}
+\]</div>
+<ul>
+<li>Quindi una formula può essere l'applicazione di un simbolo predicativo ad una sequenza di termini.</li>
+<li>Cos'altro è una formula?<ul>
+<li><em>falso</em></li>
+<li><span class="arithmatex">\(A \mathop{\wedge} B\)</span></li>
+<li><span class="arithmatex">\(A \mathop{\vee} B\)</span></li>
+<li><span class="arithmatex">\(A \rightarrow B\)</span></li>
+<li><span class="arithmatex">\(\neg A\)</span></li>
+<li><span class="arithmatex">\(\forall x. A\)</span></li>
+<li><span class="arithmatex">\(\exists x. A\)</span></li>
+</ul>
+</li>
+</ul>
 
 
 
