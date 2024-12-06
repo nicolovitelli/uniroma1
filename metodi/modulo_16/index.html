@@ -710,6 +710,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#istanza-di-una-variabile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Istanza di una Variabile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formule-per-i-tableu-predicativi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formule per i Tableu Predicativi
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -808,6 +826,24 @@
   <a href="#ambiente" class="md-nav__link">
     <span class="md-ellipsis">
       Ambiente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istanza-di-una-variabile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Istanza di una Variabile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formule-per-i-tableu-predicativi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formule per i Tableu Predicativi
     </span>
   </a>
   
@@ -1316,16 +1352,181 @@
     \begin{array}{c}
         1) [[\text{falso}]] = F \\
         2) [[A \mathop{\vee} B]]_\rho = [[A]]_\rho \mathop{\vee} [[B]]_\rho \\
-        3) 
     \end{array}
 \]</div>
 <ul>
-<li>Nella Terza Interpretazione Semantica, il risultato delle due interpretazioni (<span class="arithmatex">\([[A]]_\rho, [[B]]_\rho\)</span>) sarà <span class="arithmatex">\(T\)</span> o <span class="arithmatex">\(F\)</span>, ed infine si otterrà il risultato finale attraverso le Tavole della Verità.</li>
-<li>Inoltre, sempre nella Terza Interpretazione Semantica, il primo simbolo <span class="arithmatex">\(\mathop{\vee}\)</span> rappresenta un oggetto sintattico, mentre il secondo <span class="arithmatex">\(\mathop{\vee}\)</span> rappresenta un oggetto semantico, ovvero un operatore che lavora similmente ad altri operatori (<span class="arithmatex">\(+,-\)</span>).<ul>
-<li>$    }</li>
+<li>Nella Seconda Interpretazione Semantica, il risultato delle due interpretazioni (<span class="arithmatex">\([[A]]_\rho, [[B]]_\rho\)</span>) sarà <span class="arithmatex">\(T\)</span> o <span class="arithmatex">\(F\)</span>, ed infine si otterrà il risultato finale attraverso le Tavole della Verità.</li>
+<li>Inoltre, sempre nella Seconda Interpretazione Semantica, il primo simbolo <span class="arithmatex">\(\mathop{\vee}\)</span> rappresenta un oggetto sintattico, mentre il secondo <span class="arithmatex">\(\mathop{\vee}\)</span> rappresenta un oggetto semantico, ovvero un operatore che lavora similmente ad altri operatori (<span class="arithmatex">\(+,-\)</span>).</li>
 </ul>
+</details>
+<details class="example">
+<summary>Esempio ― tilizzo del NOT nella Logica Predicativa</summary>
+<ul>
+<li>Prendiamo come esempio queste proposizioni e la relativa Formula:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        L(x) = \text{ x è un leone} \\
+        C(x) = \text{ x beve il caffè} \\
+        F(x) = \text{ x è feroce} \\
+        \\
+        \exists x. L(X) \mathop{\wedge} \neg C(X) \\
+        \text{esiste un leone che non beve il caffè}
+    \end{array}
+\]</div>
+<ul>
+<li>Sostituiamo <span class="arithmatex">\(x\)</span> con <span class="arithmatex">\(a\)</span>, deducendo quindi che <span class="arithmatex">\(a\)</span> è un particolare leone:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        L(a) \mathop{\wedge} \neg C(a)
+    \end{array}
+\]</div>
+<ul>
+<li>La seconda ipotesi che abbiamo a disposizione è:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \forall x. L(x) \rightarrow F(x) \\
+        \text{se } x \text{ è un leone, allora è feroce}
+    \end{array}
+\]</div>
+<ul>
+<li>Sicuramente varrà anche per quel particolare leone <span class="arithmatex">\(a\)</span>:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        L(a) \rightarrow F(a)
+    \end{array}
+\]</div>
+<ul>
+<li>A questo punto, usiamo il Modus Ponens per derivare che <span class="arithmatex">\(a\)</span> è feroce:</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \frac{L(a) \quad L(a) \rightarrow F(a)}{F(a)}
+    \end{array}
+\]</div>
+</details>
+<h2 id="istanza-di-una-variabile">Istanza di una Variabile<a class="headerlink" href="#istanza-di-una-variabile" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Istanza di una Variabile</p>
+<ul>
+<li>Data una qualunque formula <span class="arithmatex">\(A\)</span>, denotiamo con <span class="arithmatex">\([b/x]A\)</span> la formula ottenuta sostituendo <span class="arithmatex">\(b\)</span> ad ogni occorrenza libera di <span class="arithmatex">\(x\)</span> in <span class="arithmatex">\(A\)</span>.</li>
+</ul>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        \frac{\forall x. A}{[a/x]A} \\
+        \frac{\exists x. A}{[b/x]A}
+    \end{array}
+\]</div>
+</div>
+<details class="example">
+<summary>Esempio ― Perchè è necessaria questa notazione</summary>
+<ul>
+<li>
+<ul>
+<li><span class="arithmatex">\(Q_n(x) = x\)</span> è un uomo</li>
+<li><span class="arithmatex">\(R_n(x) = x\)</span> è mortale</li>
+<li><span class="arithmatex">\(P_n(x) = x\)</span> ha 100 arti</li>
+</ul>
+<p>Usiamo l'esempio del modello <span class="arithmatex">\(n\)</span> con le seguenti proposizioni:</p>
+<div class="arithmatex">\[\begin{array}{c}
+    \frac{\exists x. P(x)}{P(a)} \\
+    \frac{\exists x. Q(x)}{Q(a)} \\
+    \\
+    P(a) \mathop{\wedge} Q(a)
+\end{array}\]</div>
 </li>
 </ul>
+<p>$$</p>
+<ul>
+<li>Ovviamente <span class="arithmatex">\(P(a) \mathop{\wedge} Q(a)\)</span> è falso, perchè sappiamo che non esiste un uomo con 100 arti.</li>
+<li>Dobbiamo quindi differenziare le due istanze in quanto non potranno avere entrambe <span class="arithmatex">\(a\)</span>.</li>
+</ul>
+</details>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        [b\x](P(x) \mathop{\wedge} R(x,y)) = P(b) \mathop{\wedge} R(b,y) \\
+        [b\x](P(z) \mathop{\wedge} R(z,y)) = P(z) \mathop{\wedge} R(z,y) \\
+        [b\x](P(x) \mathop{\wedge} \forall y. R(x,y)) = P(b) \mathop{\wedge} \forall y. R(b,y) \\
+        [b\x](P(x) \mathop{\wedge} \forall x. R(x,y)) = P(b) \mathop{\wedge} \forall x. R(x,y)
+    \end{array}
+\]</div>
+<ul>
+<li>Nell'ultimo esempio, <span class="arithmatex">\(x\)</span> rimane inalterato nella seconda parte perhè è legato ad un quantificatore.</li>
+</ul>
+</details>
+<h2 id="formule-per-i-tableu-predicativi">Formule per i Tableu Predicativi<a class="headerlink" href="#formule-per-i-tableu-predicativi" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Formule per i Tableu Predicativi</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \frac{\forall x. A}{[a/x] A} \\
+    \frac{\neg \exists x. A}{[a/x] \neg A} \\
+    \\
+    \frac{\exists x. A}{[b/x] A} \\
+    \frac{\neg \forall x. A}{[b/x] \neg A}
+\end{array}
+\]</div>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+\begin{array}{c}
+    (\forall x. P(x)) \rightarrow (\exists x. P(x))
+\end{array}
+\]</div>
+<ul>
+<li>Sappiamo che questa è una formula valida: proviamo a derivarlo con i Tableu Predicativi:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \neg((\forall x. P(x)) \rightarrow (\exists x. P(x))) \\
+                            | \\
+    \forall x. P(x), \neg \exists x. P(x) \\
+                            | \\
+    P(a), \neg \exists x. P(x) \\
+                            | \\
+    P(a), \neg P(a) \\
+    \text{Tableu chiuso}
+\end{array}
+\]</div>
+<ul>
+<li>Tra il secondo e terzo passaggio, abbiamo applicato la regola del <span class="arithmatex">\(\forall\)</span> ed istanziamo un <span class="arithmatex">\(x\)</span> per ottenere <span class="arithmatex">\(P(a)\)</span>.</li>
+<li>Tra il terzo e quarto passaggio, applichiamo la regola del <span class="arithmatex">\(\neg \exists x. A\)</span> ed istanziamo <span class="arithmatex">\(x\)</span>.</li>
+</ul>
+<hr />
+<div class="arithmatex">\[
+\begin{array}{c}
+    (\exists x. \neg P(x)) \mathop{\vee} (\forall x. P(x)) \\
+    \text{o esiste un } x \text{ per la quale non vale } P(x) \text{, oppure esiste un } x \text{ per cui vale.} \\
+                            | \\
+    \neg ((\exists x. \neg P(x)) \mathop{\vee} (\forall x. P(x))) \\
+                            | \\
+    \neg \neg P(a), \neg \forall x. P(x) \\
+                            | \\
+    \neg \neg P(a), \neg P(b)
+\end{array}
+\]</div>
+<ul>
+<li>Il Tableu non viene chiuso perchè abbiamo istanziato la prima parte della formula piuttosto che la seconda.</li>
+<li>Modificando il procedimento:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    (\exists x. \neg P(x)) \mathop{\vee} (\forall x. P(x)) \\
+                            | \\
+    \neg ((\exists x. \neg P(x)) \mathop{\vee} (\forall x. P(x))) \\
+                            | \\
+    \neg \exists x. \neg P(x), \neg P(a) \\
+                            | \\
+    \neg \neg P(a), \neg P(a) \\
+    \text{Tableu chiuso}
+\end{array}
+\]</div>
 </details>
 
 
