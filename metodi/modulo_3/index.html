@@ -446,9 +446,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#relazioni-transitive" class="md-nav__link">
+  <a href="#relazioni-transitive-antitransitive" class="md-nav__link">
     <span class="md-ellipsis">
-      Relazioni Transitive
+      Relazioni Transitive &amp; Antitransitive
     </span>
   </a>
   
@@ -458,24 +458,6 @@
   <a href="#chiusura" class="md-nav__link">
     <span class="md-ellipsis">
       Chiusura
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dimostrazione-dellunicita-della-chiusura" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dimostrazione dell'unicità della Chiusura
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preservazione-della-transitivita" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preservazione della Transitività
     </span>
   </a>
   
@@ -810,9 +792,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#relazioni-transitive" class="md-nav__link">
+  <a href="#relazioni-transitive-antitransitive" class="md-nav__link">
     <span class="md-ellipsis">
-      Relazioni Transitive
+      Relazioni Transitive &amp; Antitransitive
     </span>
   </a>
   
@@ -822,24 +804,6 @@
   <a href="#chiusura" class="md-nav__link">
     <span class="md-ellipsis">
       Chiusura
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dimostrazione-dellunicita-della-chiusura" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dimostrazione dell'unicità della Chiusura
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preservazione-della-transitivita" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preservazione della Transitività
     </span>
   </a>
   
@@ -912,11 +876,11 @@ $$</p>
 \end{array}
 \]</div>
 <ul>
-<li><strong>Antiriflessiva:</strong> nessun numero è minore di se stesso.</li>
+<li><strong>Antiriflessiva:</strong> nessun numero reale è minore di se stesso.</li>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_2 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x - y \text{ è pari}\}
+    \mathcal{R}_2 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \text{ è pari}\}
 \end{array}
 \]</div>
 <ul>
@@ -924,7 +888,7 @@ $$</p>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_3 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \neq y\}
+    \mathcal{R}_3 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \neq x\}
 \end{array}
 \]</div>
 <ul>
@@ -932,19 +896,19 @@ $$</p>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_4 = \{(x,y) \in \mathbb{N} \times \mathbb{N} : x + y = 5\}
+    \mathcal{R}_4 = \{(x,x) \in \mathbb{N} \times \mathbb{N} : x + x = 6\}
 \end{array}
 \]</div>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x + y = 5\)</span> è vero solo quando <span class="arithmatex">\(x\)</span> e <span class="arithmatex">\(y\)</span> sono uguali a <span class="arithmatex">\(2.5\)</span>, in tutti gli altri casi è falso.</li>
+<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x + x = 6\)</span> è vero solo quando <span class="arithmatex">\(x\)</span> e <span class="arithmatex">\(x\)</span> sono uguali a <span class="arithmatex">\(3\)</span>, in tutti gli altri casi è falso.</li>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_5 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \cdot x = 0\}
+    \mathcal{R}_5 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x = 0\}
 \end{array}
 \]</div>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x \cdot y = 0\)</span> è vero solo quando  <span class="arithmatex">\((x,y) = 0\)</span>, in tutti gli altri casi è falso.</li>
+<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x \cdot x = 0\)</span> è vero solo quando  <span class="arithmatex">\((x,x) = 0\)</span>, in tutti gli altri casi è falso.</li>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
@@ -952,11 +916,11 @@ $$</p>
 \end{array}
 \]</div>
 <ul>
-<li><strong>sia Riflessiva che Antiriflessiva:</strong> l'unico caso in cui una Relazione è sia Riflessiva che Antiriflessiva.</li>
+<li><strong>sia Riflessiva che Antiriflessiva:</strong> Riflessiva perchè non ci sono coppie che violano la Riflessività (<span class="arithmatex">\(\forall (x,x) \in \mathbb{N} \times \mathbb{N}, x \mathcal{R} x\)</span>) e contemporaneamente non viola nemmeno l'Antiriflessività, perchè non ci sono coppie da confrontare.</li>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_7 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x - y \in \mathbb{Z}\}
+    \mathcal{R}_7 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \in \mathbb{Z}\}
 \end{array}
 \]</div>
 <ul>
@@ -964,15 +928,15 @@ $$</p>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_8 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x^2 + y^2 = 0\}
+    \mathcal{R}_8 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x^2 + x^2 = 0\}
 \end{array}
 \]</div>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x^2 + y^2 = 0\)</span> è vero solo quando <span class="arithmatex">\((x,y) = 0\)</span>, in tutti gli altri casi è falso.</li>
+<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x^2 + x^2 = 0\)</span> è vero solo quando <span class="arithmatex">\((x,x) = 0\)</span>, in tutti gli altri casi è falso.</li>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_9 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \ge y\}
+    \mathcal{R}_9 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \ge x\}
 \end{array}
 \]</div>
 <ul>
@@ -980,11 +944,11 @@ $$</p>
 </ul>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}_{10} = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \cdot y &gt; 0\}
+    \mathcal{R}_{10} = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x &gt; 0\}
 \end{array}
 \]</div>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x \cdot y &gt; 0\)</span> è falso solo quando <span class="arithmatex">\(x\)</span> e <span class="arithmatex">\(y\)</span> valgono <span class="arithmatex">\(0\)</span>, in qualsiasi altro caso è vero.</li>
+<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x \cdot x &gt; 0\)</span> è falso solo quando <span class="arithmatex">\(x\)</span> e <span class="arithmatex">\(x\)</span> valgono <span class="arithmatex">\(0\)</span>, in qualsiasi altro caso è vero.</li>
 </ul>
 </details>
 <h2 id="relazioni-simmetriche-e-antisimmetriche">Relazioni Simmetriche e Antisimmetriche<a class="headerlink" href="#relazioni-simmetriche-e-antisimmetriche" title="Permanent link">&para;</a></h2>
@@ -1079,10 +1043,14 @@ $$</p>
 <li><strong>Antisimmetrica:</strong> non ci sono coppie <span class="arithmatex">\((a,b) \in \mathcal{R}\)</span> e <span class="arithmatex">\((b,a) \in \mathcal{R}\)</span>.</li>
 </ul>
 </details>
-<h2 id="relazioni-transitive">Relazioni Transitive<a class="headerlink" href="#relazioni-transitive" title="Permanent link">&para;</a></h2>
+<h2 id="relazioni-transitive-antitransitive">Relazioni Transitive &amp; Antitransitive<a class="headerlink" href="#relazioni-transitive-antitransitive" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Transitiva</p>
 <p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è transitiva se per ogni <span class="arithmatex">\(a,b \text{ e } c \in A\)</span>, se <span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} c\)</span>, allora <span class="arithmatex">\(a \mathcal{R} c\)</span>.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Relazione Transitiva</p>
+<p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è transitiva se per ogni <span class="arithmatex">\(a,b \text{ e } c \in A\)</span>, se <span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} c\)</span>, allora <span class="arithmatex">\(a \cancel{\mathcal{R}} c\)</span>.</p>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -1110,19 +1078,14 @@ $$</p>
 <figure>
 <p><img alt="image" src="\metodi\assets\mod3_chiusura.png" /></p>
 </figure>
-<p>Nell'esempio raffigurato:</p>
-<ul>
-<li>tutti gli elementi di <span class="arithmatex">\(B\)</span> godono della proprietà <span class="arithmatex">\(\mathcal{P}\)</span>, quindi <span class="arithmatex">\(\mathcal{P}(B)\)</span></li>
-<li>l'insieme <span class="arithmatex">\(A\)</span> è un sottoinsieme di <span class="arithmatex">\(B\)</span></li>
-<li>possiamo affermare che <span class="arithmatex">\(B \subseteq C\)</span> perchè quest'ultimo gode della proprietà <span class="arithmatex">\(\mathcal{P}\)</span> ed è superinsieme di <span class="arithmatex">\(A\)</span>. </li>
-</ul>
 <details class="note">
 <summary>Note aggiuntive</summary>
 <ul>
 <li>La Chiusura di un insieme rispetto ad una proprietà, se esiste, è unica.</li>
 </ul>
 </details>
-<h2 id="dimostrazione-dellunicita-della-chiusura">Dimostrazione dell'unicità della Chiusura<a class="headerlink" href="#dimostrazione-dellunicita-della-chiusura" title="Permanent link">&para;</a></h2>
+<details class="example">
+<summary>Esempio ― Dimostrazione dell'unicità della Chiusura</summary>
 <p>Supponiamo di avere <span class="arithmatex">\(B\)</span> e <span class="arithmatex">\(B^\prime\)</span> che sono entrambe chiusure di <span class="arithmatex">\(A\)</span> rispetto a <span class="arithmatex">\(\mathcal{P}\)</span>.</p>
 <p>Per le tre proprietà della Chiusura, possiamo dire che:</p>
 <ul>
@@ -1137,7 +1100,9 @@ $$</p>
 <li><span class="arithmatex">\(B^\prime\)</span> è un superinsieme di <span class="arithmatex">\(B\)</span>, quindi <span class="arithmatex">\(B \subseteq B^\prime\)</span>.</li>
 </ul>
 <p>Si nota quindi che <span class="arithmatex">\(B^\prime \subseteq B\)</span> e <span class="arithmatex">\(B \subseteq B^\prime\)</span>. Possiamo concludere che <span class="arithmatex">\(B = B^\prime\)</span>.</p>
-<h2 id="preservazione-della-transitivita">Preservazione della Transitività<a class="headerlink" href="#preservazione-della-transitivita" title="Permanent link">&para;</a></h2>
+</details>
+<details class="example">
+<summary>Esempio ― Preservazione della Transitività</summary>
 <p>Nel paragrafo che segue si va a dimostrare che l'operatore insiemistico di Intersezione preserva la Transitività di due Relazioni.</p>
 <p>Supponiamo di avere due relazioni transitive, <span class="arithmatex">\(\mathcal{R}\)</span> e <span class="arithmatex">\(\mathcal{S}\)</span>.</p>
 <ul>
@@ -1164,6 +1129,7 @@ $$</p>
 <li>Secondo la Transitività però, se <span class="arithmatex">\(x\)</span> è più basso di <span class="arithmatex">\(y\)</span> (Giuliana è più basso di Pietro), allora <span class="arithmatex">\(x\)</span> è sicuramente più basso di <span class="arithmatex">\(z\)</span> (Giuliana è più bassa di Valerio).</li>
 </ul>
 <p>Possiamo concludere quindi che l'Unione non preserva la Transitività di una Relazione.</p>
+</details>
 <h2 id="p-maggiorabile">P-Maggiorabile<a class="headerlink" href="#p-maggiorabile" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― P-Maggiorabile</p>
