@@ -344,6 +344,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#esercizi-modulo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi - Modulo 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizi-modulo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi - Modulo 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#esercizi-sulla-cardinalita" class="md-nav__link">
     <span class="md-ellipsis">
       Esercizi sulla Cardinalità
@@ -972,6 +990,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#esercizi-modulo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi - Modulo 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizi-modulo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi - Modulo 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#esercizi-sulla-cardinalita" class="md-nav__link">
     <span class="md-ellipsis">
       Esercizi sulla Cardinalità
@@ -1259,13 +1295,161 @@
 </ol>
 </details>
 <hr />
+<h2 id="esercizi-modulo-2">Esercizi - Modulo 2<a class="headerlink" href="#esercizi-modulo-2" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>Domande</summary>
+<ol>
+<li>
+<p>Definisci formalmente l'operazione di intersezione tra due insiemi e dimostra che l'intersezione di due insiemi è commutativa, cioè <span class="arithmatex">\(A \cap B = B \cap A\)</span>.</p>
+</li>
+<li>
+<p>Definisci l'operazione di unione tra due insiemi e dimostra che l'unione di due insiemi è associativa, cioè <span class="arithmatex">\(A \cup (B \cup C) = (A \cup B) \cup C\)</span>.</p>
+</li>
+<li>
+<p>Definisci la differenza tra due insiemi. Mostra che la differenza tra insiemi non è commutativa, cioè <span class="arithmatex">\(A - B \neq B - A\)</span>, fornendo un controesempio.</p>
+</li>
+<li>
+<p>Definisci il complemento di un insieme rispetto a un universo dato. Dimostra che se <span class="arithmatex">\(A \subseteq U\)</span>, allora <span class="arithmatex">\(A \cup \overline{A} = U\)</span>, dove <span class="arithmatex">\(\overline{A}\)</span> è il complemento di <span class="arithmatex">\(A\)</span> rispetto all'universo <span class="arithmatex">\(U\)</span>.</p>
+</li>
+<li>
+<p>Definisci il concetto di potenza di un insieme e spiega la relazione tra la cardinalità di un insieme e la cardinalità del suo insieme delle parti. Mostra che la cardinalità dell'insieme delle parti di un insieme finito è sempre maggiore della cardinalità dell'insieme stesso.</p>
+</li>
+<li>
+<p>Definisci cosa si intende per coppia ordinata e discuti la differenza tra una coppia ordinata e un insieme. Come si determina l'ordine in una coppia ordinata?</p>
+</li>
+<li>
+<p>Definisci il prodotto cartesiano di due insiemi e spiega la sua relazione con le coppie ordinate. Dimostra che il prodotto cartesiano è non commutativo, cioè <span class="arithmatex">\(A \times B \neq B \times A\)</span>.</p>
+</li>
+<li>
+<p>Definisci l'operazione di intersezione tra tre insiemi e discuti la proprietà distributiva rispetto all'unione, cioè <span class="arithmatex">\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)</span>.</p>
+</li>
+<li>
+<p>Definisci il concetto di sottoinsieme e dimostra che l'intersezione di due insiemi è sempre un sottoinsieme di ciascuno degli insiemi coinvolti, cioè <span class="arithmatex">\(A \cap B \subseteq A\)</span> e <span class="arithmatex">\(A \cap B \subseteq B\)</span>.</p>
+</li>
+<li>
+<p>Definisci l'operazione di prodotto cartesiano tra più di due insiemi. Mostra che il prodotto cartesiano di insiemi è associativo, cioè <span class="arithmatex">\(A \times (B \times C) = (A \times B) \times C\)</span>, e discuti il significato di questa proprietà.</p>
+</li>
+</ol>
+</details>
+<details class="lightbulb">
+<summary>Soluzioni</summary>
+<ol>
+<li>L'intersezione tra i due insiemi si compone con gli elementi appartenenti sia al primo insieme che il secondo. Per esempio, dati due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, l'intersezione si definisce come <span class="arithmatex">\(\forall x, x \in A\)</span> e <span class="arithmatex">\(x \in B\)</span>. Per dimostrare che l'intersezione di due insiemi è commutativa possiamo usare come esempio gli insiemi <span class="arithmatex">\(A = \{1,2,3\}\)</span> e <span class="arithmatex">\(B = \{2,3,4\}\)</span>. L'intersezione <span class="arithmatex">\(A \cap B = \{2,3\}\)</span>, mentre <span class="arithmatex">\(B \cap A = \{2,3\}\)</span>. Il risultato dell'intersezione è la medesima perchè anche scambiando l'ordine degli insiemi, gli elementi in comune sono gli stessi.</li>
+<li>
+<p>L'operazione di unione tra due insiemi si compone con gli elementi appartenenti o al primo insieme oppure al secondo insieme. Per esempio, dati due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, l'unione si definisce come <span class="arithmatex">\(\forall x, x \in A\)</span> o <span class="arithmatex">\(x \in B\)</span>. Per dimostrare che l'operazione di unione è associativa, possiamo usare il seguente esempio:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A \cup (B \cup C) = (A \cup B) \cup C \\
+    A = \{1,2,3\}, B = \{4,5,6\}, C = \{7,8,9\} \\
+    \\
+    A \cup (B \cup C) \\
+    = \{1,2,3\} \cup (\{4,5,6\} \cup \{7,8,9\}) \\
+    = \{1,2,3\} \cup \{4,5,6,7,8,9\} \\
+    = \{1,2,3,4,5,6,7,8,9\} \\
+    \\
+    (A \cup B) \cup C \\
+    = (\{1,2,3\} \cup \{4,5,6\}) \cup \{7,8,9\} \\
+    = \{1,2,3,4,5,6\} \cup \{7,8,9\} \\
+    = \{1,2,3,4,5,6,7,8,9\}
+\end{array}
+\]</div>
+</li>
+<li>
+<p>La differenza tra due insiemi si definisce come gli elementi presenti nel primo insieme ma assenti nel secondo insieme. Per esempio, dati due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, la differenza <span class="arithmatex">\(A - B\)</span> si compone con <span class="arithmatex">\(\forall x \in A, x \not\in B\)</span>. La differenza non è commmutativa perchè il risultato di <span class="arithmatex">\(A - B\)</span> sarà diverso da <span class="arithmatex">\(B - A\)</span>, in quanto nella prima differenza avremo gli elementi di <span class="arithmatex">\(A\)</span> non appartenenti a <span class="arithmatex">\(B\)</span>, mentre nella seconda differenza avremo gli elementi di <span class="arithmatex">\(B\)</span> non appartenent ad <span class="arithmatex">\(A\)</span>.</p>
+</li>
+<li>Il teorema "se <span class="arithmatex">\(A \subseteq U\)</span>, allora <span class="arithmatex">\(A \cup \overline{A} = U\)</span>" è vero. Se assumiamo che l'insieme <span class="arithmatex">\(A\)</span> è un sottoinsieme dell'universo <span class="arithmatex">\(U\)</span>, ovvero tutti gli elementi di <span class="arithmatex">\(A\)</span> appartengono ad <span class="arithmatex">\(U\)</span>, possiamo affermare che l'unione tra <span class="arithmatex">\(A\)</span> ed il suo complemento (<em>ovvero tutti gli elementi di <span class="arithmatex">\(U\)</span> che non appartengono ad <span class="arithmatex">\(A\)</span></em>) è l'universo <span class="arithmatex">\(U\)</span> stesso. Possiamo dimostrarlo con un esempio:</li>
+</ol>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        U = \{1,2,3,4,5\} \\
+        A = \{1,2,3\} \\
+        \overline{A} = \{4,5\} \\
+        A \cup \overline{A} = \{1,2,3,4,5\} = U
+    \end{array}
+\]</div>
+</details>
+<hr />
+<h2 id="esercizi-modulo-1">Esercizi - Modulo 1<a class="headerlink" href="#esercizi-modulo-1" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>Domande</summary>
+<ol>
+<li>
+<p>Dimostra che l'assioma di estensione vale per i seguenti due insiemi:</p>
+<ul>
+<li><span class="arithmatex">\(A = \{x \mid x \in \mathbb{N}, x \text{ è pari} \}\)</span></li>
+<li><span class="arithmatex">\(B = \{x \mid x \in \mathbb{N}, x \text{ è il doppio di un numero intero positivo} \}\)</span></li>
+</ul>
+</li>
+<li>
+<p>Definisci e spiega il concetto di "appartenenza" di un elemento a un insieme. Verifica se <span class="arithmatex">\(4 \in A\)</span> e <span class="arithmatex">\(10 \notin A\)</span>, dove <span class="arithmatex">\(A = \{2, 4, 6, 8\}\)</span>.</p>
+</li>
+<li>
+<p>Esprimi la negazione della proposizione "2 appartiene a <span class="arithmatex">\(A\)</span>" dove <span class="arithmatex">\(A = \{ 1, 3, 5, 7, 9 \}\)</span>. Giustifica la tua risposta.</p>
+</li>
+<li>
+<p>Sia <span class="arithmatex">\(A = \{ x \mid x \in \mathbb{Z}, -3 \leq x \leq 3 \}\)</span> e <span class="arithmatex">\(B = \{ -2, -1, 0, 1, 2 \}\)</span>. Verifica se <span class="arithmatex">\(B \subseteq A\)</span> e spiega se la relazione di sottoinsieme è soddisfatta.</p>
+</li>
+<li>
+<p>Esprimi formalmente la negazione della proposizione "B è sottoinsieme di A", dove <span class="arithmatex">\(A = \{x \mid x \in \mathbb{N}, x \text{ è un multiplo di 3}\}\)</span> e <span class="arithmatex">\(B = \{1, 2, 3, 4, 5\}\)</span>. Giustifica la risposta.</p>
+</li>
+<li>
+<p>Sia <span class="arithmatex">\(P(x): x \text{ è un numero primo}\)</span>. Usa l'assioma di specificazione per definire l'insieme <span class="arithmatex">\(A = \{ x \mid x \in \mathbb{N}, P(x) \}\)</span>. Scrivi esplicitamente l'insieme <span class="arithmatex">\(A\)</span>.</p>
+</li>
+<li>
+<p>Definisci un predicato che rappresenti l'insieme dei numeri divisibili per 3 o per 5. Verifica se <span class="arithmatex">\(15 \in A\)</span> e <span class="arithmatex">\(7 \notin A\)</span>, giustificando le risposte.</p>
+</li>
+<li>
+<p>Sia <span class="arithmatex">\(P(x): x \text{ è un numero pari}\)</span>. Scrivi la negazione del predicato "Per ogni <span class="arithmatex">\(x \in \mathbb{N}\)</span>, <span class="arithmatex">\(x\)</span> è pari". Dimostra che la negazione è corretta.</p>
+</li>
+<li>
+<p>Siano <span class="arithmatex">\(A = \{1, 2, 3\}\)</span> e <span class="arithmatex">\(B = \{ x \mid x \in \mathbb{N}, x \text{ è un numero positivo minore di 4} \}\)</span>. Verifica se <span class="arithmatex">\(A = B\)</span> utilizzando l'assioma di estensione e giustifica la risposta.</p>
+</li>
+<li>
+<p>Considera il predicato <span class="arithmatex">\(Q(x): x \text{ è un numero maggiore di 5}\)</span>. Usa questo predicato per definire l'insieme <span class="arithmatex">\(C = \{ x \mid x \in \mathbb{N}, Q(x) \}\)</span>. Verifica se <span class="arithmatex">\(C \subseteq \mathbb{N}\)</span>.</p>
+</li>
+</ol>
+</details>
+<details class="lightbulb">
+<summary>Soluzioni</summary>
+<ol>
+<li>L'Assioma di Estensione non è valido per gli insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, in quanto <span class="arithmatex">\(A\)</span> include i numeri pari, quindi <span class="arithmatex">\(\{0,2,4,6,8,\dots\}\)</span> mentre <span class="arithmatex">\(B\)</span> è definito come il doppio di un numero intero positivo ovvero <span class="arithmatex">\(\{2,4,6,8,\dots\}\)</span>. <span class="arithmatex">\(0\)</span> sicuramente non è il doppio di nessun numero, quindi <span class="arithmatex">\(0 \not\in B\)</span>, perciò <span class="arithmatex">\(A \neq B\)</span>.</li>
+<li>Si dice che un elemento appartiene ad un insieme (<span class="arithmatex">\(a \in A\)</span>) se l'elemento fa parte dell'insieme stesso. Dato <span class="arithmatex">\(A = \{2,4,6,8\}\)</span>, possiamo affermare che <span class="arithmatex">\(4 \in A\)</span> e <span class="arithmatex">\(10 \not\in A\)</span>.</li>
+<li>La Negazione della Proposizione "<span class="arithmatex">\(2\)</span> appartiene ad <span class="arithmatex">\(A\)</span>" è "<span class="arithmatex">\(2\)</span> non appartiene ad <span class="arithmatex">\(A\)</span>", che si rappresenta con <span class="arithmatex">\(2 \not\in A\)</span>. L'affermazione è corretta perchè <span class="arithmatex">\(A = \{1,3,5,7,9\}\)</span>, ovvero <span class="arithmatex">\(2\)</span> non è un elemento dell'insieme <span class="arithmatex">\(A\)</span>.</li>
+<li>Data la definizione dell'insieme <span class="arithmatex">\(A\)</span>, sappiamo che i suoi elementi sono <span class="arithmatex">\(\{-3,-2,-1,1,0,1,2,3\}\)</span>. La Relazione di Sottoinsieme è soddisfatta perchè ogni elemento di <span class="arithmatex">\(B\)</span> appartiene ad <span class="arithmatex">\(A\)</span>, quindi <span class="arithmatex">\(B \subseteq A\)</span>.</li>
+<li>La Negazione della Proposizione "<span class="arithmatex">\(B\)</span> è sottoinsieme di <span class="arithmatex">\(A\)</span>" si esprime come "<span class="arithmatex">\(B\)</span> non è sottoinsieme di <span class="arithmatex">\(A\)</span>", ovvero <span class="arithmatex">\(B \not\subseteq A\)</span>. L'insieme <span class="arithmatex">\(A\)</span> è composto da tutti i numeri naturali che sono multipli di <span class="arithmatex">\(3\)</span>, mentre l'insieme <span class="arithmatex">\(B\)</span> è composto da <span class="arithmatex">\(\{1,2,3,4,5\}\)</span>. Possiamo affermare che <span class="arithmatex">\(B\)</span> non è un sottoinsieme di <span class="arithmatex">\(A\)</span>, in quanto gli elementi <span class="arithmatex">\(1\)</span> e <span class="arithmatex">\(2\)</span> non sono presenti nell'insieme <span class="arithmatex">\(A\)</span>, ovvero multipli di 3.</li>
+<li>Dato <span class="arithmatex">\(P(x) = x\)</span> è un numero primo, possiamo costruire <span class="arithmatex">\(A\)</span> con tutti i numeri naturali primi, quindi <span class="arithmatex">\(\{2,3,5,7,9,\dots\}\)</span>. L'Assioma di Specificazione applica un predicato su un insieme, il quale nel nostro caso è <span class="arithmatex">\(x =\)</span> è un numero primo, mentre l'insieme è quello dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
+<li>Possiamo definire il predicato come <span class="arithmatex">\(P(x) = x\)</span> è un numero divisibile per <span class="arithmatex">\(3\)</span> o per <span class="arithmatex">\(5\)</span>. Applicando il predicato <span class="arithmatex">\(P\)</span> sull'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span>, possiamo derivarci l'insieme <span class="arithmatex">\(A = \{x \in \mathbb{N}, P(x)\}\)</span>. Infine, sicuramente <span class="arithmatex">\(15\)</span> è un numero divisibile per <span class="arithmatex">\(5\)</span>, quindi <span class="arithmatex">\(15 \in A\)</span>, mentre <span class="arithmatex">\(7\)</span> non è numero divisibile per <span class="arithmatex">\(3\)</span> o per <span class="arithmatex">\(5\)</span>, quindi <span class="arithmatex">\(7 \not\in A\)</span>.</li>
+<li>La Negazione della Proposizione "<span class="arithmatex">\(\forall x \in \mathbb{N}, x\)</span> è pari", è la seguente: "<span class="arithmatex">\(\forall x \in \mathbb{N}, x\)</span> non è pari", la quale è vera, perchè esistono dei numeri nell'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span> che non sono pari.</li>
+<li>L'insieme <span class="arithmatex">\(B\)</span>, ovvero l'insieme di tutti quei numeri naturali positivi minori di <span class="arithmatex">\(4\)</span>, quindi <span class="arithmatex">\(B = \{1,2,3\}\)</span>, rispetta l'Assioma di Estensione, in quanto i due insiemi contengono gli stessi elementi.</li>
+<li>L'insieme <span class="arithmatex">\(C\)</span> sarà composto da tutti quei numeri naturali che verificano la proprietà <span class="arithmatex">\(Q(x) = x\)</span> è un numero maggiore di <span class="arithmatex">\(5\)</span>. Sappiamo quindi che <span class="arithmatex">\(C = \{6,7,8,9,\dots\}\)</span>. L'insieme <span class="arithmatex">\(C\)</span> è un sottoinsieme di <span class="arithmatex">\(\mathbb{N}\)</span> perchè ogni elemento di <span class="arithmatex">\(C\)</span> appartiene all'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span>. </li>
+</ol>
+</details>
+<hr />
 <h2 id="esercizi-sulla-cardinalita">Esercizi sulla Cardinalità<a class="headerlink" href="#esercizi-sulla-cardinalita" title="Permanent link">&para;</a></h2>
 <details class="question">
 <summary>Domande</summary>
+<ol>
+<li>Dimostra che l'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{A}\)</span> ha cardinalità infinita numerabile, utilizzando il concetto di corrispondenza biunivoca.</li>
+<li>Successivamente, dimostra che l'insieme dei numeri razionali <span class="arithmatex">\(\mathbb{Q}\)</span> ha la stessa cardinalità di <span class="arithmatex">\(\mathbb{A}\)</span>.</li>
+</ol>
+</details>
+<details class="lightbulb">
+<summary>Soluzioni</summary>
+<ol>
+<li>
+<p><a href="/metodi/modulo_5/#infinito-e-finito">Un Insieme è detto infinito se è in corrispondenza biunivoca con una suo sottoinsieme</a>.</p>
 <ul>
-<li>Dimostra che l'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span> ha cardinalità infinita numerabile, utilizzando il concetto di corrispondenza biunivoca. Successivamente, dimostra che l'insieme dei numeri razionali <span class="arithmatex">\(\mathbb{Q}\)</span> ha la stessa cardinalità di <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
-<li>Indica e giustifica ogni passaggio.</li>
+<li>Consideriamo <span class="arithmatex">\(A\)</span> come l'insieme dei numeri naturali e <span class="arithmatex">\(B\)</span> il sottoinsieme dei numeri pari.</li>
+<li>Possiamo facilmente verificare che c'è una biiezione tra i due insiemi, quindi l'insieme <span class="arithmatex">\(A\)</span> è infinito.</li>
 </ul>
+<p><figure markdown="1">
+<img alt="image" src="\metodi\assets\mod5_infinito.png" />
+</figure></p>
+</li>
+<li>
+<p>da trovare risposta</p>
+</li>
+</ol>
 </details>
 <hr />
 <h2 id="esercizi-13122024">Esercizi - 13/12/2024<a class="headerlink" href="#esercizi-13122024" title="Permanent link">&para;</a></h2>
