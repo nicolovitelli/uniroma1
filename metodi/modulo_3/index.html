@@ -464,6 +464,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#chiusura-transitiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chiusura Transitiva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#p-maggiorabile" class="md-nav__link">
     <span class="md-ellipsis">
       P-Maggiorabile
@@ -810,6 +819,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#chiusura-transitiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chiusura Transitiva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#p-maggiorabile" class="md-nav__link">
     <span class="md-ellipsis">
       P-Maggiorabile
@@ -847,8 +865,21 @@ $$</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Composizione di due Relazioni</p>
-<p><span class="arithmatex">\(\mathcal{R} \subseteq A \times B\)</span> e <span class="arithmatex">\(\mathcal{S} \subseteq B \times C\)</span> è la relazione <span class="arithmatex">\(\mathcal{R} \circ \mathcal{S}\)</span> = <span class="arithmatex">\(\{(a,c) \in A \times C : \exists \text{ } b \in B \text{ tale che } a \mathcal{R} b \text{ e } b \mathcal{R} c\}\)</span>.</p>
+<p>La Composizione di due Relazioni <span class="arithmatex">\(\mathcal{R}\)</span> ed <span class="arithmatex">\(\mathcal{S}\)</span> tra gli insiemi <span class="arithmatex">\(A,B\)</span> e <span class="arithmatex">\(C\)</span> è definita come una Relazione <span class="arithmatex">\(\mathcal{R} \circ \mathcal{S} \subseteq A \times C\)</span>, tale che per ogni coppia <span class="arithmatex">\((a,c) \in \mathcal{R} \circ \mathcal{S}\)</span>, esiste un elemento <span class="arithmatex">\(b \in B\)</span> tale che <span class="arithmatex">\(a \mathcal{R} b, b \mathcal{S} c\)</span>.</p>
 </div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+    \begin{array}{c}
+        A = \{1,2\} \\
+        B = \{3,4\} \\
+        C = \{5\} \\
+        \mathcal{R} = \{(1,3),(2,4)\} \\
+        \mathcal{S} = \{(3,5)\} \\
+        \mathcal{R} \circ \mathcal{S} = \{(1,5)\}
+    \end{array}
+\]</div>
+</details>
 <h2 id="relazioni-riflessive-e-antiriflessive">Relazioni Riflessive e Antiriflessive<a class="headerlink" href="#relazioni-riflessive-e-antiriflessive" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Riflessiva</p>
@@ -1129,6 +1160,21 @@ $$</p>
 <li>Secondo la Transitività però, se <span class="arithmatex">\(x\)</span> è più basso di <span class="arithmatex">\(y\)</span> (Giuliana è più basso di Pietro), allora <span class="arithmatex">\(x\)</span> è sicuramente più basso di <span class="arithmatex">\(z\)</span> (Giuliana è più bassa di Valerio).</li>
 </ul>
 <p>Possiamo concludere quindi che l'Unione non preserva la Transitività di una Relazione.</p>
+</details>
+<h2 id="chiusura-transitiva">Chiusura Transitiva<a class="headerlink" href="#chiusura-transitiva" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Chiusura Transitiva</p>
+<p>La Chiusura Transitiva di una Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su un insieme <span class="arithmatex">\(A\)</span> è la relazione più piccola che contiene <span class="arithmatex">\(\mathcal{R}\)</span> e che è transitiva.</p>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A = \{1,2,3\} \\
+    \mathcal{R} = \{(1,2),(2,3)\} \\
+    \mathcal{R}^{+} = \{(1,2),(2,3),(1,3)\}
+\end{array}
+\]</div>
 </details>
 <h2 id="p-maggiorabile">P-Maggiorabile<a class="headerlink" href="#p-maggiorabile" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
