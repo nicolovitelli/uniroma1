@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../domande_esame/">
+        <link rel="prev" href="../domande/">
       
       
         <link rel="next" href="../modulo_2/">
@@ -314,11 +314,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../domande_esame/" class="md-nav__link">
+      <a href="../argomenti_esame/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Domande Esame
+    Argomenti Esame
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domande/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domande
   </span>
   
 
@@ -907,10 +928,11 @@
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Assioma di Estensione</p>
 <p>Due insiemi sono uguali se e solo se hanno gli stessi elementi.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Conseguenza dell'Assioma di Estensione</p>
-<p>Se <span class="arithmatex">\(A \subseteq B\)</span> e <span class="arithmatex">\(B \subseteq A\)</span>, allora <span class="arithmatex">\(A = B\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A \subseteq B \mathop{\wedge} B \subseteq A \rightarrow A = B
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -925,37 +947,49 @@
 <h2 id="relazione-di-appartenenza">Relazione di Appartenenza<a class="headerlink" href="#relazione-di-appartenenza" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione di Appartenenza</p>
-<p><span class="arithmatex">\(B \in A\)</span> se e solo se <span class="arithmatex">\(B\)</span> è un elemento di <span class="arithmatex">\(A\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    a \in A \iff a \text{ è un elemento di } A
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
 <div class="arithmatex">\[
 \begin{array}{c}
     A = \{1,2,3\} \\
-    B = 1 \\
-    B \in A
+    a = 1 \\
+    a \in A
 \end{array}
 \]</div>
 </details>
 <h2 id="negazione-di-appartenenza">Negazione di Appartenenza<a class="headerlink" href="#negazione-di-appartenenza" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Negazione di Appartenenza</p>
-<p><span class="arithmatex">\(B \not\in A\)</span> se e solo se <span class="arithmatex">\(B\)</span> non è un elemento di <span class="arithmatex">\(A\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    a \not\in A \iff a \text{ non è un elemento di } A
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
 <div class="arithmatex">\[
 \begin{array}{c}
     A = \{1,2,3\} \\
-    B = 4 \\
-    B \not\in A
+    a = 4 \\
+    a \not\in A
 \end{array}
 \]</div>
 </details>
 <h2 id="relazione-di-sottoinsieme">Relazione di Sottoinsieme<a class="headerlink" href="#relazione-di-sottoinsieme" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione di Sottoinsieme</p>
-<p><span class="arithmatex">\(B \subseteq A\)</span> se e solo se ogni elemento di <span class="arithmatex">\(B\)</span> è un elemento di <span class="arithmatex">\(A\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    B \subseteq A \iff \forall \, b \in B : b \in A
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -987,7 +1021,11 @@ $$</li>
 <h2 id="negazione-di-sottoinsieme">Negazione di Sottoinsieme<a class="headerlink" href="#negazione-di-sottoinsieme" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Negazione di Sottoinsieme</p>
-<p><span class="arithmatex">\(B \not\subseteq A\)</span> se e solo se almeno un elemento di <span class="arithmatex">\(B\)</span> non è un elemento di <span class="arithmatex">\(A\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    B \not\subseteq A \iff \exists \, b \in B : b \not\in A
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -1002,7 +1040,12 @@ $$</li>
 <h2 id="predicato">Predicato<a class="headerlink" href="#predicato" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Predicato</p>
-<p>Si indica con <span class="arithmatex">\(\{x \in A : \mathcal{P}(x)\}\)</span> l'insieme degli elementi di <span class="arithmatex">\(A\)</span> che godono della proprietà <span class="arithmatex">\(\mathcal{P}\)</span>.</p>
+<p>Un Predicato è una proprietà applicata su un elemento di un insieme.
+$$
+\begin{array}{c}
+    {x \in A : \mathcal{P}(x)}
+\end{array}
+$$</p>
 </div>
 <h2 id="assioma-di-specificazione">Assioma di Specificazione<a class="headerlink" href="#assioma-di-specificazione" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
