@@ -878,16 +878,40 @@
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Funzioni</p>
 <p>Una Funzione da un insieme <span class="arithmatex">\(A\)</span> ad un insieme <span class="arithmatex">\(B\)</span> è una Relazione <span class="arithmatex">\(\mathcal{R} \subseteq A \times B\)</span> tale che per ogni elemento <span class="arithmatex">\(a \in A\)</span> esiste uno ed un solo elemento <span class="arithmatex">\(b \in B\)</span> tale che <span class="arithmatex">\(a \mathcal{R} b\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    f: A \rightarrow B
+\end{array}
+\]</div>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Dominio</p>
+<p>Il dominio di una funzione <span class="arithmatex">\(f\)</span> è l'insieme di tutti i valori (elementi) per i quali la funzione è definita. In altre parole, il dominio è l'insieme di partenza, ovvero l'insieme degli input sui quali la funzione opera.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Codominio</p>
+<p>Il codominio di una funzione <span class="arithmatex">\(f\)</span> è l'insieme di tutti i possibili valori che la funzione può assumere come output. È l'insieme in cui devono appartenere i valori di uscita della funzione.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Immagine</p>
+<p>Sia <span class="arithmatex">\(f : A \rightarrow B\)</span> una funzione che mappa ogni elemento di <span class="arithmatex">\(A\)</span> (il dominio) in un elemento di <span class="arithmatex">\(B\)</span> (il codominio). L'immagine di <span class="arithmatex">\(f\)</span>, è l'insieme di tutti i valori che <span class="arithmatex">\(f(x)\)</span> può assumere quando <span class="arithmatex">\(x\)</span> varia in <span class="arithmatex">\(A\)</span>. In altre parole, l'immagine è l'insieme dei valori di uscita (output) effettivamente raggiunti dalla funzione.</p>
 </div>
 <figure>
 <p><img alt="image" src="/uniroma1/assets/metodi/mod5_funzioni.png" /></p>
 </figure>
-<details class="note">
-<summary>Note aggiuntive</summary>
+<details class="example">
+<summary>Esempio</summary>
 <ul>
-<li>Per indicare una Funzione usiamo la notazione <span class="arithmatex">\(f: A \rightarrow B\)</span></li>
-<li><span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> rappresentano rispettivamente il <strong>dominio</strong> e <strong>codominio</strong>.</li>
-<li>Il sottoinsieme di <span class="arithmatex">\(B\)</span> che ha una relazione con <span class="arithmatex">\(A\)</span> si chiama <strong>immagine di <span class="arithmatex">\(f\)</span></strong>.</li>
+<li>Consideriamo la funzione <span class="arithmatex">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> definita come <span class="arithmatex">\(f(x) = x + 2\)</span>.</li>
+<li>La funzione <span class="arithmatex">\(f\)</span> associa ad ogni numero reale <span class="arithmatex">\(x\)</span> il numero <span class="arithmatex">\(x + 2\)</span>:
+$$
+\begin{array}{c}
+    f(x) = x + 2
+\end{array}
+$$</li>
+<li>Il dominio di questa funzione <span class="arithmatex">\(f\)</span> è l'insieme di tutti i numeri reali <span class="arithmatex">\(\mathbb{R}\)</span>, perchè la funzione è definita per ogni valore di <span class="arithmatex">\(x \in \mathbb{R}\)</span>.</li>
+<li>Il codominio di questa funzione è anch'esso <span class="arithmatex">\(\mathbb{R}\)</span>, perchè ogni valore che otteniamo come output dalla funzione è un numero reale. La funzione <span class="arithmatex">\(f(x) = x + 2\)</span> mappa ogni <span class="arithmatex">\(x \in \mathbb{R}\)</span> in un altro numero reale.</li>
+<li>L'immagine di <span class="arithmatex">\(f\)</span> è l'insieme di tutti i valori che <span class="arithmatex">\(f(x)\)</span> può assumere. Poiché la funzione è una traslazione della retta dei numeri reali, l'immagine sarà anch'essa l'insieme di tutti i numeri reali.</li>
 </ul>
 </details>
 <h2 id="funzioni-iniettive">Funzioni Iniettive<a class="headerlink" href="#funzioni-iniettive" title="Permanent link">&para;</a></h2>
@@ -987,7 +1011,11 @@
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Funzione Inversa</p>
 <p>Invertendo l'ordine delle coppie di una funzione non iniettiva o non suriettiva si ottiene una relazione che non è una funzione.</p>
-<p>Una Funzione inversa si indica con <span class="arithmatex">\(f^{-1} : B \rightarrow A\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    f^{-1} : B \rightarrow A
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -1026,7 +1054,11 @@
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Funzione Indentica</p>
 <p>Una Funzione Identica associa ogni elemento di <span class="arithmatex">\(A\)</span> a sé stesso.</p>
-<p>La sua notazione è <span class="arithmatex">\(id_A(a) = a\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    id_A(a) = a
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>

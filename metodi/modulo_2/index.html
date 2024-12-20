@@ -455,9 +455,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#potenza-e-cardinalita" class="md-nav__link">
+  <a href="#potenza" class="md-nav__link">
     <span class="md-ellipsis">
-      Potenza e Cardinalità
+      Potenza
     </span>
   </a>
   
@@ -831,9 +831,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#potenza-e-cardinalita" class="md-nav__link">
+  <a href="#potenza" class="md-nav__link">
     <span class="md-ellipsis">
-      Potenza e Cardinalità
+      Potenza
     </span>
   </a>
   
@@ -941,21 +941,12 @@ $$
 \end{array}
 $$</p>
 </div>
-<details class="note">
-<summary>Note aggiuntive</summary>
-<ul>
-<li>Unendo un qualsiasi insieme ad un insieme vuoto rimarrà sempre quel qualsiasi insieme.
-$$
-\begin{array}{c}
-    A \cup \emptyset = A
-\end{array}
-$$</li>
-</ul>
-</details>
 <details class="math-adm">
 <summary>Proprietà Algebriche</summary>
 <div class="arithmatex">\[
 \begin{array}{c}
+    A \cup \emptyset = A \\
+    \\
     \text{Proprietà della Simmetria} \\
     A \cup B = B \cup A \\
     \\
@@ -1030,12 +1021,11 @@ $$</p>
 <h2 id="complemento">Complemento<a class="headerlink" href="#complemento" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Complemento</p>
-<p>Quando <span class="arithmatex">\(B \subseteq A, A-B\)</span> si chiama complemento di <span class="arithmatex">\(B\)</span> rispetto ad <span class="arithmatex">\(A\)</span>.
-$$
+<div class="arithmatex">\[
 \begin{array}{c}
-    B^\prime = {x \in A : x \not\in B}
+    \overline{A} = \{x \in B : x \not\in A\}
 \end{array}
-$$</p>
+\]</div>
 </div>
 <figure>
 <p><img alt="image" src="/uniroma1/assets/metodi/mod2_complemento.png" /></p>
@@ -1045,8 +1035,8 @@ $$</p>
 <div class="arithmatex">\[
 \begin{array}{c}
     \text{Equazioni di De Morgan} \\
-    (A \cap B)^\prime = A^\prime \cup B^\prime \\
-    (A \cup B)^\prime = A^\prime \cap B^\prime
+    \overline{(A \cap B)}= \overline{A} \cup \overline{B} \\
+    \overline{(A \cup B)} = \overline{A} \cap \overline{B}
 \end{array}
 \]</div>
 </details>
@@ -1056,25 +1046,24 @@ $$</p>
 \begin{array}{c}
     A = \{1,2,3,4\} \\
     B = \{3,4,5,6\} \\
-    B^\prime = \{1,2\}
+    \overline{B} = \{1,2\}
 \end{array}
 \]</div>
 </details>
-<h2 id="potenza-e-cardinalita">Potenza e Cardinalità<a class="headerlink" href="#potenza-e-cardinalita" title="Permanent link">&para;</a></h2>
+<h2 id="potenza">Potenza<a class="headerlink" href="#potenza" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Potenza</p>
 <p>L'insieme delle parti, o insieme potenza, è l'insieme dei sottoinsiemi di <span class="arithmatex">\(A\)</span>.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Cardinalità</p>
-<p>Rappresenta il numero dei sottoinsiemi di un insieme.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \mathcal{P}(A)
+\end{array}
+\]</div>
 </div>
 <details class="note">
 <summary>Note aggiuntive</summary>
 <ul>
-<li>La Potenza si indica con <span class="arithmatex">\(\mathcal{P}(A)\)</span> oppure <span class="arithmatex">\(2^A\)</span>.</li>
-<li>La Cardinalità si indica con <span class="arithmatex">\(|A| = n\)</span>.</li>
-<li>La Cardinalità dell'insieme delle sue parti è uguale a <span class="arithmatex">\(|\mathcal{P}(A)| = 2^n\)</span>.</li>
+<li>La Cardinalità dell'insieme potenza è uguale a <span class="arithmatex">\(|\mathcal{P}(A)| = 2^n\)</span>.</li>
 </ul>
 </details>
 <details class="example">
@@ -1090,28 +1079,33 @@ $$</p>
 <h2 id="coppie-ordinate">Coppie Ordinate<a class="headerlink" href="#coppie-ordinate" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Coppie Ordinate</p>
-<p>Sono delle coppie in cui l'ordine con cui vengono rappresentate è importante.
-$$
+<p>Sono delle coppie in cui l'ordine con cui vengono rappresentate è importante.</p>
+<div class="arithmatex">\[
 \begin{array}{c}
-    (a,b) \neq (b,a) \text{ mentre } {a,b} = {b,a}
+    (a,b) \neq (b,a) : \{a,b\} = \{b,a\}
 \end{array}
-$$</p>
+\]</div>
 </div>
 <details class="note">
 <summary>Note aggiuntive</summary>
 <ul>
-<li>Per rappresentare l'eguaglianza tra una coppia ordinata ed un insieme si usa questa equazione:
-$$
-\begin{array}{c}
-    (a,b) = {a,{a,b}}
-\end{array}
-$$</li>
+<li>Per rappresentare l'eguaglianza tra una coppia ordinata ed un insieme si usa questa equazione:</li>
 </ul>
+<div class="arithmatex">\[
+\begin{array}{c}
+    (a,b) = \{a,\{a,b\}\}
+\end{array}
+\]</div>
 </details>
 <h2 id="prodotto-cartesiano">Prodotto Cartesiano<a class="headerlink" href="#prodotto-cartesiano" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Prodotto Cartesiano</p>
 <p>Dati due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, si dice Prodotto Cartesiano l'insieme di tutte le coppie ordinate <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> tali che <span class="arithmatex">\(a\)</span> è un elemento di <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(b\)</span> è un elemento di <span class="arithmatex">\(B\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A \times B = \forall \, (a,b), \, a \in A : b \in B
+\end{array}
+\]</div>
 </div>
 <details class="math-adm">
 <summary>Proprietà Algebriche</summary>

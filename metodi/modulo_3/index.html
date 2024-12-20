@@ -880,7 +880,7 @@
 <p>Una Relazione fra due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> è un qualunque sottoinsieme di <span class="arithmatex">\(A \times B\)</span>.
 $$
 \begin{array}{c}
-    A \mathcal{R} B
+    \mathcal{R} \subseteq A \times B
 \end{array}
 $$</p>
 </div>
@@ -904,21 +904,21 @@ $$</p>
 <h2 id="relazioni-riflessive-e-antiriflessive">Relazioni Riflessive e Antiriflessive<a class="headerlink" href="#relazioni-riflessive-e-antiriflessive" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Riflessiva</p>
-<p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è riflessiva se ogni elemento di <span class="arithmatex">\(A\)</span> è in relazione con se stesso.
-$$
+<div class="arithmatex">\[
 \begin{array}{c}
-    \forall a \in A, (a,a) \in \mathcal{R}
+    \forall a \in A \\
+    (a,a) \in \mathcal{R}
 \end{array}
-$$</p>
+\]</div>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Antiriflessiva</p>
-<p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è antiriflessiva se ogni elemento di <span class="arithmatex">\(A\)</span> non è in relazione con se stesso.
-$$
+<div class="arithmatex">\[
 \begin{array}{c}
-    \forall a \in A, (a,a) \not\in \mathcal{R}
+    \forall a \in A \\
+    (a,a) \not\in \mathcal{R}
 \end{array}
-$$</p>
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -1006,11 +1006,21 @@ $$</p>
 <h2 id="relazioni-simmetriche-e-antisimmetriche">Relazioni Simmetriche e Antisimmetriche<a class="headerlink" href="#relazioni-simmetriche-e-antisimmetriche" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Simmetrica</p>
-<p>Una Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è simmetrica se per ogni elemento <span class="arithmatex">\(a \text{ e } b \in A\)</span>, <span class="arithmatex">\(a \mathcal{R} b\)</span> implica <span class="arithmatex">\(b \mathcal{R} a\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \forall \, (a,b) \in A \\
+    a \mathcal{R} b \rightarrow b \mathcal{R} a
+\end{array}
+\]</div>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Antisimmetrica</p>
-<p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è antisimmetrica se per ogni <span class="arithmatex">\(a \text{ e } b \in A\)</span>, se <span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} a\)</span>, allora <span class="arithmatex">\(a = b\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \forall \, (a,b) \in A \\
+    a \mathcal{R} b, b \mathcal{R} a \rightarrow a = b
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -1098,11 +1108,21 @@ $$</p>
 <h2 id="relazioni-transitive-antitransitive">Relazioni Transitive &amp; Antitransitive<a class="headerlink" href="#relazioni-transitive-antitransitive" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Transitiva</p>
-<p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è transitiva se per ogni <span class="arithmatex">\(a,b \text{ e } c \in A\)</span>, se <span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} c\)</span>, allora <span class="arithmatex">\(a \mathcal{R} c\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \forall \, (a,b,c) \in A \\
+    a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c
+\end{array}
+\]</div>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Transitiva</p>
-<p>Diciamo che la Relazione <span class="arithmatex">\(\mathcal{R}\)</span> su <span class="arithmatex">\(A \times A\)</span> è transitiva se per ogni <span class="arithmatex">\(a,b \text{ e } c \in A\)</span>, se <span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} c\)</span>, allora <span class="arithmatex">\(a \cancel{\mathcal{R}} c\)</span>.</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    \forall \, (a,b,c) \in A \\
+    a \mathcal{R} b, b \mathcal{R} c \rightarrow a \cancel{\mathcal{R}} c
+\end{array}
+\]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>

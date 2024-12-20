@@ -819,13 +819,13 @@
 <li>Ogni numero <span class="arithmatex">\(n\)</span> ha un successore che indichiamo con <em>succ</em>(<span class="arithmatex">\(n\)</span>)</li>
 <li>Zero non è successore di nessuno</li>
 <li>Se <em>succ</em>(<span class="arithmatex">\(n\)</span>) = <em>succ</em>(<span class="arithmatex">\(m\)</span>) allora <span class="arithmatex">\(n = m\)</span></li>
-<li>Se <span class="arithmatex">\(A \subseteq \mathcal{N}\)</span> è tale che zero <span class="arithmatex">\(\in A\)</span> e inoltre <span class="arithmatex">\(n \in A\)</span> implica <em>succ</em>(<span class="arithmatex">\(m\)</span>) <span class="arithmatex">\(\in A\)</span>, allora <span class="arithmatex">\(A = \mathcal{N}\)</span>. </li>
+<li>Se un insieme <span class="arithmatex">\(A\)</span> di numeri naturali contiene <span class="arithmatex">\(0\)</span> e contiene anche il successore di ogni suo elemento, allora <span class="arithmatex">\(A\)</span> deve essere l'insieme di tutti i numeri naturali.</li>
 </ul>
 </div>
 <h2 id="induzione">Induzione<a class="headerlink" href="#induzione" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Principio di Induzione</p>
-<p>Se <span class="arithmatex">\(P\)</span> è un predicato su <span class="arithmatex">\(\mathcal{N}\)</span> tale che vale <span class="arithmatex">\(P(0)\)</span> e inoltre <span class="arithmatex">\(P(n)\)</span> implica <span class="arithmatex">\(P(n+1)\)</span>, allora per ogni <span class="arithmatex">\(n\)</span> vale <span class="arithmatex">\(P(n)\)</span>.</p>
+<p>Se <span class="arithmatex">\(P\)</span> è un predicato su <span class="arithmatex">\(\mathcal{N}\)</span> tale che vale <span class="arithmatex">\(P(0)\)</span> (<em>passo base</em>) e inoltre <span class="arithmatex">\(P(n)\)</span> implica <span class="arithmatex">\(P(n+1)\)</span>, allora per ogni <span class="arithmatex">\(n\)</span> vale <span class="arithmatex">\(P(n)\)</span> (<em>passo induttivo</em>).</p>
 </div>
 <details class="example">
 <summary>Esempio</summary>
