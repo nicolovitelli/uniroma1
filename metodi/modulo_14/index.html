@@ -659,15 +659,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tableu-proposizionali" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tableu Proposizionali
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#regole-costruttive" class="md-nav__link">
     <span class="md-ellipsis">
       Regole Costruttive
@@ -777,15 +768,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tableu-proposizionali" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tableu Proposizionali
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#regole-costruttive" class="md-nav__link">
     <span class="md-ellipsis">
       Regole Costruttive
@@ -823,7 +805,7 @@
 <h2 id="albero-delle-proposizioni">Albero delle Proposizioni<a class="headerlink" href="#albero-delle-proposizioni" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Albero delle Proposizioni</p>
-<p>Un Albero delle Proposizioni è una certa struttura ad albero nella quale ogni nodo può avere zero figli, un figlio, oppure due figli.</p>
+<p>Un Albero delle Proposizioni (<em>o Tableu Proposizionali</em>) è una certa struttura ad albero nella quale ogni nodo può avere zero figli, un figlio, oppure due figli.</p>
 <ul>
 <li>I nodi sono insiemi di proposizioni.</li>
 <li>Le proposizioni di ciascun nodo si intendono in congiunzione.</li>
@@ -936,24 +918,14 @@
 Ovvero, se e solo se per ogni <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(m(\neg A) = F\)</span>.<br>
 Ovvero, se e solo se <span class="arithmatex">\(\neg A\)</span> è insoddisfacibile.</p>
 </div>
-<h2 id="tableu-proposizionali">Tableu Proposizionali<a class="headerlink" href="#tableu-proposizionali" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Tableu Proposizionali</p>
-<p>Tableu Proposizionale è un nome più formale per definire gli Alberi delle Proposizioni.</p>
-</div>
 <h2 id="regole-costruttive">Regole Costruttive<a class="headerlink" href="#regole-costruttive" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Conosciamo queste tre regole costruttive, le quali possiamo trovare all'interno di un nodo:</li>
-</ul>
-<figure>
-<p><img alt="image" src="/uniroma1/assets/metodi/mod14_regole_costruttive_base.png" /></p>
-</figure>
-<ul>
-<li>Da queste, possiamo derivarci tutte le altre, per esempio l'implicazione:</li>
-</ul>
-<figure>
-<p><img alt="image" src="/uniroma1/assets/metodi/mod14_reg_costr_implicazione.png" /></p>
-</figure>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Regole Costruttive</p>
+<p>Le seguenti sono regole costruttive che possiamo trovare all'interno di un nodo di un Tableu Proposizionale:</p>
+<p><figure markdown="1">
+<img alt="image" src="/uniroma1/assets/metodi/mod14_regole_costruttive_base.png" />
+</figure></p>
+</div>
 <details class="note">
 <summary>Note aggiuntive</summary>
 <ul>
@@ -962,39 +934,28 @@ Ovvero, se e solo se <span class="arithmatex">\(\neg A\)</span> è insoddisfacib
 </ul>
 </details>
 <details class="example">
-<summary>Altri Esempi</summary>
+<summary>Derivazione di altre Regole Costruttive</summary>
+<ul>
+<li>Dalle tre regole costruttive base possiamo derivarci tutte le altre, per esempio l'implicazione:</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="/uniroma1/assets/metodi/mod14_reg_costr_implicazione.png" />
+</figure></p>
+</details>
+<details class="math-adm">
+<summary>Proprietà Algebriche</summary>
 <div class="arithmatex">\[
 \begin{array}{c}
+    \neg(A \rightarrow B) = A, \neg B \\
+    \\
     \neg (A \rightarrow B) \equiv \neg (\neg A \mathop{\vee} B) \\
     \equiv \neg \neg A \mathop{\wedge} \neg B \\
     \equiv A \mathop{\wedge} \neg B \\
-    A, \neg B \\
-    \\
-    \neg(A \rightarrow B) \\
     A, \neg B
 \end{array}
 \]</div>
 </details>
 <h2 id="correttezza-e-completezza">Correttezza e Completezza<a class="headerlink" href="#correttezza-e-completezza" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>Dato un Tableu di partenza:</p>
-<p><figure markdown="1">
-<img alt="image" src="/uniroma1/assets/metodi/mod14_esempio1.png" />
-</figure></p>
-</li>
-<li>
-<p>Analizzando le foglie possiamo ricavare la formula <span class="arithmatex">\(\phi_B\)</span>, che ha la seguente proprietà:</p>
-<ul>
-<li>Un qualunque modello <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(B\)</span> (<em>il tableu di partenza</em>) se e solo se soddisfa <span class="arithmatex">\(\phi_B\)</span></li>
-<li>Inoltre, se <span class="arithmatex">\(\phi_B\)</span> è insoddisfacibile, l'albero <span class="arithmatex">\(B\)</span> è necessariamente chiuso.  </li>
-</ul>
-</li>
-<li>Più genericamente quindi, <span class="arithmatex">\(A\)</span> è valido se l'albero <span class="arithmatex">\(\neg A\)</span> è chiuso. Dimostrazione:</li>
-</ul>
-<figure>
-<p><img alt="image" src="/uniroma1/assets/metodi/mod14_esempio2.png" /></p>
-</figure>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Correttezza</p>
 <p>La Correttezza si verifica quando un albero <span class="arithmatex">\(\neg A\)</span> chiuso implica <span class="arithmatex">\(A\)</span> valido.</p>
@@ -1003,6 +964,26 @@ Ovvero, se e solo se <span class="arithmatex">\(\neg A\)</span> è insoddisfacib
 <p class="admonition-title">Definizione ― Completezza</p>
 <p>La Completezza si verifica quando un <span class="arithmatex">\(A\)</span> valido implica <span class="arithmatex">\(\neg A\)</span> chiuso.</p>
 </div>
+<details class="example">
+<summary>Esempio</summary>
+<ul>
+<li>Dato un Tableu di partenza:</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="/uniroma1/assets/metodi/mod14_esempio1.png" />
+</figure></p>
+<ul>
+<li>Analizzando le foglie possiamo ricavare la formula <span class="arithmatex">\(\phi_B\)</span>, che ha la seguente proprietà:<ul>
+<li>Un qualunque modello <span class="arithmatex">\(m\)</span> soddisfa <span class="arithmatex">\(B\)</span> (<em>il tableu di partenza</em>) se e solo se soddisfa <span class="arithmatex">\(\phi_B\)</span></li>
+<li>Inoltre, se <span class="arithmatex">\(\phi_B\)</span> è insoddisfacibile, l'albero <span class="arithmatex">\(B\)</span> è necessariamente chiuso.  </li>
+</ul>
+</li>
+<li>Più genericamente quindi, <span class="arithmatex">\(A\)</span> è valido se l'albero <span class="arithmatex">\(\neg A\)</span> è chiuso. Dimostrazione:</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="/uniroma1/assets/metodi/mod14_esempio2.png" />
+</figure></p>
+</details>
 
 
 
