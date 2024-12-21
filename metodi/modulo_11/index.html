@@ -596,15 +596,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduzione-alla-logica-proposizionale" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduzione alla Logica Proposizionale
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#tavole-di-verita" class="md-nav__link">
     <span class="md-ellipsis">
       Tavole di Verità
@@ -771,15 +762,6 @@
   <a href="#omomorfismo" class="md-nav__link">
     <span class="md-ellipsis">
       Omomorfismo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduzione-alla-logica-proposizionale" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduzione alla Logica Proposizionale
     </span>
   </a>
   
@@ -987,13 +969,14 @@
 \end{array}
 \]</div>
 </details>
-<h2 id="introduzione-alla-logica-proposizionale">Introduzione alla Logica Proposizionale<a class="headerlink" href="#introduzione-alla-logica-proposizionale" title="Permanent link">&para;</a></h2>
+<details class="example">
+<summary>Esempio - Introduzione alla Logica Proposizionale</summary>
 <ul>
 <li>Consideriamo l'insieme dei numeri naturali <span class="arithmatex">\(\mathbb{N}\)</span> ed i due predicati <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span>:</li>
 </ul>
-<figure>
-<p><img alt="image" src="/uniroma1/assets/metodi/mod11_logica_prop1.png" /></p>
-</figure>
+<p><figure markdown="1">
+<img alt="image" src="/uniroma1/assets/metodi/mod11_logica_prop1.png" />
+</figure></p>
 <ul>
 <li><span class="arithmatex">\(P\)</span> = essere un numero primo</li>
 <li><span class="arithmatex">\(Q\)</span> = essere un numero minore di <span class="arithmatex">\(10\)</span></li>
@@ -1003,9 +986,9 @@
 </ul>
 </li>
 </ul>
-<figure>
-<p><img alt="image" src="/uniroma1/assets/metodi/mod11_logica_prop2.png" /></p>
-</figure>
+<p><figure markdown="1">
+<img alt="image" src="/uniroma1/assets/metodi/mod11_logica_prop2.png" />
+</figure></p>
 <ul>
 <li>Preso un qualsiasi elemento <span class="arithmatex">\(\mathbb{N}\)</span>, mappiamo <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> su <span class="arithmatex">\(\top\)</span> / <span class="arithmatex">\(\bot\)</span> a seconda se l'elemento di <span class="arithmatex">\(\mathbb{N}\)</span> rispetta le proprietà.</li>
 </ul>
@@ -1029,6 +1012,7 @@
         Q \rightarrow \bot
     \end{array}
 \]</div>
+</details>
 </details>
 <details class="example">
 <summary>Esempio - Omomorfismo Violato</summary>
@@ -1108,30 +1092,26 @@
 \]</div>
 </details>
 <h2 id="tavole-di-verita">Tavole di Verità<a class="headerlink" href="#tavole-di-verita" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Possiamo rappresentare in forma tabellare la ricetta che ci consente di calcolare qual è il valore che assume nel modello <span class="arithmatex">\(m\)</span> le forme <span class="arithmatex">\(P \mathop{\wedge} Q\)</span> e <span class="arithmatex">\(P \mathop{\vee} Q\)</span>.</li>
-</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Tavole di Verità</p>
+<p>Le Tavole di Verità sono rappresentazioni tabellari che mostrano tutte le possibili combinazioni dei valori di verità (vero o falso, rappresentati rispettivamente da <span class="arithmatex">\(T\)</span> e <span class="arithmatex">\(F\)</span>) per una o più proposizioni logiche. Sono utilizzate per descrivere il comportamento degli operatori logici, come il join (<span class="arithmatex">\(\mathop{\vee}\)</span>) e il meet (<span class="arithmatex">\(\mathop{\wedge}\)</span>).</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: center;"><img alt="mod11_tav_verita_meet" src="/uniroma1/assets/metodi/mod11_tav_verita_meet.png" /></th>
 <th style="text-align: center;"><img alt="mod11_tav_verita_join" src="/uniroma1/assets/metodi/mod11_tav_verita_join.png" /></th>
+<th style="text-align: center;"><img alt="image" src="/uniroma1/assets/metodi/mod11_tav_verita_not.png" /></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Avendo a disposizione l'interpretazione di <span class="arithmatex">\(P\)</span> e <span class="arithmatex">\(Q\)</span> (<em>ovvero il risultato di <span class="arithmatex">\(m(P)\)</span> e <span class="arithmatex">\(m(Q)\)</span></em>) allora facendone il <span class="arithmatex">\(\mathop{\vee}\)</span> o <span class="arithmatex">\(\mathop{\wedge}\)</span> possiamo calcolare l'interpretazione di <span class="arithmatex">\(P \mathop{\vee} Q\)</span> o <span class="arithmatex">\(P \mathop{\wedge} Q\)</span>.</li>
-<li>Un discorso analogo possiamo farlo per il not (<em>complemento</em>):</li>
-</ul>
-<figure>
-<p><img alt="image" src="/uniroma1/assets/metodi/mod11_tav_verita_not.png" /></p>
-</figure>
+</div>
 <h2 id="logica-proposizionale">Logica Proposizionale<a class="headerlink" href="#logica-proposizionale" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Linguaggio della Logica Proposizionale</p>
@@ -1154,7 +1134,7 @@
 <summary>Esempio</summary>
 <div class="arithmatex">\[
     \begin{array}{c}
-        P \mathop{\wedge} (\neg Q \mathop{\vee} R)
+        P \mathop{\wedge} \, (\neg Q \mathop{\vee} R)
     \end{array}
 \]</div>
 <ul>
@@ -1168,7 +1148,7 @@
 </details>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Modelli</p>
-<p>Sono delle Funzioni che associano ciascuna proposizione ad un elemento dell'insieme <span class="arithmatex">\(\{T,F\}\)</span>.</p>
+<p>Un Modello è una Funzione che mappa i simboli proposizionali semplici (<span class="arithmatex">\(P,Q,\dots\)</span>) nell'insieme <span class="arithmatex">\(\{T,F\}\)</span>; mentre per tutte le altre proposizioni (<em>che potrebbero essere frasi complesse</em>) usiamo le tavole di verità per calcolare la loro interpretazione.</p>
 <p>Nel mondo della Logica, <span class="arithmatex">\(\top\)</span> e <span class="arithmatex">\(\bot\)</span> vengono chiamati True e False.</p>
 <div class="arithmatex">\[
     \begin{array}{c}
@@ -1189,10 +1169,6 @@
     \end{array}
 \]</div>
 </details>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Modelli (Alternativa)</p>
-<p>In alternativa, possiamo dire che un Modello mappa solamente i simboli proposizionali semplici (<span class="arithmatex">\(P,Q,\dots\)</span>) nell'insieme <span class="arithmatex">\(\{T,F\}\)</span>; mentre per tutte le altre proposizioni (<em>che potrebbero essere frasi complesse</em>) usiamo le tavole di verità per calcolare la loro interpretazione.</p>
-</div>
 
 
 

@@ -808,8 +808,7 @@
 <p>Se tutte le proposizioni <span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span> e <span class="arithmatex">\(A\)</span> sono vere per un certo modello, allora <span class="arithmatex">\(B\)</span> deve essere vera nello stesso modello. Inoltre, questo afferma che in tutti i modelli in cui <span class="arithmatex">\(C_1,C_2,\dots,C_n\)</span> sono veri, l'implicazione <span class="arithmatex">\(A \rightarrow B\)</span> deve essere vera.
 $$
 \begin{array}{c}
-    C_1,C_2,\dots,C_n,A \models B \
-    \text{ se e solo se } \
+    C_1,C_2,\dots,C_n,A \models B \iff
     C_1,C_2,\dots,C_n \models A \rightarrow B
 \end{array}
 $$</p>
@@ -893,21 +892,23 @@ $$</p>
 <h2 id="operatore-logico-xor">Operatore Logico XOR<a class="headerlink" href="#operatore-logico-xor" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― XOR</p>
+<p><span class="arithmatex">\(A \dot{\vee} B\)</span> è vero quando <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> hanno dei valori di verità diversi.</p>
 <div class="arithmatex">\[
 \begin{array}{c}
     A \dot{\vee} B
 \end{array}
 \]</div>
-<p><span class="arithmatex">\(A \dot{\vee} B\)</span> è vero quando <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> hanno dei valori di verità diversi.</p>
 <p><figure markdown="1">
 <img alt="image" src="/uniroma1/assets/metodi/mod13_xor.png" />
 </figure></p>
 </div>
-<details class="note">
-<summary>Note aggiuntive</summary>
-<ul>
-<li><span class="arithmatex">\(A \dot{\vee} B\)</span> è equivalente semanticamente a <span class="arithmatex">\((A \mathop{\wedge} \neg B) \mathop{\vee} (B \mathop{\wedge} \neg A)\)</span>   </li>
-</ul>
+<details class="math-adm">
+<summary>Proprietà Algebriche</summary>
+<div class="arithmatex">\[
+\begin{array}{c}
+    A \dot{\vee} B \equiv (A \mathop{\wedge} \neg B) \mathop{\vee} (B \mathop{\wedge} \neg A)
+\end{array}
+\]</div>
 </details>
 
 
