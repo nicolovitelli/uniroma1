@@ -559,6 +559,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#polvere-di-cantor-new" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polvere di Cantor new
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -798,6 +807,15 @@
   <a href="#alberghi-transfiniti" class="md-nav__link">
     <span class="md-ellipsis">
       Alberghi Transfiniti
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polvere-di-cantor-new" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polvere di Cantor new
     </span>
   </a>
   
@@ -1085,6 +1103,51 @@ $$
     |\mathbb{N}| &lt; |2^\mathbb{N}|
     \end{array}
 $$</p>
+<h2 id="polvere-di-cantor-new">Polvere di Cantor new<a class="headerlink" href="#polvere-di-cantor-new" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Equipotenza</p>
+<p>La polvere di Cantor è un insieme costruito partendo dall'intervallo <span class="arithmatex">\([0,1]\)</span> (in una dimensione) e applicando un procedimento iterativo di "rimozione". Alla fine di questo processo, otteniamo un insieme che ha proprietà molto particolari, come essere infinito ma non numerabile e avere misura nulla.</p>
+</div>
+<details class="example">
+<summary>Dimostrazione della Polvere di Cantor</summary>
+<ol>
+<li>Partiamo dall'intervallo <span class="arithmatex">\([0,1]\)</span> sulla retta reale. Questo è l'intervallo di partenza.<ul>
+<li>Dividiamo <span class="arithmatex">\([0,1]\)</span> in tre parti uguali: <span class="arithmatex">\([0,\frac{1}{3}],(\frac{1}{3},\frac{2}{3}),[\frac{2}{3},1]\)</span>.</li>
+<li>Rimuoviamo la parte centrale aperta: il segmento <span class="arithmatex">\((\frac{1}{3},\frac{2}{3})\)</span>.</li>
+<li>Dopo questo primo passo, rimangono due intervalli chiusi: <span class="arithmatex">\([0,\frac{1}{3}]\)</span> e <span class="arithmatex">\([\frac{2}{3},1]\)</span>.</li>
+</ul>
+</li>
+<li>Adesso applichiamo lo stesso procedimento ai due intervalli rimanenti <span class="arithmatex">\([0,\frac{1}{3}]\)</span> e <span class="arithmatex">\([\frac{2}{3},1]\)</span>:<ul>
+<li>Dividiamo ciascun intervallo in tre parti uguali:
+$$
+    \begin{array}{c}
+    [0,\frac{1}{9}],(\frac{1}{9},\frac{2}{9}),[\frac{2}{9},\frac{1}{3}] \
+    [\frac{2}{3},\frac{7}{9}],(\frac{7}{9},\frac{8}{9}),[\frac{8}{9},1]
+    \end{array}
+$$</li>
+</ul>
+</li>
+<li>Rimuoviamo i segmenti centrali aperti di ciascun intervallo:<ul>
+<li>Dal primo intervallo <span class="arithmatex">\([0,\frac{1}{3}]\)</span>, rimuoviamo <span class="arithmatex">\((\frac{1}{9},\frac{2}{9})\)</span>.</li>
+<li>Dal secondo intervallo <span class="arithmatex">\([\frac{2}{3},1]\)</span>, rimuoviamo <span class="arithmatex">\((\frac{7}{9},\frac{8}{9})\)</span>.</li>
+</ul>
+</li>
+<li>Dopo quest'ultimo passo, rimangono 4 intervalli chiusi:
+$$
+    \begin{array}{c}
+        [0,\frac{1}{9}],[\frac{2}{9},\frac{1}{3}],[\frac{2}{3},\frac{7}{9}],[\frac{8}{9},1]
+    \end{array}
+$$</li>
+<li>A questo punto, ripetiamo lo stesso procedimento in modo infinito per tutti gli intervalli rimanenti:<ul>
+<li>Ad ogni passo, dividiamo ogni intervallo rimanente in tre parti uguali.</li>
+<li>Rimuoviamo sempre il segmento centrale aperto di ciascun intervallo.</li>
+</ul>
+</li>
+<li>Ad esempio, dopo il quarto passo, rimangono 8 intervalli chiusi (uno per ogni estremità dei quattro intervalli del passo precedente). Dopo il quarto passo, ci saranno 16 intervalli, e così via.</li>
+<li>Ad ogni iterazione, il numero di intervalli rimanenti raddoppia, ma la loro lunghezza totale diminuisce progressivamente.</li>
+<li>Dopo infinite iterazioni, la lunghezza totale rimanente tende a <span class="arithmatex">\(0\)</span> (poiché <span class="arithmatex">\((\frac{2}{3})^n \rightarrow 0\)</span> quando <span class="arithmatex">\(n \rightarrow \infty\)</span>). Quindi, la polvere di Cantor ha misura nulla. Anche se rimangono infiniti punti, la somma della loro lunghezza è <span class="arithmatex">\(0\)</span>.</li>
+</ol>
+</details>
 
 
 
