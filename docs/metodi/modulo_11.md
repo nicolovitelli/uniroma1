@@ -28,7 +28,7 @@ title: Modulo 11
 
 ??? example "Esempio - Non Preservazione di Meet e Join"
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_esempio1.png)
+    ![image](/uniroma1/assets/metodi/mod11_esempio1.png)
     </figure>
 
     - Dati i Reticoli $A$ e $B$ ed una funzione $f : A \rightarrow B$:
@@ -76,7 +76,7 @@ title: Modulo 11
 
 ??? example "Esempio - Preservazione di Meet e Join"
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_esempio1.png)
+    ![image](/uniroma1/assets/metodi/mod11_esempio1.png)
     </figure>
 
     - Dati i Reticoli $A$ e $B$ ed una funzione $f : A \rightarrow B$:
@@ -128,7 +128,7 @@ title: Modulo 11
 ??? example "Esempio - Dimostrazione del Complemento"
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_esempio_comp.png)
+    ![image](/uniroma1/assets/metodi/mod11_esempio_comp.png)
     </figure>
 
     - Dati due insieme $A$ e $B$ ed una funzione $f : A \rightarrow B$:
@@ -158,49 +158,49 @@ title: Modulo 11
     \end{array}
     $$
 
-## Introduzione alla Logica Proposizionale
+??? example "Esempio - Introduzione alla Logica Proposizionale"
 
-- Consideriamo l'insieme dei numeri naturali $\mathbb{N}$ ed i due predicati $P$ e $Q$:
-
-<figure markdown="1">
-![image](\metodi\assets\mod11_logica_prop1.png)
-</figure>
-
-- $P$ = essere un numero primo
-- $Q$ = essere un numero minore di $10$
-- Aggiungiamo due Algebre di Boole:
-    - nella prima Algebra di Boole, ogni elemento rappresenta un sottoinsieme dell'insieme $\mathbb{N}$
-    - la seconda Algebra di Boole è detta **Omomorfismo di 2**, perchè contiene solo Top e Bottom.
-
-<figure markdown="1">
-![image](\metodi\assets\mod11_logica_prop2.png)
-</figure>
-
-- Preso un qualsiasi elemento $\mathbb{N}$, mappiamo $P$ e $Q$ su $\top$ / $\bot$ a seconda se l'elemento di $\mathbb{N}$ rispetta le proprietà.
-
-??? example "Esempio - Omomorfismo Non Violato"
-    - Dato $a = 2$
-        - $2$ è sia un numero primo ($P$) sia è un numero minore di 10 ($Q$), quindi entrambi vengono mappati su Top $\top$.
+    - Consideriamo l'insieme dei numeri naturali $\mathbb{N}$ ed i due predicati $P$ e $Q$:
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_logica_prop3.png)
+    ![image](/uniroma1/assets/metodi/mod11_logica_prop1.png)
     </figure>
 
-    - Gli elementi dell'universo dei sottoinsiemi che corrispondono agli omomorfismi nell'universo delle Algebre di Boole, in realtà corrispondono a delle funzioni che mappano i predicati in Top $\top$ e Bottom $\bot$, secondo la condizione descritta nello step precedente:
+    - $P$ = essere un numero primo
+    - $Q$ = essere un numero minore di $10$
+    - Aggiungiamo due Algebre di Boole:
+        - nella prima Algebra di Boole, ogni elemento rappresenta un sottoinsieme dell'insieme $\mathbb{N}$
+        - la seconda Algebra di Boole è detta **Omomorfismo di 2**, perchè contiene solo Top e Bottom.
 
-    $$
-        \begin{array}{c}
-            P \rightarrow \top \\
-            Q \rightarrow \bot
-        \end{array}
-    $$
+    <figure markdown="1">
+    ![image](/uniroma1/assets/metodi/mod11_logica_prop2.png)
+    </figure>
+
+    - Preso un qualsiasi elemento $\mathbb{N}$, mappiamo $P$ e $Q$ su $\top$ / $\bot$ a seconda se l'elemento di $\mathbb{N}$ rispetta le proprietà.
+
+    ??? example "Esempio - Omomorfismo Non Violato"
+        - Dato $a = 2$
+            - $2$ è sia un numero primo ($P$) sia è un numero minore di 10 ($Q$), quindi entrambi vengono mappati su Top $\top$.
+
+        <figure markdown="1">
+        ![image](/uniroma1/assets/metodi/mod11_logica_prop3.png)
+        </figure>
+
+        - Gli elementi dell'universo dei sottoinsiemi che corrispondono agli omomorfismi nell'universo delle Algebre di Boole, in realtà corrispondono a delle funzioni che mappano i predicati in Top $\top$ e Bottom $\bot$, secondo la condizione descritta nello step precedente:
+
+        $$
+            \begin{array}{c}
+                P \rightarrow \top \\
+                Q \rightarrow \bot
+            \end{array}
+        $$
 
 ??? example "Esempio - Omomorfismo Violato"
 
     - Esempio con $a = 9$:
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_logica_prop4.png)
+    ![image](/uniroma1/assets/metodi/mod11_logica_prop4.png)
     </figure>
 
     - In questo caso quindi, visto che $9$ rispetta solo la proprietà $Q$:
@@ -215,7 +215,7 @@ title: Modulo 11
     - Ipotizziamo una funzione $m$ che oltre a mappare $P$ e $Q$, mappa $P \mathop{\wedge} Q$ su $\top$.
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_logica_prop5.png)
+    ![image](/uniroma1/assets/metodi/mod11_logica_prop5.png)
     </figure>
 
     $$
@@ -259,7 +259,7 @@ title: Modulo 11
     - Possiamo modificare la funzione $m$ in questo modo:
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod11_logica_prop6.png)
+    ![image](/uniroma1/assets/metodi/mod11_logica_prop6.png)
     </figure>
 
     - In questo caso, la funzione $m$ è un omomorfismo perchè rispetta le tre proprietà:
@@ -274,17 +274,11 @@ title: Modulo 11
 
 ## Tavole di Verità
 
-- Possiamo rappresentare in forma tabellare la ricetta che ci consente di calcolare qual è il valore che assume nel modello $m$ le forme $P \mathop{\wedge} Q$ e $P \mathop{\vee} Q$.
+!!! abstract "Definizione ― Tavole di Verità"
+    Le Tavole di Verità sono rappresentazioni tabellari che mostrano tutte le possibili combinazioni dei valori di verità (vero o falso, rappresentati rispettivamente da $T$ e $F$) per una o più proposizioni logiche. Sono utilizzate per descrivere il comportamento degli operatori logici, come il join ($\mathop{\vee}$) e il meet ($\mathop{\wedge}$).
 
-| ![mod11_tav_verita_meet](assets\mod11_tav_verita_meet.png) | ![mod11_tav_verita_join](assets\mod11_tav_verita_join.png) |
-|:-----------------------:|:----------------------:|
-
-- Avendo a disposizione l'interpretazione di $P$ e $Q$ (*ovvero il risultato di $m(P)$ e $m(Q)$*) allora facendone il $\mathop{\vee}$ o $\mathop{\wedge}$ possiamo calcolare l'interpretazione di $P \mathop{\vee} Q$ o $P \mathop{\wedge} Q$.
-- Un discorso analogo possiamo farlo per il not (*complemento*):
-
-<figure markdown="1">
-![image](\metodi\assets\mod11_tav_verita_not.png)
-</figure>
+    | ![mod11_tav_verita_meet](/uniroma1/assets/metodi/mod11_tav_verita_meet.png) | ![mod11_tav_verita_join](/uniroma1/assets/metodi/mod11_tav_verita_join.png) | ![image](/uniroma1/assets/metodi/mod11_tav_verita_not.png) |
+    |:-----------------------:|:----------------------:|:----------------------:|
 
 ## Logica Proposizionale
 
@@ -307,7 +301,7 @@ title: Modulo 11
 
     $$
         \begin{array}{c}
-            P \mathop{\wedge} (\neg Q \mathop{\vee} R)
+            P \mathop{\wedge} \, (\neg Q \mathop{\vee} R)
         \end{array}
     $$
 
@@ -317,7 +311,7 @@ title: Modulo 11
         - $R$
 
 !!! abstract "Definizione ― Modelli"
-    Sono delle Funzioni che associano ciascuna proposizione ad un elemento dell'insieme $\{T,F\}$.
+    Un Modello è una Funzione che mappa i simboli proposizionali semplici ($P,Q,\dots$) nell'insieme $\{T,F\}$; mentre per tutte le altre proposizioni (*che potrebbero essere frasi complesse*) usiamo le tavole di verità per calcolare la loro interpretazione.
 
     Nel mondo della Logica, $\top$ e $\bot$ vengono chiamati True e False.
 
@@ -337,6 +331,3 @@ title: Modulo 11
             \neg A \rightarrow \overline{m(B)}
         \end{array}
     $$
-
-!!! abstract "Definizione ― Modelli (Alternativa)"
-    In alternativa, possiamo dire che un Modello mappa solamente i simboli proposizionali semplici ($P,Q,\dots$) nell'insieme $\{T,F\}$; mentre per tutte le altre proposizioni (*che potrebbero essere frasi complesse*) usiamo le tavole di verità per calcolare la loro interpretazione.

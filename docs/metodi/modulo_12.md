@@ -13,7 +13,7 @@ title: Modulo 12
     \end{array}
 	$$
 
-	Si diche anche che $B$ consegue semanticamente da $A_1,A_2,\dots,A_n$
+	Si dice anche che "$B$ consegue semanticamente da $A_1,A_2,\dots,A_n$".
 
 ??? note "Note aggiuntive"
 	- Quando $n = 0$, quindi quando non ci sono premesse alla conseguenza semantica, allora per ogni $m$, $m$ soddisfa $B$.
@@ -30,13 +30,13 @@ title: Modulo 12
 	- Considerato l'insieme $\mathbb{N}$ a questo corrisponderà una qualche Algebra di Boole.
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod11_logica_prop2.png)
+	![image](/uniroma1/assets/metodi/mod11_logica_prop2.png)
 	</figure>
 
 	- Ora prendiamo come esempio l'elemento $9$:
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod12_esempio1.png)
+	![image](/uniroma1/assets/metodi/mod12_esempio1.png)
 	</figure>
 
 	- Possiamo affermare che:
@@ -53,7 +53,7 @@ title: Modulo 12
 
 	- Una volta individuati $P$ e $Q$, possiamo individuare l'interpretazione delle restanti proposizioni ($P \mathop{\vee} Q$ e $P \mathop{\wedge} Q$) attraverso le Tabelle di Verità.
 
-	| ![mod12_tav_verita_join](assets\mod12_tav_verita_join.png) | ![mod12_tav_verita_meet](assets\mod12_tav_verita_meet.png) |
+	| ![mod12_tav_verita_join](/uniroma1/assets/metodi/mod12_tav_verita_join.png) | ![mod12_tav_verita_meet](/uniroma1/assets/metodi/mod12_tav_verita_meet.png) |
 	|:-----------------------:|:----------------------:|
 
 	$$
@@ -87,7 +87,7 @@ title: Modulo 12
 	$$
 
 <figure markdown="1">
-  ![Intersezione](\metodi\assets/mod12_tav_implicazione.png)
+  ![Intersezione](/uniroma1/assets/metodi/mod12_tav_implicazione.png)
   <figcaption>Tavola di Verità dell'Implicazione</figcaption>
 </figure>
 
@@ -104,3 +104,9 @@ title: Modulo 12
 	- Se $P$ e $Q$ sono proposizioni vere, allora è vero anche l'enunciato $P \rightarrow Q$, e ciò giustifica la prima riga della Tavola di Verità.
 	- Se la prima proposizione $P$ è vera e la seconda $Q$ è falsa, l'implicazione è falsa, perchè quando si verifica la causa (piove) deve necessariamente verificarsi l'effetto (la strada è bagnata).
 	- Infine, nel caso in cui la causa $P$ sia falsa, nulla si può dire sull'effetto $Q$: infati la strada potrebbe essere bagnata per altri motivi (notte di umidità). 
+
+??? example "Esempio ― Perchè $A \implies B = \neg A \mathop{\vee} B$"
+	- Costruiamo la tabella di verità per entrambe le espressioni $A \implies B$ e $\neg A \mathop{\vee} B$, e mostriamo che i valori di verità coincidono per ogni possibile combinazione di $A$ e $B$.
+	<figure markdown="1">
+  	![implicazione](/uniroma1/assets/metodi/mod12_implicazione.png)
+	</figure>

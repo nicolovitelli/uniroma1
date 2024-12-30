@@ -14,13 +14,19 @@ title: Modulo 8
 
     $$
     \begin{array}{c}
-    |A| \leq |B| \text{ se esiste una funzione iniettiva } A \rightarrow B \\
-    \text{se } |A| \leq |B| \text{ e } |B| \leq |A|, \text{ allora } |A| = |B|
+    |A| \leq |B| \text{ se esiste } f \text{ iniettiva } A \rightarrow B \\
+    \text{invece, se } |A| \leq |B| \text{ e } |B| \leq |A|, \text{ allora } |A| = |B|
     \end{array}
 	$$
 
+!!! abstract "Definizione ― Cardinalità di una Funzione"
+    La Cardinalità dell'insieme delle Funzioni da $A \rightarrow B$ è uguale a $|B|^{|A|}$.
+
 ??? note "Note aggiuntive"
     - L'equipotenza è una Relazione di Equivalenza (*Riflessiva, Simmetrica e Transitiva*).
+    - La Cardinalità di $\mathop{N}$ è uguale a quella di $\mathop{N} \times \mathop{N} \times \dots \times \mathop{N}$.
+
+
 
 ## Teorema di Cantor
 !!! abstract "Definizione ― Teorema di Cantor"
@@ -28,7 +34,7 @@ title: Modulo 8
 
 ??? example "Esempio"
     <figure markdown="1">
-    ![image](\metodi\assets\mod8_cantor_01.png)
+    ![image](/uniroma1/assets/metodi/mod8_cantor_01.png)
     </figure>
 
     Nell'esempio 1, c'è una funzione iniettiva $A \rightarrow B$, ma non c'è una l'iniettività $B \rightarrow A$, quindi la cardinalità di $A$ è minore di quella di $B$:
@@ -40,7 +46,7 @@ title: Modulo 8
 	$$
 
 	<figure markdown="1">
-    ![image](\metodi\assets\mod8_cantor_02.png)
+    ![image](/uniroma1/assets/metodi/mod8_cantor_02.png)
     </figure>
 
     Nell'esempio 2, c'è una funziona iniettiva $A \rightarrow B$ ed una funzione iniettiva $B \rightarrow A$, quindi secondo il Teorema di Cantor, esiste una funzione biiettiva $A \rightarrow B$:
@@ -58,19 +64,19 @@ Proviamo a mettere in corrispondenza l'insieme di tutti i numeri naturali $\math
 - Immaginiamo una retta di tutti i numeri reali compresi tra $0$ ed $1$, e la dividiamo in esattamente tre parti uguali:
 
 <figure markdown="1">
-![image](\metodi\assets\mod8_polvere_01.png)
+![image](/uniroma1/assets/metodi/mod8_polvere_01.png)
 </figure>
 
 - Andiamo a togliere la parte centrale e prendiamo solo la parte evidenziata in blu ($0 < x < \frac{1}{3}$ e $\frac{2}{3} < x < 1$) per andare a costruire altre piccole rette:
 
 <figure markdown="1">
-![image](\metodi\assets\mod8_polvere_02.png)
+![image](/uniroma1/assets/metodi/mod8_polvere_02.png)
 </figure>
 
 - Applichiamo la stessa strategia in cui andiamo a dividere in esattamente tre parti uguali ed andiamo a prendere la parte centrale, continuando all'infinito:
 
 <figure markdown="1">
-![image](\metodi\assets\mod8_polvere_03.png)
+![image](/uniroma1/assets/metodi/mod8_polvere_03.png)
 </figure>
 
 - L'insieme $C$ sarà quindi l'intersezione tra tutti gli insiemi che abbiamo estratto:
@@ -169,3 +175,38 @@ $$
     |\mathbb{N}| < |2^\mathbb{N}|
     \end{array}
 $$
+
+## Polvere di Cantor new
+
+!!! abstract "Definizione ― Equipotenza"
+    La polvere di Cantor è un insieme costruito partendo dall'intervallo $[0,1]$ (in una dimensione) e applicando un procedimento iterativo di "rimozione". Alla fine di questo processo, otteniamo un insieme che ha proprietà molto particolari, come essere infinito ma non numerabile e avere misura nulla.
+
+??? example "Dimostrazione della Polvere di Cantor"
+    1. Partiamo dall'intervallo $[0,1]$ sulla retta reale. Questo è l'intervallo di partenza.
+        * Dividiamo $[0,1]$ in tre parti uguali: $[0,\frac{1}{3}],(\frac{1}{3},\frac{2}{3}),[\frac{2}{3},1]$.
+        * Rimuoviamo la parte centrale aperta: il segmento $(\frac{1}{3},\frac{2}{3})$.
+        * Dopo questo primo passo, rimangono due intervalli chiusi: $[0,\frac{1}{3}]$ e $[\frac{2}{3},1]$.
+    2. Adesso applichiamo lo stesso procedimento ai due intervalli rimanenti $[0,\frac{1}{3}]$ e $[\frac{2}{3},1]$:
+        * Dividiamo ciascun intervallo in tre parti uguali:
+        $$
+            \begin{array}{c}
+            [0,\frac{1}{9}],(\frac{1}{9},\frac{2}{9}),[\frac{2}{9},\frac{1}{3}] \\
+            [\frac{2}{3},\frac{7}{9}],(\frac{7}{9},\frac{8}{9}),[\frac{8}{9},1]
+            \end{array}
+        $$
+    3. Rimuoviamo i segmenti centrali aperti di ciascun intervallo:
+        * Dal primo intervallo $[0,\frac{1}{3}]$, rimuoviamo $(\frac{1}{9},\frac{2}{9})$.
+        * Dal secondo intervallo $[\frac{2}{3},1]$, rimuoviamo $(\frac{7}{9},\frac{8}{9})$.
+    4. Dopo quest'ultimo passo, rimangono 4 intervalli chiusi:
+    $$
+        \begin{array}{c}
+            [0,\frac{1}{9}],[\frac{2}{9},\frac{1}{3}],[\frac{2}{3},\frac{7}{9}],[\frac{8}{9},1]
+        \end{array}
+    $$
+    5. A questo punto, ripetiamo lo stesso procedimento in modo infinito per tutti gli intervalli rimanenti:
+        * Ad ogni passo, dividiamo ogni intervallo rimanente in tre parti uguali.
+        * Rimuoviamo sempre il segmento centrale aperto di ciascun intervallo.
+    6. Ad esempio, dopo il quarto passo, rimangono 8 intervalli chiusi (uno per ogni estremità dei quattro intervalli del passo precedente). Dopo il quarto passo, ci saranno 16 intervalli, e così via.
+    7. Ad ogni iterazione, il numero di intervalli rimanenti raddoppia, ma la loro lunghezza totale diminuisce progressivamente.
+    8. Dopo infinite iterazioni, la lunghezza totale rimanente tende a $0$ (poiché $(\frac{2}{3})^n \rightarrow 0$ quando $n \rightarrow \infty$). Quindi, la polvere di Cantor ha misura nulla. Anche se rimangono infiniti punti, la somma della loro lunghezza è $0$.
+        

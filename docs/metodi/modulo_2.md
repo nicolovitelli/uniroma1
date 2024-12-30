@@ -12,7 +12,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](\metodi\assets\mod2_intersezione.png)
+![image](/uniroma1/assets/metodi/mod2_intersezione.png)
 </figure>
 
 ??? math-adm "Proprietà Algebriche"
@@ -31,7 +31,7 @@ title: Modulo 2
 	$$
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod2_intersezione_subset.png)
+	![image](/uniroma1/assets/metodi/mod2_intersezione_subset.png)
 	</figure>
 
 ??? example "Esempio"
@@ -56,7 +56,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](\metodi\assets\mod2_unione.png)
+![image](/uniroma1/assets/metodi/mod2_unione.png)
 </figure>
 
 !!! abstract "Definizione ― Assioma dell'Unione"
@@ -67,17 +67,11 @@ title: Modulo 2
     \end{array}
 	$$
 
-??? note "Note aggiuntive"
-    - Unendo un qualsiasi insieme ad un insieme vuoto rimarrà sempre quel qualsiasi insieme.
-    $$
-    \begin{array}{c}
-        A \cup \emptyset = A
-    \end{array}
-    $$
-
 ??? math-adm "Proprietà Algebriche"
     $$
     \begin{array}{c}
+        A \cup \emptyset = A \\
+        \\
         \text{Proprietà della Simmetria} \\
         A \cup B = B \cup A \\
         \\
@@ -112,7 +106,7 @@ title: Modulo 2
     $$
 
     <figure markdown="1">
-	![image](\metodi\assets\mod2_intersezione_subset.png)
+	![image](/uniroma1/assets/metodi/mod2_intersezione_subset.png)
 	</figure>
 
 ## Differenza
@@ -125,7 +119,7 @@ title: Modulo 2
 	$$
 
 <figure markdown="1">
-![image](\metodi\assets\mod2_differenza.png)
+![image](/uniroma1/assets/metodi/mod2_differenza.png)
 </figure>
 
 ??? math-adm "Proprietà Algebriche"
@@ -149,23 +143,22 @@ title: Modulo 2
 
 ## Complemento
 !!! abstract "Definizione ― Complemento"
-    Quando $B \subseteq A, A-B$ si chiama complemento di $B$ rispetto ad $A$.
     $$
     \begin{array}{c}
-        B^\prime = \{x \in A : x \not\in B\}
+        \overline{A} = \{x \in B : x \not\in A\}
     \end{array}
 	$$
 
 <figure markdown="1">
-![image](\metodi\assets\mod2_complemento.png)
+![image](/uniroma1/assets/metodi/mod2_complemento.png)
 </figure>
 
 ??? math-adm "Proprietà Algebriche"
     $$
     \begin{array}{c}
         \text{Equazioni di De Morgan} \\
-        (A \cap B)^\prime = A^\prime \cup B^\prime \\
-        (A \cup B)^\prime = A^\prime \cap B^\prime
+        \overline{(A \cap B)}= \overline{A} \cup \overline{B} \\
+        \overline{(A \cup B)} = \overline{A} \cap \overline{B}
     \end{array}
 	$$
 
@@ -174,21 +167,22 @@ title: Modulo 2
     \begin{array}{c}
     	A = \{1,2,3,4\} \\
 	    B = \{3,4,5,6\} \\
-	    B^\prime = \{1,2\}
+	    \overline{B} = \{1,2\}
     \end{array}
     $$
 
-## Potenza e Cardinalità
+## Potenza
 !!! abstract "Definizione ― Potenza"
     L'insieme delle parti, o insieme potenza, è l'insieme dei sottoinsiemi di $A$.
 
-!!! abstract "Definizione ― Cardinalità"
-    Rappresenta il numero dei sottoinsiemi di un insieme.
+    $$
+    \begin{array}{c}
+        \mathcal{P}(A)
+    \end{array}
+    $$
 
 ??? note "Note aggiuntive"
-    - La Potenza si indica con $\mathcal{P}(A)$ oppure $2^A$.
-    - La Cardinalità si indica con $|A| = n$.
-    - La Cardinalità dell'insieme delle sue parti è uguale a $|\mathcal{P}(A)| = 2^n$.
+    - La Cardinalità dell'insieme potenza è uguale a $|\mathcal{P}(A)| = 2^n$.
 
 ??? example "Esempio"
     $$
@@ -202,14 +196,16 @@ title: Modulo 2
 ## Coppie Ordinate
 !!! abstract "Definizione ― Coppie Ordinate"
     Sono delle coppie in cui l'ordine con cui vengono rappresentate è importante.
+
     $$
     \begin{array}{c}
-        (a,b) \neq (b,a) \text{ mentre } \{a,b\} = \{b,a\}
+        (a,b) \neq (b,a) : \{a,b\} = \{b,a\}
     \end{array}
 	$$
 
 ??? note "Note aggiuntive"
     - Per rappresentare l'eguaglianza tra una coppia ordinata ed un insieme si usa questa equazione:
+    
     $$
     \begin{array}{c}
         (a,b) = \{a,\{a,b\}\}
@@ -218,7 +214,13 @@ title: Modulo 2
 
 ## Prodotto Cartesiano
 !!! abstract "Definizione ― Prodotto Cartesiano"
-    Dati due insiemi $A$ e $B$, si dice Prodotto Cartesiano l'insieme di tutte le coppie $A$ e $B$ tali che $a$ è un elemento di $A$ e $b$ è un elemento di $B$.
+    Dati due insiemi $A$ e $B$, si dice Prodotto Cartesiano l'insieme di tutte le coppie ordinate $A$ e $B$ tali che $a$ è un elemento di $A$ e $b$ è un elemento di $B$.
+
+    $$
+    \begin{array}{c}
+        A \times B = \forall \, (a,b), \, a \in A : b \in B
+    \end{array}
+    $$
 
 ??? math-adm "Proprietà Algebriche"
     $$
@@ -228,3 +230,11 @@ title: Modulo 2
     	A \times (B \cap C)=(A \times B)\cap(A \times C)
     \end{array}
 	$$
+
+??? example "Esempio"
+    $$
+    \begin{array}{c}
+        A = \{\emptyset\} \\
+        A \times A = \{(\emptyset,\emptyset),\{\}\}
+    \end{array}
+    $$

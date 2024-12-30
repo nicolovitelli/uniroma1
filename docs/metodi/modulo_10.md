@@ -5,7 +5,7 @@ title: Modulo 10
 ## Reticoli Distributivi
 
 !!! abstract "Definizione ― Reticolo Distributivo"
-    Un Reticolo Distributivo è un reticolo dove ogni elemento è verificato dalla proprietà distributiva.
+    Un Reticolo Distributivo è un reticolo dove è verificata la proprietà distributiva.
 
     $$
         \begin{array}{c}
@@ -62,7 +62,7 @@ title: Modulo 10
     - Dato il seguente reticolo:
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod9_reticoloNonDis.png)
+    ![image](/uniroma1/assets/metodi/mod9_reticoloNonDis.png)
     </figure>
 
     - Usiamo la Proprietà Distributiva per capire se è un reticolo distributivo:
@@ -83,25 +83,36 @@ title: Modulo 10
 
 ## Top e Bottom
 
-$$
-    \begin{array}{c}
-        \forall \text{ } b \in A, \text{ se } a \leq b \text { } \forall \text { } a \in \{\}, \\
-        \text{ allora } sup\{\} \leq b
-    \end{array}
-$$
+!!! abstract "Definizione ― Top"
+    In un reticolo $L$, il Top $\top$ è l'elemento massimo, ovvero quell'elemento più grande di tutti gli altri. 
 
-Per ogni elemento dell'insieme $A$, se questo elemento è più grande di tutti gli elementi dell'insieme vuoto (*condizione banalmente verificata*) allora $sup\{\}$ è più piccolo di $b$.
+    $$
+        \begin{array}{c}
+            \forall x \in L, x \leq \top
+        \end{array}
+    $$
 
-Da questa definizione possiamo assumere che il $sup$ dell'insieme vuoto altro non è che il $min(A)$. Analogamente, l'$inf$ dell'insieme vuoto è il $max(A)$.
+!!! abstract "Definizione ― Bottom"
+    In un reticolo $L$, il Bottom $\bot$ è l'elemento minimo, ovvero quell'elemento più piccolo di tutti gli altri. 
 
-La rappresentazione è la seguente:
+    $$
+        \begin{array}{c}
+            \forall x \in L, \bot \leq x
+        \end{array}
+    $$
 
-$$
-    \begin{array}{c}
-       sup\{\} = min(A) = \bot \text{ (bottom)} \\
-       inf\{\} = max(A) = \top \text{ (top)}
-    \end{array}
-$$
+??? example "Esempio"
+
+    $$
+        \begin{array}{c}
+            L = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}, \{1,2,3\}\} \\
+            \top = \{1,2,3\} \\
+            \bot = \emptyset
+        \end{array}
+    $$
+
+    - $\top = \{1,2,3\}$ perchè l'insieme $\{1,2,3\}$ contiene tutti gli altri sottoinsiemi.
+    - $\bot = \emptyset$ perchè è contenuto in tutti gli altri sottoinsiemi.
 
 ??? example "Applicazione del Teorema su Insiemi Infiniti"
 
@@ -123,7 +134,7 @@ $$
         A \mathop{\wedge} \top = A \\
         \\
         \forall (a,b,c), \\
-        \text{ se } a \mathop{\vee} b = a \mathop{\vee} c
+        \text{ se } a \mathop{\vee} b = a \mathop{\vee} c \\
         \text{e } a \mathop{\wedge} b = a \mathop{\wedge} c, \\
         \text{allora } b = c \\
         \\
@@ -134,19 +145,12 @@ $$
 
 ## Complemento
 !!! abstract "Definizione ― Complemento"
-    Un elemento $b$ di un Reticolo $A$ si dice complemento di $a \in A$ se: 
+    Un elemento $\overline{a}$ di un Reticolo $A$ si dice complemento di $a \in A$ se: 
 
     $$
     \begin{array}{c}
-        a \mathop{\vee} b = \top \\
-        a \mathop{\wedge} b = \bot
-    \end{array}
-    $$
-
-    Il complemento si rappresenta con un segno sopra il carattere:
-    $$
-    \begin{array}{c}
-        \overline{a}
+        a \mathop{\vee} \overline{a} = \top \\
+        a \mathop{\wedge} \overline{a} = \bot
     \end{array}
     $$
 
@@ -154,14 +158,6 @@ $$
     In un Reticolo Distributivo, se $a \in A$ ha un complemento, allora non può averne altri.
 
     Non è vero il contrario: esistono Reticoli Non Distributivi a complemento unico  ― ma non esistono esempi!
-
-??? math-adm "Proprietà Algebriche"
-    $$
-    \begin{array}{c}
-        a \mathop{\vee} \overline{a} = \top \\
-        a \mathop{\wedge} \overline{a} = \bot
-    \end{array}
-    $$
 
 ??? example "Dimostrazione delle Proprietà Algebriche"
 
@@ -182,7 +178,7 @@ $$
         - $A$ rappresenta il $max(A)$ $\top$
 
     <figure markdown="1">
-      ![image](\metodi\assets\mod10_complemento.png)
+      ![image](/uniroma1/assets/metodi/mod10_complemento.png)
     </figure>
 
     - Possiamo dimostrare che le proprietà algebriche si verificano correttamente:
@@ -209,7 +205,7 @@ $$
     Ogni Algebra di Boole (*rappresentazione astratta di un reticolo*) è isomorfa ad un'algebra di insieme (*rappresentazione concreta di un insieme*).
 
     <figure markdown="1">
-    ![image](\metodi\assets\mod10_stone.png)
+    ![image](/uniroma1/assets/metodi/mod10_stone.png)
     </figure>
 
 ## Leggi di De Morgan
@@ -229,4 +225,4 @@ $$
     - due elementi speciali: *Top* $\top$, *Bottom* $\bot$
     - tre operazioni: *Join* $\mathop{\vee}$, *Meet* $\mathop{\wedge}$, *Complemento* $\overline{A}$
 
-    Ogni Algebra di Boole è necesarriamente un Reticolo Distributivo.
+    Ogni Algebra di Boole è necessariamente un Reticolo Distributivo.

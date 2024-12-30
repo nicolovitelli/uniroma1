@@ -7,27 +7,32 @@ title: Modulo 3
     Una Relazione fra due insiemi $A$ e $B$ è un qualunque sottoinsieme di $A \times B$.
     $$
     \begin{array}{c}
-        A \mathcal{R} B
+        \mathcal{R} \subseteq A \times B
     \end{array}
 	$$
 
 !!! abstract "Definizione ― Composizione di due Relazioni"
-    $\mathcal{R} \subseteq A \times B$ e $\mathcal{S} \subseteq B \times C$ è la relazione $\mathcal{R} \circ \mathcal{S}$ = $\{(a,c) \in A \times C : \exists \text{ } b \in B \text{ tale che } a \mathcal{R} b \text{ e } b \mathcal{R} c\}$.
+    La Composizione di due Relazioni $\mathcal{R}$ ed $\mathcal{S}$ tra gli insiemi $A,B$ e $C$ è definita come una Relazione $\mathcal{R} \circ \mathcal{S} \subseteq A \times C$, tale che per ogni coppia $(a,c) \in \mathcal{R} \circ \mathcal{S}$, esiste un elemento $b \in B$ tale che $a \mathcal{R} b, b \mathcal{S} c$.
+
+??? example "Esempio"
+    <figure markdown="1">
+    ![composizione](/uniroma1/assets/metodi/mod3_composizione.png)
+    </figure>
 
 ## Relazioni Riflessive e Antiriflessive
 !!! abstract "Definizione ― Relazione Riflessiva"
-    Diciamo che la Relazione $\mathcal{R}$ su $A \times A$ è riflessiva se ogni elemento di $A$ è in relazione con se stesso.
     $$
     \begin{array}{c}
-        \forall a \in A, (a,a) \in \mathcal{R}
+        \forall a \in A \\
+        (a,a) \in \mathcal{R}
     \end{array}
 	$$
 
 !!! abstract "Definizione ― Relazione Antiriflessiva"
-	Diciamo che la Relazione $\mathcal{R}$ su $A \times A$ è antiriflessiva se ogni elemento di $A$ non è in relazione con se stesso.
 	$$
     \begin{array}{c}
-        \forall a \in A, (a,a) \not\in \mathcal{R}
+        \forall a \in A \\
+        (a,a) \not\in \mathcal{R}
     \end{array}
 	$$
 
@@ -38,11 +43,11 @@ title: Modulo 3
     \end{array}
     $$
 
-    - **Antiriflessiva:** nessun numero è minore di se stesso.
+    - **Antiriflessiva:** nessun numero reale è minore di se stesso.
 
     $$
     \begin{array}{c}
-    	\mathcal{R}_2 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x - y \text{ è pari}\}
+    	\mathcal{R}_2 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \text{ è pari}\}
     \end{array}
     $$
 
@@ -50,7 +55,7 @@ title: Modulo 3
     
     $$
     \begin{array}{c}
-    	\mathcal{R}_3 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \neq y\}
+    	\mathcal{R}_3 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \neq x\}
     \end{array}
     $$
 
@@ -58,19 +63,19 @@ title: Modulo 3
     
     $$
     \begin{array}{c}
-    	\mathcal{R}_4 = \{(x,y) \in \mathbb{N} \times \mathbb{N} : x + y = 5\}
+    	\mathcal{R}_4 = \{(x,x) \in \mathbb{N} \times \mathbb{N} : x + x = 6\}
     \end{array}
     $$
 
-    - **né Riflessiva né Antiriflessiva:** $x + y = 5$ è vero solo quando $x$ e $y$ sono uguali a $2.5$, in tutti gli altri casi è falso.
+    - **né Riflessiva né Antiriflessiva:** $x + x = 6$ è vero solo quando $x$ e $x$ sono uguali a $3$, in tutti gli altri casi è falso.
     
     $$
     \begin{array}{c}
-    	\mathcal{R}_5 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \cdot x = 0\}
+    	\mathcal{R}_5 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x = 0\}
     \end{array}
     $$
 
-    - **né Riflessiva né Antiriflessiva:** $x \cdot y = 0$ è vero solo quando  $(x,y) = 0$, in tutti gli altri casi è falso.
+    - **né Riflessiva né Antiriflessiva:** $x \cdot x = 0$ è vero solo quando  $(x,x) = 0$, in tutti gli altri casi è falso.
     
     $$
     \begin{array}{c}
@@ -78,11 +83,11 @@ title: Modulo 3
     \end{array}
     $$
     
-    - **sia Riflessiva che Antiriflessiva:** l'unico caso in cui una Relazione è sia Riflessiva che Antiriflessiva.
+    - **sia Riflessiva che Antiriflessiva:** Riflessiva perchè non ci sono coppie che violano la Riflessività ($\forall (x,x) \in \mathbb{N} \times \mathbb{N}, x \mathcal{R} x$) e contemporaneamente non viola nemmeno l'Antiriflessività, perchè non ci sono coppie da confrontare.
 
     $$
     \begin{array}{c}
-    	\mathcal{R}_7 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x - y \in \mathbb{Z}\}
+    	\mathcal{R}_7 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \in \mathbb{Z}\}
     \end{array}
     $$
 
@@ -90,15 +95,15 @@ title: Modulo 3
     
     $$
     \begin{array}{c}
-    	\mathcal{R}_8 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x^2 + y^2 = 0\}
+    	\mathcal{R}_8 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x^2 + x^2 = 0\}
 	\end{array}
     $$
 
-    - **né Riflessiva né Antiriflessiva:** \(x^2 + y^2 = 0\) è vero solo quando \((x,y) = 0\), in tutti gli altri casi è falso.
+    - **né Riflessiva né Antiriflessiva:** \(x^2 + x^2 = 0\) è vero solo quando \((x,x) = 0\), in tutti gli altri casi è falso.
     
     $$
     \begin{array}{c}
-    	\mathcal{R}_9 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \ge y\}
+    	\mathcal{R}_9 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \ge x\}
     \end{array}
     $$
 
@@ -106,18 +111,28 @@ title: Modulo 3
     
     $$
     \begin{array}{c}
-    	\mathcal{R}_{10} = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x \cdot y > 0\}
+    	\mathcal{R}_{10} = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x > 0\}
     \end{array}
     $$
 
-    - **né Riflessiva né Antiriflessiva:** $x \cdot y > 0$ è falso solo quando $x$ e $y$ valgono $0$, in qualsiasi altro caso è vero.
+    - **né Riflessiva né Antiriflessiva:** $x \cdot x > 0$ è falso solo quando $x$ e $x$ valgono $0$, in qualsiasi altro caso è vero.
 
 ## Relazioni Simmetriche e Antisimmetriche
 !!! abstract "Definizione ― Relazione Simmetrica"
-    Una Relazione $\mathcal{R}$ su $A \times A$ è simmetrica se per ogni elemento $a \text{ e } b \in A$, $a \mathcal{R} b$ implica $b \mathcal{R} a$.
+    $$
+    \begin{array}{c}
+        \forall \, (a,b) \in A \\
+        a \mathcal{R} b \rightarrow b \mathcal{R} a
+    \end{array}
+    $$
 
 !!! abstract "Definizione ― Relazione Antisimmetrica"
-	Diciamo che la Relazione $\mathcal{R}$ su $A \times A$ è antisimmetrica se per ogni $a \text{ e } b \in A$, se $a \mathcal{R} b$ e $b \mathcal{R} a$, allora $a = b$.
+	$$
+    \begin{array}{c}
+        \forall \, (a,b) \in A \\
+        a \mathcal{R} b, b \mathcal{R} a \rightarrow a = b
+    \end{array}
+    $$
 
 ??? example "Esempio"
     $$
@@ -200,9 +215,22 @@ title: Modulo 3
 
     - **Antisimmetrica:** non ci sono coppie $(a,b) \in \mathcal{R}$ e $(b,a) \in \mathcal{R}$.
 
-## Relazioni Transitive
+## Relazioni Transitive & Antitransitive
 !!! abstract "Definizione ― Relazione Transitiva"
-    Diciamo che la Relazione $\mathcal{R}$ su $A \times A$ è transitiva se per ogni $a,b \text{ e } c \in A$, se $a \mathcal{R} b$ e $b \mathcal{R} c$, allora $a \mathcal{R} c$.
+    $$
+    \begin{array}{c}
+        \forall \, (a,b,c) \in A \\
+        a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c
+    \end{array}
+    $$
+
+!!! abstract "Definizione ― Relazione Transitiva"
+    $$
+    \begin{array}{c}
+        \forall \, (a,b,c) \in A \\
+        a \mathcal{R} b, b \mathcal{R} c \rightarrow a \cancel{\mathcal{R}} c
+    \end{array}
+    $$
 
 ??? example "Esempio"
     $$
@@ -225,62 +253,69 @@ title: Modulo 3
 	- per ogni insieme $C$, se $\mathcal{P}(C)$ e $A \subseteq C$, allora $B \subseteq C$
 
 <figure markdown="1">
-![image](\metodi\assets\mod3_chiusura.png)
+![image](/uniroma1/assets/metodi/mod3_chiusura.png)
 </figure>
-
-Nell'esempio raffigurato:
-
-- tutti gli elementi di $B$ godono della proprietà $\mathcal{P}$, quindi $\mathcal{P}(B)$
-- l'insieme $A$ è un sottoinsieme di $B$
-- possiamo affermare che $B \subseteq C$ perchè quest'ultimo gode della proprietà $\mathcal{P}$ ed è superinsieme di $A$. 
 
 ??? note "Note aggiuntive"
     - La Chiusura di un insieme rispetto ad una proprietà, se esiste, è unica.
 
-## Dimostrazione dell'unicità della Chiusura
-Supponiamo di avere $B$ e $B^\prime$ che sono entrambe chiusure di $A$ rispetto a $\mathcal{P}$.
+??? example "Esempio ― Dimostrazione dell'unicità della Chiusura"
+    Supponiamo di avere $B$ e $B^\prime$ che sono entrambe chiusure di $A$ rispetto a $\mathcal{P}$.
+    
+    Per le tre proprietà della Chiusura, possiamo dire che:
+    
+    - esiste un insieme $\mathcal{P}(B^\prime)$
+    - $A \subseteq B^\prime$
+    - $B$ è un superinsieme di $B^\prime$, quindi $B^\prime \subseteq B$.
+    
+    Ora scambiando i due insiemi ($B$ e $B^\prime$) otteniamo quanto segue:
+    
+    - esiste un insieme $\mathcal{P}(B)$
+    - $A \subseteq B$
+    - $B^\prime$ è un superinsieme di $B$, quindi $B \subseteq B^\prime$.
+    
+    Si nota quindi che $B^\prime \subseteq B$ e $B \subseteq B^\prime$. Possiamo concludere che $B = B^\prime$.
+    
+??? example "Esempio ― Preservazione della Transitività"
+    
+    Nel paragrafo che segue si va a dimostrare che l'operatore insiemistico di Intersezione preserva la Transitività di due Relazioni.
+    
+    Supponiamo di avere due relazioni transitive, $\mathcal{R}$ e $\mathcal{S}$.
+    
+    - Se $(a,b),(b,c) \in \mathcal{R} \cap \mathcal{S}$, allora $(a,b),(b,c) \in \mathcal{R}$ e $(a,b),(b,c) \in \mathcal{S}$.
+    
+    - Visto che sono entrambe relazioni transitive:
+        - $(a,c) \in \mathcal{R}$
+        - $(a,c) \in \mathcal{S}$
+    - Quindi per definizione di Intersezione, $(a,c) \in \mathcal{R} \cap \mathcal{S}$.
+    
+    Possiamo quindi confermare che l'Intersezione tra due relazioni transitive ne preserva la transitività.
+    
+    Verifichiamo ora che lo stesso accada con l'operatore di Unione.
+    
+    Supponiamo di avere due relazioni transitive: $\mathcal{R}$ = essere più basso di, $\mathcal{B}$ = essere antenato di.
+    
+    Quindi l'unione $\mathcal{R} \cup \mathcal{B}$ sarà formata dalle coppie in cui o $x$ è antenato di $y$ o $x$ è più basso di $y$.
+    
+    - Pietro è antenato di Valerio, quindi troviamo la coppia (Pietro, Valerio) nell'Unione tra le due Relazioni.
+    - Valerio è più basso di Giuliana, quindi troviamo la coppia (Valerio, Giuliana) nell'Unione tra le due Relazioni.
+    - Pietro non è però più basso di Giuliana ne Giuliana è suo antenato. Quindi sicuramente non troveremo la coppia (Pietro, Giuliana) nell'Unione tra le due Relazioni.
+    - Secondo la Transitività però, se $x$ è più basso di $y$ (Giuliana è più basso di Pietro), allora $x$ è sicuramente più basso di $z$ (Giuliana è più bassa di Valerio).
+    
+    Possiamo concludere quindi che l'Unione non preserva la Transitività di una Relazione.
 
-Per le tre proprietà della Chiusura, possiamo dire che:
+## Chiusura Transitiva
+!!! abstract "Definizione ― Chiusura Transitiva"
+    La Chiusura Transitiva di una Relazione $\mathcal{R}$ su un insieme $A$ è la relazione più piccola che contiene $\mathcal{R}$ e che è transitiva.
 
-- esiste un insieme $\mathcal{P}(B^\prime)$
-- $A \subseteq B^\prime$
-- $B$ è un superinsieme di $B^\prime$, quindi $B^\prime \subseteq B$.
-
-Ora scambiando i due insiemi ($B$ e $B^\prime$) otteniamo quanto segue:
-
-- esiste un insieme $\mathcal{P}(B)$
-- $A \subseteq B$
-- $B^\prime$ è un superinsieme di $B$, quindi $B \subseteq B^\prime$.
-
-Si nota quindi che $B^\prime \subseteq B$ e $B \subseteq B^\prime$. Possiamo concludere che $B = B^\prime$.
-
-## Preservazione della Transitività
-
-Nel paragrafo che segue si va a dimostrare che l'operatore insiemistico di Intersezione preserva la Transitività di due Relazioni.
-
-Supponiamo di avere due relazioni transitive, $\mathcal{R}$ e $\mathcal{S}$.
-
-- Se $(a,b),(b,c) \in \mathcal{R} \cap \mathcal{S}$, allora $(a,b),(b,c) \in \mathcal{R}$ e $(a,b),(b,c) \in \mathcal{S}$.
-
-- Visto che sono entrambe relazioni transitive:
-	- $(a,c) \in \mathcal{R}$
-	- $(a,c) \in \mathcal{S}$
-- Quindi per definizione di Intersezione, $(a,c) \in \mathcal{R} \cap \mathcal{S}$.
-
-Possiamo quindi confermare che l'Intersezione tra due relazioni transitive ne preserva la transitività.
-
-Verifichiamo ora che lo stesso accada con l'operatore di Unione.
-
-Supponiamo di avere due relazioni transitive: $\mathcal{R}$ = essere più basso di, $\mathcal{B}$ = essere antenato di.
-
-Quindi l'unione $\mathcal{R} \cup \mathcal{B}$ sarà formata dalle coppie in cui o $x$ è antenato di $y$ o $x$ è più basso di $y$.
-
-- Pietro è antenato di Valerio, quindi troviamo la coppia (Pietro, Valerio) nell'Unione tra le due Relazioni.
-- Valerio è più basso di Giuliana, quindi troviamo la coppia (Valerio, Giuliana) nell'Unione tra le due Relazioni.
-- Pietro non è però più basso di Giuliana ne Giuliana è suo antenato. Quindi sicuramente non troveremo la coppia (Pietro, Giuliana) nell'Unione tra le due Relazioni.
-- Secondo la Transitività però, se $x$ è più basso di $y$ (Giuliana è più basso di Pietro), allora $x$ è sicuramente più basso di $z$ (Giuliana è più bassa di Valerio).
-
-Possiamo concludere quindi che l'Unione non preserva la Transitività di una Relazione.
+??? example "Esempio"
+    $$
+    \begin{array}{c}
+        A = \{1,2,3\} \\
+        \mathcal{R} = \{(1,2),(2,3)\} \\
+        \mathcal{R}^{+} = \{(1,2),(2,3),(1,3)\}
+    \end{array}
+    $$
 
 ## P-Maggiorabile
 !!! abstract "Definizione ― P-Maggiorabile"
@@ -289,5 +324,5 @@ Possiamo concludere quindi che l'Unione non preserva la Transitività di una Rel
     In altre parole, $A$ è P-Maggiorabile quando rispetta le prime due proprietà della Chiusura.
 
 <figure markdown="1">
-![image](\metodi\assets\mod3_pmaggiorabile.png)
+![image](/uniroma1/assets/metodi/mod3_pmaggiorabile.png)
 </figure>

@@ -15,11 +15,20 @@ title: Modulo 6 e 7
     - Ogni numero $n$ ha un successore che indichiamo con *succ*($n$)
     - Zero non è successore di nessuno
     - Se *succ*($n$) = *succ*($m$) allora $n = m$
-    - Se $A \subseteq \mathcal{N}$ è tale che zero $\in A$ e inoltre $n \in A$ implica *succ*($m$) $\in A$, allora $A = \mathcal{N}$. 
+    - Se un insieme $A$ di numeri naturali contiene $0$ e contiene anche il successore di ogni suo elemento, allora $A$ deve essere l'insieme di tutti i numeri naturali.
 
 ## Induzione
 !!! abstract "Definizione ― Principio di Induzione"
-    Se $P$ è un predicato su $\mathcal{N}$ tale che vale $P(0)$ e inoltre $P(n)$ implica $P(n+1)$, allora per ogni $n$ vale $P(n)$.
+	Il Principio di Induzione è una tecnica formale per dimostrare che una proprietà $P(n)$ è vera per tutti i numeri naturali $\mathcal{N}$.
+
+	$$
+	\begin{array}{c}
+		\text{Se } P \text{ è un predicato su } \mathcal{N} \\
+		\text{ tale che vale } P(0) \text{ e inoltre } P(n) \implies P(n+1) \\
+		\text{allora per ogni } n \text{ vale } P(n) .
+	\end{array}
+	$$
+
 
 ??? example "Esempio"
 	

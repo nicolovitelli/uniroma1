@@ -4,14 +4,14 @@ title: Modulo 14
 
 ## Albero delle Proposizioni
 !!! abstract "Definizione ― Albero delle Proposizioni"
-	Un Albero delle Proposizioni è una certa struttura ad albero nella quale ogni nodo può avere zero figli, un figlio, oppure due figli.
+	Un Albero delle Proposizioni (*o Tableu Proposizionali*) è una certa struttura ad albero nella quale ogni nodo può avere zero figli, un figlio, oppure due figli.
 
 	- I nodi sono insiemi di proposizioni.
 	- Le proposizioni di ciascun nodo si intendono in congiunzione.
 	- I figli di un nodo si intendono in disgiunzione e dipendono dal padre secondo regole costruttive. 
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod14_albero_prop.png)
+	![image](/uniroma1/assets/metodi/mod14_albero_prop.png)
 	</figure>
 
 ??? note "Note aggiuntive"
@@ -20,11 +20,11 @@ title: Modulo 14
 ??? example "Esempio ― AND e OR"
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod14_albero_and.png)
+	![image](/uniroma1/assets/metodi/mod14_albero_and.png)
 	</figure>
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod14_albero_or.png)
+	![image](/uniroma1/assets/metodi/mod14_albero_or.png)
 	</figure>
 
 ??? example "Esempio ― Verificare la Soddisfacibilità di un Albero"
@@ -103,7 +103,7 @@ title: Modulo 14
 ??? example "Esempio"
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod14_albero_chiuso.png)
+	![image](/uniroma1/assets/metodi/mod14_albero_chiuso.png)
 	</figure>
 
 !!! abstract "Definizione ― Proposizione Valida"
@@ -111,62 +111,58 @@ title: Modulo 14
 	Ovvero, se e solo se per ogni $m$, $m(\neg A) = F$.<br>
 	Ovvero, se e solo se $\neg A$ è insoddisfacibile.
 
-## Tableu Proposizionali
-!!! abstract "Definizione ― Tableu Proposizionali"
-	Tableu Proposizionale è un nome più formale per definire gli Alberi delle Proposizioni.
-
-
 ## Regole Costruttive
 
-- Conosciamo queste tre regole costruttive, le quali possiamo trovare all'interno di un nodo:
+!!! abstract "Definizione ― Regole Costruttive"
+    Le seguenti sono regole costruttive che possiamo trovare all'interno di un nodo di un Tableu Proposizionale:
 
-<figure markdown="1">
-![image](\metodi\assets\mod14_regole_costruttive_base.png)
-</figure>
-
-- Da queste, possiamo derivarci tutte le altre, per esempio l'implicazione:
-
-<figure markdown="1">
-![image](\metodi\assets\mod14_reg_costr_implicazione.png)
-</figure>
+    <figure markdown="1">
+    ![image](/uniroma1/assets/metodi/mod14_regole_costruttive_base.png)
+    </figure>
 
 ??? note "Note aggiuntive"
-	- Le regole costruttive con un solo figlio ($\mathop{\wedge}$) sono chiamate regole $\alpha$.
-	- Le regole costruttive con più di un figlio ($\mathop{\vee}$) sono chiamate regole $\beta$.
+    - Le regole costruttive con un solo figlio ($\mathop{\wedge}$) sono chiamate regole $\alpha$.
+    - Le regole costruttive con più di un figlio ($\mathop{\vee}$) sono chiamate regole $\beta$.
 
-??? example "Altri Esempi"
+??? example "Derivazione di altre Regole Costruttive"
+    - Dalle tre regole costruttive base possiamo derivarci tutte le altre, per esempio l'implicazione:
 
+    <figure markdown="1">
+    ![image](/uniroma1/assets/metodi/mod14_reg_costr_implicazione.png)
+    </figure>
+
+??? math-adm "Proprietà Algebriche"
 	$$
     \begin{array}{c}
+        \neg(A \rightarrow B) = A, \neg B \\
+        \\
         \neg (A \rightarrow B) \equiv \neg (\neg A \mathop{\vee} B) \\
         \equiv \neg \neg A \mathop{\wedge} \neg B \\
         \equiv A \mathop{\wedge} \neg B \\
-        A, \neg B \\
-        \\
-        \neg(A \rightarrow B) \\
         A, \neg B
     \end{array}
     $$
 
 ## Correttezza e Completezza
 
-- Dato un Tableu di partenza:
-
-	<figure markdown="1">
-    ![image](\metodi\assets\mod14_esempio1.png)
-    </figure>
-
-- Analizzando le foglie possiamo ricavare la formula $\phi_B$, che ha la seguente proprietà:
-    - Un qualunque modello $m$ soddisfa $B$ (*il tableu di partenza*) se e solo se soddisfa $\phi_B$
-    - Inoltre, se $\phi_B$ è insoddisfacibile, l'albero $B$ è necessariamente chiuso.  
-- Più genericamente quindi, $A$ è valido se l'albero $\neg A$ è chiuso. Dimostrazione:
-
-<figure markdown="1">
-![image](\metodi\assets\mod14_esempio2.png)
-</figure>
-
 !!! abstract "Definizione ― Correttezza"
     La Correttezza si verifica quando un albero $\neg A$ chiuso implica $A$ valido.
 
 !!! abstract "Definizione ― Completezza"
     La Completezza si verifica quando un $A$ valido implica $\neg A$ chiuso.
+
+??? example "Esempio"
+    - Dato un Tableu di partenza:
+
+	<figure markdown="1">
+    ![image](/uniroma1/assets/metodi/mod14_esempio1.png)
+    </figure>
+
+    - Analizzando le foglie possiamo ricavare la formula $\phi_B$, che ha la seguente proprietà:
+        - Un qualunque modello $m$ soddisfa $B$ (*il tableu di partenza*) se e solo se soddisfa $\phi_B$
+        - Inoltre, se $\phi_B$ è insoddisfacibile, l'albero $B$ è necessariamente chiuso.  
+    - Più genericamente quindi, $A$ è valido se l'albero $\neg A$ è chiuso. Dimostrazione:
+
+    <figure markdown="1">
+    ![image](/uniroma1/assets/metodi/mod14_esempio2.png)
+    </figure>

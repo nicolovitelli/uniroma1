@@ -7,8 +7,7 @@ title: Modulo 13
 	Se tutte le proposizioni $C_1,C_2,\dots,C_n$ e $A$ sono vere per un certo modello, allora $B$ deve essere vera nello stesso modello. Inoltre, questo afferma che in tutti i modelli in cui $C_1,C_2,\dots,C_n$ sono veri, l'implicazione $A \rightarrow B$ deve essere vera.
     $$
     \begin{array}{c}
-        C_1,C_2,\dots,C_n,A \models B \\
-        \text{ se e solo se } \\
+        C_1,C_2,\dots,C_n,A \models B \iff
         C_1,C_2,\dots,C_n \models A \rightarrow B
     \end{array}
 	$$
@@ -70,7 +69,7 @@ title: Modulo 13
 	- Costruiamo la Tabella di Verità per entrambe le proposizioni per tutte le combinazioni di valori di $p$:
 
 	<figure markdown="1">
-	![image](\metodi\assets\mod13_es1.png)
+	![image](/uniroma1/assets/metodi/mod13_es1.png)
 	</figure>
 
 	- Possiamo osservare che le colonne per $\neg p$ e $p \rightarrow$ Falso hanno gli stessi valori di verità in tutte le interpretazioni.
@@ -78,17 +77,21 @@ title: Modulo 13
 
 ## Operatore Logico XOR
 !!! abstract "Definizione ― XOR"
+	$A \dot{\vee} B$ è vero quando $A$ e $B$ hanno dei valori di verità diversi.
+
 	$$
     \begin{array}{c}
         A \dot{\vee} B
     \end{array}
 	$$
 
-	$A \dot{\vee} B$ è vero quando $A$ e $B$ hanno dei valori di verità diversi.
-
 	<figure markdown="1">
-	![image](\metodi\assets\mod13_xor.png)
+	![image](/uniroma1/assets/metodi/mod13_xor.png)
 	</figure>
 
-??? note "Note aggiuntive"
-	- $A \dot{\vee} B$ è equivalente semanticamente a $(A \mathop{\wedge} \neg B) \mathop{\vee} (B \mathop{\wedge} \neg A)$   
+??? math-adm "Proprietà Algebriche"
+    $$
+    \begin{array}{c}
+        A \dot{\vee} B \equiv (A \mathop{\wedge} \neg B) \mathop{\vee} (B \mathop{\wedge} \neg A)
+    \end{array}
+	$$  

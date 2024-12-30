@@ -2,7 +2,7 @@
 title: Modulo 9
 ---
 
-## Reticoli
+## Reticolo
 !!! abstract "Definizione ― Reticolo"
     Un Reticolo è un insieme [parzialmente ordinato](/metodi/modulo_4/#ordinamento-parziale) $S$ tale che, per ogni $a, b \in S$, esistono $inf(a,b)$ e $sup(a,b)$.
 
@@ -27,11 +27,11 @@ title: Modulo 9
 
 	$$
     \begin{array}{c}
-    	x \mathop{\vee} y = sup(x,y)
+    	a \mathop{\vee} b = sup(a,b)
     \end{array}
 	$$
 
-!!! math-adm "Proprietà Algebriche"
+??? math-adm "Proprietà Algebriche"
 
 	- **Commutatività**: l'ordine degli elementi non influenza il risultato.
 
@@ -186,6 +186,6 @@ title: Modulo 9
 	- Conclusione: la proprietà di Assorbimento è rispettata :white_check_mark:, quindi possiamo stabilire che l'insieme $A = \{1,2,3,4,6,12\}$ con la relazione $\mathcal{R}$ di divisibilità è un Reticolo.
 
 	<figure markdown="1">
-	  ![image](\metodi\assets\mod9_div12.png)
+	  ![image](/uniroma1/assets/metodi/mod9_div12.png)
 	  <figcaption>Diagramma di Hasse</figcaption>
 	</figure>

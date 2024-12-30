@@ -22,8 +22,12 @@ $$
 !!! abstract "Definizione ― Assioma di Estensione"
     Due insiemi sono uguali se e solo se hanno gli stessi elementi.
 
-!!! abstract "Definizione ― Conseguenza dell'Assioma di Estensione"
-    Se $A \subseteq B$ e $B \subseteq A$, allora $A = B$.
+    $$
+    \begin{array}{c}
+        A \subseteq B \mathop{\wedge} B \subseteq A \rightarrow A = B
+    \end{array}
+    $$
+
 
 ??? example "Esempio"
     $$
@@ -36,33 +40,45 @@ $$
 
 ## Relazione di Appartenenza
 !!! abstract "Definizione ― Relazione di Appartenenza"
-    $B \in A$ se e solo se $B$ è un elemento di $A$.
+    $$
+    \begin{array}{c}
+        a \in A \iff a \text{ è un elemento di } A
+    \end{array}
+    $$
 
 ??? example "Esempio"
     $$
     \begin{array}{c}
         A = \{1,2,3\} \\
-        B = 1 \\
-        B \in A
+        a = 1 \\
+        a \in A
     \end{array}
     $$
 
 ## Negazione di Appartenenza
 !!! abstract "Definizione ― Negazione di Appartenenza"
-    $B \not\in A$ se e solo se $B$ non è un elemento di $A$.
+    $$
+    \begin{array}{c}
+        a \not\in A \iff a \text{ non è un elemento di } A
+    \end{array}
+    $$
 
 ??? example "Esempio"
     $$
     \begin{array}{c}
         A = \{1,2,3\} \\
-        B = 4 \\
-        B \not\in A
+        a = 4 \\
+        a \not\in A
     \end{array}
     $$
 
 ## Relazione di Sottoinsieme
 !!! abstract "Definizione ― Relazione di Sottoinsieme"
-    $B \subseteq A$ se e solo se ogni elemento di $B$ è un elemento di $A$.
+    $$
+    \begin{array}{c}
+        B \subseteq A \iff \forall \, b \in B : b \in A
+    \end{array}
+    $$
 
 ??? example "Esempio"
     $$
@@ -89,7 +105,11 @@ $$
 
 ## Negazione di Sottoinsieme
 !!! abstract "Definizione ― Negazione di Sottoinsieme"
-    $B \not\subseteq A$ se e solo se almeno un elemento di $B$ non è un elemento di $A$.
+    $$
+    \begin{array}{c}
+        B \not\subseteq A \iff \exists \, b \in B : b \not\in A
+    \end{array}
+    $$
 
 ??? example "Esempio"
     $$
@@ -102,7 +122,12 @@ $$
 
 ## Predicato
 !!! abstract "Definizione ― Predicato"
-    Si indica con $\{x \in A : \mathcal{P}(x)\}$ l'insieme degli elementi di $A$ che godono della proprietà $\mathcal{P}$.
+    Un Predicato è una proprietà applicata su un elemento di un insieme.
+    $$
+    \begin{array}{c}
+        \{x \in A : \mathcal{P}(x)\}
+    \end{array}
+    $$
 
 ## Assioma di Specificazione
 !!! abstract "Definizione ― Assioma di Specificazione"
