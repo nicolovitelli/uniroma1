@@ -126,26 +126,26 @@ title: Esercizi
     	4. L’intersezione di $A$ e $B$.
 
 ??? lightbulb "Soluzioni"
-	1. **A** - Una relazione riflessiva è definita come una relazione in cui ogni elemento è in relazione con se stesso.
-	2. **B** - L’insieme potenza di $A$ è l’insieme di tutti i sottoinsiemi di $A$, incluso l’insieme vuoto.
-	3. **A** - Una relazione è antisimmetrica se $a \mathcal{R} b$ e $b \mathcal{R} a$ implicano $a = b$.
-	4. **A** - Una relazione d’ordine parziale è caratterizzata da riflessività, antisimmetria e transitività.
-	5. **B** - La chiusura transitiva di una relazione è la relazione più piccola che include la relazione originale ed è transitiva.
-	6. **C** - Una funzione è una relazione in cui ogni elemento del dominio è associato a esattamente un elemento del codominio.
-	7. **B** - Un’algebra di Boole è un sistema con operazioni di unione, intersezione e complemento che soddisfano leggi specifiche.
-	8. **A** - La cardinalità dei numeri naturali è rappresentata da $\aleph_0$, il primo numero cardinale transfinito.
-	9. **A** - La chiusura di una relazione è l’insieme più piccolo che contiene la relazione e soddisfa una proprietà specifica.
-	10. **A** - I tableau proposizionali utilizzano solo proposizioni atomiche, senza variabili o quantificatori.
-	11. **A** - Una relazione è simmetrica se $a \mathcal{R} b$ implica $b \mathcal{R} a$.
-	12. **A** - Il sistema di Hilbert formalizza le dimostrazioni in logica proposizionale e predicativa.
-	13. **B** - L’implicazione logica è una relazione tra due proposizioni, in cui la seconda è vera se la prima è vera.
-	14. **A** - Le funzioni non calcolabili non possono essere descritte da alcun algoritmo finito.
-	15. **A** - L’induzione matematica è un metodo per dimostrare che una proposizione è vera per tutti i numeri naturali.
-	16. **A** - Una relazione d’equivalenza è riflessiva, simmetrica e transitiva.
-	17. **A** - La logica predicativa formalizza il ragionamento su insiemi e relazioni con variabili e quantificatori.
-	18. **B** - La chiusura non è un’operazione sugli insiemi, ma un concetto legato alle relazioni.
-	19. **A** - La prova di Cantor dimostra che l’insieme dei numeri reali è non numerabile.
-	20. **A** - Il prodotto cartesiano è l’insieme delle coppie ordinate in cui il primo elemento è di $A$ e il secondo di $B$.
+	1. **A** ― Una relazione riflessiva è definita come una relazione in cui ogni elemento è in relazione con se stesso.
+ 	2. **B** ― L’insieme potenza di $A$ è l’insieme di tutti i sottoinsiemi di $A$, incluso l’insieme vuoto.
+	3. **A** ― Una relazione è antisimmetrica se $a \mathcal{R} b$ e $b \mathcal{R} a$ implicano $a = b$.
+	4. **A** ― Una relazione d’ordine parziale è caratterizzata da riflessività, antisimmetria e transitività.
+	5. **B** ― La chiusura transitiva di una relazione è la relazione più piccola che include la relazione originale ed è transitiva.
+	6. **C** ― Una funzione è una relazione in cui ogni elemento del dominio è associato a esattamente un elemento del codominio.
+	7. **B** ― Un’algebra di Boole è un sistema con operazioni di unione, intersezione e complemento che soddisfano leggi specifiche.
+	8. **A** ― La cardinalità dei numeri naturali è rappresentata da $\aleph_0$, il primo numero cardinale transfinito.
+	9. **A** ― La chiusura di una relazione è l’insieme più piccolo che contiene la relazione e soddisfa una proprietà specifica.
+	10. **A** ― I tableau proposizionali utilizzano solo proposizioni atomiche, senza variabili o quantificatori.
+	11. **A** ― Una relazione è simmetrica se $a \mathcal{R} b$ implica $b \mathcal{R} a$.
+	12. **A** ― Il sistema di Hilbert formalizza le dimostrazioni in logica proposizionale e predicativa.
+	13. **B** ― L’implicazione logica è una relazione tra due proposizioni, in cui la seconda è vera se la prima è vera.
+	14. **A** ― Le funzioni non calcolabili non possono essere descritte da alcun algoritmo finito.
+	15. **A** ― L’induzione matematica è un metodo per dimostrare che una proposizione è vera per tutti i numeri naturali.
+	16. **A** ― Una relazione d’equivalenza è riflessiva, simmetrica e transitiva.
+	17. **A** ― La logica predicativa formalizza il ragionamento su insiemi e relazioni con variabili e quantificatori.
+	18. **B** ― La chiusura non è un’operazione sugli insiemi, ma un concetto legato alle relazioni.
+	19. **A** ― La prova di Cantor dimostra che l’insieme dei numeri reali è non numerabile.
+	20. **A** ― Il prodotto cartesiano è l’insieme delle coppie ordinate in cui il primo elemento è di $A$ e il secondo di $B$.
 
 ---
 
