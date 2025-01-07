@@ -11,6 +11,8 @@ title: Modulo 3
     \end{array}
 	$$
 
+## Composizione di due Relazioni
+
 !!! abstract "Definizione ― Composizione di due Relazioni"
     La Composizione di due Relazioni $\mathcal{R}$ ed $\mathcal{S}$ tra gli insiemi $A,B$ e $C$ è definita come una Relazione $\mathcal{R} \circ \mathcal{S} \subseteq A \times C$, tale che per ogni coppia $(a,c) \in \mathcal{R} \circ \mathcal{S}$, esiste un elemento $b \in B$ tale che $a \mathcal{R} b, b \mathcal{S} c$.
 
@@ -18,6 +20,16 @@ title: Modulo 3
     <figure markdown="1">
     ![composizione](/uniroma1/assets/metodi/mod3_composizione.png)
     </figure>
+
+## Complemento di una Relazione
+!!! abstract "Definizione ― Complemento di una Relazione"
+    Sia $\mathcal{R}$ una Relazione definita su un insieme $A$. Il complemento di $\mathcal{R}$, denotato $\mathcal{R}^C$, è definito come l'insieme delle coppie ordinate $(a,b)$ in $A \times A$ tali che $(a,b) \not\in \mathcal{R}$.
+
+    $$
+    \begin{array}{c}
+        \mathcal{R}^C = \{(a,b) \in A \times A \, | \, (a,b) \not\in \mathcal{R}\}
+    \end{array}
+    $$
 
 ## Relazioni Riflessive e Antiriflessive
 !!! abstract "Definizione ― Relazione Riflessiva"

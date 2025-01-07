@@ -29,12 +29,8 @@ extra:
 markdown_extensions:
   - tables
   - footnotes
-  # - attr_list
   - pymdownx.arithmatex:
       generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
@@ -53,6 +49,8 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.mark
   - attr_list
   - md_in_html
