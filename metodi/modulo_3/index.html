@@ -916,10 +916,21 @@
 <p>Una Relazione fra due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span> è un qualunque sottoinsieme di <span class="arithmatex">\(A \times B\)</span>.
 $$
 \begin{array}{c}
-    \mathcal{R} \subseteq A \times B
+     \mathcal{R} \subseteq A \times B
 \end{array}
 $$</p>
 </div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+\begin{array}{c}
+     A = \{1, 2, 3\} \\
+     B = \{4, 5, 6\} \\
+     A \times B = \{(1,4),(1,5),(1,6),(2,4),(2,5),(3,6)\} \\
+     \mathcal{R}_1 = \{(1,6), (2,5)\}
+\end{array}
+\]</div>
+</details>
 <h2 id="composizione-di-due-relazioni">Composizione di due Relazioni<a class="headerlink" href="#composizione-di-due-relazioni" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Composizione di due Relazioni</p>
@@ -937,7 +948,7 @@ $$</p>
 <p>Sia <span class="arithmatex">\(\mathcal{R}\)</span> una Relazione definita su un insieme <span class="arithmatex">\(A\)</span>. Il complemento di <span class="arithmatex">\(\mathcal{R}\)</span>, denotato <span class="arithmatex">\(\mathcal{R}^C\)</span>, è definito come l'insieme delle coppie ordinate <span class="arithmatex">\((a,b)\)</span> in <span class="arithmatex">\(A \times A\)</span> tali che <span class="arithmatex">\((a,b) \not\in \mathcal{R}\)</span>.</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \mathcal{R}^C = \{(a,b) \in A \times A \, | \, (a,b) \not\in \mathcal{R}\}
+     \mathcal{R}^C = \{(a,b) \in A \times A \, | \, (a,b) \not\in \mathcal{R}\}
 \end{array}
 \]</div>
 </div>
@@ -946,8 +957,8 @@ $$</p>
 <p class="admonition-title">Definizione ― Relazione Riflessiva</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \forall a \in A \\
-    (a,a) \in \mathcal{R}
+     \forall a \in A \\
+     (a,a) \in \mathcal{R}
 \end{array}
 \]</div>
 </div>
@@ -955,101 +966,83 @@ $$</p>
 <p class="admonition-title">Definizione ― Relazione Antiriflessiva</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \forall a \in A \\
-    (a,a) \not\in \mathcal{R}
+     \forall a \in A \\
+     (a,a) \not\in \mathcal{R}
 \end{array}
 \]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_1 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x &lt; y\}
-\end{array}
-\]</div>
+<ol>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_1 = \{(a, a) \mid a \in A\}\)</span></p>
 <ul>
-<li><strong>Antiriflessiva:</strong> nessun numero reale è minore di se stesso.</li>
+<li><strong>Proprietà:</strong> Riflessiva, perché ogni elemento è in relazione con sé stesso.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_2 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \text{ è pari}\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_2 = \emptyset\)</span> </p>
 <ul>
-<li><strong>Riflessiva:</strong> qualsiasi numero reale sottratto a se stesso ha come risultato <span class="arithmatex">\(0\)</span>, quindi un numero paro.</li>
+<li><strong>Proprietà:</strong> Antiriflessiva, perché non contiene nessuna coppia <span class="arithmatex">\((a, a)\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_3 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \neq x\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_3 = \{(a, b) \mid a, b \in A \text{ e } a \text{ è divisibile per } 2\}\)</span> con <span class="arithmatex">\(A = \{1, 2, 3, 4\}\)</span></p>
 <ul>
-<li><strong>Antiriflessiva:</strong> nessun numero è diverso da se stesso.</li>
+<li><strong>Proprietà:</strong> Non è riflessiva perché gli elementi <span class="arithmatex">\(1\)</span> e <span class="arithmatex">\(3\)</span> non sono in relazione con sé stessi. Non è antiriflessiva perché gli elementi <span class="arithmatex">\(2\)</span> e <span class="arithmatex">\(4\)</span> sono in relazione con sé stessi.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_4 = \{(x,x) \in \mathbb{N} \times \mathbb{N} : x + x = 6\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_4 = \{(a, b) \mid a \text{ divide } b\}\)</span> </p>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x + x = 6\)</span> è vero solo quando <span class="arithmatex">\(x\)</span> e <span class="arithmatex">\(x\)</span> sono uguali a <span class="arithmatex">\(3\)</span>, in tutti gli altri casi è falso.</li>
+<li><strong>Proprietà:</strong> Riflessiva, perché ogni numero divide sé stesso.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_5 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x = 0\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_5 = \{(a, b) \mid a &gt; b\}\)</span></p>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x \cdot x = 0\)</span> è vero solo quando  <span class="arithmatex">\((x,x) = 0\)</span>, in tutti gli altri casi è falso.</li>
+<li><strong>Proprietà:</strong> Antiriflessiva, perché non esistono <span class="arithmatex">\(a \in A\)</span> tali che <span class="arithmatex">\(a &gt; a\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_6 = \{\emptyset\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_6 = \{(a, b) \mid a \leq b\}\)</span></p>
 <ul>
-<li><strong>sia Riflessiva che Antiriflessiva:</strong> Riflessiva perchè non ci sono coppie che violano la Riflessività (<span class="arithmatex">\(\forall (x,x) \in \mathbb{N} \times \mathbb{N}, x \mathcal{R} x\)</span>) e contemporaneamente non viola nemmeno l'Antiriflessività, perchè non ci sono coppie da confrontare.</li>
+<li><strong>Proprietà:</strong> Riflessiva, perché <span class="arithmatex">\(a \leq a\)</span> per ogni <span class="arithmatex">\(a \in A\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_7 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \in \mathbb{Z}\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_7 = \{(a, b) \mid a \neq b\}\)</span></p>
 <ul>
-<li><strong>Riflessiva:</strong> qualsiasi numero reale sottratto a se stesso ha come risultato <span class="arithmatex">\(0\)</span>, quindi appartiene all'insieme <span class="arithmatex">\(\mathbb{Z}\)</span>.</li>
+<li><strong>Proprietà:</strong> Antiriflessiva, perché nessun elemento è diverso da sé stesso.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_8 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x^2 + x^2 = 0\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_8 = \{(a, b) \mid a \text{ e } b \text{ sono fratelli, con } a \neq b\}\)</span></p>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x^2 + x^2 = 0\)</span> è vero solo quando <span class="arithmatex">\((x,x) = 0\)</span>, in tutti gli altri casi è falso.</li>
+<li><strong>Proprietà:</strong> Antiriflessiva, perché nessuno è fratello di sé stesso (non esistono coppie <span class="arithmatex">\((a, a)\)</span> nella relazione).</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_9 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \ge x\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{9} = \{(a, b) \mid a \text{ è antenato di } b\}\)</span></p>
 <ul>
-<li><strong>Riflessiva:</strong> qualsiasi numero reale è uguale a se stesso.</li>
+<li><strong>Proprietà:</strong> Antiriflessiva, perché nessuno è antenato di sé stesso.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_{10} = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x &gt; 0\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{10} = \{(a, b) \mid a \text{ è divisore di } b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3, 4, 6\}\)</span></p>
 <ul>
-<li><strong>né Riflessiva né Antiriflessiva:</strong> <span class="arithmatex">\(x \cdot x &gt; 0\)</span> è falso solo quando <span class="arithmatex">\(x\)</span> e <span class="arithmatex">\(x\)</span> valgono <span class="arithmatex">\(0\)</span>, in qualsiasi altro caso è vero.</li>
+<li><strong>Proprietà:</strong> Riflessiva, perché ogni numero è divisibile per sé stesso.</li>
 </ul>
+</li>
+</ol>
 </details>
 <h2 id="relazioni-simmetriche-e-antisimmetriche">Relazioni Simmetriche e Antisimmetriche<a class="headerlink" href="#relazioni-simmetriche-e-antisimmetriche" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Simmetrica</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \forall \, (a,b) \in A \\
-    a \mathcal{R} b \rightarrow b \mathcal{R} a
+     \forall \, (a,b) \in A \\
+     a \mathcal{R} b \rightarrow b \mathcal{R} a
 \end{array}
 \]</div>
 </div>
@@ -1057,101 +1050,83 @@ $$</p>
 <p class="admonition-title">Definizione ― Relazione Antisimmetrica</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \forall \, (a,b) \in A \\
-    a \mathcal{R} b, b \mathcal{R} a \rightarrow a = b
+     \forall \, (a,b) \in A \\
+     a \mathcal{R} b, b \mathcal{R} a \rightarrow a = b
 \end{array}
 \]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_1 = \{(1,1),(2,2)\}
-\end{array}
-\]</div>
+<ol>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{1} = \{(a, b) \mid a = b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
 <ul>
-<li><strong>sia Simmetrica che Antisimmetrica</strong>.</li>
+<li><strong>Proprietà:</strong> Sia simmetrica che antisimmetrica, perché ogni elemento è in relazione solo con sé stesso.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_2 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a \leq b\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{2} = \emptyset\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
 <ul>
-<li><strong>Antisimmetrica:</strong> se <span class="arithmatex">\(a \leq b\)</span> e <span class="arithmatex">\(b \leq a\)</span>, allora necessariamente <span class="arithmatex">\(a = b\)</span>. Non può capitare che la condizione si verifichi e <span class="arithmatex">\(a \neq b\)</span> (quindi non può essere Simmetrica).</li>
+<li><strong>Proprietà:</strong> Sia simmetrica che antisimmetrica, poiché non ci sono coppie che violano nessuna delle due proprietà.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_3 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a &lt; b\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{3} = A \times A\)</span> su <span class="arithmatex">\(A = \{1, 2\}\)</span></p>
 <ul>
-<li><strong>Antisimmetrica:</strong> perchè non troveremo mai coppie in cui <span class="arithmatex">\(a &lt; b\)</span> e <span class="arithmatex">\(b &lt; a\)</span>, quindi la definizione di Antisimmetria viene rispettata.</li>
+<li><strong>Proprietà:</strong> Simmetrica, perché se <span class="arithmatex">\((a, b) \in \mathcal{R}_3\)</span>, allora anche <span class="arithmatex">\((b, a) \in \mathcal{R}_3\)</span>; non è antisimmetrica, perché <span class="arithmatex">\(a \neq b\)</span> è possibile.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_4 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a + b = 10\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{4} = \{(a, b) \mid a \text{ divide } b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 4\}\)</span></p>
 <ul>
-<li><strong>Simmetrica:</strong> se <span class="arithmatex">\(a + b = 10\)</span> allora è sicuramente vero che <span class="arithmatex">\(b + a = 10\)</span>. Non è necessariamente vero che <span class="arithmatex">\(a = b\)</span> (Antisimmetria) perchè possono esserci coppie come <span class="arithmatex">\(a=3, b=10\)</span>.</li>
+<li><strong>Proprietà:</strong> Antisimmetrica, perché se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid a\)</span>, allora <span class="arithmatex">\(a = b\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_5 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a \text{ e } b \text{ hanno la stessa parità}\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{5} = \{(a, b) \mid a \geq b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
 <ul>
-<li><strong>Simmetrica:</strong> possono esserci coppie come <span class="arithmatex">\(a=2,b=4\)</span> che rispettano la proprietà di Simmetria (<span class="arithmatex">\(2,4\)</span> sono pari come <span class="arithmatex">\(4,2\)</span>). Non può essere Antisimmetrica perchè non è detto che <span class="arithmatex">\(a = b\)</span>.</li>
+<li><strong>Proprietà:</strong> Antisimmetrica, perché se <span class="arithmatex">\(a \geq b\)</span> e <span class="arithmatex">\(b \geq a\)</span>, allora <span class="arithmatex">\(a = b\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_6 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a \text{ è paro}, b \text{ è disparo}\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{6} = \{(a, b) \mid a \text{ e } b \text{ sono fratelli}\}\)</span> su un insieme di persone <span class="arithmatex">\(P\)</span></p>
 <ul>
-<li><strong>né Simmetrica né Antisimmetrica:</strong> <span class="arithmatex">\(a \mathcal{R} b\)</span> e <span class="arithmatex">\(b \mathcal{R} a\)</span> non potrà mai essere vero, per esempio la coppia <span class="arithmatex">\((2,5) \in \mathcal{R}\)</span> ma <span class="arithmatex">\((5,2) \not\in \mathcal{R}\)</span>.</li>
+<li><strong>Proprietà:</strong> Simmetrica, perché se <span class="arithmatex">\(a\)</span> è fratello di <span class="arithmatex">\(b\)</span>, allora <span class="arithmatex">\(b\)</span> è fratello di <span class="arithmatex">\(a\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_7 = \{(1,2),(2,1)\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{7} = \{(a, b) \mid a \neq b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
 <ul>
-<li><strong>Simmetrica:</strong> perchè <span class="arithmatex">\((a,b) \in \mathcal{R}\)</span> e <span class="arithmatex">\((b,a) \in \mathcal{R}\)</span>.</li>
+<li><strong>Proprietà:</strong> Né simmetrica né antisimmetrica, perché la simmetria è violata dalla proprietà stessa e l'antisimmetria non si applica.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_8 = \{(3,4),(4,5)\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{8} = \{(a, b) \mid a + b = 0\}\)</span> su <span class="arithmatex">\(A = \{-2, -1, 0, 1, 2\}\)</span></p>
+</li>
+<li>
+<p><strong>Proprietà:</strong> Simmetrica, perché se <span class="arithmatex">\((a, b) \in \mathcal{R}_8\)</span>, allora <span class="arithmatex">\((b, a) \in \mathcal{R}_8\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{9} = \{(a, b) \mid a \leq b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
 <ul>
-<li><strong>né Simmetrica né Antisimmetrica:</strong> <span class="arithmatex">\((a,b) \in \mathcal{R}\)</span> ma <span class="arithmatex">\((b,a) \not\in \mathcal{R}\)</span>.</li>
+<li><strong>Proprietà:</strong> Antisimmetrica, perché se <span class="arithmatex">\((a, b) \in \mathcal{R}_9\)</span> e <span class="arithmatex">\((b, a) \in \mathcal{R}_9\)</span>, allora <span class="arithmatex">\(a = b\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_9 = \{(5,10),(10,5),(5,5)\}
-\end{array}
-\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{10} = \{(a, b) \mid a + b \text{ è pari}\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3, 4\}\)</span></p>
 <ul>
-<li><strong>Simmetrica:</strong> <span class="arithmatex">\((a,b) \in \mathcal{R}\)</span> e <span class="arithmatex">\((b,a) \in \mathcal{R}\)</span>.</li>
+<li><strong>Proprietà:</strong> Simmetrica, perché se <span class="arithmatex">\((a, b) \in \mathcal{R}_{10}\)</span>, allora <span class="arithmatex">\((b, a) \in \mathcal{R}_{10}\)</span>.</li>
 </ul>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \mathcal{R}_{10} = \{(1,2),(2,3),(1,3)\}
-\end{array}
-\]</div>
-<ul>
-<li><strong>Antisimmetrica:</strong> non ci sono coppie <span class="arithmatex">\((a,b) \in \mathcal{R}\)</span> e <span class="arithmatex">\((b,a) \in \mathcal{R}\)</span>.</li>
-</ul>
+</li>
+</ol>
 </details>
 <h2 id="relazioni-transitive-antitransitive">Relazioni Transitive &amp; Antitransitive<a class="headerlink" href="#relazioni-transitive-antitransitive" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Relazione Transitiva</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \forall \, (a,b,c) \in A \\
-    a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c
+     \forall \, (a,b,c) \in A \\
+     a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c
 \end{array}
 \]</div>
 </div>
@@ -1159,32 +1134,84 @@ $$</p>
 <p class="admonition-title">Definizione ― Relazione Transitiva</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    \forall \, (a,b,c) \in A \\
-    a \mathcal{R} b, b \mathcal{R} c \rightarrow a \cancel{\mathcal{R}} c
+     \forall \, (a,b,c) \in A \\
+     a \mathcal{R} b, b \mathcal{R} c \rightarrow a \cancel{\mathcal{R}} c
 \end{array}
 \]</div>
 </div>
 <details class="example">
 <summary>Esempio</summary>
-<div class="arithmatex">\[
-\begin{array}{c}
-    \textit{Esempi di Relazioni Transitive e Non Transitive}\\
-    A = \{1,2,3,4\} \\
-    \\
-    \mathcal{R}_1 = \{(2,1),(3,1),(3,2),(4,4)\} \\ \mathcal{R}_1 \text{ è Transitiva perchè } \{(3,2),(2,1),(3,1)\} \in \mathcal{R}_1 \\
-    \\
-    \mathcal{R}_2 = \{(2,1),(1,3)\} \\ \mathcal{R}_2 \text{ non è Transitiva perchè } \{(2,1),(1,3)\} \in \mathcal{R}_2,(2,3) \not\in \mathcal{R}_2
-\end{array}
-\]</div>
+<ol>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{1} = \{(a, b) \mid a = b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché se <span class="arithmatex">\(a = b\)</span> e <span class="arithmatex">\(b = c\)</span>, allora <span class="arithmatex">\(a = c\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{2} = \emptyset\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché non ci sono coppie <span class="arithmatex">\((a, b)\)</span>, quindi non c'è alcuna violazione della transitività.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{3} = A \times A\)</span> su <span class="arithmatex">\(A = \{1, 2\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché ogni coppia <span class="arithmatex">\((a, b)\)</span> è in relazione con ogni altra coppia.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{4} = \{(a, b) \mid a \leq b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché se <span class="arithmatex">\(a \leq b\)</span> e <span class="arithmatex">\(b \leq c\)</span>, allora <span class="arithmatex">\(a \leq c\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{5} = \{(a, b) \mid a &gt; b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché se <span class="arithmatex">\(a &gt; b\)</span> e <span class="arithmatex">\(b &gt; c\)</span>, allora <span class="arithmatex">\(a &gt; c\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{6} = \{(a, b) \mid a \text{ è padre di } b\}\)</span> su un insieme di persone <span class="arithmatex">\(P\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Antitransitiva, perché se <span class="arithmatex">\(a\)</span> è padre di <span class="arithmatex">\(b\)</span> e <span class="arithmatex">\(b\)</span> è padre di <span class="arithmatex">\(c\)</span>, allora <span class="arithmatex">\(a\)</span> non può essere padre di <span class="arithmatex">\(c\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{7} = \{(a, b) \mid a \text{ è più vecchio di } b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3, 4\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché se <span class="arithmatex">\(a\)</span> è più vecchio di <span class="arithmatex">\(b\)</span> e <span class="arithmatex">\(b\)</span> è più vecchio di <span class="arithmatex">\(c\)</span>, allora <span class="arithmatex">\(a\)</span> è più vecchio di <span class="arithmatex">\(c\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{8} = \{(a, b) \mid a + b \text{ è pari}\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3, 4\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Né transitiva né antitransitiva, perché, ad esempio, se <span class="arithmatex">\((a, b) \in \mathcal{R}_8\)</span> e <span class="arithmatex">\((b, c) \in \mathcal{R}_8\)</span>, non è garantito che <span class="arithmatex">\((a, c) \in \mathcal{R}_8\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{9} = \{(a, b) \mid a + b = 10\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 3, 4, 5, 6, 7, 8, 9\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Né transitiva né antitransitiva, perché non esiste alcuna regola che leghi <span class="arithmatex">\(a, b, c\)</span> in modo consistente.</li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{R}_{10} = \{(a, b) \mid a \text{ è divisore di } b\}\)</span> su <span class="arithmatex">\(A = \{1, 2, 4, 8\}\)</span></p>
+<ul>
+<li><strong>Proprietà:</strong> Transitiva, perché se <span class="arithmatex">\(a \mid b\)</span> e <span class="arithmatex">\(b \mid c\)</span>, allora <span class="arithmatex">\(a \mid c\)</span>.</li>
+</ul>
+</li>
+</ol>
 </details>
 <h2 id="chiusura">Chiusura<a class="headerlink" href="#chiusura" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Chiusura</p>
-<p>Un insieme <span class="arithmatex">\(B\)</span> è detto chiusura di un insieme <span class="arithmatex">\(A\)</span> rispetto ad una proprietà <span class="arithmatex">\(\mathcal{P}\)</span> quando sono soddisfatte le seguenti condizioni:</p>
+<p>Un insieme <span class="arithmatex">\(B\)</span> è detto chiusura di un insieme <span class="arithmatex">\(A\)</span> rispetto ad una proprietà <span class="arithmatex">\(P\)</span> quando sono soddisfatte le seguenti condizioni:</p>
 <ul>
-<li><span class="arithmatex">\(B\)</span> gode della proprietà <span class="arithmatex">\(\mathcal{P}\)</span>, quindi <span class="arithmatex">\(\mathcal{P}(B)\)</span></li>
+<li><span class="arithmatex">\(B\)</span> gode della proprietà <span class="arithmatex">\(P\)</span>, quindi <span class="arithmatex">\(P(B)\)</span></li>
 <li><span class="arithmatex">\(A \subseteq B\)</span></li>
-<li>per ogni insieme <span class="arithmatex">\(C\)</span>, se <span class="arithmatex">\(\mathcal{P}(C)\)</span> e <span class="arithmatex">\(A \subseteq C\)</span>, allora <span class="arithmatex">\(B \subseteq C\)</span></li>
+<li>per ogni insieme <span class="arithmatex">\(C\)</span>, se <span class="arithmatex">\(P(C)\)</span> e <span class="arithmatex">\(A \subseteq C\)</span>, allora <span class="arithmatex">\(B \subseteq C\)</span></li>
 </ul>
 </div>
 <figure>
@@ -1198,16 +1225,16 @@ $$</p>
 </details>
 <details class="example">
 <summary>Esempio ― Dimostrazione dell'unicità della Chiusura</summary>
-<p>Supponiamo di avere <span class="arithmatex">\(B\)</span> e <span class="arithmatex">\(B^\prime\)</span> che sono entrambe chiusure di <span class="arithmatex">\(A\)</span> rispetto a <span class="arithmatex">\(\mathcal{P}\)</span>.</p>
+<p>Supponiamo di avere <span class="arithmatex">\(B\)</span> e <span class="arithmatex">\(B^\prime\)</span> che sono entrambe chiusure di <span class="arithmatex">\(A\)</span> rispetto a <span class="arithmatex">\(P\)</span>.</p>
 <p>Per le tre proprietà della Chiusura, possiamo dire che:</p>
 <ul>
-<li>esiste un insieme <span class="arithmatex">\(\mathcal{P}(B^\prime)\)</span></li>
+<li>esiste un insieme <span class="arithmatex">\(P(B^\prime)\)</span></li>
 <li><span class="arithmatex">\(A \subseteq B^\prime\)</span></li>
 <li><span class="arithmatex">\(B\)</span> è un superinsieme di <span class="arithmatex">\(B^\prime\)</span>, quindi <span class="arithmatex">\(B^\prime \subseteq B\)</span>.</li>
 </ul>
 <p>Ora scambiando i due insiemi (<span class="arithmatex">\(B\)</span> e <span class="arithmatex">\(B^\prime\)</span>) otteniamo quanto segue:</p>
 <ul>
-<li>esiste un insieme <span class="arithmatex">\(\mathcal{P}(B)\)</span></li>
+<li>esiste un insieme <span class="arithmatex">\(P(B)\)</span></li>
 <li><span class="arithmatex">\(A \subseteq B\)</span></li>
 <li><span class="arithmatex">\(B^\prime\)</span> è un superinsieme di <span class="arithmatex">\(B\)</span>, quindi <span class="arithmatex">\(B \subseteq B^\prime\)</span>.</li>
 </ul>
@@ -1251,16 +1278,16 @@ $$</p>
 <summary>Esempio</summary>
 <div class="arithmatex">\[
 \begin{array}{c}
-    A = \{1,2,3\} \\
-    \mathcal{R} = \{(1,2),(2,3)\} \\
-    \mathcal{R}^{+} = \{(1,2),(2,3),(1,3)\}
+     A = \{1,2,3\} \\
+     \mathcal{R} = \{(1,2),(2,3)\} \\
+     \mathcal{R}^{+} = \{(1,2),(2,3),(1,3)\}
 \end{array}
 \]</div>
 </details>
 <h2 id="p-maggiorabile">P-Maggiorabile<a class="headerlink" href="#p-maggiorabile" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― P-Maggiorabile</p>
-<p>Quando esiste un insieme <span class="arithmatex">\(B\)</span> tale che <span class="arithmatex">\(\mathcal{P}(B)\)</span> e <span class="arithmatex">\(A \subseteq B\)</span>, diciamo che <span class="arithmatex">\(A\)</span> è P-Maggiorabile.</p>
+<p>Quando esiste un insieme <span class="arithmatex">\(B\)</span> tale che <span class="arithmatex">\(P(B)\)</span> e <span class="arithmatex">\(A \subseteq B\)</span>, diciamo che <span class="arithmatex">\(A\)</span> è P-Maggiorabile.</p>
 <p>In altre parole, <span class="arithmatex">\(A\)</span> è P-Maggiorabile quando rispetta le prime due proprietà della Chiusura.</p>
 </div>
 <figure>
