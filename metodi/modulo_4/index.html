@@ -875,9 +875,9 @@
 <p class="admonition-title">Definizione ― Ordine Stretto</p>
 <p>Un Ordine Stretto si presenta quando una Relazione <span class="arithmatex">\(\mathcal{R}\)</span> è:</p>
 <ul>
-<li>Transitiva <span class="arithmatex">\((a \mathcal{R} b, b \mathcal{R} c, a \mathcal{R} c)\)</span></li>
-<li>Antisimmetrica <span class="arithmatex">\((a \mathcal{R} b, b \mathcal{R} a, a = b)\)</span></li>
-<li>Non necessariamente Riflessiva <span class="arithmatex">\((a \mathcal{R} b)\)</span></li>
+<li>Antiriflessiva (<span class="arithmatex">\(\forall a \in A, (a,a) \not\in \mathcal{R}\)</span>)</li>
+<li>Transitiva (<span class="arithmatex">\(\forall \, (a,b,c) \in A \\
+     a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c\)</span>)</li>
 </ul>
 </div>
 <details class="example">
@@ -973,7 +973,7 @@ $$</p>
 <h2 id="quoziente">Quoziente<a class="headerlink" href="#quoziente" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Quoziente</p>
-<p>L'insieme di tutte le Classi di Equivalenza si chiama Quoziente e si indica con <span class="arithmatex">\(A/\mathcal{R}\)</span>.</p>
+<p>Si dice insieme Quoziente dell'insieme <span class="arithmatex">\(A\)</span> rispetto alla Relazione <span class="arithmatex">\(\mathcal{R}\)</span> l'insieme <span class="arithmatex">\(A/\mathcal{R}\)</span> delle classi di equivalenza degli elementi di <span class="arithmatex">\(A\)</span> rispetto alla relazione di equivalenza <span class="arithmatex">\(\mathcal{R}\)</span>.</p>
 </div>
 <details class="example">
 <summary>Esempio</summary>
