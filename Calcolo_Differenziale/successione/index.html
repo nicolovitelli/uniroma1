@@ -430,6 +430,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#successione-crescente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successione Crescente
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -944,6 +953,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#successione-crescente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successione Crescente
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1135,10 +1153,10 @@ $$</p>
 <h2 id="successione-limitata">Successione Limitata<a class="headerlink" href="#successione-limitata" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Successione Limitata</p>
-<p>Una successione limitata è una successione i cui termini non crescono indefinitamente né in positivo né in negativo, ma sono "contenuti" all'interno di un intervallo finito. In altre parole, una successione (<span class="arithmatex">\(a_n\)</span>) è limitata se esistono due numeri reali <span class="arithmatex">\(M\)</span> e <span class="arithmatex">\(m\)</span> tali che per ogni termine della successione <span class="arithmatex">\(a_n\)</span>, si ha:</p>
+<p>Una successione limitata è una successione i cui termini sono contenuti all'interno di un intervallo finito:</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    m \leq a_n \leq M \text{ per ogni } n.
+    m \leq a_n \leq M \text{ per ogni } n
 \end{array}
 \]</div>
 <p>Quindi, i termini della successione sono compresi tra due valori <span class="arithmatex">\(m\)</span> e <span class="arithmatex">\(M\)</span>, senza mai superare questi limiti. Questo significa che i valori della successione non diventano mai troppo grandi né troppo piccoli.</p>
@@ -1168,7 +1186,11 @@ $$</p>
 <h2 id="successione-indeterminata">Successione Indeterminata<a class="headerlink" href="#successione-indeterminata" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Successione Indeterminata</p>
-<p>Una successione indeterminata si riferisce a una successione i cui termini non tendono a un valore specifico e non sono prevedibili in modo chiaro. Più precisamente, una successione è indeterminata quando il suo comportamento è ambiguo, cioè quando non è possibile determinarne facilmente il limite o quando la successione non ha un comportamento regolare che si avvicina a un valore fisso.</p>
+<p>Una successione indeterminata è una successione che non ha un comportamento regolare e non tende ad un valore specifico. I suoi termini possono:</p>
+<ul>
+<li>Oscillare senza mai stabilizzarsi su un valore fisso.</li>
+<li>Crescere senza un limite definito.</li>
+</ul>
 </div>
 <details class="example">
 <summary>Esempio</summary>
@@ -1180,6 +1202,30 @@ $$</p>
     a_1 = 1, a_2 = -1, a_3 = 1, a_4 = 1, \dots
 \end{array}
 \]</div>
+</details>
+<h2 id="successione-crescente">Successione Crescente<a class="headerlink" href="#successione-crescente" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Definizione ― Successione Crescente</p>
+<p>Una successione crescente è una successione in cui ogni termine è maggiore o uguale al termine precedente. In altre parole, per ogni <span class="arithmatex">\(n\)</span>, abbiamo:</p>
+<div class="arithmatex">\[
+\begin{array}{c}
+    a_n \leq a_n+1 \text{ per ogni } n
+\end{array}
+\]</div>
+</div>
+<details class="example">
+<summary>Esempio</summary>
+<div class="arithmatex">\[
+\begin{array}{c}
+    a_n = n
+\end{array}
+\]</div>
+<ul>
+<li>Quando <span class="arithmatex">\(n = 1, a_1 = 1\)</span></li>
+<li>Quando <span class="arithmatex">\(n = 2, a_2 = 2\)</span></li>
+<li><span class="arithmatex">\(\dots\)</span></li>
+<li>Si può notare che, per ogni <span class="arithmatex">\(n, a_n \leq a_{n+1}\)</span>, quindi la successione è crescente perchè ogni termine è maggiore o uguale al termine precedente.</li>
+</ul>
 </details>
 
 
