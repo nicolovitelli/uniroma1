@@ -428,18 +428,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipi-di-funzione" class="md-nav__link">
+  <a href="#calcolo-del-dominio" class="md-nav__link">
     <span class="md-ellipsis">
-      Tipi di Funzione
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asintoti" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asintoti
+      Calcolo del Dominio
     </span>
   </a>
   
@@ -894,18 +885,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipi-di-funzione" class="md-nav__link">
+  <a href="#calcolo-del-dominio" class="md-nav__link">
     <span class="md-ellipsis">
-      Tipi di Funzione
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asintoti" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asintoti
+      Calcolo del Dominio
     </span>
   </a>
   
@@ -931,83 +913,78 @@
 <h2 id="funzione">Funzione<a class="headerlink" href="#funzione" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Definizione ― Funzione</p>
-<p>Una funzione è una relazione che associa ad ogni valore di <span class="arithmatex">\(x\)</span> (detto dominio) un unico valore di <span class="arithmatex">\(y\)</span> (detto codominio).</p>
+<p>Dati due insiemi <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(B\)</span>, una funzione definita su <span class="arithmatex">\(A\)</span> ed a valori in <span class="arithmatex">\(B\)</span>, spesso indicata con <span class="arithmatex">\(f: A \to B\)</span>, è una relazione che associa ad ogni elemento dell'insieme <span class="arithmatex">\(A\)</span> un unico elemento dell'insieme <span class="arithmatex">\(B\)</span>.</p>
 <div class="arithmatex">\[
 \begin{array}{c}
-    f(x) = y
+    f(a) = b
 \end{array}
 \]</div>
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/funzione.png" />
+</figure></p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Proprietà delle Funzioni</p>
+<p class="admonition-title">Proprietà di una Funzione</p>
 <ul>
-<li><strong>Dominio</strong>: l'insieme dei valori di <span class="arithmatex">\(x\)</span> per cui la funzione è definita.</li>
-<li><strong>Codominio</strong>: l'insieme dei valori che la funzione può assumere.</li>
-<li><strong>Immagine</strong>: l'insieme dei valori effettivi che la funzione assume per il valore dato.</li>
+<li>L'insieme <span class="arithmatex">\(A\)</span> è detto dominio della funzione e l'insieme <span class="arithmatex">\(B\)</span> viene chiamato codominio della Funzione.</li>
+<li>Dato <span class="arithmatex">\(a \in A\)</span>, l'elemento <span class="arithmatex">\(f(a) \in B\)</span> si dice <strong>immagine</strong> di <span class="arithmatex">\(a\)</span>.</li>
+<li>L'insieme <span class="arithmatex">\(Im_f = \{f(a) : a \in A\}\)</span> è detto insieme immagine della funzione.</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/prop_funzione.png" />
+</figure></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Rappresentazione sul Grafico</p>
+<ul>
+<li>I punti dell'asse <span class="arithmatex">\(X\)</span> rappresentano gli elementi del dominio.</li>
+<li>I punti dell'asse <span class="arithmatex">\(Y\)</span> rappresentano gli elementi del codominio.</li>
+</ul>
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_funz.png" />
+</figure></p>
+</div>
+<h2 id="calcolo-del-dominio">Calcolo del Dominio<a class="headerlink" href="#calcolo-del-dominio" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Determinare il Dominio di una Funzione</p>
+<ul>
+<li><strong>Denominatore</strong> <span class="arithmatex">\(\to\)</span> se presente, va posto diverso da <span class="arithmatex">\(0\)</span></li>
+<li><strong>Radici di indici pari</strong> <span class="arithmatex">\(\to\)</span> i loro argomento vanno posti <span class="arithmatex">\(\geq 0\)</span>.</li>
+<li><strong>Logaritmi</strong> <span class="arithmatex">\(\to\)</span> i loro argomenti vanno posti <span class="arithmatex">\(&gt; 0\)</span></li>
+<li><span class="arithmatex">\([f(x)]^{g(x)} \to\)</span> la funzione <span class="arithmatex">\(f(x)\)</span> va posta <span class="arithmatex">\(&gt; 0\)</span></li>
 </ul>
 </div>
-<h2 id="tipi-di-funzione">Tipi di Funzione<a class="headerlink" href="#tipi-di-funzione" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Funzione Lineare</p>
-<p>Una Funzione Lineare è una funzione di primo grado del tipo:</p>
-<div class="arithmatex">\[
-\begin{array}{c}
-    f(x) = ax + b
-\end{array}
-\]</div>
-<p>Dove <span class="arithmatex">\(a\)</span> e <span class="arithmatex">\(b\)</span> sono costanti; il grafico è una retta.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Funzione Quadratica</p>
-<p>Una Funzione Quadratica è una funzione del tipo:</p>
-<div class="arithmatex">\[
-\begin{array}{c}
-    f(x) = ax^2 + bx + c
-\end{array}
-\]</div>
-<p>La sua rappresentazione grafica è una parabola.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Funzione Esponenziale</p>
-<p>Una Funzione Esponenziale è una funzione del tipo:</p>
-<div class="arithmatex">\[
-\begin{array}{c}
-    f(x) = a^2
-\end{array}
-\]</div>
-<p>Dove <span class="arithmatex">\(a\)</span> è una costante positiva; il suo grafico cresce rapidamente.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Funzione Logaritmica</p>
-<p>Una Funzione Logaritmica è una funzione del tipo:</p>
-<div class="arithmatex">\[
-\begin{array}{c}
-    f(x) = log_a(x)
-\end{array}
-\]</div>
-<p>Dove <span class="arithmatex">\(a\)</span> è una costante; la funzione cresce lentamente ed ha un asintoto verticale.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Funzione Trigonometrica</p>
-<p>Una Funzione Trigonometrica è una funzione del tipo:</p>
-<div class="arithmatex">\[
-\begin{array}{c}
-    f(x) = sin(x) \\
-    f(x) = cos(x)
-\end{array}
-\]</div>
-<p>Queste funzioni oscillano tra <span class="arithmatex">\(-1\)</span> ed <span class="arithmatex">\(1\)</span> e sono periodiche.</p>
-</div>
-<h2 id="asintoti">Asintoti<a class="headerlink" href="#asintoti" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p class="admonition-title">Definizione ― Asintoti</p>
-<p>Un asintoto è una retta alla quale la curva di una funzione si avvicina ma non la raggiunge mai, almeno in modo finito. Esistono tre tipi di asintoti principali:</p>
-<ul>
-<li><strong>Asintoti Orizzontali</strong>: se una funzione si avvicina ad un valore finito mentre <span class="arithmatex">\(x\)</span> tende ad infinito o a meno infinito.</li>
-<li><strong>Asintoti Obliqui</strong>: se la funzione si avvicina ad una retta inclinata mentre <span class="arithmatex">\(x\)</span> tende ad infinito o meno infinito.</li>
-<li><strong>Asintoti Verticali</strong>: se la funzione cresce senza limite (positivamente o negativamente) mentre <span class="arithmatex">\(x\)</span> si avvicina ad un valore finito.</li>
-</ul>
-</div>
+<details class="example">
+<summary>Esempi</summary>
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es1.png" />
+</figure></p>
+<hr />
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es2.png" />
+</figure></p>
+<hr />
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es3.png" />
+</figure></p>
+<hr />
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es4.png" />
+</figure></p>
+<hr />
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es5.png" />
+</figure></p>
+<hr />
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es6.png" />
+</figure></p>
+<hr />
+<p><figure markdown="1">
+<img alt="image" src="/assets/calcolo_diff/dominio_es7.png" />
+</figure></p>
+<hr />
+</details>
 
 
 
