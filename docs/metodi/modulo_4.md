@@ -23,9 +23,9 @@ title: Modulo 4
 !!! abstract "Definizione ― Ordine Stretto"
     Un Ordine Stretto si presenta quando una Relazione $\mathcal{R}$ è:
 
-    - Transitiva $(a \mathcal{R} b, b \mathcal{R} c, a \mathcal{R} c)$
-	- Antisimmetrica $(a \mathcal{R} b, b \mathcal{R} a, a = b)$
-	- Non necessariamente Riflessiva $(a \mathcal{R} b)$
+    - Antiriflessiva ($\forall a \in A, (a,a) \not\in \mathcal{R}$)
+	- Transitiva ($\forall \, (a,b,c) \in A \\
+         a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c$)
 
 ??? example "Esempio"
     $$
@@ -106,7 +106,7 @@ title: Modulo 4
 
 ## Quoziente
 !!! abstract "Definizione ― Quoziente"
-    L'insieme di tutte le Classi di Equivalenza si chiama Quoziente e si indica con $A/\mathcal{R}$.
+    Si dice insieme Quoziente dell'insieme $A$ rispetto alla Relazione $\mathcal{R}$ l'insieme $A/\mathcal{R}$ delle classi di equivalenza degli elementi di $A$ rispetto alla relazione di equivalenza $\mathcal{R}$.
 
 ??? example "Esempio"
     $$

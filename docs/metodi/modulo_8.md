@@ -3,11 +3,6 @@ title: Modulo 8
 ---
 
 ## Cardinalità
-!!! abstract "Definizione ― Numeri Transfiniti"
-    Sono definiti Numeri Transfiniti quei numeri che vanno oltre l'infinito.
-
-!!! abstract "Definizione ― Equipotenza"
-    $A$ si dice equipotente a $B$ se esiste una biiezione $A \rightarrow B$.
 
 !!! abstract "Definizione ― Cardinalità"
     La Cardinalità di un insieme $A$ indicata con $|A|$, è la classe di equipotenza (*numero di elementi*) di $A$.
@@ -22,11 +17,8 @@ title: Modulo 8
 !!! abstract "Definizione ― Cardinalità di una Funzione"
     La Cardinalità dell'insieme delle Funzioni da $A \rightarrow B$ è uguale a $|B|^{|A|}$.
 
-??? note "Note aggiuntive"
-    - L'equipotenza è una Relazione di Equivalenza (*Riflessiva, Simmetrica e Transitiva*).
-    - La Cardinalità di $\mathop{N}$ è uguale a quella di $\mathop{N} \times \mathop{N} \times \dots \times \mathop{N}$.
-
-
+!!! abstract "Definizione ― Equipotenza"
+    $A$ si dice equipotente a $B$ se esiste una biiezione $A \rightarrow B$ ed una Relazione di Equivalenza su essi.
 
 ## Teorema di Cantor
 !!! abstract "Definizione ― Teorema di Cantor"
@@ -56,38 +48,6 @@ title: Modulo 8
     |\mathbb{N}| = |\mathbb{N}+1|
     \end{array}
 	$$
-
-## Polvere di Cantor
-
-Proviamo a mettere in corrispondenza l'insieme di tutti i numeri naturali $\mathbb{N}$ compresi fra $0$ ed $1$ con un insieme numerico $C$ che definiamo nel seguente modo:
-
-- Immaginiamo una retta di tutti i numeri reali compresi tra $0$ ed $1$, e la dividiamo in esattamente tre parti uguali:
-
-<figure markdown="1">
-![image](/uniroma1/assets/metodi/mod8_polvere_01.png)
-</figure>
-
-- Andiamo a togliere la parte centrale e prendiamo solo la parte evidenziata in blu ($0 < x < \frac{1}{3}$ e $\frac{2}{3} < x < 1$) per andare a costruire altre piccole rette:
-
-<figure markdown="1">
-![image](/uniroma1/assets/metodi/mod8_polvere_02.png)
-</figure>
-
-- Applichiamo la stessa strategia in cui andiamo a dividere in esattamente tre parti uguali ed andiamo a prendere la parte centrale, continuando all'infinito:
-
-<figure markdown="1">
-![image](/uniroma1/assets/metodi/mod8_polvere_03.png)
-</figure>
-
-- L'insieme $C$ sarà quindi l'intersezione tra tutti gli insiemi che abbiamo estratto:
-
-	$$
-    \begin{array}{c}
-    C = C_1 \cap C_2 \cap C_3 \cap \dots
-    \end{array}
-	$$
-
-- Quali sono quindi gli elementi di $C$? Sicuramente possiamo dire che tutti gli estremi ne fanno parte: $0, \frac{1}{3}, \frac{2}{3}, 1, \frac{1}{9}, \frac{2}{9}, \frac{7}{9}, \frac{8}{9}, \dots$ 
 
 ## Alberghi Transfiniti
 Il matematico Hilbert ha immaginato un albergo con infinite stanze per mostrare alcune caratteristiche dell'infinito stesso.
@@ -176,7 +136,7 @@ $$
     \end{array}
 $$
 
-## Polvere di Cantor new
+## Polvere di Cantor
 
 !!! abstract "Definizione ― Equipotenza"
     La polvere di Cantor è un insieme costruito partendo dall'intervallo $[0,1]$ (in una dimensione) e applicando un procedimento iterativo di "rimozione". Alla fine di questo processo, otteniamo un insieme che ha proprietà molto particolari, come essere infinito ma non numerabile e avere misura nulla.

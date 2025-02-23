@@ -7,9 +7,19 @@ title: Modulo 3
     Una Relazione fra due insiemi $A$ e $B$ è un qualunque sottoinsieme di $A \times B$.
     $$
     \begin{array}{c}
-        \mathcal{R} \subseteq A \times B
+         \mathcal{R} \subseteq A \times B
     \end{array}
 	$$
+
+??? example "Esempio"
+    $$
+    \begin{array}{c}
+         A = \{1, 2, 3\} \\
+         B = \{4, 5, 6\} \\
+         A \times B = \{(1,4),(1,5),(1,6),(2,4),(2,5),(3,6)\} \\
+         \mathcal{R}_1 = \{(1,6), (2,5)\}
+    \end{array}
+    $$
 
 ## Composizione di due Relazioni
 
@@ -27,7 +37,7 @@ title: Modulo 3
 
     $$
     \begin{array}{c}
-        \mathcal{R}^C = \{(a,b) \in A \times A \, | \, (a,b) \not\in \mathcal{R}\}
+         \mathcal{R}^C = \{(a,b) \in A \times A \, | \, (a,b) \not\in \mathcal{R}\}
     \end{array}
     $$
 
@@ -35,234 +45,154 @@ title: Modulo 3
 !!! abstract "Definizione ― Relazione Riflessiva"
     $$
     \begin{array}{c}
-        \forall a \in A \\
-        (a,a) \in \mathcal{R}
+         \forall a \in A \\
+         (a,a) \in \mathcal{R}
     \end{array}
 	$$
 
 !!! abstract "Definizione ― Relazione Antiriflessiva"
 	$$
     \begin{array}{c}
-        \forall a \in A \\
-        (a,a) \not\in \mathcal{R}
+         \forall a \in A \\
+         (a,a) \not\in \mathcal{R}
     \end{array}
 	$$
 
 ??? example "Esempio"
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_1 = \{(x,y) \in \mathbb{R} \times \mathbb{R} : x < y\}
-    \end{array}
-    $$
+    1. $\mathcal{R}_1 = \{(a, a) \mid a \in A\}$
+        - **Proprietà:** Riflessiva, perché ogni elemento è in relazione con sé stesso.
 
-    - **Antiriflessiva:** nessun numero reale è minore di se stesso.
+    2. $\mathcal{R}_2 = \emptyset$ 
+        - **Proprietà:** Antiriflessiva, perché non contiene nessuna coppia $(a, a)$.
 
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_2 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \text{ è pari}\}
-    \end{array}
-    $$
+    3. $\mathcal{R}_3 = \{(a, b) \mid a, b \in A \text{ e } a \text{ è divisibile per } 2\}$ con $A = \{1, 2, 3, 4\}$
+        - **Proprietà:** Non è riflessiva perché gli elementi $1$ e $3$ non sono in relazione con sé stessi. Non è antiriflessiva perché gli elementi $2$ e $4$ sono in relazione con sé stessi.
 
-    - **Riflessiva:** qualsiasi numero reale sottratto a se stesso ha come risultato $0$, quindi un numero paro.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_3 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \neq x\}
-    \end{array}
-    $$
+    4. $\mathcal{R}_4 = \{(a, b) \mid a \text{ divide } b\}$ 
+        - **Proprietà:** Riflessiva, perché ogni numero divide sé stesso.
 
-    - **Antiriflessiva:** nessun numero è diverso da se stesso.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_4 = \{(x,x) \in \mathbb{N} \times \mathbb{N} : x + x = 6\}
-    \end{array}
-    $$
+    5. $\mathcal{R}_5 = \{(a, b) \mid a > b\}$
+        - **Proprietà:** Antiriflessiva, perché non esistono $a \in A$ tali che $a > a$.
 
-    - **né Riflessiva né Antiriflessiva:** $x + x = 6$ è vero solo quando $x$ e $x$ sono uguali a $3$, in tutti gli altri casi è falso.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_5 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x = 0\}
-    \end{array}
-    $$
+    6. $\mathcal{R}_6 = \{(a, b) \mid a \leq b\}$
+        - **Proprietà:** Riflessiva, perché $a \leq a$ per ogni $a \in A$.
 
-    - **né Riflessiva né Antiriflessiva:** $x \cdot x = 0$ è vero solo quando  $(x,x) = 0$, in tutti gli altri casi è falso.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_6 = \{\emptyset\}
-    \end{array}
-    $$
-    
-    - **sia Riflessiva che Antiriflessiva:** Riflessiva perchè non ci sono coppie che violano la Riflessività ($\forall (x,x) \in \mathbb{N} \times \mathbb{N}, x \mathcal{R} x$) e contemporaneamente non viola nemmeno l'Antiriflessività, perchè non ci sono coppie da confrontare.
+    7. $\mathcal{R}_7 = \{(a, b) \mid a \neq b\}$
+        - **Proprietà:** Antiriflessiva, perché nessun elemento è diverso da sé stesso.
 
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_7 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x - x \in \mathbb{Z}\}
-    \end{array}
-    $$
+    8. $\mathcal{R}_8 = \{(a, b) \mid a \text{ e } b \text{ sono fratelli, con } a \neq b\}$
+        - **Proprietà:** Antiriflessiva, perché nessuno è fratello di sé stesso (non esistono coppie $(a, a)$ nella relazione).
 
-    - **Riflessiva:** qualsiasi numero reale sottratto a se stesso ha come risultato $0$, quindi appartiene all'insieme $\mathbb{Z}$.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_8 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x^2 + x^2 = 0\}
-	\end{array}
-    $$
+    9. $\mathcal{R}_{9} = \{(a, b) \mid a \text{ è antenato di } b\}$
+        - **Proprietà:** Antiriflessiva, perché nessuno è antenato di sé stesso.
 
-    - **né Riflessiva né Antiriflessiva:** \(x^2 + x^2 = 0\) è vero solo quando \((x,x) = 0\), in tutti gli altri casi è falso.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_9 = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \ge x\}
-    \end{array}
-    $$
+    10. $\mathcal{R}_{10} = \{(a, b) \mid a \text{ è divisore di } b\}$ su $A = \{1, 2, 3, 4, 6\}$
+        - **Proprietà:** Riflessiva, perché ogni numero è divisibile per sé stesso.
 
-    - **Riflessiva:** qualsiasi numero reale è uguale a se stesso.
-    
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_{10} = \{(x,x) \in \mathbb{R} \times \mathbb{R} : x \cdot x > 0\}
-    \end{array}
-    $$
-
-    - **né Riflessiva né Antiriflessiva:** $x \cdot x > 0$ è falso solo quando $x$ e $x$ valgono $0$, in qualsiasi altro caso è vero.
 
 ## Relazioni Simmetriche e Antisimmetriche
 !!! abstract "Definizione ― Relazione Simmetrica"
     $$
     \begin{array}{c}
-        \forall \, (a,b) \in A \\
-        a \mathcal{R} b \rightarrow b \mathcal{R} a
+         \forall \, (a,b) \in A \\
+         a \mathcal{R} b \rightarrow b \mathcal{R} a
     \end{array}
     $$
 
 !!! abstract "Definizione ― Relazione Antisimmetrica"
 	$$
     \begin{array}{c}
-        \forall \, (a,b) \in A \\
-        a \mathcal{R} b, b \mathcal{R} a \rightarrow a = b
+         \forall \, (a,b) \in A \\
+         a \mathcal{R} b, b \mathcal{R} a \rightarrow a = b
     \end{array}
     $$
 
 ??? example "Esempio"
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_1 = \{(1,1),(2,2)\}
-    \end{array}
-    $$
+    1. $\mathcal{R}_{1} = \{(a, b) \mid a = b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Sia simmetrica che antisimmetrica, perché ogni elemento è in relazione solo con sé stesso.
 
-    - **sia Simmetrica che Antisimmetrica**.
+    2. $\mathcal{R}_{2} = \emptyset$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Sia simmetrica che antisimmetrica, poiché non ci sono coppie che violano nessuna delle due proprietà.
 
-	$$
-    \begin{array}{c}
-    	\mathcal{R}_2 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a \leq b\}
-    \end{array}
-    $$
+    3. $\mathcal{R}_{3} = A \times A$ su $A = \{1, 2\}$
+        - **Proprietà:** Simmetrica, perché se $(a, b) \in \mathcal{R}_3$, allora anche $(b, a) \in \mathcal{R}_3$; non è antisimmetrica, perché $a \neq b$ è possibile.
 
-    - **Antisimmetrica:** se $a \leq b$ e $b \leq a$, allora necessariamente $a = b$. Non può capitare che la condizione si verifichi e $a \neq b$ (quindi non può essere Simmetrica).
+    4. $\mathcal{R}_{4} = \{(a, b) \mid a \text{ divide } b\}$ su $A = \{1, 2, 4\}$
+        - **Proprietà:** Antisimmetrica, perché se $a \mid b$ e $b \mid a$, allora $a = b$.
 
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_3 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a < b\}
-    \end{array}
-    $$
+    5. $\mathcal{R}_{5} = \{(a, b) \mid a \geq b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Antisimmetrica, perché se $a \geq b$ e $b \geq a$, allora $a = b$.
 
-    - **Antisimmetrica:** perchè non troveremo mai coppie in cui $a < b$ e $b < a$, quindi la definizione di Antisimmetria viene rispettata.
+    6. $\mathcal{R}_{6} = \{(a, b) \mid a \text{ e } b \text{ sono fratelli}\}$ su un insieme di persone $P$
+        - **Proprietà:** Simmetrica, perché se $a$ è fratello di $b$, allora $b$ è fratello di $a$.
 
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_4 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a + b = 10\}
-    \end{array}
-    $$
+    7. $\mathcal{R}_{7} = \{(a, b) \mid a \neq b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Né simmetrica né antisimmetrica, perché la simmetria è violata dalla proprietà stessa e l'antisimmetria non si applica.
 
-    - **Simmetrica:** se $a + b = 10$ allora è sicuramente vero che $b + a = 10$. Non è necessariamente vero che $a = b$ (Antisimmetria) perchè possono esserci coppie come $a=3, b=10$.
+    8. $\mathcal{R}_{8} = \{(a, b) \mid a + b = 0\}$ su $A = \{-2, -1, 0, 1, 2\}$
+    - **Proprietà:** Simmetrica, perché se $(a, b) \in \mathcal{R}_8$, allora $(b, a) \in \mathcal{R}_8$.
 
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_5 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a \text{ e } b \text{ hanno la stessa parità}\}
-    \end{array}
-    $$
+    9. $\mathcal{R}_{9} = \{(a, b) \mid a \leq b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Antisimmetrica, perché se $(a, b) \in \mathcal{R}_9$ e $(b, a) \in \mathcal{R}_9$, allora $a = b$.
 
-    - **Simmetrica:** possono esserci coppie come $a=2,b=4$ che rispettano la proprietà di Simmetria ($2,4$ sono pari come $4,2$). Non può essere Antisimmetrica perchè non è detto che $a = b$.
-
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_6 = \{(a,b) \in \mathbb{N} \times \mathbb{N} : a \text{ è paro}, b \text{ è disparo}\}
-    \end{array}
-    $$
-
-    - **né Simmetrica né Antisimmetrica:** $a \mathcal{R} b$ e $b \mathcal{R} a$ non potrà mai essere vero, per esempio la coppia $(2,5) \in \mathcal{R}$ ma $(5,2) \not\in \mathcal{R}$.
-
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_7 = \{(1,2),(2,1)\}
-    \end{array}
-    $$
-
-    - **Simmetrica:** perchè $(a,b) \in \mathcal{R}$ e $(b,a) \in \mathcal{R}$.
-
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_8 = \{(3,4),(4,5)\}
-    \end{array}
-    $$
-
-    - **né Simmetrica né Antisimmetrica:** $(a,b) \in \mathcal{R}$ ma $(b,a) \not\in \mathcal{R}$.
-
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_9 = \{(5,10),(10,5),(5,5)\}
-    \end{array}
-    $$
-
-    - **Simmetrica:** $(a,b) \in \mathcal{R}$ e $(b,a) \in \mathcal{R}$.
-
-    $$
-    \begin{array}{c}
-    	\mathcal{R}_{10} = \{(1,2),(2,3),(1,3)\}
-    \end{array}
-    $$
-
-    - **Antisimmetrica:** non ci sono coppie $(a,b) \in \mathcal{R}$ e $(b,a) \in \mathcal{R}$.
+    10. $\mathcal{R}_{10} = \{(a, b) \mid a + b \text{ è pari}\}$ su $A = \{1, 2, 3, 4\}$
+        - **Proprietà:** Simmetrica, perché se $(a, b) \in \mathcal{R}_{10}$, allora $(b, a) \in \mathcal{R}_{10}$.
 
 ## Relazioni Transitive & Antitransitive
 !!! abstract "Definizione ― Relazione Transitiva"
     $$
     \begin{array}{c}
-        \forall \, (a,b,c) \in A \\
-        a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c
+         \forall \, (a,b,c) \in A \\
+         a \mathcal{R} b, b \mathcal{R} c \rightarrow a \mathcal{R} c
     \end{array}
     $$
 
 !!! abstract "Definizione ― Relazione Transitiva"
     $$
     \begin{array}{c}
-        \forall \, (a,b,c) \in A \\
-        a \mathcal{R} b, b \mathcal{R} c \rightarrow a \cancel{\mathcal{R}} c
+         \forall \, (a,b,c) \in A \\
+         a \mathcal{R} b, b \mathcal{R} c \rightarrow a \cancel{\mathcal{R}} c
     \end{array}
     $$
 
 ??? example "Esempio"
-    $$
-    \begin{array}{c}
-    	\textit{Esempi di Relazioni Transitive e Non Transitive}\\
-	    A = \{1,2,3,4\} \\
-	    \\
-	    \mathcal{R}_1 = \{(2,1),(3,1),(3,2),(4,4)\} \\ \mathcal{R}_1 \text{ è Transitiva perchè } \{(3,2),(2,1),(3,1)\} \in \mathcal{R}_1 \\
-	    \\
-	    \mathcal{R}_2 = \{(2,1),(1,3)\} \\ \mathcal{R}_2 \text{ non è Transitiva perchè } \{(2,1),(1,3)\} \in \mathcal{R}_2,(2,3) \not\in \mathcal{R}_2
-    \end{array}
-    $$
+    1. $\mathcal{R}_{1} = \{(a, b) \mid a = b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Transitiva, perché se $a = b$ e $b = c$, allora $a = c$.
+
+    2. $\mathcal{R}_{2} = \emptyset$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Transitiva, perché non ci sono coppie $(a, b)$, quindi non c'è alcuna violazione della transitività.
+
+    3. $\mathcal{R}_{3} = A \times A$ su $A = \{1, 2\}$
+        - **Proprietà:** Transitiva, perché ogni coppia $(a, b)$ è in relazione con ogni altra coppia.
+
+    4. $\mathcal{R}_{4} = \{(a, b) \mid a \leq b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Transitiva, perché se $a \leq b$ e $b \leq c$, allora $a \leq c$.
+
+    5. $\mathcal{R}_{5} = \{(a, b) \mid a > b\}$ su $A = \{1, 2, 3\}$
+        - **Proprietà:** Transitiva, perché se $a > b$ e $b > c$, allora $a > c$.
+
+    6. $\mathcal{R}_{6} = \{(a, b) \mid a \text{ è padre di } b\}$ su un insieme di persone $P$
+        - **Proprietà:** Antitransitiva, perché se $a$ è padre di $b$ e $b$ è padre di $c$, allora $a$ non può essere padre di $c$.
+
+    7. $\mathcal{R}_{7} = \{(a, b) \mid a \text{ è più vecchio di } b\}$ su $A = \{1, 2, 3, 4\}$
+        - **Proprietà:** Transitiva, perché se $a$ è più vecchio di $b$ e $b$ è più vecchio di $c$, allora $a$ è più vecchio di $c$.
+
+    8. $\mathcal{R}_{8} = \{(a, b) \mid a + b \text{ è pari}\}$ su $A = \{1, 2, 3, 4\}$
+        - **Proprietà:** Né transitiva né antitransitiva, perché, ad esempio, se $(a, b) \in \mathcal{R}_8$ e $(b, c) \in \mathcal{R}_8$, non è garantito che $(a, c) \in \mathcal{R}_8$.
+
+    9. $\mathcal{R}_{9} = \{(a, b) \mid a + b = 10\}$ su $A = \{1, 2, 3, 4, 5, 6, 7, 8, 9\}$
+        - **Proprietà:** Né transitiva né antitransitiva, perché non esiste alcuna regola che leghi $a, b, c$ in modo consistente.
+
+    10. $\mathcal{R}_{10} = \{(a, b) \mid a \text{ è divisore di } b\}$ su $A = \{1, 2, 4, 8\}$
+        - **Proprietà:** Transitiva, perché se $a \mid b$ e $b \mid c$, allora $a \mid c$.
 
 ## Chiusura
 !!! abstract "Definizione ― Chiusura"
-    Un insieme $B$ è detto chiusura di un insieme $A$ rispetto ad una proprietà $\mathcal{P}$ quando sono soddisfatte le seguenti condizioni:
+    Un insieme $B$ è detto chiusura di un insieme $A$ rispetto ad una proprietà $P$ quando sono soddisfatte le seguenti condizioni:
 
-    - $B$ gode della proprietà $\mathcal{P}$, quindi $\mathcal{P}(B)$
+    - $B$ gode della proprietà $P$, quindi $P(B)$
 	- $A \subseteq B$
-	- per ogni insieme $C$, se $\mathcal{P}(C)$ e $A \subseteq C$, allora $B \subseteq C$
+	- per ogni insieme $C$, se $P(C)$ e $A \subseteq C$, allora $B \subseteq C$
 
 <figure markdown="1">
 ![image](/uniroma1/assets/metodi/mod3_chiusura.png)
@@ -272,17 +202,17 @@ title: Modulo 3
     - La Chiusura di un insieme rispetto ad una proprietà, se esiste, è unica.
 
 ??? example "Esempio ― Dimostrazione dell'unicità della Chiusura"
-    Supponiamo di avere $B$ e $B^\prime$ che sono entrambe chiusure di $A$ rispetto a $\mathcal{P}$.
+    Supponiamo di avere $B$ e $B^\prime$ che sono entrambe chiusure di $A$ rispetto a $P$.
     
     Per le tre proprietà della Chiusura, possiamo dire che:
     
-    - esiste un insieme $\mathcal{P}(B^\prime)$
+    - esiste un insieme $P(B^\prime)$
     - $A \subseteq B^\prime$
     - $B$ è un superinsieme di $B^\prime$, quindi $B^\prime \subseteq B$.
     
     Ora scambiando i due insiemi ($B$ e $B^\prime$) otteniamo quanto segue:
     
-    - esiste un insieme $\mathcal{P}(B)$
+    - esiste un insieme $P(B)$
     - $A \subseteq B$
     - $B^\prime$ è un superinsieme di $B$, quindi $B \subseteq B^\prime$.
     
@@ -297,8 +227,8 @@ title: Modulo 3
     - Se $(a,b),(b,c) \in \mathcal{R} \cap \mathcal{S}$, allora $(a,b),(b,c) \in \mathcal{R}$ e $(a,b),(b,c) \in \mathcal{S}$.
     
     - Visto che sono entrambe relazioni transitive:
-        - $(a,c) \in \mathcal{R}$
-        - $(a,c) \in \mathcal{S}$
+         - $(a,c) \in \mathcal{R}$
+         - $(a,c) \in \mathcal{S}$
     - Quindi per definizione di Intersezione, $(a,c) \in \mathcal{R} \cap \mathcal{S}$.
     
     Possiamo quindi confermare che l'Intersezione tra due relazioni transitive ne preserva la transitività.
@@ -323,15 +253,15 @@ title: Modulo 3
 ??? example "Esempio"
     $$
     \begin{array}{c}
-        A = \{1,2,3\} \\
-        \mathcal{R} = \{(1,2),(2,3)\} \\
-        \mathcal{R}^{+} = \{(1,2),(2,3),(1,3)\}
+         A = \{1,2,3\} \\
+         \mathcal{R} = \{(1,2),(2,3)\} \\
+         \mathcal{R}^{+} = \{(1,2),(2,3),(1,3)\}
     \end{array}
     $$
 
 ## P-Maggiorabile
 !!! abstract "Definizione ― P-Maggiorabile"
-    Quando esiste un insieme $B$ tale che $\mathcal{P}(B)$ e $A \subseteq B$, diciamo che $A$ è P-Maggiorabile.
+    Quando esiste un insieme $B$ tale che $P(B)$ e $A \subseteq B$, diciamo che $A$ è P-Maggiorabile.
 
     In altre parole, $A$ è P-Maggiorabile quando rispetta le prime due proprietà della Chiusura.
 

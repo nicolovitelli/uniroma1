@@ -1,1 +1,2 @@
+- [Calcolo Differenziale](Calcolo_Differenziale)
 - [Metodi Matematici per l'Informatica](metodi)

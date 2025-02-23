@@ -1,8 +1,6 @@
 nav:
     - Indice: index.md
     - Esercizi: esercizi.md
-    - Argomenti Esame: argomenti_esame.md
-    - Domande: domande.md
     - Modulo 1: modulo_1.md
     - Modulo 2: modulo_2.md
     - Modulo 3: modulo_3.md

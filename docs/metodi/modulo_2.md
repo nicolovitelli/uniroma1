@@ -177,18 +177,16 @@ title: Modulo 2
 
     $$
     \begin{array}{c}
-        \mathcal{P}(A)
+        \mathcal{P}(A) \\
+        |\mathcal{P}(A)| = 2^n
     \end{array}
     $$
-
-??? note "Note aggiuntive"
-    - La Cardinalità dell'insieme potenza è uguale a $|\mathcal{P}(A)| = 2^n$.
 
 ??? example "Esempio"
     $$
     \begin{array}{c}
     	A = \{1,2\} \\
-	    \mathcal{P}(A) = \{\emptyset,\{1,2\},1,2\} \\
+	    \mathcal{P}(A) = \{\emptyset,\{1,2\},\{1,2\}\} \\
 	    |A| = |\mathcal{P}(A)| = 2^n = 4
     \end{array}
     $$

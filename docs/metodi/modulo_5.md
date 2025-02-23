@@ -81,6 +81,9 @@ title: Modulo 5
 !!! abstract "Definizione ― Infinito"
     Un insieme è detto infinito se è in corrispondenza biunivoca con una sua parte propria (*con un suo sottoinsieme proprio*).
 
+!!! abstract "Definizione ― Numeri Transfiniti"
+    Sono definiti Numeri Transfiniti quei numeri che vanno oltre l'infinito.
+
 ??? example "Esempio"
 
     <figure markdown="1">
@@ -91,7 +94,7 @@ title: Modulo 5
     
     - Sia $A = \{0,1,2,3,4,5\}$ e $B$ un suo sottoinsieme dei primi quattro elementi: $B = \{0,1,2,3\}$.
     - Associando ogni elemento $a$ di $A$ con un elemento $b$ di $B$ ($f(0) = 0, f(1) = 1$, etc.) rimangono fuori i due elementi $\{4,5\}$.
-    - Questa Relazione non è una funzione non è biiettiva (*non è nemmeno una funzione*) quindi possiamo definire $A$ come insieme finito.
+    - Questa Relazione non è una funzione biiettiva (*non è nemmeno una funzione*) quindi possiamo definire $A$ come insieme finito.
     
     <figure markdown="1">
     ![image](/uniroma1/assets/metodi/mod5_infinito.png)
@@ -106,7 +109,7 @@ title: Modulo 5
 
 ## Funzione Inversa
 !!! abstract "Definizione ― Funzione Inversa"
-    Invertendo l'ordine delle coppie di una funzione non iniettiva o non suriettiva si ottiene una relazione che non è una funzione.
+    Invertendo l'ordine delle coppie di una funzione non iniettiva o non suriettiva si ottiene una relazione che non è una funzione. Una Funzione per avere la sua inversa deve essere biiettiva.
 
     $$
     \begin{array}{c}
@@ -127,7 +130,7 @@ title: Modulo 5
 
 ## Identità di una Funzione
 !!! abstract "Definizione ― Funzione Indentica"
-    Una Funzione Identica associa ogni elemento di $A$ a sé stesso.
+    Una Funzione di Identità associa ogni elemento di $A$ a sé stesso.
 
     $$
     \begin{array}{c}

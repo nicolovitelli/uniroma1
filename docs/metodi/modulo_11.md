@@ -310,7 +310,9 @@ title: Modulo 11
         - $\neg Q$
         - $R$
 
-!!! abstract "Definizione ― Modelli"
+## Modello
+
+!!! abstract "Definizione ― Modello"
     Un Modello è una Funzione che mappa i simboli proposizionali semplici ($P,Q,\dots$) nell'insieme $\{T,F\}$; mentre per tutte le altre proposizioni (*che potrebbero essere frasi complesse*) usiamo le tavole di verità per calcolare la loro interpretazione.
 
     Nel mondo della Logica, $\top$ e $\bot$ vengono chiamati True e False.
